@@ -454,14 +454,14 @@
                         <viewControllerLayoutGuide type="bottom" id="9lg-Sa-LGt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Rv9-qx-mkh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1400"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_img" translatesAutoresizingMaskIntoConstraints="NO" id="Fmv-Cp-Lbe">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1400"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k97-3B-EAA">
-                                <rect key="frame" x="15" y="72" width="356" height="1275"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" directionalLockEnabled="YES" bounces="NO" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k97-3B-EAA">
+                                <rect key="frame" x="15" y="72" width="356" height="1450"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garden_club_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Uba-3Z-j7w">
                                         <rect key="frame" x="62" y="35" width="219" height="170"/>
@@ -761,7 +761,7 @@ Cgo
                     </view>
                     <tabBarItem key="tabBarItem" title="About Us" image="about_us_tab" id="6VG-gs-TTb"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="1400"/>
+                    <size key="freeformSize" width="375" height="1500"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fCT-M9-BDS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

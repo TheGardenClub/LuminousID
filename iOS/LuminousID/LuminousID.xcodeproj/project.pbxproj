@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		009D62E801D46D3BE80979BB /* Pods_LuminousIDUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7664974A8EB952D828C2AC51 /* Pods_LuminousIDUITests.framework */; };
+		71713055E46188FFCA42DA3B /* Pods_LuminousIDTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5A44B9D3CFAD03AF9E02B66 /* Pods_LuminousIDTests.framework */; };
+		823C0E98626025C3F05D8B95 /* Pods_LuminousID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B22DE81D532830EE0DC6C52 /* Pods_LuminousID.framework */; };
 		A427FB4A1E34089000011350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427FB491E34089000011350 /* AppDelegate.swift */; };
 		A427FB4C1E34089000011350 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427FB4B1E34089000011350 /* ViewController.swift */; };
 		A427FB4F1E34089000011350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A427FB4D1E34089000011350 /* Main.storyboard */; };
@@ -14,6 +17,8 @@
 		A427FB541E34089000011350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A427FB521E34089000011350 /* LaunchScreen.storyboard */; };
 		A427FB5F1E34089000011350 /* LuminousIDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427FB5E1E34089000011350 /* LuminousIDTests.swift */; };
 		A427FB6A1E34089000011350 /* LuminousIDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427FB691E34089000011350 /* LuminousIDUITests.swift */; };
+		A4B2DF431E60F43B002F14D5 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B2DF421E60F43B002F14D5 /* CreateAccountViewController.swift */; };
+		A4B2DF451E60F4B9002F14D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4B2DF441E60F4B9002F14D5 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CF5977283A11F0BB40F9564 /* Pods-LuminousID.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuminousID.release.xcconfig"; path = "Pods/Target Support Files/Pods-LuminousID/Pods-LuminousID.release.xcconfig"; sourceTree = "<group>"; };
+		3481CF858ABF093FFB527842 /* Pods-LuminousIDUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuminousIDUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LuminousIDUITests/Pods-LuminousIDUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4B22DE81D532830EE0DC6C52 /* Pods_LuminousID.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuminousID.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7664974A8EB952D828C2AC51 /* Pods_LuminousIDUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuminousIDUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DAA00A9A5517336F67B021 /* Pods-LuminousIDUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuminousIDUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LuminousIDUITests/Pods-LuminousIDUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A427FB461E34089000011350 /* LuminousID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuminousID.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A427FB491E34089000011350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A427FB4B1E34089000011350 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +57,12 @@
 		A427FB651E34089000011350 /* LuminousIDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuminousIDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A427FB691E34089000011350 /* LuminousIDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminousIDUITests.swift; sourceTree = "<group>"; };
 		A427FB6B1E34089000011350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4B2DF421E60F43B002F14D5 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateAccountViewController.swift; path = ../CreateAccountViewController.swift; sourceTree = "<group>"; };
+		A4B2DF441E60F4B9002F14D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B92C76FA9419BD828960B4F3 /* Pods-LuminousID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuminousID.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LuminousID/Pods-LuminousID.debug.xcconfig"; sourceTree = "<group>"; };
+		C5A44B9D3CFAD03AF9E02B66 /* Pods_LuminousIDTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuminousIDTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D249D51B5FE838DBBCE6C76F /* Pods-LuminousIDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuminousIDTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LuminousIDTests/Pods-LuminousIDTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA26C3563AFD30D6ED3B8704 /* Pods-LuminousIDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuminousIDTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LuminousIDTests/Pods-LuminousIDTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				823C0E98626025C3F05D8B95 /* Pods_LuminousID.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71713055E46188FFCA42DA3B /* Pods_LuminousIDTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +86,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				009D62E801D46D3BE80979BB /* Pods_LuminousIDUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53158001F635369E40496F1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B92C76FA9419BD828960B4F3 /* Pods-LuminousID.debug.xcconfig */,
+				0CF5977283A11F0BB40F9564 /* Pods-LuminousID.release.xcconfig */,
+				D249D51B5FE838DBBCE6C76F /* Pods-LuminousIDTests.debug.xcconfig */,
+				FA26C3563AFD30D6ED3B8704 /* Pods-LuminousIDTests.release.xcconfig */,
+				3481CF858ABF093FFB527842 /* Pods-LuminousIDUITests.debug.xcconfig */,
+				A0DAA00A9A5517336F67B021 /* Pods-LuminousIDUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A427FB3D1E34089000011350 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +113,8 @@
 				A427FB5D1E34089000011350 /* LuminousIDTests */,
 				A427FB681E34089000011350 /* LuminousIDUITests */,
 				A427FB471E34089000011350 /* Products */,
+				53158001F635369E40496F1B /* Pods */,
+				D88DE940E6806A616A011B35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +133,11 @@
 			children = (
 				A427FB491E34089000011350 /* AppDelegate.swift */,
 				A427FB4B1E34089000011350 /* ViewController.swift */,
+				A4B2DF421E60F43B002F14D5 /* CreateAccountViewController.swift */,
 				A427FB4D1E34089000011350 /* Main.storyboard */,
 				A427FB501E34089000011350 /* Assets.xcassets */,
 				A427FB521E34089000011350 /* LaunchScreen.storyboard */,
+				A4B2DF441E60F4B9002F14D5 /* GoogleService-Info.plist */,
 				A427FB551E34089000011350 /* Info.plist */,
 			);
 			path = LuminousID;
@@ -125,6 +161,16 @@
 			path = LuminousIDUITests;
 			sourceTree = "<group>";
 		};
+		D88DE940E6806A616A011B35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B22DE81D532830EE0DC6C52 /* Pods_LuminousID.framework */,
+				C5A44B9D3CFAD03AF9E02B66 /* Pods_LuminousIDTests.framework */,
+				7664974A8EB952D828C2AC51 /* Pods_LuminousIDUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A427FB6E1E34089000011350 /* Build configuration list for PBXNativeTarget "LuminousID" */;
 			buildPhases = (
+				40B668B44C31955C8B0AB397 /* [CP] Check Pods Manifest.lock */,
 				A427FB421E34089000011350 /* Sources */,
 				A427FB431E34089000011350 /* Frameworks */,
 				A427FB441E34089000011350 /* Resources */,
+				0CF394A9EE8035A5C4F799FC /* [CP] Embed Pods Frameworks */,
+				A71C852EE3099F6347DC8290 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A427FB711E34089000011350 /* Build configuration list for PBXNativeTarget "LuminousIDTests" */;
 			buildPhases = (
+				37DE6736D338F70CA5FA1834 /* [CP] Check Pods Manifest.lock */,
 				A427FB561E34089000011350 /* Sources */,
 				A427FB571E34089000011350 /* Frameworks */,
 				A427FB581E34089000011350 /* Resources */,
+				CE342ADDF565E98F3025F4F7 /* [CP] Embed Pods Frameworks */,
+				1DA19876E9600758DD8BAB64 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A427FB741E34089000011350 /* Build configuration list for PBXNativeTarget "LuminousIDUITests" */;
 			buildPhases = (
+				96543507078D8E5E9FC89A82 /* [CP] Check Pods Manifest.lock */,
 				A427FB611E34089000011350 /* Sources */,
 				A427FB621E34089000011350 /* Frameworks */,
 				A427FB631E34089000011350 /* Resources */,
+				97A319D2AC338AEE496DF2B9 /* [CP] Embed Pods Frameworks */,
+				153ACC565A97E8DF7F9125CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A427FB541E34089000011350 /* LaunchScreen.storyboard in Resources */,
+				A4B2DF451E60F4B9002F14D5 /* GoogleService-Info.plist in Resources */,
 				A427FB511E34089000011350 /* Assets.xcassets in Resources */,
 				A427FB4F1E34089000011350 /* Main.storyboard in Resources */,
 			);
@@ -254,11 +310,150 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0CF394A9EE8035A5C4F799FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LuminousID/Pods-LuminousID-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		153ACC565A97E8DF7F9125CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LuminousIDUITests/Pods-LuminousIDUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DA19876E9600758DD8BAB64 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LuminousIDTests/Pods-LuminousIDTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37DE6736D338F70CA5FA1834 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		40B668B44C31955C8B0AB397 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		96543507078D8E5E9FC89A82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		97A319D2AC338AEE496DF2B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LuminousIDUITests/Pods-LuminousIDUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A71C852EE3099F6347DC8290 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LuminousID/Pods-LuminousID-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE342ADDF565E98F3025F4F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LuminousIDTests/Pods-LuminousIDTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A427FB421E34089000011350 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4B2DF431E60F43B002F14D5 /* CreateAccountViewController.swift in Sources */,
 				A427FB4C1E34089000011350 /* ViewController.swift in Sources */,
 				A427FB4A1E34089000011350 /* AppDelegate.swift in Sources */,
 			);
@@ -408,6 +603,7 @@
 		};
 		A427FB6F1E34089000011350 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B92C76FA9419BD828960B4F3 /* Pods-LuminousID.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LuminousID/Info.plist;
@@ -420,6 +616,7 @@
 		};
 		A427FB701E34089000011350 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CF5977283A11F0BB40F9564 /* Pods-LuminousID.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LuminousID/Info.plist;
@@ -432,6 +629,7 @@
 		};
 		A427FB721E34089000011350 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D249D51B5FE838DBBCE6C76F /* Pods-LuminousIDTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -446,6 +644,7 @@
 		};
 		A427FB731E34089000011350 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA26C3563AFD30D6ED3B8704 /* Pods-LuminousIDTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -460,6 +659,7 @@
 		};
 		A427FB751E34089000011350 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3481CF858ABF093FFB527842 /* Pods-LuminousIDUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = LuminousIDUITests/Info.plist;
@@ -473,6 +673,7 @@
 		};
 		A427FB761E34089000011350 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0DAA00A9A5517336F67B021 /* Pods-LuminousIDUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = LuminousIDUITests/Info.plist;
@@ -503,6 +704,7 @@
 				A427FB701E34089000011350 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A427FB711E34089000011350 /* Build configuration list for PBXNativeTarget "LuminousIDTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +713,7 @@
 				A427FB731E34089000011350 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A427FB741E34089000011350 /* Build configuration list for PBXNativeTarget "LuminousIDUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +722,7 @@
 				A427FB761E34089000011350 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

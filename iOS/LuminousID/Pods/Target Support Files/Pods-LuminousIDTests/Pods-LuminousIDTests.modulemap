@@ -1,0 +1,6 @@
+framework module Pods_LuminousIDTests {
+  umbrella header "Pods-LuminousIDTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
