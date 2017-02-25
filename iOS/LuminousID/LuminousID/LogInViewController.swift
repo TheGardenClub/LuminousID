@@ -12,7 +12,10 @@ import FirebaseAuth
 import FirebaseDatabase
 
 class LogInViewController: UIViewController {
-    
+
+    @IBOutlet weak var loginEmail: UITextField!
+
+    @IBOutlet weak var loginPass: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,6 +27,11 @@ class LogInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func loginUser(_ sender: Any) {
+        FIRAuth.auth()?.signIn(withEmail: loginEmail.text!, password: loginPass.text!) { (user, error) in
+            // ...
+        }
+    }
 
     /*
     // MARK: - Navigation

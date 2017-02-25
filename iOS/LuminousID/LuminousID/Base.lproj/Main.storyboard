@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HWg-U9-Am5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HWg-U9-Am5">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="-1681" y="927"/>
         </scene>
-        <!--View Controller-->
+        <!--Log In View Controller-->
         <scene sceneID="uu8-hu-n48">
             <objects>
-                <viewController id="HWg-U9-Am5" sceneMemberID="viewController">
+                <viewController id="HWg-U9-Am5" customClass="LogInViewController" customModule="LuminousID" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DLY-ul-Zra"/>
                         <viewControllerLayoutGuide type="bottom" id="RMa-IW-63J"/>
@@ -66,9 +66,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2u-71-Gkl">
-                                <rect key="frame" x="164" y="478" width="46" height="30"/>
+                                <rect key="frame" x="164" y="452" width="46" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="loginUser:" destination="HWg-U9-Am5" eventType="touchUpInside" id="sTr-kh-qBy"/>
+                                    <segue destination="tjz-55-yMD" kind="show" id="NLh-Ez-gJD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZa-3g-zDT">
                                 <rect key="frame" x="131" y="577" width="113" height="30"/>
@@ -81,6 +85,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="loginEmail" destination="i6d-de-nkK" id="gx4-m4-aXG"/>
+                        <outlet property="loginPass" destination="LeQ-KY-ck3" id="v99-KU-y2h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6d-8j-9H5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -406,4 +414,7 @@
         <image name="my_observations_normal" width="75" height="75"/>
         <image name="myobs" width="75" height="75"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="NLh-Ez-gJD"/>
+    </inferredMetricsTieBreakers>
 </document>
