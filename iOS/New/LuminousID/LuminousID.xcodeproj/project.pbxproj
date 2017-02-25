@@ -39,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A417342B1E5232940010CDDF /* Luminous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luminous.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A417342B1E5232940010CDDF /* LuminousID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuminousID.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A417342E1E5232940010CDDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A41734301E5232940010CDDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A41734331E5232940010CDDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,10 +47,10 @@
 		A41734381E5232940010CDDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A417343B1E5232940010CDDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A417343D1E5232940010CDDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A41734421E5232940010CDDF /* LuminousTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuminousTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A41734421E5232940010CDDF /* LuminousIDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuminousIDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A41734461E5232940010CDDF /* LuminousTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminousTests.swift; sourceTree = "<group>"; };
 		A41734481E5232940010CDDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A417344D1E5232940010CDDF /* LuminousUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuminousUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A417344D1E5232940010CDDF /* LuminousIDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuminousIDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A41734511E5232940010CDDF /* LuminousUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminousUITests.swift; sourceTree = "<group>"; };
 		A41734531E5232940010CDDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4380EA81E59096F004072D0 /* SpeciesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpeciesListViewController.swift; path = ../SpeciesListViewController.swift; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		A41734221E5232940010CDDF = {
 			isa = PBXGroup;
 			children = (
-				A417342D1E5232940010CDDF /* Luminous */,
+				A417342D1E5232940010CDDF /* LuminousID */,
 				A41734451E5232940010CDDF /* LuminousTests */,
 				A41734501E5232940010CDDF /* LuminousUITests */,
 				A417342C1E5232940010CDDF /* Products */,
@@ -97,14 +97,14 @@
 		A417342C1E5232940010CDDF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A417342B1E5232940010CDDF /* Luminous.app */,
-				A41734421E5232940010CDDF /* LuminousTests.xctest */,
-				A417344D1E5232940010CDDF /* LuminousUITests.xctest */,
+				A417342B1E5232940010CDDF /* LuminousID.app */,
+				A41734421E5232940010CDDF /* LuminousIDTests.xctest */,
+				A417344D1E5232940010CDDF /* LuminousIDUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A417342D1E5232940010CDDF /* Luminous */ = {
+		A417342D1E5232940010CDDF /* LuminousID */ = {
 			isa = PBXGroup;
 			children = (
 				A417342E1E5232940010CDDF /* AppDelegate.swift */,
@@ -119,7 +119,7 @@
 				A41734351E5232940010CDDF /* Luminous.xcdatamodeld */,
 				A4380EB01E591048004072D0 /* Cyperaceae.csv */,
 			);
-			path = Luminous;
+			path = LuminousID;
 			sourceTree = "<group>";
 		};
 		A41734451E5232940010CDDF /* LuminousTests */ = {
@@ -143,9 +143,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A417342A1E5232940010CDDF /* Luminous */ = {
+		A417342A1E5232940010CDDF /* LuminousID */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A41734561E5232940010CDDF /* Build configuration list for PBXNativeTarget "Luminous" */;
+			buildConfigurationList = A41734561E5232940010CDDF /* Build configuration list for PBXNativeTarget "LuminousID" */;
 			buildPhases = (
 				A41734271E5232940010CDDF /* Sources */,
 				A41734281E5232940010CDDF /* Frameworks */,
@@ -155,14 +155,14 @@
 			);
 			dependencies = (
 			);
-			name = Luminous;
+			name = LuminousID;
 			productName = Luminous;
-			productReference = A417342B1E5232940010CDDF /* Luminous.app */;
+			productReference = A417342B1E5232940010CDDF /* LuminousID.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A41734411E5232940010CDDF /* LuminousTests */ = {
+		A41734411E5232940010CDDF /* LuminousIDTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A41734591E5232940010CDDF /* Build configuration list for PBXNativeTarget "LuminousTests" */;
+			buildConfigurationList = A41734591E5232940010CDDF /* Build configuration list for PBXNativeTarget "LuminousIDTests" */;
 			buildPhases = (
 				A417343E1E5232940010CDDF /* Sources */,
 				A417343F1E5232940010CDDF /* Frameworks */,
@@ -173,14 +173,14 @@
 			dependencies = (
 				A41734441E5232940010CDDF /* PBXTargetDependency */,
 			);
-			name = LuminousTests;
+			name = LuminousIDTests;
 			productName = LuminousTests;
-			productReference = A41734421E5232940010CDDF /* LuminousTests.xctest */;
+			productReference = A41734421E5232940010CDDF /* LuminousIDTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A417344C1E5232940010CDDF /* LuminousUITests */ = {
+		A417344C1E5232940010CDDF /* LuminousIDUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A417345C1E5232940010CDDF /* Build configuration list for PBXNativeTarget "LuminousUITests" */;
+			buildConfigurationList = A417345C1E5232940010CDDF /* Build configuration list for PBXNativeTarget "LuminousIDUITests" */;
 			buildPhases = (
 				A41734491E5232940010CDDF /* Sources */,
 				A417344A1E5232940010CDDF /* Frameworks */,
@@ -191,9 +191,9 @@
 			dependencies = (
 				A417344F1E5232940010CDDF /* PBXTargetDependency */,
 			);
-			name = LuminousUITests;
+			name = LuminousIDUITests;
 			productName = LuminousUITests;
-			productReference = A417344D1E5232940010CDDF /* LuminousUITests.xctest */;
+			productReference = A417344D1E5232940010CDDF /* LuminousIDUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -222,7 +222,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A41734261E5232940010CDDF /* Build configuration list for PBXProject "Luminous" */;
+			buildConfigurationList = A41734261E5232940010CDDF /* Build configuration list for PBXProject "LuminousID" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -235,9 +235,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A417342A1E5232940010CDDF /* Luminous */,
-				A41734411E5232940010CDDF /* LuminousTests */,
-				A417344C1E5232940010CDDF /* LuminousUITests */,
+				A417342A1E5232940010CDDF /* LuminousID */,
+				A41734411E5232940010CDDF /* LuminousIDTests */,
+				A417344C1E5232940010CDDF /* LuminousIDUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -305,12 +305,12 @@
 /* Begin PBXTargetDependency section */
 		A41734441E5232940010CDDF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A417342A1E5232940010CDDF /* Luminous */;
+			target = A417342A1E5232940010CDDF /* LuminousID */;
 			targetProxy = A41734431E5232940010CDDF /* PBXContainerItemProxy */;
 		};
 		A417344F1E5232940010CDDF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A417342A1E5232940010CDDF /* Luminous */;
+			target = A417342A1E5232940010CDDF /* LuminousID */;
 			targetProxy = A417344E1E5232940010CDDF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -430,9 +430,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Luminous/Info.plist;
+				INFOPLIST_FILE = LuminousID/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Garden-Club.Luminous";
+				PRODUCT_BUNDLE_IDENTIFIER = "Garden-Club.LuminousID";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -442,9 +442,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Luminous/Info.plist;
+				INFOPLIST_FILE = LuminousID/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Garden-Club.Luminous";
+				PRODUCT_BUNDLE_IDENTIFIER = "Garden-Club.LuminousID";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -460,7 +460,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Garden-Club.LuminousTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Luminous.app/Luminous";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuminousID.app/LuminousID";
 			};
 			name = Debug;
 		};
@@ -474,7 +474,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Garden-Club.LuminousTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Luminous.app/Luminous";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuminousID.app/LuminousID";
 			};
 			name = Release;
 		};
@@ -507,7 +507,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A41734261E5232940010CDDF /* Build configuration list for PBXProject "Luminous" */ = {
+		A41734261E5232940010CDDF /* Build configuration list for PBXProject "LuminousID" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A41734541E5232940010CDDF /* Debug */,
@@ -516,7 +516,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A41734561E5232940010CDDF /* Build configuration list for PBXNativeTarget "Luminous" */ = {
+		A41734561E5232940010CDDF /* Build configuration list for PBXNativeTarget "LuminousID" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A41734571E5232940010CDDF /* Debug */,
@@ -525,7 +525,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A41734591E5232940010CDDF /* Build configuration list for PBXNativeTarget "LuminousTests" */ = {
+		A41734591E5232940010CDDF /* Build configuration list for PBXNativeTarget "LuminousIDTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A417345A1E5232940010CDDF /* Debug */,
@@ -534,7 +534,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A417345C1E5232940010CDDF /* Build configuration list for PBXNativeTarget "LuminousUITests" */ = {
+		A417345C1E5232940010CDDF /* Build configuration list for PBXNativeTarget "LuminousIDUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A417345D1E5232940010CDDF /* Debug */,
