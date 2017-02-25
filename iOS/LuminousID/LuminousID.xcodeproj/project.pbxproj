@@ -17,7 +17,7 @@
 		A427FB541E34089000011350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A427FB521E34089000011350 /* LaunchScreen.storyboard */; };
 		A427FB5F1E34089000011350 /* LuminousIDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427FB5E1E34089000011350 /* LuminousIDTests.swift */; };
 		A427FB6A1E34089000011350 /* LuminousIDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427FB691E34089000011350 /* LuminousIDUITests.swift */; };
-		A4B2DF431E60F43B002F14D5 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B2DF421E60F43B002F14D5 /* CreateAccountViewController.swift */; };
+		A45861CA1E61077800DAE2FC /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45861C91E61077800DAE2FC /* CreateUserViewController.swift */; };
 		A4B2DF451E60F4B9002F14D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4B2DF441E60F4B9002F14D5 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +57,7 @@
 		A427FB651E34089000011350 /* LuminousIDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuminousIDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A427FB691E34089000011350 /* LuminousIDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminousIDUITests.swift; sourceTree = "<group>"; };
 		A427FB6B1E34089000011350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4B2DF421E60F43B002F14D5 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateAccountViewController.swift; path = ../CreateAccountViewController.swift; sourceTree = "<group>"; };
+		A45861C91E61077800DAE2FC /* CreateUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		A4B2DF441E60F4B9002F14D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B92C76FA9419BD828960B4F3 /* Pods-LuminousID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuminousID.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LuminousID/Pods-LuminousID.debug.xcconfig"; sourceTree = "<group>"; };
 		C5A44B9D3CFAD03AF9E02B66 /* Pods_LuminousIDTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuminousIDTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,12 +133,12 @@
 			children = (
 				A427FB491E34089000011350 /* AppDelegate.swift */,
 				A427FB4B1E34089000011350 /* ViewController.swift */,
-				A4B2DF421E60F43B002F14D5 /* CreateAccountViewController.swift */,
 				A427FB4D1E34089000011350 /* Main.storyboard */,
 				A427FB501E34089000011350 /* Assets.xcassets */,
 				A427FB521E34089000011350 /* LaunchScreen.storyboard */,
 				A4B2DF441E60F4B9002F14D5 /* GoogleService-Info.plist */,
 				A427FB551E34089000011350 /* Info.plist */,
+				A45861C91E61077800DAE2FC /* CreateUserViewController.swift */,
 			);
 			path = LuminousID;
 			sourceTree = "<group>";
@@ -453,9 +453,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4B2DF431E60F43B002F14D5 /* CreateAccountViewController.swift in Sources */,
 				A427FB4C1E34089000011350 /* ViewController.swift in Sources */,
 				A427FB4A1E34089000011350 /* AppDelegate.swift in Sources */,
+				A45861CA1E61077800DAE2FC /* CreateUserViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
