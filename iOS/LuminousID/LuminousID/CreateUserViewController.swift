@@ -25,10 +25,30 @@ class CreateUserViewController: UIViewController {
     }
     
     @IBAction func createUser(_ sender: Any) {
-        FIRAuth.auth()?.createUser(withEmail: userEmail.text!, password: userPass.text!) { (user, error) in
-            // ...
+        if self.userEmail.text == "" || self.userPass.text == ""
+        {
+            let alertController = UIAlertController(title: "Oops!", message: "Please enter an email and password.", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            self.present(alertController, animated: true, completion: nil)
+            
         }
-
+        else
+        {
+            FIRAuth.auth()?.createUser(withEmail: userEmail.text!, password: userPass.text!) { (user, error) in
+            // ...
+                if error == nil
+                {
+                    self.userEmail.text = ""
+                    self.userPass.text = ""
+                }
+                else
+                {
+                    let alertController = UIAlertController(title: "Oops!", message: error?.localizedDescription, preferredStyle: .alert)
+                    alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                    self.present(alertController, animated: true, completion: nil)
+                }
+            }
+        }
     }
     
 

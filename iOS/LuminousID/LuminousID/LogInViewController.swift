@@ -14,7 +14,6 @@ import FirebaseDatabase
 class LogInViewController: UIViewController {
 
     @IBOutlet weak var loginEmail: UITextField!
-
     @IBOutlet weak var loginPass: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +27,30 @@ class LogInViewController: UIViewController {
     }
     
     @IBAction func loginUser(_ sender: Any) {
-        FIRAuth.auth()?.signIn(withEmail: loginEmail.text!, password: loginPass.text!) { (user, error) in
-            // ...
+        if self.loginEmail.text == "" || self.loginPass.text == ""
+        {
+            let alertController = UIAlertController(title: "Oops!", message: "Please enter an email and password.", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            self.present(alertController, animated: true, completion: nil)
+            
+        }
+        else
+        {
+            FIRAuth.auth()?.signIn(withEmail: loginEmail.text!, password: loginPass.text!) { (user, error) in
+                // ...
+                if error == nil
+                {
+                    self.loginEmail.text = ""
+                    self.loginPass.text = ""
+                }
+                else
+                {
+                    let alertController = UIAlertController(title: "Oops!", message: error?.localizedDescription, preferredStyle: .alert)
+                    alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                    
+                    self.present(alertController, animated: true, completion: nil)
+                }
+            }
         }
     }
 
