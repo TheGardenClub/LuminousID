@@ -14,8 +14,12 @@ class CreateUserViewController: UIViewController {
 
     @IBOutlet weak var userEmail: UITextField!
     @IBOutlet weak var userPass: UITextField!
+    
+    var ref:FIRDatabaseReference?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        ref = FIRDatabase.database().reference()
                // Do any additional setup after loading the view.
     }
 
@@ -35,7 +39,8 @@ class CreateUserViewController: UIViewController {
         else
         {
             FIRAuth.auth()?.createUser(withEmail: userEmail.text!, password: userPass.text!) { (user, error) in
-            // ...
+                
+                
                 if error == nil
                 {
                     self.performSegue(withIdentifier: "toMainMenuFromCreate", sender: nil)
