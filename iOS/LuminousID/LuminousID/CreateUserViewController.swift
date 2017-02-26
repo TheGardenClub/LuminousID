@@ -43,6 +43,7 @@ class CreateUserViewController: UIViewController {
                 
                 if error == nil
                 {
+                    self.ref?.child("speciesid").child("accounts").child((user?.uid)!).setValue(["researcher": false])
                     self.performSegue(withIdentifier: "toMainMenuFromCreate", sender: nil)
                 }
                 else

@@ -224,7 +224,7 @@
                                 <rect key="frame" x="98" y="396" width="180" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odq-Vo-kBL">
                                 <rect key="frame" x="87" y="559" width="202" height="21"/>
@@ -521,7 +521,7 @@
                                             <constraint firstAttribute="height" constant="170" id="Ljc-VA-a7X"/>
                                         </constraints>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u79-iP-oem">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u79-iP-oem">
                                         <rect key="frame" x="19" y="224" width="336" height="1135"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -1006,7 +1006,7 @@ Cgo
         <image name="myobs" width="75" height="75"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="KMq-JO-Sfn"/>
         <segue reference="CLC-eV-Nut"/>
-        <segue reference="P5r-Qz-pJA"/>
     </inferredMetricsTieBreakers>
 </document>
