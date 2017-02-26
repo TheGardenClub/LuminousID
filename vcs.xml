@@ -6,7 +6,12 @@
           <option name="url" value="http://github.com" />
           <option name="userName" value="jeba1858" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/jeba1858/LuminousIDAndroid.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
+    <option name="cloneParentDir" value="C:\Users\Matt\AndroidStudioProjects" />
   </component>
 </application>
