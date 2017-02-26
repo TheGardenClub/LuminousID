@@ -38,8 +38,7 @@ class CreateUserViewController: UIViewController {
             // ...
                 if error == nil
                 {
-                    self.userEmail.text = ""
-                    self.userPass.text = ""
+                    self.performSegue(withIdentifier: "toMainMenuFromCreate", sender: nil)
                 }
                 else
                 {

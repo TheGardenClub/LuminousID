@@ -26,6 +26,10 @@ class MainMenuViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func logout(_ sender: Any) {
+        try! FIRAuth.auth()?.signOut()
+        self.performSegue(withIdentifier: "toLoginFromMainMenu", sender: nil)
+    }
 
     /*
     // MARK: - Navigation

@@ -40,14 +40,12 @@ class LogInViewController: UIViewController {
                 // ...
                 if error == nil
                 {
-                    self.loginEmail.text = ""
-                    self.loginPass.text = ""
+                    self.performSegue(withIdentifier: "toMainMenuFromLogin", sender: nil)
                 }
                 else
                 {
                     let alertController = UIAlertController(title: "Oops!", message: error?.localizedDescription, preferredStyle: .alert)
                     alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                    
                     self.present(alertController, animated: true, completion: nil)
                 }
             }
