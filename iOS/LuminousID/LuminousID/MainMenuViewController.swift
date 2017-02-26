@@ -14,9 +14,19 @@ import FirebaseDatabase
 
 class MainMenuViewController: UIViewController {
 
+
+    @IBOutlet var logOutButton: UIButton!
     @IBOutlet var userEmailLabel: UILabel!
     override func viewDidLoad() {
-        self.userEmailLabel.text = FIRAuth.auth()?.currentUser?.email
+        if FIRAuth.auth()?.currentUser?.email != nil
+        {
+            self.userEmailLabel.text = FIRAuth.auth()?.currentUser?.email
+        }
+        else
+        {
+            self.userEmailLabel.text = "Guest"
+            logOutButton.setTitle("Log In", for: .normal)
+        }
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
@@ -26,7 +36,8 @@ class MainMenuViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func logout(_ sender: Any) {
+
+    @IBAction func logOut(_ sender: Any) {
         try! FIRAuth.auth()?.signOut()
         self.performSegue(withIdentifier: "toLoginFromMainMenu", sender: nil)
     }

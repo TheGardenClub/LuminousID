@@ -125,6 +125,9 @@
                                 <state key="normal" title="Continue as Guest">
                                     <color key="titleColor" red="0.81608760359999999" green="0.80503106120000001" blue="0.73819595579999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="continueAsGuest:" destination="HWg-U9-Am5" eventType="touchUpInside" id="JIf-hd-htN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZa-3g-zDT">
                                 <rect key="frame" x="113" y="583" width="148" height="30"/>
@@ -417,11 +420,12 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="yae-0L-fpK"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
                                 <state key="normal" title="Log Out">
                                     <color key="titleColor" red="0.81608760359999999" green="0.80503106120000001" blue="0.73819595579999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="logout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L4d-wZ-eCw"/>
+                                    <action selector="logOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5xA-GF-VRM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -469,6 +473,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="J9f-Wu-17h"/>
                     <connections>
+                        <outlet property="logOutButton" destination="3TN-Sz-Q80" id="dEk-Vb-fYE"/>
                         <outlet property="userEmailLabel" destination="Z7C-4g-K3G" id="kdZ-Fu-pO0"/>
                         <segue destination="HWg-U9-Am5" kind="presentation" identifier="toLoginFromMainMenu" modalPresentationStyle="overCurrentContext" id="fdS-hd-rPB"/>
                     </connections>
@@ -603,7 +608,7 @@
         <image name="myobs" width="75" height="75"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="KMq-JO-Sfn"/>
-        <segue reference="CLC-eV-Nut"/>
+        <segue reference="P5r-Qz-pJA"/>
+        <segue reference="fdS-hd-rPB"/>
     </inferredMetricsTieBreakers>
 </document>

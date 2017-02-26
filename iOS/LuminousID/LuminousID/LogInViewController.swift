@@ -15,9 +15,13 @@ class LogInViewController: UIViewController {
 
     @IBOutlet weak var loginEmail: UITextField!
     @IBOutlet weak var loginPass: UITextField!
+    override func viewDidAppear(_ animated: Bool) {
+        if FIRAuth.auth()?.currentUser?.email != nil{
+            self.performSegue(withIdentifier: "toMainMenuFromLogin", sender: nil)
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -26,6 +30,9 @@ class LogInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func continueAsGuest(_ sender: Any) {
+        self.performSegue(withIdentifier: "toMainMenuFromLogin", sender: nil)
+    }
     @IBAction func loginUser(_ sender: Any) {
         if self.loginEmail.text == "" || self.loginPass.text == ""
         {
