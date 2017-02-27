@@ -196,33 +196,53 @@
             </objects>
             <point key="canvasLocation" x="-3857" y="38"/>
         </scene>
-        <!--Field Guide View Controller-->
-        <scene sceneID="TeK-5W-TLH">
+        <!--Field Guide Table View Controller-->
+        <scene sceneID="MOL-DW-1RU">
             <objects>
-                <tableViewController id="3la-gq-9NL" customClass="FieldGuideViewController" customModule="LuminousID" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Kiv-iK-P4x">
+                <viewController id="uy0-SE-mxn" customClass="FieldGuideTableViewController" customModule="LuminousID" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ucJ-WK-7EN"/>
+                        <viewControllerLayoutGuide type="bottom" id="J7I-Cd-YdI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="13P-q4-au5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_img" translatesAutoresizingMaskIntoConstraints="NO" id="Y7A-YJ-smj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HJV-1a-jOa">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.032365131259999999" green="0.53030303030000003" blue="0.092576524379999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="fieldGuideCell" id="GpW-aq-hiv">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GpW-aq-hiv" id="0hc-82-GEZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="uy0-SE-mxn" id="MND-B4-uG7"/>
+                                    <outlet property="delegate" destination="uy0-SE-mxn" id="9gX-ww-86C"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="oUE-6n-m5y" customClass="FieldGuideViewCell" customModule="LuminousID" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oUE-6n-m5y" id="PjH-2D-LI3">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="3la-gq-9NL" id="aTP-Ms-ebM"/>
-                            <outlet property="delegate" destination="3la-gq-9NL" id="oKj-Gf-9fg"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="j2W-PF-p0g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    </view>
+                    <connections>
+                        <outlet property="fieldGuideTable" destination="HJV-1a-jOa" id="cKE-Kt-IHN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sdg-oY-WAt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2538" y="-920"/>
+            <point key="canvasLocation" x="-882.39999999999998" y="-1102.3988005997003"/>
         </scene>
         <!--Create User View Controller-->
         <scene sceneID="xMB-Cd-Apr">
@@ -399,7 +419,7 @@
                                 <rect key="frame" x="81" y="303" width="75" height="75"/>
                                 <state key="normal" image="field_guide_normal"/>
                                 <connections>
-                                    <segue destination="3la-gq-9NL" kind="show" id="pXn-sk-WjH"/>
+                                    <segue destination="uy0-SE-mxn" kind="show" id="0gm-hk-IGW"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Luminous-ID" translatesAutoresizingMaskIntoConstraints="NO" id="2rW-yl-NHH">
@@ -994,6 +1014,6 @@ Cgo
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="KMq-JO-Sfn"/>
-        <segue reference="CLC-eV-Nut"/>
+        <segue reference="fdS-hd-rPB"/>
     </inferredMetricsTieBreakers>
 </document>
