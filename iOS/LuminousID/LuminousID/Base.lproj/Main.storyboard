@@ -1183,18 +1183,18 @@ If you’re interested in using this app as an informal learning tool with stude
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_img" translatesAutoresizingMaskIntoConstraints="NO" id="sLf-Xb-Id1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_img" translatesAutoresizingMaskIntoConstraints="NO" id="sLf-Xb-Id1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6U1-YI-RoP">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6U1-YI-RoP">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="szN-fs-Ybb">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="szN-fs-Ybb">
                                         <rect key="frame" x="20" y="22" width="334" height="524"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="524" id="5iS-Ip-v7k"/>
+                                        </constraints>
                                         <attributedString key="attributedText">
                                             <fragment>
                                                 <string key="content">
@@ -1221,9 +1221,26 @@ This is where a how to page will go. But we will cross that bridge when we get t
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="szN-fs-Ybb" firstAttribute="bottom" secondItem="6U1-YI-RoP" secondAttribute="bottomMargin" id="CDp-r0-qJk"/>
+                                    <constraint firstItem="szN-fs-Ybb" firstAttribute="leading" secondItem="6U1-YI-RoP" secondAttribute="leading" constant="20" id="GEa-fw-5Qd"/>
+                                    <constraint firstItem="szN-fs-Ybb" firstAttribute="centerX" secondItem="6U1-YI-RoP" secondAttribute="centerX" id="Qn0-VM-ScJ"/>
+                                    <constraint firstItem="szN-fs-Ybb" firstAttribute="top" secondItem="6U1-YI-RoP" secondAttribute="top" constant="22" id="h1k-ST-ooc"/>
+                                    <constraint firstAttribute="trailing" secondItem="szN-fs-Ybb" secondAttribute="trailing" constant="21" id="rZ1-Er-GjB"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sLf-Xb-Id1" firstAttribute="trailing" secondItem="6U1-YI-RoP" secondAttribute="trailing" id="0sc-fH-kjJ"/>
+                            <constraint firstItem="sLf-Xb-Id1" firstAttribute="leading" secondItem="6U1-YI-RoP" secondAttribute="leading" id="IES-Cl-5l7"/>
+                            <constraint firstItem="sLf-Xb-Id1" firstAttribute="leading" secondItem="ewD-EX-ges" secondAttribute="leading" id="Sys-u8-iXD"/>
+                            <constraint firstItem="sLf-Xb-Id1" firstAttribute="top" secondItem="ewD-EX-ges" secondAttribute="top" id="UXV-5G-JhC"/>
+                            <constraint firstItem="6U1-YI-RoP" firstAttribute="bottom" secondItem="yNj-zf-VAs" secondAttribute="top" id="bon-sP-lXz"/>
+                            <constraint firstAttribute="trailing" secondItem="sLf-Xb-Id1" secondAttribute="trailing" id="c0s-hZ-Xjj"/>
+                            <constraint firstItem="6U1-YI-RoP" firstAttribute="top" secondItem="eFa-fo-kDQ" secondAttribute="bottom" id="lh8-fA-bfM"/>
+                            <constraint firstAttribute="bottom" secondItem="sLf-Xb-Id1" secondAttribute="bottom" id="wmU-eS-dyA"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="How To" image="HowTo_tab" id="czz-4V-hbB"/>
                 </viewController>
