@@ -1,5 +1,5 @@
 //
-//  FieldGuideTableViewController.swift
+//  CyperaceaeViewController.swift
 //  LuminousID
 //
 //  Created by Brian Larson on 2/27/17.
@@ -11,9 +11,10 @@ import Firebase
 import FirebaseDatabase
 import FirebaseAuth
 
-class FieldGuideTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+class CyperaceaeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var fieldGuideTable: UITableView!
+    @IBOutlet weak var cyperaceaeTable: UITableView!
     var myDict = [[String:AnyObject]]()
     var speciesNames:[String] = []
     var handle:FIRDatabaseHandle?
@@ -21,7 +22,7 @@ class FieldGuideTableViewController: UIViewController, UITableViewDelegate, UITa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ref = FIRDatabase.database().reference().child("speciesid").child("field_guide").child("forbs")
+        ref = FIRDatabase.database().reference().child("speciesid").child("field_guide").child("gaminoids").child("cyperaceae")
         ref?.observe(.value, with: { (snapshot) in
             
             if let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot]
@@ -29,15 +30,15 @@ class FieldGuideTableViewController: UIViewController, UITableViewDelegate, UITa
                 self.myDict = snapshots.flatMap { $0.value as? [String:AnyObject]}
                 for item in self.myDict{
                     self.speciesNames.append(item["species_name"] as! String)
-                    self.fieldGuideTable.reloadData()
+                    self.cyperaceaeTable.reloadData()
                 }
-
+                
             }
+            self.cyperaceaeTable.reloadData()
         })
-        fieldGuideTable.reloadData()
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -49,22 +50,22 @@ class FieldGuideTableViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     
-
+    
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "fieldGuideCell")
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cyperaceaeCell")
         cell.textLabel?.text = self.speciesNames[indexPath.row]
         return(cell)
     }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
