@@ -22,6 +22,7 @@
 		A46FF7691E6507C30001455E /* WoodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46FF7681E6507C30001455E /* WoodyViewController.swift */; };
 		A46FF76B1E6508910001455E /* DeciduousViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46FF76A1E6508910001455E /* DeciduousViewController.swift */; };
 		A46FF76D1E65089D0001455E /* NeedleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46FF76C1E65089D0001455E /* NeedleViewController.swift */; };
+		A46FF76F1E65129F0001455E /* Snippet.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A46FF76E1E65129F0001455E /* Snippet.ttf */; };
 		A49CAD0D1E64B7AC006CC4DE /* ForbsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49CAD0C1E64B7AC006CC4DE /* ForbsTableViewController.swift */; };
 		A49CAD0F1E64EABE006CC4DE /* GraminoidsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49CAD0E1E64EABE006CC4DE /* GraminoidsViewController.swift */; };
 		A49CAD131E64F358006CC4DE /* JuncaceaeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49CAD121E64F358006CC4DE /* JuncaceaeViewController.swift */; };
@@ -72,6 +73,7 @@
 		A46FF7681E6507C30001455E /* WoodyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoodyViewController.swift; sourceTree = "<group>"; };
 		A46FF76A1E6508910001455E /* DeciduousViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeciduousViewController.swift; sourceTree = "<group>"; };
 		A46FF76C1E65089D0001455E /* NeedleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleViewController.swift; sourceTree = "<group>"; };
+		A46FF76E1E65129F0001455E /* Snippet.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Snippet.ttf; sourceTree = "<group>"; };
 		A49CAD0C1E64B7AC006CC4DE /* ForbsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForbsTableViewController.swift; sourceTree = "<group>"; };
 		A49CAD0E1E64EABE006CC4DE /* GraminoidsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraminoidsViewController.swift; sourceTree = "<group>"; };
 		A49CAD121E64F358006CC4DE /* JuncaceaeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuncaceaeViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				A46FF7681E6507C30001455E /* WoodyViewController.swift */,
 				A46FF76A1E6508910001455E /* DeciduousViewController.swift */,
 				A46FF76C1E65089D0001455E /* NeedleViewController.swift */,
+				A46FF76E1E65129F0001455E /* Snippet.ttf */,
 			);
 			path = LuminousID;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A427FB541E34089000011350 /* LaunchScreen.storyboard in Resources */,
+				A46FF76F1E65129F0001455E /* Snippet.ttf in Resources */,
 				A4B2DF451E60F4B9002F14D5 /* GoogleService-Info.plist in Resources */,
 				A427FB511E34089000011350 /* Assets.xcassets in Resources */,
 				A427FB4F1E34089000011350 /* Main.storyboard in Resources */,

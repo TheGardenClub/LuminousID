@@ -14,6 +14,7 @@ class CreateUserViewController: UIViewController {
 
     @IBOutlet weak var userEmail: UITextField!
     @IBOutlet weak var userPass: UITextField!
+    @IBOutlet weak var confirmPass: UITextField!
     
     var ref:FIRDatabaseReference?
     
@@ -35,6 +36,14 @@ class CreateUserViewController: UIViewController {
             alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alertController, animated: true, completion: nil)
             
+        }
+        else if self.userPass.text != self.confirmPass.text
+        {
+            let alertController = UIAlertController(title: "Oops!", message: "Passwords don't match. Please try again.", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            self.present(alertController, animated: true, completion: nil)
+            self.userPass.text = ""
+            self.confirmPass.text = ""
         }
         else
         {
