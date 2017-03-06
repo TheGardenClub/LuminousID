@@ -77,13 +77,13 @@
                                 <rect key="frame" x="37" y="120" width="298" height="96"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i6d-de-nkK">
-                                <rect key="frame" x="97" y="318" width="179" height="30"/>
+                                <rect key="frame" x="95" y="318" width="183.5" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LeQ-KY-ck3">
-                                <rect key="frame" x="97" y="395" width="179" height="30"/>
+                                <rect key="frame" x="95" y="395" width="183.5" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
@@ -102,13 +102,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xV2-9z-tw7">
-                                <rect key="frame" x="99" y="558" width="177" height="20"/>
+                                <rect key="frame" x="97" y="558" width="181.5" height="20"/>
                                 <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="17"/>
                                 <color key="textColor" red="0.81608760359999999" green="0.80503106120000001" blue="0.73819595579999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CiK-1G-pOD">
-                                <rect key="frame" x="97" y="289" width="54" height="21"/>
+                                <rect key="frame" x="95" y="289" width="54" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="54" id="M4P-A9-B5C"/>
                                     <constraint firstAttribute="height" constant="21" id="ZIh-dX-IfR"/>
@@ -118,7 +118,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhs-H6-VZD">
-                                <rect key="frame" x="97" y="367" width="86" height="20"/>
+                                <rect key="frame" x="95" y="367" width="86" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="86" id="Ifb-8M-HV0"/>
                                 </constraints>
@@ -250,7 +250,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uoS-Dm-Z6r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2087.1999999999998" y="-2650.5247376311845"/>
+            <point key="canvasLocation" x="-3788" y="-2651"/>
         </scene>
         <!--Juncaceae View Controller-->
         <scene sceneID="uAm-Fs-Xig">
@@ -297,7 +297,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fIO-us-Tsd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-858.39999999999998" y="-2651.4242878560722"/>
+            <point key="canvasLocation" x="-2559" y="-2651"/>
         </scene>
         <!--Poaceae View Controller-->
         <scene sceneID="7VV-Ai-g9z">
@@ -344,7 +344,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tVX-gj-dB0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="368.80000000000001" y="-2651.4242878560722"/>
+            <point key="canvasLocation" x="-1332" y="-2651"/>
         </scene>
         <!--Deciduous View Controller-->
         <scene sceneID="aty-6Q-xKF">
@@ -391,7 +391,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FoH-hQ-aU2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1946.4000000000001" y="-2651.4242878560722"/>
+            <point key="canvasLocation" x="380" y="-2651"/>
         </scene>
         <!--Needle View Controller-->
         <scene sceneID="Kzr-ua-1dm">
@@ -438,7 +438,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zhc-Lh-bMy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3344.8000000000002" y="-2651.4242878560722"/>
+            <point key="canvasLocation" x="1644" y="-2651"/>
         </scene>
         <!--Forbs Table View Controller-->
         <scene sceneID="MOL-DW-1RU">
@@ -486,7 +486,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sdg-oY-WAt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3858" y="-1558"/>
+            <point key="canvasLocation" x="-5567" y="-1558"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="v88-Mh-Rlr">
@@ -578,7 +578,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dsq-rC-tnd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-858" y="-1558"/>
+            <point key="canvasLocation" x="-2559" y="-1558"/>
         </scene>
         <!--Woody View Controller-->
         <scene sceneID="GFu-Te-1yF">
@@ -599,7 +599,7 @@
                                 <rect key="frame" x="112" y="330" width="150" height="32"/>
                                 <color key="backgroundColor" red="0.26393100619999998" green="0.4660366178" blue="0.26225295659999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="lUd-3J-4Hi"/>
+                                    <constraint firstAttribute="height" constant="32" id="5jD-gp-QcM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="22"/>
                                 <state key="normal" title="Deciduous">
@@ -613,7 +613,7 @@
                                 <rect key="frame" x="112" y="382" width="150" height="29"/>
                                 <color key="backgroundColor" red="0.26393100619999998" green="0.4660366178" blue="0.26225295659999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="akB-gR-Al1"/>
+                                    <constraint firstAttribute="height" constant="29" id="v7Y-Fl-Mkb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="22"/>
                                 <state key="normal" title="Needle">
@@ -624,36 +624,36 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Woody" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDy-T0-HUt">
-                                <rect key="frame" x="130" y="171" width="106" height="44"/>
+                                <rect key="frame" x="121" y="171" width="132" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="106" id="cZd-v7-hK8"/>
-                                    <constraint firstAttribute="height" constant="44" id="yKB-oA-8g7"/>
+                                    <constraint firstAttribute="width" constant="132" id="mo3-lf-GHQ"/>
+                                    <constraint firstAttribute="height" constant="44" id="s61-QU-NbE"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="32"/>
+                                <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="36"/>
                                 <color key="textColor" red="0.81608760359999999" green="0.80503106120000001" blue="0.73819595579999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="phJ-HV-ud0" firstAttribute="leading" secondItem="VZp-wS-aOB" secondAttribute="leading" id="3Dn-1t-6v4"/>
-                            <constraint firstAttribute="trailing" secondItem="phJ-HV-ud0" secondAttribute="trailing" id="4MH-xc-o7M"/>
-                            <constraint firstItem="awK-Hj-QQQ" firstAttribute="leading" secondItem="VZp-wS-aOB" secondAttribute="leadingMargin" constant="96" id="8Bq-FN-0H4"/>
-                            <constraint firstItem="gtI-1g-XHU" firstAttribute="top" secondItem="Xwa-SL-tsw" secondAttribute="bottom" constant="256" id="F8l-Gc-kdJ"/>
-                            <constraint firstItem="bDy-T0-HUt" firstAttribute="top" secondItem="cWN-l1-O63" secondAttribute="bottom" constant="107" id="OiY-32-QE9"/>
-                            <constraint firstItem="Xwa-SL-tsw" firstAttribute="top" secondItem="awK-Hj-QQQ" secondAttribute="bottom" constant="20" id="QI1-cH-okw"/>
-                            <constraint firstItem="awK-Hj-QQQ" firstAttribute="leading" secondItem="Xwa-SL-tsw" secondAttribute="leading" id="Sza-9h-5jw"/>
-                            <constraint firstItem="bDy-T0-HUt" firstAttribute="leading" secondItem="VZp-wS-aOB" secondAttribute="leading" constant="130" id="TEq-bO-Ncf"/>
-                            <constraint firstItem="awK-Hj-QQQ" firstAttribute="trailing" secondItem="Xwa-SL-tsw" secondAttribute="trailing" id="dEw-uJ-aiE"/>
-                            <constraint firstItem="phJ-HV-ud0" firstAttribute="top" secondItem="VZp-wS-aOB" secondAttribute="top" id="eAq-0v-ldD"/>
-                            <constraint firstItem="phJ-HV-ud0" firstAttribute="bottom" secondItem="gtI-1g-XHU" secondAttribute="top" id="oBI-D8-9EV"/>
-                            <constraint firstItem="phJ-HV-ud0" firstAttribute="centerX" secondItem="Xwa-SL-tsw" secondAttribute="centerX" id="uCM-yA-YOf"/>
+                            <constraint firstItem="awK-Hj-QQQ" firstAttribute="leading" secondItem="Xwa-SL-tsw" secondAttribute="leading" id="251-Ms-KQQ"/>
+                            <constraint firstItem="phJ-HV-ud0" firstAttribute="leading" secondItem="VZp-wS-aOB" secondAttribute="leading" id="2UY-FP-Sm6"/>
+                            <constraint firstItem="phJ-HV-ud0" firstAttribute="top" secondItem="VZp-wS-aOB" secondAttribute="top" id="CfJ-7V-L5s"/>
+                            <constraint firstAttribute="trailing" secondItem="phJ-HV-ud0" secondAttribute="trailing" id="Et8-aB-0Qe"/>
+                            <constraint firstItem="gtI-1g-XHU" firstAttribute="top" secondItem="Xwa-SL-tsw" secondAttribute="bottom" constant="256" id="LFd-53-pDv"/>
+                            <constraint firstItem="phJ-HV-ud0" firstAttribute="bottom" secondItem="gtI-1g-XHU" secondAttribute="top" id="MuM-fJ-Pu4"/>
+                            <constraint firstItem="awK-Hj-QQQ" firstAttribute="trailing" secondItem="Xwa-SL-tsw" secondAttribute="trailing" id="Uuf-q5-XJD"/>
+                            <constraint firstItem="bDy-T0-HUt" firstAttribute="centerX" secondItem="awK-Hj-QQQ" secondAttribute="centerX" id="Z0U-40-8lk"/>
+                            <constraint firstItem="awK-Hj-QQQ" firstAttribute="leading" secondItem="VZp-wS-aOB" secondAttribute="leadingMargin" constant="96" id="amc-5l-c3t"/>
+                            <constraint firstItem="Xwa-SL-tsw" firstAttribute="top" secondItem="awK-Hj-QQQ" secondAttribute="bottom" constant="20" id="bgL-aa-VLe"/>
+                            <constraint firstItem="phJ-HV-ud0" firstAttribute="centerX" secondItem="awK-Hj-QQQ" secondAttribute="centerX" id="dI1-Cs-ejw"/>
+                            <constraint firstItem="bDy-T0-HUt" firstAttribute="top" secondItem="cWN-l1-O63" secondAttribute="bottom" constant="107" id="ulf-sp-TZs"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zk6-Ny-S6M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2644" y="-1558.4707646176912"/>
+            <point key="canvasLocation" x="380" y="-1558"/>
         </scene>
         <!--Create User View Controller-->
         <scene sceneID="xMB-Cd-Apr">
@@ -741,7 +741,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odq-Vo-kBL">
-                                <rect key="frame" x="92" y="593" width="191" height="20"/>
+                                <rect key="frame" x="89" y="593" width="197" height="20"/>
                                 <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="17"/>
                                 <color key="textColor" red="0.81608760359999999" green="0.80503106120000001" blue="0.73819595579999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -808,10 +808,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMG-93-b7a">
-                                <rect key="frame" x="112" y="330" width="150" height="32"/>
+                                <rect key="frame" x="112" y="380" width="150" height="32"/>
                                 <color key="backgroundColor" red="0.26393100619316101" green="0.46603661775588989" blue="0.26225295662879944" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="7Ux-x3-PZl"/>
+                                    <constraint firstAttribute="height" constant="32" id="oR8-6k-K31"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="24"/>
                                 <state key="normal" title="Forbs">
@@ -824,31 +824,17 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Field Guide" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5n3-BR-FfU">
                                 <rect key="frame" x="97" y="171" width="181" height="38"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="TR0-DI-1mS"/>
+                                    <constraint firstAttribute="height" constant="38" id="HM4-Wb-jwT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="36"/>
                                 <color key="textColor" red="0.81608760359999999" green="0.80503106120000001" blue="0.73819595579999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s53-xe-yOV">
-                                <rect key="frame" x="112" y="381" width="150" height="31"/>
-                                <color key="backgroundColor" red="0.26393100619999998" green="0.4660366178" blue="0.26225295659999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="0yf-da-VOj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="24"/>
-                                <state key="normal" title="Graminoids">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Dcf-A7-OyM" kind="show" id="YWq-w8-g8W"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dV1-8a-SDF">
                                 <rect key="frame" x="112" y="430" width="150" height="31"/>
                                 <color key="backgroundColor" red="0.26393100619999998" green="0.4660366178" blue="0.26225295659999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="5QA-a9-RNn"/>
+                                    <constraint firstAttribute="height" constant="31" id="zQD-y8-Wl9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="24"/>
                                 <state key="normal" title="Woody">
@@ -858,31 +844,45 @@
                                     <segue destination="qOI-JD-Nt3" kind="show" id="3db-ol-sYS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s53-xe-yOV">
+                                <rect key="frame" x="112" y="330" width="150" height="31"/>
+                                <color key="backgroundColor" red="0.26393100619999998" green="0.4660366178" blue="0.26225295659999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="7tq-rv-h2w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="24"/>
+                                <state key="normal" title="Graminoids">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Dcf-A7-OyM" kind="show" id="YWq-w8-g8W"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Sak-UX-TJl" firstAttribute="top" secondItem="dV1-8a-SDF" secondAttribute="bottom" constant="206" id="2Q2-42-baE"/>
-                            <constraint firstItem="jMG-93-b7a" firstAttribute="trailing" secondItem="s53-xe-yOV" secondAttribute="trailing" id="2pc-Fd-9AQ"/>
-                            <constraint firstItem="bdX-Eb-ubW" firstAttribute="leading" secondItem="t5O-rv-p0d" secondAttribute="leading" id="9yt-PO-o4L"/>
-                            <constraint firstItem="bdX-Eb-ubW" firstAttribute="top" secondItem="t5O-rv-p0d" secondAttribute="top" id="APB-4a-s6E"/>
-                            <constraint firstItem="dV1-8a-SDF" firstAttribute="top" secondItem="s53-xe-yOV" secondAttribute="bottom" constant="18" id="Xa1-Nf-9jQ"/>
-                            <constraint firstItem="jMG-93-b7a" firstAttribute="leading" secondItem="s53-xe-yOV" secondAttribute="leading" id="agc-e4-bal"/>
-                            <constraint firstAttribute="trailing" secondItem="bdX-Eb-ubW" secondAttribute="trailing" id="d51-eh-deB"/>
-                            <constraint firstItem="bdX-Eb-ubW" firstAttribute="centerX" secondItem="dV1-8a-SDF" secondAttribute="centerX" id="drN-ou-09U"/>
-                            <constraint firstItem="jMG-93-b7a" firstAttribute="leading" secondItem="t5O-rv-p0d" secondAttribute="leadingMargin" constant="96" id="eex-3j-lQd"/>
-                            <constraint firstItem="s53-xe-yOV" firstAttribute="top" secondItem="jMG-93-b7a" secondAttribute="bottom" constant="19" id="eko-Nv-N7l"/>
-                            <constraint firstItem="s53-xe-yOV" firstAttribute="trailing" secondItem="dV1-8a-SDF" secondAttribute="trailing" id="i0E-ld-LsK"/>
-                            <constraint firstItem="5n3-BR-FfU" firstAttribute="leading" secondItem="t5O-rv-p0d" secondAttribute="leadingMargin" constant="81" id="lDo-1a-pIr"/>
-                            <constraint firstItem="bdX-Eb-ubW" firstAttribute="bottom" secondItem="Sak-UX-TJl" secondAttribute="top" id="p1I-a6-XmV"/>
-                            <constraint firstItem="5n3-BR-FfU" firstAttribute="centerX" secondItem="jMG-93-b7a" secondAttribute="centerX" id="w6F-c4-mSG"/>
-                            <constraint firstItem="5n3-BR-FfU" firstAttribute="top" secondItem="jQs-7m-3f5" secondAttribute="bottom" constant="107" id="xSl-D3-rpK"/>
-                            <constraint firstItem="s53-xe-yOV" firstAttribute="leading" secondItem="dV1-8a-SDF" secondAttribute="leading" id="yrU-Yr-Lzd"/>
+                            <constraint firstItem="s53-xe-yOV" firstAttribute="trailing" secondItem="jMG-93-b7a" secondAttribute="trailing" id="2dF-Ps-g01"/>
+                            <constraint firstItem="jMG-93-b7a" firstAttribute="top" secondItem="s53-xe-yOV" secondAttribute="bottom" constant="19" id="6cC-Ld-0dY"/>
+                            <constraint firstItem="s53-xe-yOV" firstAttribute="leading" secondItem="jMG-93-b7a" secondAttribute="leading" id="Cc1-aJ-sHu"/>
+                            <constraint firstItem="5n3-BR-FfU" firstAttribute="centerX" secondItem="s53-xe-yOV" secondAttribute="centerX" id="ChK-QB-zFf"/>
+                            <constraint firstItem="bdX-Eb-ubW" firstAttribute="top" secondItem="t5O-rv-p0d" secondAttribute="top" id="D54-eQ-pqA"/>
+                            <constraint firstItem="jMG-93-b7a" firstAttribute="leading" secondItem="dV1-8a-SDF" secondAttribute="leading" id="Fdu-4R-Uw8"/>
+                            <constraint firstItem="dV1-8a-SDF" firstAttribute="top" secondItem="jMG-93-b7a" secondAttribute="bottom" constant="18" id="InS-Dg-BOp"/>
+                            <constraint firstItem="bdX-Eb-ubW" firstAttribute="bottom" secondItem="Sak-UX-TJl" secondAttribute="top" id="MdS-gG-lFR"/>
+                            <constraint firstItem="5n3-BR-FfU" firstAttribute="leading" secondItem="t5O-rv-p0d" secondAttribute="leadingMargin" constant="81" id="VV5-WE-Odw"/>
+                            <constraint firstItem="Sak-UX-TJl" firstAttribute="top" secondItem="dV1-8a-SDF" secondAttribute="bottom" constant="206" id="WeX-Ia-DdN"/>
+                            <constraint firstAttribute="trailing" secondItem="bdX-Eb-ubW" secondAttribute="trailing" id="XRt-Nq-hPg"/>
+                            <constraint firstItem="s53-xe-yOV" firstAttribute="leading" secondItem="t5O-rv-p0d" secondAttribute="leadingMargin" constant="96" id="i5Y-el-xZD"/>
+                            <constraint firstItem="bdX-Eb-ubW" firstAttribute="leading" secondItem="t5O-rv-p0d" secondAttribute="leading" id="pSq-k9-XBN"/>
+                            <constraint firstItem="5n3-BR-FfU" firstAttribute="top" secondItem="jQs-7m-3f5" secondAttribute="bottom" constant="107" id="rni-3T-LOY"/>
+                            <constraint firstItem="bdX-Eb-ubW" firstAttribute="centerX" secondItem="dV1-8a-SDF" secondAttribute="centerX" id="v3o-Cx-WJS"/>
+                            <constraint firstItem="jMG-93-b7a" firstAttribute="trailing" secondItem="dV1-8a-SDF" secondAttribute="trailing" id="wrE-Ud-099"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V1R-i9-5O0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-858.39999999999998" y="-780.35982008995506"/>
+            <point key="canvasLocation" x="-2559" y="-780"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LVQ-4o-EfQ">
@@ -916,7 +916,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37n-mL-uBq">
-                                <rect key="frame" x="209" y="304" width="75" height="75"/>
+                                <rect key="frame" x="211" y="304" width="75" height="75"/>
                                 <state key="normal" image="myobs"/>
                                 <connections>
                                     <segue destination="cw6-KK-aPc" kind="show" id="ZOO-Td-wP6"/>
@@ -930,14 +930,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PW-uZ-4KL">
-                                <rect key="frame" x="209" y="435" width="75" height="75"/>
+                                <rect key="frame" x="211" y="435" width="75" height="75"/>
                                 <state key="normal" image="my_observations_normal"/>
                                 <connections>
                                     <segue destination="brr-Ky-JNe" kind="show" id="som-lC-5HD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AtH-YA-t9j">
-                                <rect key="frame" x="80" y="305" width="75" height="75"/>
+                                <rect key="frame" x="80" y="305" width="77" height="75"/>
                                 <state key="normal" image="field_guide_normal"/>
                                 <connections>
                                     <segue destination="UDE-tU-XY8" kind="show" id="8eT-wj-euq"/>
@@ -947,13 +947,13 @@
                                 <rect key="frame" x="37" y="120" width="301" height="98"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Field Guide" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCn-07-C5u">
-                                <rect key="frame" x="75" y="388" width="85" height="20"/>
+                                <rect key="frame" x="75" y="388" width="87" height="20"/>
                                 <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Observation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QzA-Tc-ygO">
-                                <rect key="frame" x="182" y="386" width="129" height="21"/>
+                                <rect key="frame" x="184" y="386" width="129" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="8Vt-mg-4gT"/>
                                 </constraints>
@@ -968,7 +968,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Observations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEK-NE-V5Q">
-                                <rect key="frame" x="181" y="518" width="128" height="21"/>
+                                <rect key="frame" x="181" y="518" width="129" height="21"/>
                                 <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -1100,7 +1100,7 @@
                                         </constraints>
                                         <attributedString key="attributedText">
                                             <fragment>
-                                                <mutableString key="content">Who We Are:
+                                                <string key="content">Who We Are:
 
 We are the Garden Club, a crew of developers out of the University of Colorado that created this app as part of our Senior Design Project.  
 
@@ -1128,7 +1128,7 @@ The species in this app are a representative, but not exhaustive, list of specie
 
 Education and Outreach:
 
-If you’re interested in using this app as an informal learning tool with students of any age, or as part of a citizen science project, please contact Niwot Ridge LTER Education and Outreach Coordinator Dr. Alexandra Rose (alexandra.rose@colorado.edu) for supporting resources and to let us know how you’re using the app.</mutableString>
+If you’re interested in using this app as an informal learning tool with students of any age, or as part of a citizen science project, please contact Niwot Ridge LTER Education and Outreach Coordinator Dr. Alexandra Rose (alexandra.rose@colorado.edu) for supporting resources and to let us know how you’re using the app.</string>
                                                 <attributes>
                                                     <color key="NSColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" size="18" name="Snippet"/>
