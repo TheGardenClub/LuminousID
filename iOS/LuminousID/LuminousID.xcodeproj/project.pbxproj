@@ -29,6 +29,8 @@
 		A49CAD151E6501AF006CC4DE /* PoaceaeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49CAD141E6501AF006CC4DE /* PoaceaeViewController.swift */; };
 		A4B2DF451E60F4B9002F14D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4B2DF441E60F4B9002F14D5 /* GoogleService-Info.plist */; };
 		A4C3C1FA1E610CFE003FC85A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C3C1F91E610CFE003FC85A /* LogInViewController.swift */; };
+		A4E6ABC01E6DFA5100EBE83C /* SpeciesInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E6ABBF1E6DFA5100EBE83C /* SpeciesInfoViewController.swift */; };
+		A4E6ABC21E6E14D700EBE83C /* sample_photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4E6ABC11E6E14D700EBE83C /* sample_photo.jpg */; };
 		A4E745161E6504F30051058B /* CyperaceaeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E745151E6504F30051058B /* CyperaceaeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,8 @@
 		A49CAD141E6501AF006CC4DE /* PoaceaeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoaceaeViewController.swift; sourceTree = "<group>"; };
 		A4B2DF441E60F4B9002F14D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A4C3C1F91E610CFE003FC85A /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		A4E6ABBF1E6DFA5100EBE83C /* SpeciesInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeciesInfoViewController.swift; sourceTree = "<group>"; };
+		A4E6ABC11E6E14D700EBE83C /* sample_photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample_photo.jpg; sourceTree = "<group>"; };
 		A4E745151E6504F30051058B /* CyperaceaeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CyperaceaeViewController.swift; sourceTree = "<group>"; };
 		B92C76FA9419BD828960B4F3 /* Pods-LuminousID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuminousID.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LuminousID/Pods-LuminousID.debug.xcconfig"; sourceTree = "<group>"; };
 		C5A44B9D3CFAD03AF9E02B66 /* Pods_LuminousIDTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuminousIDTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,7 +175,9 @@
 				A46FF7681E6507C30001455E /* WoodyViewController.swift */,
 				A46FF76A1E6508910001455E /* DeciduousViewController.swift */,
 				A46FF76C1E65089D0001455E /* NeedleViewController.swift */,
+				A4E6ABBF1E6DFA5100EBE83C /* SpeciesInfoViewController.swift */,
 				A46FF76E1E65129F0001455E /* Snippet.ttf */,
+				A4E6ABC11E6E14D700EBE83C /* sample_photo.jpg */,
 			);
 			path = LuminousID;
 			sourceTree = "<group>";
@@ -324,6 +330,7 @@
 				A46FF76F1E65129F0001455E /* Snippet.ttf in Resources */,
 				A4B2DF451E60F4B9002F14D5 /* GoogleService-Info.plist in Resources */,
 				A427FB511E34089000011350 /* Assets.xcassets in Resources */,
+				A4E6ABC21E6E14D700EBE83C /* sample_photo.jpg in Resources */,
 				A427FB4F1E34089000011350 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,6 +507,7 @@
 				A46FF76D1E65089D0001455E /* NeedleViewController.swift in Sources */,
 				A46FF7691E6507C30001455E /* WoodyViewController.swift in Sources */,
 				A45861CA1E61077800DAE2FC /* CreateUserViewController.swift in Sources */,
+				A4E6ABC01E6DFA5100EBE83C /* SpeciesInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
