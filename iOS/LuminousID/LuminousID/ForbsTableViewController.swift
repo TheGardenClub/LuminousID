@@ -64,23 +64,7 @@ class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let speciesInfoVC = segue.destination as! SpeciesInfoViewController
-        speciesInfoVC.speciesName = "Species Name: " + (myDict[row]["species_name"] as! String)
-        speciesInfoVC.speciesFamily = "Family: " + (myDict[row]["family_name"] as! String)
-        speciesInfoVC.speciesGrowthForm = "Growth Form: " + (myDict[row]["growth_form"] as! String)
-        speciesInfoVC.speciesLeafShape = "Leaf Shape: " + (myDict[row]["leaf_shape_filter"] as! String)
-        speciesInfoVC.speciesLeafArrangement = "Leaf Arrangement: " + (myDict[row]["leaf_arrangement"] as! String)
-        speciesInfoVC.speciesPetalNumber = "Petal Number: " + (myDict[row]["petal_number"] as! String)
-        speciesInfoVC.speciesFlowerShape = "Flower Shape: " + (myDict[row]["flower_shape"] as! String)
-        speciesInfoVC.speciesSynonyms = "Synonyms: " + (myDict[row]["synonyms"] as! String)
-        speciesInfoVC.speciesFlowerColor = "Flower Color: " + (myDict[row]["flower_color"] as! String)
-        speciesInfoVC.speciesCommonName = "Common Name: " + (myDict[row]["common_name"] as! String)
-        speciesInfoVC.speciesHabitat = "Habitat: " + (myDict[row]["habitat"] as! String)
-        /*
-        speciesInfoVC.speciesPhotoCredit = "Photo Credit: " + (myDict[row]["photo_credit"] as! String)
-        */
-        speciesInfoVC.speciesPhotoCredit = "Photo Credit: Brian Larson"
-        speciesInfoVC.speciesNotes = "Notes: " + (myDict[row]["notes"] as! String)
-        speciesInfoVC.speciesTitle = (myDict[row]["species_name"] as! String)
+        speciesInfoVC.speciesDict = [myDict[row]]
         
     }
     /*
