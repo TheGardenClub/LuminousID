@@ -17,6 +17,7 @@ class DeciduousViewController: UIViewController, UITableViewDelegate, UITableVie
     var speciesNames:[String] = []
     var handle:FIRDatabaseHandle?
     var ref:FIRDatabaseReference?
+    var row = 0
     
     @IBOutlet weak var deciduousTable: UITableView!
     override func viewDidLoad() {
@@ -57,6 +58,16 @@ class DeciduousViewController: UIViewController, UITableViewDelegate, UITableVie
         return(cell)
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        row = indexPath.row
+        performSegue(withIdentifier: "toSpeciesFromDeciduous", sender: speciesNames[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let speciesInfoVC = segue.destination as! SpeciesInfoViewController
+        speciesInfoVC.speciesDict = [myDict[row]]
+        
+    }
     /*
     // MARK: - Navigation
 

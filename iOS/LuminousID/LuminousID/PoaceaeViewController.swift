@@ -17,6 +17,7 @@ class PoaceaeViewController: UIViewController, UITableViewDelegate, UITableViewD
     var speciesNames:[String] = []
     var handle:FIRDatabaseHandle?
     var ref:FIRDatabaseReference?
+    var row = 0
     
     @IBOutlet weak var poaceaeTable: UITableView!
     
@@ -59,6 +60,16 @@ class PoaceaeViewController: UIViewController, UITableViewDelegate, UITableViewD
         return(cell)
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        row = indexPath.row
+        performSegue(withIdentifier: "toSpeciesFromPoaceae", sender: speciesNames[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let speciesInfoVC = segue.destination as! SpeciesInfoViewController
+        speciesInfoVC.speciesDict = [myDict[row]]
+        
+    }
     /*
     // MARK: - Navigation
 

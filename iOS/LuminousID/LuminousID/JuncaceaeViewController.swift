@@ -18,6 +18,7 @@ class JuncaceaeViewController: UIViewController, UITableViewDelegate, UITableVie
     var speciesNames:[String] = []
     var handle:FIRDatabaseHandle?
     var ref:FIRDatabaseReference?
+    var row = 0
     
     @IBOutlet weak var juncaceaeTable: UITableView!
 
@@ -58,6 +59,17 @@ class JuncaceaeViewController: UIViewController, UITableViewDelegate, UITableVie
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "juncaceaeCell")
         cell.textLabel?.text = self.speciesNames[indexPath.row]
         return(cell)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        row = indexPath.row
+        performSegue(withIdentifier: "toSpeciesFromJuncaceae", sender: speciesNames[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let speciesInfoVC = segue.destination as! SpeciesInfoViewController
+        speciesInfoVC.speciesDict = [myDict[row]]
+        
     }
     /*
     // MARK: - Navigation

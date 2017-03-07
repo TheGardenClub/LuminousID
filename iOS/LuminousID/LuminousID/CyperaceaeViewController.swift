@@ -19,6 +19,7 @@ class CyperaceaeViewController: UIViewController, UITableViewDelegate, UITableVi
     var speciesNames:[String] = []
     var handle:FIRDatabaseHandle?
     var ref:FIRDatabaseReference?
+    var row = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +59,16 @@ class CyperaceaeViewController: UIViewController, UITableViewDelegate, UITableVi
         return(cell)
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        row = indexPath.row
+        performSegue(withIdentifier: "toSpeciesFromCyperaceae", sender: speciesNames[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let speciesInfoVC = segue.destination as! SpeciesInfoViewController
+        speciesInfoVC.speciesDict = [myDict[row]]
+        
+    }
     /*
      // MARK: - Navigation
      

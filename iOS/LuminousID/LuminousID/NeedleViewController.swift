@@ -19,6 +19,7 @@ class NeedleViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var speciesNames:[String] = []
     var handle:FIRDatabaseHandle?
     var ref:FIRDatabaseReference?
+    var row = 0
     
     @IBOutlet weak var deciduousTable: UITableView!
     override func viewDidLoad() {
@@ -57,6 +58,17 @@ class NeedleViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "needleCell")
         cell.textLabel?.text = self.speciesNames[indexPath.row]
         return(cell)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        row = indexPath.row
+        performSegue(withIdentifier: "toSpeciesFromNeedle", sender: speciesNames[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let speciesInfoVC = segue.destination as! SpeciesInfoViewController
+        speciesInfoVC.speciesDict = [myDict[row]]
+        
     }
     /*
     // MARK: - Navigation
