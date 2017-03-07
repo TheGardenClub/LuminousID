@@ -74,7 +74,7 @@ class SpeciesInfoViewController: UIViewController {
                 Label12.text = "Notes: " + (speciesDict[0]["notes"] as! String)
                 titleLabel.text = (speciesDict[0]["species_name"] as! String)
             }
-            else if (speciesDict[0]["leaf_type"] as! String) == "needle"
+            else if (speciesDict[0]["leaf_type"] as! String) == "needle" || (speciesDict[0]["leaf_type"] as! String) == "scale"
             {
                 Label1.text = "Species Name: " + (speciesDict[0]["species_name"] as! String)
                 Label2.text = "Common Name: " + (speciesDict[0]["common_name"] as! String)
@@ -152,6 +152,10 @@ class SpeciesInfoViewController: UIViewController {
                 Label13.text = "Notes: " + (speciesDict[0]["notes"] as! String)
                 
                 titleLabel.text = (speciesDict[0]["species_name"] as! String)
+            }
+            else
+            {
+                Label1.text = "nil"
             }
         }
         
