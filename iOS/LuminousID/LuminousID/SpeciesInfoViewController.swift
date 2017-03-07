@@ -10,20 +10,38 @@ import UIKit
 
 class SpeciesInfoViewController: UIViewController {
 
-    @IBOutlet weak var speciesLabel: UILabel!
-    @IBOutlet weak var familyLabel: UILabel!
-    @IBOutlet weak var growthFormLabel: UILabel!
-    @IBOutlet weak var leafShapeLabel: UILabel!
-    @IBOutlet weak var leafArrangementLabel: UILabel!
-    @IBOutlet weak var petalNumberLabel: UILabel!
-    @IBOutlet weak var flowerShapeLabel: UILabel!
-    @IBOutlet weak var synonymsLabel: UILabel!
-    @IBOutlet weak var flowerColorLabel: UILabel!
-    @IBOutlet weak var commonNameLabel: UILabel!
-    @IBOutlet weak var habitatLabel: UILabel!
-    @IBOutlet weak var photoCreditLabel: UILabel!
-    @IBOutlet weak var notesLabel: UILabel!
+
+    @IBOutlet weak var Label1: UILabel!
+    
+    @IBOutlet weak var Label2: UILabel!
+    
+    @IBOutlet weak var Label3: UILabel!
+    
+    @IBOutlet weak var Label4: UILabel!
+    
+    @IBOutlet weak var Label5: UILabel!
+    
+    @IBOutlet weak var Label6: UILabel!
+    
+    @IBOutlet weak var Label7: UILabel!
+    
+    @IBOutlet weak var Label8: UILabel!
+    
+    @IBOutlet weak var Label9: UILabel!
+    
+    @IBOutlet weak var Label10: UILabel!
+    
+    @IBOutlet weak var Label11: UILabel!
+    
+    @IBOutlet weak var Label12: UILabel!
+    
+    @IBOutlet weak var Label13: UILabel!
+    
+    @IBOutlet weak var Label14: UILabel!
+    
     @IBOutlet weak var titleLabel: UILabel!
+    
+    
     
     var speciesDict = [[String:AnyObject]]()
     
@@ -31,27 +49,27 @@ class SpeciesInfoViewController: UIViewController {
         super.viewDidLoad()
         if (speciesDict[0]["growth_form"] as! String) == "forb"
         {
-            speciesLabel.text = "Species Name: " + (speciesDict[0]["species_name"] as! String)
-            familyLabel.text = "Family: " + (speciesDict[0]["family_name"] as! String)
-            growthFormLabel.text = "Growth Form: " + (speciesDict[0]["growth_form"] as! String)
-            leafShapeLabel.text = "Leaf Shape: " + (speciesDict[0]["leaf_shape_filter"] as! String)
-            leafArrangementLabel.text = "Leaf Arrangement: " + (speciesDict[0]["leaf_arrangement"] as! String)
-            petalNumberLabel.text = "Petal Number: " + (speciesDict[0]["petal_number"] as! String)
-            flowerShapeLabel.text = "Flower Shape: " + (speciesDict[0]["flower_shape"] as! String)
-            synonymsLabel.text = "Synonyms: " + (speciesDict[0]["synonyms"] as! String)
-            flowerColorLabel.text = "Flower Color: " + (speciesDict[0]["flower_color"] as! String)
-            commonNameLabel.text = "Common Name: " + (speciesDict[0]["common_name"] as! String)
-            habitatLabel.text = "Habitat: " + (speciesDict[0]["habitat"] as! String)
+            Label1.text = "Species Name: " + (speciesDict[0]["species_name"] as! String)
+            Label2.text = "Family: " + (speciesDict[0]["family_name"] as! String)
+            Label3.text = "Growth Form: " + (speciesDict[0]["growth_form"] as! String)
+            Label4.text = "Leaf Shape: " + (speciesDict[0]["leaf_shape_filter"] as! String)
+            Label5.text = "Leaf Arrangement: " + (speciesDict[0]["leaf_arrangement"] as! String)
+            Label6.text = "Petal Number: " + (speciesDict[0]["petal_number"] as! String)
+            Label7.text = "Flower Shape: " + (speciesDict[0]["flower_shape"] as! String)
+            Label8.text = "Synonyms: " + (speciesDict[0]["synonyms"] as! String)
+            Label9.text = "Flower Color: " + (speciesDict[0]["flower_color"] as! String)
+            Label10.text = "Common Name: " + (speciesDict[0]["common_name"] as! String)
+            Label11.text = "Habitat: " + (speciesDict[0]["habitat"] as! String)
             /*
-             photoCreditLabel.text = "Photo Credit: " + (speciesDict[0]["photo_credit"] as! String)
+             Label12.text = "Photo Credit: " + (speciesDict[0]["photo_credit"] as! String)
              */
-            photoCreditLabel.text = "Photo Credit: Brian Larson"
-            notesLabel.text = "Notes: " + (speciesDict[0]["notes"] as! String)
+            Label12.text = "Photo Credit: Brian Larson"
+            Label13.text = "Notes: " + (speciesDict[0]["notes"] as! String)
             titleLabel.text = (speciesDict[0]["species_name"] as! String)
         }
         else
         {
-            speciesLabel.text = "This is broken"
+            Label1.text = "This is broken"
         }
         
         // Do any additional setup after loading the view.
