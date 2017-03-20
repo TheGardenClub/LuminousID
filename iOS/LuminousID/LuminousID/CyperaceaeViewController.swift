@@ -23,7 +23,7 @@ class CyperaceaeViewController: UIViewController, UITableViewDelegate, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ref = FIRDatabase.database().reference().child("speciesid").child("field_guide").child("gaminoids").child("cyperaceae")
+        ref = FIRDatabase.database().reference().child("speciesid").child("field_guide").child("graminoids").child("cyperaceae")
         ref?.observe(.value, with: { (snapshot) in
             
             if let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot]

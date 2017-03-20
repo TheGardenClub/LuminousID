@@ -23,7 +23,7 @@ class PoaceaeViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ref = FIRDatabase.database().reference().child("speciesid").child("field_guide").child("gaminoids").child("poaceae")
+        ref = FIRDatabase.database().reference().child("speciesid").child("field_guide").child("graminoids").child("poaceae")
         ref?.observe(.value, with: { (snapshot) in
             
             if let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot]
