@@ -55,9 +55,11 @@ class PoaceaeViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "poaceaeCell")
-        cell.textLabel?.text = self.speciesNames[indexPath.row]
-        return(cell)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "poaceaeCell", for: indexPath) as! FieldGuideTableViewCell
+        cell.speciesPhoto.image = UIImage(named: "sample_photo.jpg")
+        cell.speciesNameCellLabel.text = self.speciesNames[indexPath.row]
+        cell.commonNameCellLabel.text = myDict[indexPath.row]["common_name"] as? String
+        return (cell)
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
