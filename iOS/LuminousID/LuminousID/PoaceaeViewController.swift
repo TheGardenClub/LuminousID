@@ -64,6 +64,7 @@ class PoaceaeViewController: UIViewController, UITableViewDelegate, UITableViewD
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         row = indexPath.row
+        tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "toSpeciesFromPoaceae", sender: speciesNames[indexPath.row])
     }
     

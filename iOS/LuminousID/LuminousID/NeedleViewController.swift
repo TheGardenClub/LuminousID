@@ -64,6 +64,7 @@ class NeedleViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         row = indexPath.row
+        tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "toSpeciesFromNeedle", sender: speciesNames[indexPath.row])
     }
     

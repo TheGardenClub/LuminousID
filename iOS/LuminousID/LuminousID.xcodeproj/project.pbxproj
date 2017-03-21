@@ -30,6 +30,7 @@
 		A4B2DF451E60F4B9002F14D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4B2DF441E60F4B9002F14D5 /* GoogleService-Info.plist */; };
 		A4C3C1FA1E610CFE003FC85A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C3C1F91E610CFE003FC85A /* LogInViewController.swift */; };
 		A4DAD53F1E8065BF000F8073 /* FieldGuideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAD53E1E8065BF000F8073 /* FieldGuideTableViewCell.swift */; };
+		A4DF25D41E81C6150095AFD8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DF25D31E81C6150095AFD8 /* SettingsViewController.swift */; };
 		A4E6ABC01E6DFA5100EBE83C /* SpeciesInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E6ABBF1E6DFA5100EBE83C /* SpeciesInfoViewController.swift */; };
 		A4E6ABC21E6E14D700EBE83C /* sample_photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4E6ABC11E6E14D700EBE83C /* sample_photo.jpg */; };
 		A4E745161E6504F30051058B /* CyperaceaeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E745151E6504F30051058B /* CyperaceaeViewController.swift */; };
@@ -84,6 +85,7 @@
 		A4B2DF441E60F4B9002F14D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A4C3C1F91E610CFE003FC85A /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		A4DAD53E1E8065BF000F8073 /* FieldGuideTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldGuideTableViewCell.swift; sourceTree = "<group>"; };
+		A4DF25D31E81C6150095AFD8 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A4E6ABBF1E6DFA5100EBE83C /* SpeciesInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeciesInfoViewController.swift; sourceTree = "<group>"; };
 		A4E6ABC11E6E14D700EBE83C /* sample_photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample_photo.jpg; sourceTree = "<group>"; };
 		A4E745151E6504F30051058B /* CyperaceaeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CyperaceaeViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				A46FF76E1E65129F0001455E /* Snippet.ttf */,
 				A4E6ABC11E6E14D700EBE83C /* sample_photo.jpg */,
 				A4DAD53E1E8065BF000F8073 /* FieldGuideTableViewCell.swift */,
+				A4DF25D31E81C6150095AFD8 /* SettingsViewController.swift */,
 			);
 			path = LuminousID;
 			sourceTree = "<group>";
@@ -504,6 +507,7 @@
 				A46FF76B1E6508910001455E /* DeciduousViewController.swift in Sources */,
 				A49CAD0D1E64B7AC006CC4DE /* ForbsTableViewController.swift in Sources */,
 				A407C84D1E626069001CA327 /* MainMenuViewController.swift in Sources */,
+				A4DF25D41E81C6150095AFD8 /* SettingsViewController.swift in Sources */,
 				A427FB4C1E34089000011350 /* ViewController.swift in Sources */,
 				A49CAD151E6501AF006CC4DE /* PoaceaeViewController.swift in Sources */,
 				A427FB4A1E34089000011350 /* AppDelegate.swift in Sources */,

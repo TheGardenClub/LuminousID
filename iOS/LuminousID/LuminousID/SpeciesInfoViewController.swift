@@ -11,6 +11,7 @@ import UIKit
 class SpeciesInfoViewController: UIViewController {
 
 
+    @IBOutlet weak var navBar: UINavigationItem!
     @IBOutlet weak var Label1: UILabel!
     @IBOutlet weak var Label2: UILabel!
     @IBOutlet weak var Label3: UILabel!
@@ -25,7 +26,7 @@ class SpeciesInfoViewController: UIViewController {
     @IBOutlet weak var Label12: UILabel!
     @IBOutlet weak var Label13: UILabel!
     @IBOutlet weak var Label14: UILabel!
-    @IBOutlet weak var titleLabel: UILabel!
+
     
     
     
@@ -33,6 +34,7 @@ class SpeciesInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navBar.title = (speciesDict[0]["species_name"] as! String)
         if (speciesDict[0]["growth_form"] as! String) == "forb"
         {
             Label1.text = "Species Name: " + (speciesDict[0]["species_name"] as! String)
@@ -51,7 +53,9 @@ class SpeciesInfoViewController: UIViewController {
              */
             Label12.text = "Photo Credit: Brian Larson"
             Label13.text = "Notes: " + (speciesDict[0]["notes"] as! String)
+            /*
             titleLabel.text = (speciesDict[0]["species_name"] as! String)
+            */
         }
         else if (speciesDict[0]["growth_form"] as! String) == "shrub/tree"
         {
@@ -72,7 +76,6 @@ class SpeciesInfoViewController: UIViewController {
                  */
                 Label11.text = "Photo Credit: Brian Larson"
                 Label12.text = "Notes: " + (speciesDict[0]["notes"] as! String)
-                titleLabel.text = (speciesDict[0]["species_name"] as! String)
             }
             else if (speciesDict[0]["leaf_type"] as! String) == "needle" || (speciesDict[0]["leaf_type"] as! String) == "scale"
             {
@@ -91,7 +94,6 @@ class SpeciesInfoViewController: UIViewController {
                  */
                 Label11.text = "Photo Credit: Brian Larson"
                 Label12.text = "Notes: " + (speciesDict[0]["notes"] as! String)
-                titleLabel.text = (speciesDict[0]["species_name"] as! String)
             }
         }
         else if (speciesDict[0]["growth_form"] as! String) == "graminoid"
@@ -113,7 +115,6 @@ class SpeciesInfoViewController: UIViewController {
                  */
                 Label11.text = "Photo Credit: Brian Larson"
                 Label12.text = "Notes: " + (speciesDict[0]["notes"] as! String)
-                titleLabel.text = (speciesDict[0]["species_name"] as! String)
             }
             else if (speciesDict[0]["family_name"] as! String) == "Juncaceae (Rushes)"
             {
@@ -130,7 +131,6 @@ class SpeciesInfoViewController: UIViewController {
                  */
                 Label9.text = "Photo Credit: Brian Larson"
                 Label10.text = "Notes: " + (speciesDict[0]["notes"] as! String)
-                titleLabel.text = (speciesDict[0]["species_name"] as! String)
             }
             else if (speciesDict[0]["family_name"] as! String) == "Poaceae (grasses)"
             {
@@ -151,7 +151,6 @@ class SpeciesInfoViewController: UIViewController {
                 Label12.text = "Photo Credit: Brian Larson"
                 Label13.text = "Notes: " + (speciesDict[0]["notes"] as! String)
                 
-                titleLabel.text = (speciesDict[0]["species_name"] as! String)
             }
             else
             {

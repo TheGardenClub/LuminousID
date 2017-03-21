@@ -65,6 +65,7 @@ class JuncaceaeViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         row = indexPath.row
+        tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "toSpeciesFromJuncaceae", sender: speciesNames[indexPath.row])
     }
     

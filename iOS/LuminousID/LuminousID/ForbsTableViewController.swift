@@ -63,6 +63,7 @@ class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         row = indexPath.row
+        tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "toSpeciesFromForbs", sender: speciesNames[indexPath.row])
     }
     
