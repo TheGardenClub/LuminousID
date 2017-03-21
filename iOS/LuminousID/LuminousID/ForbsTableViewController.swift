@@ -14,6 +14,7 @@ import FirebaseAuth
 class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var forbsTable: UITableView!
     
+    
     var myDict = [[String:AnyObject]]()
     var speciesNames:[String] = []
     var handle:FIRDatabaseHandle?
@@ -37,6 +38,7 @@ class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableVi
         })
         // Do any additional setup after loading the view.
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
