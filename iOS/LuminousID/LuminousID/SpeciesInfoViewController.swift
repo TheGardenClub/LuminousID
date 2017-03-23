@@ -166,7 +166,13 @@ class SpeciesInfoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let addObsVC = segue.destination as! AddObservationViewController
+        addObsVC.speciesObsDict = speciesDict[0]
+    }
+    @IBAction func camera_button(_ sender: Any) {
+        performSegue(withIdentifier: "toCameraFromSpeciesInfo", sender: speciesDict[0])
+    }
     /*
     // MARK: - Navigation
 

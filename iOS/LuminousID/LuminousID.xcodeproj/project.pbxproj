@@ -23,6 +23,7 @@
 		A46FF76B1E6508910001455E /* DeciduousViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46FF76A1E6508910001455E /* DeciduousViewController.swift */; };
 		A46FF76D1E65089D0001455E /* NeedleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46FF76C1E65089D0001455E /* NeedleViewController.swift */; };
 		A46FF76F1E65129F0001455E /* Snippet.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A46FF76E1E65129F0001455E /* Snippet.ttf */; };
+		A490EAEE1E842A0C00CFA2C6 /* AddObservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A490EAED1E842A0C00CFA2C6 /* AddObservationViewController.swift */; };
 		A49CAD0D1E64B7AC006CC4DE /* ForbsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49CAD0C1E64B7AC006CC4DE /* ForbsTableViewController.swift */; };
 		A49CAD0F1E64EABE006CC4DE /* GraminoidsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49CAD0E1E64EABE006CC4DE /* GraminoidsViewController.swift */; };
 		A49CAD131E64F358006CC4DE /* JuncaceaeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49CAD121E64F358006CC4DE /* JuncaceaeViewController.swift */; };
@@ -78,6 +79,7 @@
 		A46FF76A1E6508910001455E /* DeciduousViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeciduousViewController.swift; sourceTree = "<group>"; };
 		A46FF76C1E65089D0001455E /* NeedleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleViewController.swift; sourceTree = "<group>"; };
 		A46FF76E1E65129F0001455E /* Snippet.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Snippet.ttf; sourceTree = "<group>"; };
+		A490EAED1E842A0C00CFA2C6 /* AddObservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddObservationViewController.swift; sourceTree = "<group>"; };
 		A49CAD0C1E64B7AC006CC4DE /* ForbsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForbsTableViewController.swift; sourceTree = "<group>"; };
 		A49CAD0E1E64EABE006CC4DE /* GraminoidsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraminoidsViewController.swift; sourceTree = "<group>"; };
 		A49CAD121E64F358006CC4DE /* JuncaceaeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuncaceaeViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				A4E6ABC11E6E14D700EBE83C /* sample_photo.jpg */,
 				A4DAD53E1E8065BF000F8073 /* FieldGuideTableViewCell.swift */,
 				A4DF25D31E81C6150095AFD8 /* SettingsViewController.swift */,
+				A490EAED1E842A0C00CFA2C6 /* AddObservationViewController.swift */,
 			);
 			path = LuminousID;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 				A427FB4C1E34089000011350 /* ViewController.swift in Sources */,
 				A49CAD151E6501AF006CC4DE /* PoaceaeViewController.swift in Sources */,
 				A427FB4A1E34089000011350 /* AppDelegate.swift in Sources */,
+				A490EAEE1E842A0C00CFA2C6 /* AddObservationViewController.swift in Sources */,
 				A46FF76D1E65089D0001455E /* NeedleViewController.swift in Sources */,
 				A46FF7691E6507C30001455E /* WoodyViewController.swift in Sources */,
 				A45861CA1E61077800DAE2FC /* CreateUserViewController.swift in Sources */,
