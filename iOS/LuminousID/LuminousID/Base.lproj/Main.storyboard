@@ -284,11 +284,38 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_img" translatesAutoresizingMaskIntoConstraints="NO" id="cmF-E5-oPq">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.2564441898" blue="0.038876992499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yho-Ll-0E2">
+                                <rect key="frame" x="0.0" y="64" width="375" height="440"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSK-tm-i9s">
+                                <rect key="frame" x="117" y="523" width="140" height="75"/>
+                                <state key="normal" image="myobs">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="capturePicture:" destination="KJw-d6-thC" eventType="touchUpInside" id="Lqw-hI-XVo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZSK-tm-i9s" firstAttribute="top" secondItem="Yho-Ll-0E2" secondAttribute="bottom" constant="19" id="9ny-6h-doQ"/>
+                            <constraint firstItem="Yho-Ll-0E2" firstAttribute="leading" secondItem="udi-a6-pgL" secondAttribute="leading" id="BOJ-41-N57"/>
+                            <constraint firstItem="760-o8-Iaf" firstAttribute="top" secondItem="ZSK-tm-i9s" secondAttribute="bottom" constant="25" id="Bwc-7z-HcA"/>
+                            <constraint firstAttribute="trailing" secondItem="Yho-Ll-0E2" secondAttribute="trailing" id="cVW-JD-ffs"/>
+                            <constraint firstItem="Yho-Ll-0E2" firstAttribute="top" secondItem="JzC-gh-zoB" secondAttribute="bottom" id="pKz-Ee-40m"/>
+                            <constraint firstItem="ZSK-tm-i9s" firstAttribute="leading" secondItem="udi-a6-pgL" secondAttribute="leadingMargin" constant="101" id="qUg-j8-AXe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZSK-tm-i9s" secondAttribute="trailing" constant="102" id="r5c-K4-InH"/>
+                            <constraint firstItem="ZSK-tm-i9s" firstAttribute="top" secondItem="Yho-Ll-0E2" secondAttribute="bottom" constant="19" id="z4Q-Pt-tuK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Observation" id="6GZ-RB-x90"/>
+                    <connections>
+                        <outlet property="cameraView" destination="Yho-Ll-0E2" id="8bM-7v-D23"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lSE-GX-Rqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1722,6 +1749,7 @@ This is where a how to page will go. But we will cross that bridge when we get t
         <image name="garden_club_logo" width="216" height="168"/>
         <image name="glossary" width="75" height="75"/>
         <image name="my_observations_normal" width="75" height="75"/>
+        <image name="myobs" width="75" height="75"/>
         <image name="sample_photo.jpg" width="1200" height="793"/>
         <image name="settings" width="75" height="75"/>
     </resources>
