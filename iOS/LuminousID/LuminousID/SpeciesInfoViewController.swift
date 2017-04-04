@@ -10,6 +10,7 @@ import UIKit
 
 class SpeciesInfoViewController: UIViewController {
 
+    @IBOutlet weak var SpeciesImageView: UIImageView!
 
     @IBOutlet weak var navBar: UINavigationItem!
     @IBOutlet weak var Label1: UILabel!
@@ -35,6 +36,8 @@ class SpeciesInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navBar.title = (speciesDict[0]["species_name"] as! String)
+        print(((speciesDict[0]["plant_code"]) as? String)!)
+        SpeciesImageView.image = UIImage(named: "Images/"+((speciesDict[0]["plant_code"]) as? String)! + "_1.jpg")
         if (speciesDict[0]["growth_form"] as! String) == "forb"
         {
             Label1.text = "Species Name: " + (speciesDict[0]["species_name"] as! String)

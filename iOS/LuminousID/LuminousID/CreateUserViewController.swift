@@ -15,6 +15,9 @@ class CreateUserViewController: UIViewController {
     @IBOutlet weak var userEmail: UITextField!
     @IBOutlet weak var userPass: UITextField!
     @IBOutlet weak var confirmPass: UITextField!
+    @IBOutlet weak var userName: UITextField!
+    
+    var userNamePath = ""
     
     var ref:FIRDatabaseReference?
     
@@ -24,7 +27,7 @@ class CreateUserViewController: UIViewController {
                // Do any additional setup after loading the view.
         
         
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(CreateUserViewController.dismissKeyboard))
         
         view.addGestureRecognizer(tap)
         
@@ -41,12 +44,11 @@ class CreateUserViewController: UIViewController {
     }
     
     @IBAction func createUser(_ sender: Any) {
-        if self.userEmail.text == "" || self.userPass.text == ""
+        if self.userEmail.text == "" || self.userPass.text == "" || self.userName.text == ""
         {
-            let alertController = UIAlertController(title: "Oops!", message: "Please enter an email and password.", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Oops!", message: "Please enter an email, a username, and a password.", preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alertController, animated: true, completion: nil)
-            
         }
         else if self.userPass.text != self.confirmPass.text
         {
@@ -56,6 +58,7 @@ class CreateUserViewController: UIViewController {
             self.userPass.text = ""
             self.confirmPass.text = ""
         }
+            
         else
         {
             FIRAuth.auth()?.createUser(withEmail: userEmail.text!, password: userPass.text!) { (user, error) in
@@ -63,7 +66,10 @@ class CreateUserViewController: UIViewController {
                 
                 if error == nil
                 {
+                    self.userNamePath = "speciesid/accounts/" + (user?.uid)! + "/username"
                     self.ref?.child("speciesid").child("accounts").child((user?.uid)!).setValue(["researcher": false])
+                    self.ref?.child(self.userNamePath).setValue(self.userName.text)
+                    
                     self.performSegue(withIdentifier: "toMainMenuFromCreate", sender: nil)
                 }
                 else

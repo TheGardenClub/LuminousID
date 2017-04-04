@@ -55,7 +55,7 @@ class CyperaceaeViewController: UIViewController, UITableViewDelegate, UITableVi
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cyperaceaeCell", for: indexPath) as! FieldGuideTableViewCell
-        cell.speciesPhoto.image = UIImage(named: "sample_photo.jpg")
+        cell.speciesPhoto.image = UIImage(named: "Images/"+((myDict[indexPath.row]["plant_code"]) as? String)! + "_1.jpg")
         cell.speciesNameCellLabel.text = self.speciesNames[indexPath.row]
         cell.commonNameCellLabel.text = myDict[indexPath.row]["common_name"] as? String
         return (cell)
