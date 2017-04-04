@@ -51,10 +51,10 @@ class SpeciesInfoViewController: UIViewController {
             Label9.text = "Flower Shape: " + (speciesDict[0]["flower_shape"] as! String)
             Label10.text = "Flower Color: " + (speciesDict[0]["flower_color"] as! String)
             Label11.text = "Habitat: " + (speciesDict[0]["habitat"] as! String)
+            Label12.text = "Photo Credit: " + (speciesDict[0]["photo_credit"] as! String)
             /*
-             Label12.text = "Photo Credit: " + (speciesDict[0]["photo_credit"] as! String)
-             */
             Label12.text = "Photo Credit: Brian Larson"
+            */
             Label13.text = "Notes: " + (speciesDict[0]["notes"] as! String)
             /*
             titleLabel.text = (speciesDict[0]["species_name"] as! String)
@@ -74,10 +74,10 @@ class SpeciesInfoViewController: UIViewController {
                 Label8.text = "Leaf Arrangement: " + (speciesDict[0]["leaf_arrangement"] as! String)
                 Label9.text = "Leaf Margin: " + (speciesDict[0]["leaf_margin"] as! String)
                 Label10.text = "Cone: " + (speciesDict[0]["cone"] as! String)
+                Label11.text = "Photo Credit: " + (speciesDict[0]["photo_credit"] as! String)
                 /*
-                 Label11.text = "Photo Credit: " + (speciesDict[0]["photo_credit"] as! String)
-                 */
                 Label11.text = "Photo Credit: Brian Larson"
+                */
                 Label12.text = "Notes: " + (speciesDict[0]["notes"] as! String)
             }
             else if (speciesDict[0]["leaf_type"] as! String) == "needle" || (speciesDict[0]["leaf_type"] as! String) == "scale"
@@ -92,10 +92,11 @@ class SpeciesInfoViewController: UIViewController {
                 Label8.text = "Needle Arrangement: " + (speciesDict[0]["needle_arrangement"] as! String)
                 Label9.text = "Needles Per Fascile: " + (speciesDict[0]["needle_per_fascile"] as! String)
                 Label10.text = "Cone: " + (speciesDict[0]["cone"] as! String)
+                Label11.text = "Photo Credit: " + (speciesDict[0]["photo_credit"] as! String)
+ 
                 /*
-                 Label11.text = "Photo Credit: " + (speciesDict[0]["photo_credit"] as! String)
-                 */
                 Label11.text = "Photo Credit: Brian Larson"
+                */
                 Label12.text = "Notes: " + (speciesDict[0]["notes"] as! String)
             }
         }
@@ -113,10 +114,10 @@ class SpeciesInfoViewController: UIViewController {
                 Label8.text = "Spike Color: " + (speciesDict[0]["spike_color"] as! String)
                 Label9.text = "Stem Cross Section: " + (speciesDict[0]["stem_cross_section"] as! String)
                 Label10.text = "Habitat: " + (speciesDict[0]["habitat"] as! String)
+                Label11.text = "Photo Credit: " + (speciesDict[0]["photo_credit"] as! String)
                 /*
-                 Label11.text = "Photo Credit: " + (speciesDict[0]["photo_credit"] as! String)
-                 */
                 Label11.text = "Photo Credit: Brian Larson"
+                */
                 Label12.text = "Notes: " + (speciesDict[0]["notes"] as! String)
             }
             else if (speciesDict[0]["family_name"] as! String) == "Juncaceae (Rushes)"
@@ -129,10 +130,10 @@ class SpeciesInfoViewController: UIViewController {
                 Label6.text = "Leaf Blade: " + (speciesDict[0]["leaf_blade"] as! String)
                 Label7.text = "Stem Cross Section: " + (speciesDict[0]["stem_cross_section"] as! String)
                 Label8.text = "Habitat: " + (speciesDict[0]["habitat"] as! String)
+                Label9.text = "Photo Credit: " + (speciesDict[0]["photo_credit"] as! String)
                 /*
-                 Label9.text = "Photo Credit: " + (speciesDict[0]["photo_credit"] as! String)
-                 */
                 Label9.text = "Photo Credit: Brian Larson"
+                */
                 Label10.text = "Notes: " + (speciesDict[0]["notes"] as! String)
             }
             else if (speciesDict[0]["family_name"] as! String) == "Poaceae (grasses)"
@@ -148,10 +149,10 @@ class SpeciesInfoViewController: UIViewController {
                 Label9.text = "Florets Per Spikelet: " + (speciesDict[0]["florets_per_spikelet"] as! String)
                 Label10.text = "Stem Cross Section: " + (speciesDict[0]["stem_cross_section"] as! String)
                 Label11.text = "Habitat: " + (speciesDict[0]["habitat"] as! String)
+                Label11.text = "Photo Credit: " + (speciesDict[0]["photo_credit"] as! String)
                 /*
-                 Label11.text = "Photo Credit: " + (speciesDict[0]["photo_credit"] as! String)
-                 */
                 Label12.text = "Photo Credit: Brian Larson"
+                */
                 Label13.text = "Notes: " + (speciesDict[0]["notes"] as! String)
                 
             }
