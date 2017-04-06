@@ -30,9 +30,20 @@ class AddObservationViewController: UIViewController {
     @IBOutlet weak var thumbnail: UIButton!
     @IBOutlet weak var flashLabel: UILabel!
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        super.viewWillDisappear(animated)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         setupSession()
         setupPreview()
         startSession()
