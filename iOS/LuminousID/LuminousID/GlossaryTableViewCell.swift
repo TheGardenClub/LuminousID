@@ -10,6 +10,7 @@ import UIKit
 
 class GlossaryTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var GlossaryLabel: UILabel!
     @IBOutlet weak var GlossaryImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
