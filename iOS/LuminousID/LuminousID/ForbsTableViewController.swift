@@ -56,8 +56,7 @@ class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableVi
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "fieldGuideCell", for: indexPath) as! FieldGuideTableViewCell
-        let plantCodeString = myDict[indexPath.row]["plant_code"] as! String
-        cell.speciesPhoto.image = UIImage(named: "Images/" + plantCodeString + "_1.jpg")
+        cell.speciesPhoto.image = UIImage(named: "Images/"+((myDict[indexPath.row]["plant_code"]) as? String)! + "_1.jpg")
         cell.speciesNameCellLabel.text = self.speciesNames[indexPath.row]
         cell.commonNameCellLabel.text = myDict[indexPath.row]["common_name"] as? String
         return (cell)
