@@ -32,12 +32,10 @@ class JuncaceaeViewController: UIViewController, UITableViewDelegate, UITableVie
                 self.myDict = snapshots.flatMap { $0.value as? [String:AnyObject]}
                 for item in self.myDict{
                     self.speciesNames.append(item["species_name"] as! String)
-                    self.juncaceaeTable.reloadData()
                 }
                 
             }
             self.juncaceaeTable.reloadData()
-
         })
         // Do any additional setup after loading the view.
     }
@@ -57,7 +55,13 @@ class JuncaceaeViewController: UIViewController, UITableViewDelegate, UITableVie
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "juncaceaeCell", for: indexPath) as! FieldGuideTableViewCell
-        cell.speciesPhoto.image = UIImage(named: "Images/"+((myDict[indexPath.row]["plant_code"]) as? String)! + "_1.jpg")
+        if indexPath.row <= myDict.count{
+            let plantCodeString = myDict[indexPath.row]["plant_code"] as! String
+            cell.speciesPhoto.image = UIImage(named: "Images/" + plantCodeString + "_1.jpg")
+        }
+        else{
+            print("End of Table Error Handled.")
+        }
         cell.speciesNameCellLabel.text = self.speciesNames[indexPath.row]
         cell.commonNameCellLabel.text = myDict[indexPath.row]["common_name"] as? String
         return (cell)

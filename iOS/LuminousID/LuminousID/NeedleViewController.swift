@@ -32,7 +32,6 @@ class NeedleViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 self.myDict = snapshots.flatMap { $0.value as? [String:AnyObject]}
                 for item in self.myDict{
                     self.speciesNames.append(item["species_name"] as! String)
-                    self.needleTable.reloadData()
                 }
                 
             }

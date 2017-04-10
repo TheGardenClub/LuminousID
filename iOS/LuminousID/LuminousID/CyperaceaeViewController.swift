@@ -31,7 +31,6 @@ class CyperaceaeViewController: UIViewController, UITableViewDelegate, UITableVi
                 self.myDict = snapshots.flatMap { $0.value as? [String:AnyObject]}
                 for item in self.myDict{
                     self.speciesNames.append(item["species_name"] as! String)
-                    self.cyperaceaeTable.reloadData()
                 }
                 
             }
@@ -57,7 +56,13 @@ class CyperaceaeViewController: UIViewController, UITableViewDelegate, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "cyperaceaeCell", for: indexPath) as! FieldGuideTableViewCell
         cell.speciesNameCellLabel.text = self.speciesNames[indexPath.row]
         cell.commonNameCellLabel.text = myDict[indexPath.row]["common_name"] as? String
-        cell.speciesPhoto.image = UIImage(named: "Images/"+((myDict[indexPath.row]["plant_code"]) as? String)! + "_1.jpg")
+        if indexPath.row <= myDict.count{
+            let plantCodeString = myDict[indexPath.row]["plant_code"] as! String
+            cell.speciesPhoto.image = UIImage(named: "Images/" + plantCodeString + "_1.jpg")
+        }
+        else{
+            print("End of Table Error Handled.")
+        }
         return (cell)
     }
     
