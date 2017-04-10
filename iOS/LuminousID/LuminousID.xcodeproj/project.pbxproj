@@ -12,6 +12,8 @@
 		823C0E98626025C3F05D8B95 /* Pods_LuminousID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B22DE81D532830EE0DC6C52 /* Pods_LuminousID.framework */; };
 		884F722D1E96AC5200985F5C /* QuickLookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884F722C1E96AC5200985F5C /* QuickLookViewController.swift */; };
 		A407C84D1E626069001CA327 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A407C84C1E626069001CA327 /* MainMenuViewController.swift */; };
+		A42260071E9C109E0010FEC5 /* GlossaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42260061E9C109E0010FEC5 /* GlossaryTableViewCell.swift */; };
+		A42260091E9C124F0010FEC5 /* GlossaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42260081E9C124F0010FEC5 /* GlossaryTableViewController.swift */; };
 		A427FB4A1E34089000011350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427FB491E34089000011350 /* AppDelegate.swift */; };
 		A427FB4C1E34089000011350 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427FB4B1E34089000011350 /* ViewController.swift */; };
 		A427FB4F1E34089000011350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A427FB4D1E34089000011350 /* Main.storyboard */; };
@@ -64,6 +66,8 @@
 		884F722C1E96AC5200985F5C /* QuickLookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickLookViewController.swift; sourceTree = "<group>"; };
 		A0DAA00A9A5517336F67B021 /* Pods-LuminousIDUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuminousIDUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LuminousIDUITests/Pods-LuminousIDUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A407C84C1E626069001CA327 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		A42260061E9C109E0010FEC5 /* GlossaryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlossaryTableViewCell.swift; sourceTree = "<group>"; };
+		A42260081E9C124F0010FEC5 /* GlossaryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlossaryTableViewController.swift; sourceTree = "<group>"; };
 		A427FB461E34089000011350 /* LuminousID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuminousID.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A427FB491E34089000011350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A427FB4B1E34089000011350 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -170,12 +174,14 @@
 				A427FB491E34089000011350 /* AppDelegate.swift */,
 				A427FB4B1E34089000011350 /* ViewController.swift */,
 				A427FB4D1E34089000011350 /* Main.storyboard */,
+				A42260061E9C109E0010FEC5 /* GlossaryTableViewCell.swift */,
 				A427FB501E34089000011350 /* Assets.xcassets */,
 				A4E678C71E9322CA00E804E4 /* Images */,
 				A427FB521E34089000011350 /* LaunchScreen.storyboard */,
 				A4B2DF441E60F4B9002F14D5 /* GoogleService-Info.plist */,
 				A427FB551E34089000011350 /* Info.plist */,
 				A45861C91E61077800DAE2FC /* CreateUserViewController.swift */,
+				A42260081E9C124F0010FEC5 /* GlossaryTableViewController.swift */,
 				A4C3C1F91E610CFE003FC85A /* LogInViewController.swift */,
 				A407C84C1E626069001CA327 /* MainMenuViewController.swift */,
 				A49CAD0C1E64B7AC006CC4DE /* ForbsTableViewController.swift */,
@@ -516,9 +522,11 @@
 				A4E745161E6504F30051058B /* CyperaceaeViewController.swift in Sources */,
 				A4C3C1FA1E610CFE003FC85A /* LogInViewController.swift in Sources */,
 				A46FF76B1E6508910001455E /* DeciduousViewController.swift in Sources */,
+				A42260071E9C109E0010FEC5 /* GlossaryTableViewCell.swift in Sources */,
 				884F722D1E96AC5200985F5C /* QuickLookViewController.swift in Sources */,
 				A49CAD0D1E64B7AC006CC4DE /* ForbsTableViewController.swift in Sources */,
 				A407C84D1E626069001CA327 /* MainMenuViewController.swift in Sources */,
+				A42260091E9C124F0010FEC5 /* GlossaryTableViewController.swift in Sources */,
 				A4DF25D41E81C6150095AFD8 /* SettingsViewController.swift in Sources */,
 				A427FB4C1E34089000011350 /* ViewController.swift in Sources */,
 				A49CAD151E6501AF006CC4DE /* PoaceaeViewController.swift in Sources */,
