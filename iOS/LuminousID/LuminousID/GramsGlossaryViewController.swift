@@ -54,4 +54,9 @@ class GramsGlossaryViewController: UIViewController, UITableViewDataSource, UITa
         tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "toGlossaryInfoFromGrams", sender: gramsGlossaryList[indexPath.row])
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let glossaryInfoVC = segue.destination as! GlossaryInfoViewController
+        glossaryInfoVC.imageFile = ("grams_glossary_small_keyed/" + gramsGlossaryImageList[row])
+        glossaryInfoVC.imageName = (gramsGlossaryList[row])
+    }
 }

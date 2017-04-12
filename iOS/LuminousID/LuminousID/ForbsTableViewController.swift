@@ -76,7 +76,6 @@ class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableVi
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let speciesInfoVC = segue.destination as! SpeciesInfoViewController
         speciesInfoVC.speciesDict = [myDict[row]]
-        
     }
     /*
     // MARK: - Navigation

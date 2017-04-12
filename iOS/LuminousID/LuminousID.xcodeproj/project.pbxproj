@@ -34,6 +34,7 @@
 		A4C3C1FA1E610CFE003FC85A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C3C1F91E610CFE003FC85A /* LogInViewController.swift */; };
 		A4DAD53F1E8065BF000F8073 /* FieldGuideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAD53E1E8065BF000F8073 /* FieldGuideTableViewCell.swift */; };
 		A4DF25D41E81C6150095AFD8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DF25D31E81C6150095AFD8 /* SettingsViewController.swift */; };
+		A4E04E511E9EDD0B00F50CFC /* GlossaryInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E04E501E9EDD0B00F50CFC /* GlossaryInfoViewController.swift */; };
 		A4E678C81E9322CA00E804E4 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = A4E678C71E9322CA00E804E4 /* Images */; };
 		A4E6ABC01E6DFA5100EBE83C /* SpeciesInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E6ABBF1E6DFA5100EBE83C /* SpeciesInfoViewController.swift */; };
 		A4E6ABC21E6E14D700EBE83C /* sample_photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4E6ABC11E6E14D700EBE83C /* sample_photo.jpg */; };
@@ -97,6 +98,7 @@
 		A4C3C1F91E610CFE003FC85A /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		A4DAD53E1E8065BF000F8073 /* FieldGuideTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldGuideTableViewCell.swift; sourceTree = "<group>"; };
 		A4DF25D31E81C6150095AFD8 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A4E04E501E9EDD0B00F50CFC /* GlossaryInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlossaryInfoViewController.swift; sourceTree = "<group>"; };
 		A4E678C71E9322CA00E804E4 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		A4E6ABBF1E6DFA5100EBE83C /* SpeciesInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeciesInfoViewController.swift; sourceTree = "<group>"; };
 		A4E6ABC11E6E14D700EBE83C /* sample_photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample_photo.jpg; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 			children = (
 				A427FB491E34089000011350 /* AppDelegate.swift */,
 				A4F1797B1E9C23EA00F7E11D /* ForbsGlossaryViewController.swift */,
+				A4E04E501E9EDD0B00F50CFC /* GlossaryInfoViewController.swift */,
 				A4F1797D1E9C23FB00F7E11D /* GramsGlossaryViewController.swift */,
 				A427FB4B1E34089000011350 /* ViewController.swift */,
 				A427FB4D1E34089000011350 /* Main.storyboard */,
@@ -544,6 +547,7 @@
 				A427FB4A1E34089000011350 /* AppDelegate.swift in Sources */,
 				A490EAEE1E842A0C00CFA2C6 /* AddObservationViewController.swift in Sources */,
 				A46FF76D1E65089D0001455E /* NeedleViewController.swift in Sources */,
+				A4E04E511E9EDD0B00F50CFC /* GlossaryInfoViewController.swift in Sources */,
 				A46FF7691E6507C30001455E /* WoodyViewController.swift in Sources */,
 				A45861CA1E61077800DAE2FC /* CreateUserViewController.swift in Sources */,
 				A4DAD53F1E8065BF000F8073 /* FieldGuideTableViewCell.swift in Sources */,
@@ -701,7 +705,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B7873R5TDF;
 				INFOPLIST_FILE = LuminousID/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Garden-Club.LuminousID";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -717,7 +721,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B7873R5TDF;
 				INFOPLIST_FILE = LuminousID/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Garden-Club.LuminousID";
 				PRODUCT_NAME = "$(TARGET_NAME)";

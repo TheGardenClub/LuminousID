@@ -51,4 +51,10 @@ class ForbsGlossaryViewController: UIViewController, UITableViewDataSource, UITa
         tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "toGlossaryInfoFromForbs", sender: forbsGlossaryList[indexPath.row])
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let glossaryInfoVC = segue.destination as! GlossaryInfoViewController
+        glossaryInfoVC.imageFile = ("forbs_glossary_small_keyed/" + forbsGlossaryImageList[row])
+        glossaryInfoVC.imageName = (forbsGlossaryList[row])
+    }
 }
