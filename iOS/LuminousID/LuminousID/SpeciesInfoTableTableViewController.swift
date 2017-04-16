@@ -1,22 +1,19 @@
 //
-//  SpeciesInfoViewController.swift
+//  SpeciesInfoTableTableViewController.swift
 //  LuminousID
 //
-//  Created by Brian Larson on 3/6/17.
+//  Created by Brian Larson on 4/16/17.
 //  Copyright © 2017 Garden Club. All rights reserved.
 //
 
 import UIKit
 
-class SpeciesInfoViewController: UIViewController, UITableViewDelegate{
-
-
-    @IBOutlet weak var navBar: UINavigationItem!
+class SpeciesInfoTableTableViewController: UITableViewController {
 
     @IBOutlet weak var SpeciesImageView: UIImageView!
-
-    @IBOutlet weak var Label1: UILabel!
     
+    @IBOutlet weak var Label1: UILabel!
+
     @IBOutlet weak var Label2: UILabel!
     
     @IBOutlet weak var Label3: UILabel!
@@ -44,12 +41,11 @@ class SpeciesInfoViewController: UIViewController, UITableViewDelegate{
     @IBOutlet weak var Label14: UILabel!
     
     
-    
     var speciesDict = [[String:AnyObject]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navBar.title = (speciesDict[0]["species_name"] as! String)
+
         print(((speciesDict[0]["plant_code"]) as? String)!)
         SpeciesImageView.image = UIImage(named: "Images/"+((speciesDict[0]["plant_code"]) as? String)! + "_1.jpg")
         if (speciesDict[0]["growth_form"] as! String) == "forb"
@@ -67,12 +63,12 @@ class SpeciesInfoViewController: UIViewController, UITableViewDelegate{
             Label11.text = "Habitat: " + (speciesDict[0]["habitat"] as! String)
             Label12.text = "Photo Credit: " + (speciesDict[0]["photo_credit"] as! String)
             /*
-            Label12.text = "Photo Credit: Brian Larson"
-            */
+             Label12.text = "Photo Credit: Brian Larson"
+             */
             Label13.text = "Notes: " + (speciesDict[0]["notes"] as! String)
             /*
-            titleLabel.text = (speciesDict[0]["species_name"] as! String)
-            */
+             titleLabel.text = (speciesDict[0]["species_name"] as! String)
+             */
         }
         else if (speciesDict[0]["growth_form"] as! String) == "shrub/tree"
         {
@@ -90,8 +86,8 @@ class SpeciesInfoViewController: UIViewController, UITableViewDelegate{
                 Label10.text = "Cone: " + (speciesDict[0]["cone"] as! String)
                 Label11.text = "Photo Credit: " + (speciesDict[0]["photo_credit"] as! String)
                 /*
-                Label11.text = "Photo Credit: Brian Larson"
-                */
+                 Label11.text = "Photo Credit: Brian Larson"
+                 */
                 Label12.text = "Notes: " + (speciesDict[0]["notes"] as! String)
             }
             else if (speciesDict[0]["leaf_type"] as! String) == "needle" || (speciesDict[0]["leaf_type"] as! String) == "scale"
@@ -107,10 +103,10 @@ class SpeciesInfoViewController: UIViewController, UITableViewDelegate{
                 Label9.text = "Needles Per Fascile: " + (speciesDict[0]["needle_per_fascile"] as! String)
                 Label10.text = "Cone: " + (speciesDict[0]["cone"] as! String)
                 Label11.text = "Photo Credit: " + (speciesDict[0]["photo_credit"] as! String)
- 
+                
                 /*
-                Label11.text = "Photo Credit: Brian Larson"
-                */
+                 Label11.text = "Photo Credit: Brian Larson"
+                 */
                 Label12.text = "Notes: " + (speciesDict[0]["notes"] as! String)
             }
         }
@@ -130,8 +126,8 @@ class SpeciesInfoViewController: UIViewController, UITableViewDelegate{
                 Label10.text = "Habitat: " + (speciesDict[0]["habitat"] as! String)
                 Label11.text = "Photo Credit: " + (speciesDict[0]["photo_credit"] as! String)
                 /*
-                Label11.text = "Photo Credit: Brian Larson"
-                */
+                 Label11.text = "Photo Credit: Brian Larson"
+                 */
                 Label12.text = "Notes: " + (speciesDict[0]["notes"] as! String)
             }
             else if (speciesDict[0]["family_name"] as! String) == "Juncaceae (Rushes)"
@@ -146,8 +142,8 @@ class SpeciesInfoViewController: UIViewController, UITableViewDelegate{
                 Label8.text = "Habitat: " + (speciesDict[0]["habitat"] as! String)
                 Label9.text = "Photo Credit: " + (speciesDict[0]["photo_credit"] as! String)
                 /*
-                Label9.text = "Photo Credit: Brian Larson"
-                */
+                 Label9.text = "Photo Credit: Brian Larson"
+                 */
                 Label10.text = "Notes: " + (speciesDict[0]["notes"] as! String)
             }
             else if (speciesDict[0]["family_name"] as! String) == "Poaceae (grasses)"
@@ -165,8 +161,8 @@ class SpeciesInfoViewController: UIViewController, UITableViewDelegate{
                 Label11.text = "Habitat: " + (speciesDict[0]["habitat"] as! String)
                 Label11.text = "Photo Credit: " + (speciesDict[0]["photo_credit"] as! String)
                 /*
-                Label12.text = "Photo Credit: Brian Larson"
-                */
+                 Label12.text = "Photo Credit: Brian Larson"
+                 */
                 Label13.text = "Notes: " + (speciesDict[0]["notes"] as! String)
                 
             }
@@ -174,34 +170,71 @@ class SpeciesInfoViewController: UIViewController, UITableViewDelegate{
             {
                 Label1.text = "nil"
             }
-            
         }
         
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let addObsVC = segue.destination as! AddObservationViewController
-        addObsVC.speciesObsDict = speciesDict[0]
-    }
-    @IBAction func camera_button(_ sender: Any) {
-        performSegue(withIdentifier: "toCameraFromSpeciesInfo", sender: speciesDict[0])
-    }
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-    {
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
         return 14
     }
-    /*
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
-    {
-        
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 14
     }
- */
+
+    /*
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
+
+        return cell
+    }
+    */
+
+    /*
+    // Override to support conditional editing of the table view.
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        // Return false if you do not want the specified item to be editable.
+        return true
+    }
+    */
+
+    /*
+    // Override to support editing the table view.
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            // Delete the row from the data source
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        }    
+    }
+    */
+
+    /*
+    // Override to support rearranging the table view.
+    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+
+    }
+    */
+
+    /*
+    // Override to support conditional rearranging of the table view.
+    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        // Return false if you do not want the item to be re-orderable.
+        return true
+    }
+    */
+
     /*
     // MARK: - Navigation
 
