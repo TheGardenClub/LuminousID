@@ -21,6 +21,7 @@ class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableVi
     var ref:FIRDatabaseReference?
     var row = 0
     var photoFileName = ""
+    var pressedFilters = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +46,14 @@ class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableVi
         // Dispose of any resources that can be recreated.
     }
     
+
+    @IBAction func ForbsFilters(_ sender: Any) {
+        pressedFilters = true
+        performSegue(withIdentifier: "toForbsFilters", sender: myDict)
+        
+    }
+    
+    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return speciesNames.count
@@ -68,14 +77,22 @@ class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        pressedFilters = false
         row = indexPath.row
         tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "toSpeciesFromForbs", sender: speciesNames[indexPath.row])
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let speciesInfoVC = segue.destination as! SpeciesInfoViewController
-        speciesInfoVC.speciesDict = [myDict[row]]
+        if pressedFilters == false{
+            let speciesInfoVC = segue.destination as! SpeciesInfoViewController
+            speciesInfoVC.speciesDict = [myDict[row]]
+        }
+        else{
+            let filtersVC = segue.destination as! ForbsFilterViewController
+            filtersVC.filterDict = myDict
+        }
+        
     }
     /*
     // MARK: - Navigation

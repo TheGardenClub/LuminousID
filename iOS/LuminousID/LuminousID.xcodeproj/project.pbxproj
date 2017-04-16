@@ -20,6 +20,7 @@
 		A427FB541E34089000011350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A427FB521E34089000011350 /* LaunchScreen.storyboard */; };
 		A427FB5F1E34089000011350 /* LuminousIDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427FB5E1E34089000011350 /* LuminousIDTests.swift */; };
 		A427FB6A1E34089000011350 /* LuminousIDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427FB691E34089000011350 /* LuminousIDUITests.swift */; };
+		A44B0E9F1EA415F700025A4D /* ForbsFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44B0E9E1EA415F700025A4D /* ForbsFilterViewController.swift */; };
 		A45861CA1E61077800DAE2FC /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45861C91E61077800DAE2FC /* CreateUserViewController.swift */; };
 		A46FF7691E6507C30001455E /* WoodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46FF7681E6507C30001455E /* WoodyViewController.swift */; };
 		A46FF76B1E6508910001455E /* DeciduousViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46FF76A1E6508910001455E /* DeciduousViewController.swift */; };
@@ -84,6 +85,7 @@
 		A427FB651E34089000011350 /* LuminousIDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuminousIDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A427FB691E34089000011350 /* LuminousIDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminousIDUITests.swift; sourceTree = "<group>"; };
 		A427FB6B1E34089000011350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A44B0E9E1EA415F700025A4D /* ForbsFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForbsFilterViewController.swift; sourceTree = "<group>"; };
 		A45861C91E61077800DAE2FC /* CreateUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		A46FF7681E6507C30001455E /* WoodyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoodyViewController.swift; sourceTree = "<group>"; };
 		A46FF76A1E6508910001455E /* DeciduousViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeciduousViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				A427FB491E34089000011350 /* AppDelegate.swift */,
 				A4F1797B1E9C23EA00F7E11D /* ForbsGlossaryViewController.swift */,
 				A4E04E501E9EDD0B00F50CFC /* GlossaryInfoViewController.swift */,
+				A44B0E9E1EA415F700025A4D /* ForbsFilterViewController.swift */,
 				A4F1797D1E9C23FB00F7E11D /* GramsGlossaryViewController.swift */,
 				A427FB4B1E34089000011350 /* ViewController.swift */,
 				A427FB4D1E34089000011350 /* Main.storyboard */,
@@ -533,6 +536,7 @@
 			files = (
 				A49CAD131E64F358006CC4DE /* JuncaceaeViewController.swift in Sources */,
 				A4F1797C1E9C23EA00F7E11D /* ForbsGlossaryViewController.swift in Sources */,
+				A44B0E9F1EA415F700025A4D /* ForbsFilterViewController.swift in Sources */,
 				A49CAD0F1E64EABE006CC4DE /* GraminoidsViewController.swift in Sources */,
 				A4E745161E6504F30051058B /* CyperaceaeViewController.swift in Sources */,
 				A4C3C1FA1E610CFE003FC85A /* LogInViewController.swift in Sources */,

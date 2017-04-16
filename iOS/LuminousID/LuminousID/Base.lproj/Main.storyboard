@@ -484,7 +484,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_img" translatesAutoresizingMaskIntoConstraints="NO" id="66r-79-KpS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hTo-Yd-K9x">
                                 <rect key="frame" x="33" y="99" width="309" height="190"/>
@@ -497,10 +497,10 @@
                                 </constraints>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Er1-zy-fy4">
-                                <rect key="frame" x="33" y="324" width="326" height="343"/>
+                                <rect key="frame" x="33" y="324" width="326" height="299"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="w3D-IU-JwA">
-                                        <rect key="frame" x="0.0" y="5" width="335" height="20"/>
+                                        <rect key="frame" x="0.0" y="-17" width="335" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="335" id="bbt-Yp-gFK"/>
                                         </constraints>
@@ -509,67 +509,67 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7Av-fN-7Ja">
-                                        <rect key="frame" x="0.0" y="25" width="335" height="20"/>
+                                        <rect key="frame" x="0.0" y="3" width="335" height="20"/>
                                         <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="17"/>
                                         <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="X52-dM-v9q">
-                                        <rect key="frame" x="0.0" y="44" width="335" height="20"/>
+                                        <rect key="frame" x="0.0" y="22" width="335" height="20"/>
                                         <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="17"/>
                                         <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="L9t-LQ-S3y">
-                                        <rect key="frame" x="0.0" y="64" width="335" height="20"/>
+                                        <rect key="frame" x="0.0" y="42" width="335" height="20"/>
                                         <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="17"/>
                                         <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zqj-84-am2">
-                                        <rect key="frame" x="0.0" y="83" width="335" height="20"/>
+                                        <rect key="frame" x="0.0" y="61" width="335" height="20"/>
                                         <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="17"/>
                                         <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JdP-by-U62">
-                                        <rect key="frame" x="0.0" y="103" width="335" height="20"/>
+                                        <rect key="frame" x="0.0" y="81" width="335" height="20"/>
                                         <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="17"/>
                                         <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Fw6-w2-OKT">
-                                        <rect key="frame" x="0.0" y="122" width="335" height="20"/>
+                                        <rect key="frame" x="0.0" y="100" width="335" height="20"/>
                                         <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="17"/>
                                         <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="enf-jK-fqn">
-                                        <rect key="frame" x="0.0" y="142" width="335" height="20"/>
+                                        <rect key="frame" x="0.0" y="120" width="335" height="20"/>
                                         <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="17"/>
                                         <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JTy-1E-cYV">
-                                        <rect key="frame" x="0.0" y="161" width="335" height="20"/>
+                                        <rect key="frame" x="0.0" y="139" width="335" height="20"/>
                                         <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="17"/>
                                         <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bWa-zo-Sfx">
-                                        <rect key="frame" x="0.0" y="181" width="335" height="20"/>
+                                        <rect key="frame" x="0.0" y="159" width="335" height="20"/>
                                         <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="17"/>
                                         <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Exe-dh-mRt">
-                                        <rect key="frame" x="0.0" y="200" width="335" height="20"/>
+                                        <rect key="frame" x="0.0" y="178" width="335" height="20"/>
                                         <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="17"/>
                                         <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="biz-N9-S3n">
-                                        <rect key="frame" x="0.0" y="220" width="335" height="20"/>
+                                        <rect key="frame" x="0.0" y="198" width="335" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="b6T-bA-jbm"/>
                                         </constraints>
@@ -578,13 +578,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dOc-0z-DyS">
-                                        <rect key="frame" x="0.0" y="239" width="335" height="20"/>
+                                        <rect key="frame" x="0.0" y="217" width="335" height="20"/>
                                         <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="17"/>
                                         <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vxC-7U-CNU">
-                                        <rect key="frame" x="0.0" y="258" width="335" height="21"/>
+                                        <rect key="frame" x="0.0" y="236" width="335" height="21"/>
                                         <fontDescription key="fontDescription" name="Snippet" family="Snippet" pointSize="17"/>
                                         <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -995,6 +995,24 @@
             </objects>
             <point key="canvasLocation" x="1644" y="-2651.4242878560722"/>
         </scene>
+        <!--Forbs Filter View Controller-->
+        <scene sceneID="Qrs-xu-sns">
+            <objects>
+                <viewController id="OjW-vo-yKG" customClass="ForbsFilterViewController" customModule="LuminousID" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aAz-St-SgR"/>
+                        <viewControllerLayoutGuide type="bottom" id="8pg-76-qXs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0p9-Nm-sOy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Qi-rY-toh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4569" y="-3466"/>
+        </scene>
         <!--Forbs-->
         <scene sceneID="MOL-DW-1RU">
             <objects>
@@ -1085,12 +1103,17 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Forbs" id="iht-m3-HgP">
-                        <barButtonItem key="rightBarButtonItem" title="Filters" id="7mw-t0-Kvc"/>
+                        <barButtonItem key="rightBarButtonItem" title="Filters" id="7mw-t0-Kvc">
+                            <connections>
+                                <action selector="ForbsFilters:" destination="uy0-SE-mxn" id="pPs-jk-I4H"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="forbsTable" destination="HJV-1a-jOa" id="psR-73-WN2"/>
                         <segue destination="jcs-6x-Zpk" kind="show" identifier="toSpeciesFromForbs" id="6HK-sZ-eXZ"/>
+                        <segue destination="OjW-vo-yKG" kind="show" identifier="toForbsFilters" id="sOJ-cg-Cf0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sdg-oY-WAt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2115,7 +2138,7 @@ This is where a how to page will go. But we will cross that bridge when we get t
     <inferredMetricsTieBreakers>
         <segue reference="KMq-JO-Sfn"/>
         <segue reference="fdS-hd-rPB"/>
+        <segue reference="6HK-sZ-eXZ"/>
         <segue reference="2qF-J1-6gm"/>
-        <segue reference="rcz-Ct-agN"/>
     </inferredMetricsTieBreakers>
 </document>
