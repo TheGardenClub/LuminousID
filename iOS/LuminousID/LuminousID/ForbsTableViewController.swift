@@ -80,12 +80,12 @@ class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableVi
         pressedFilters = false
         row = indexPath.row
         tableView.deselectRow(at: indexPath, animated: true)
-        performSegue(withIdentifier: "toSpeciesInfoFromForbs", sender: speciesNames[indexPath.row])
+        performSegue(withIdentifier: "toSpeciesFromForbs", sender: speciesNames[indexPath.row])
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if pressedFilters == false{
-            let speciesInfoVC = segue.destination as! SpeciesInfoTableTableViewController
+            let speciesInfoVC = segue.destination as! SpeciesInfoViewController
             speciesInfoVC.speciesDict = [myDict[row]]
         }
         else{

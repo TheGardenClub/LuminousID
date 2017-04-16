@@ -8,40 +8,26 @@
 
 import UIKit
 
-class SpeciesInfoViewController: UIViewController, UITableViewDelegate{
-
-
-    @IBOutlet weak var navBar: UINavigationItem!
+class SpeciesInfoViewController: UIViewController {
 
     @IBOutlet weak var SpeciesImageView: UIImageView!
 
+    @IBOutlet weak var navBar: UINavigationItem!
     @IBOutlet weak var Label1: UILabel!
-    
     @IBOutlet weak var Label2: UILabel!
-    
     @IBOutlet weak var Label3: UILabel!
-    
     @IBOutlet weak var Label4: UILabel!
-    
     @IBOutlet weak var Label5: UILabel!
-    
     @IBOutlet weak var Label6: UILabel!
-    
     @IBOutlet weak var Label7: UILabel!
-    
     @IBOutlet weak var Label8: UILabel!
-    
     @IBOutlet weak var Label9: UILabel!
-    
     @IBOutlet weak var Label10: UILabel!
-    
     @IBOutlet weak var Label11: UILabel!
-    
     @IBOutlet weak var Label12: UILabel!
-    
     @IBOutlet weak var Label13: UILabel!
-    
     @IBOutlet weak var Label14: UILabel!
+
     
     
     
@@ -174,7 +160,6 @@ class SpeciesInfoViewController: UIViewController, UITableViewDelegate{
             {
                 Label1.text = "nil"
             }
-            
         }
         
         // Do any additional setup after loading the view.
@@ -192,16 +177,6 @@ class SpeciesInfoViewController: UIViewController, UITableViewDelegate{
     @IBAction func camera_button(_ sender: Any) {
         performSegue(withIdentifier: "toCameraFromSpeciesInfo", sender: speciesDict[0])
     }
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-    {
-        return 14
-    }
-    /*
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
-    {
-        
-    }
- */
     /*
     // MARK: - Navigation
 
