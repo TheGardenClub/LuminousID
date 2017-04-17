@@ -36,10 +36,9 @@ class SpeciesInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navBar.title = (speciesDict[0]["species_name"] as! String)
-        print(((speciesDict[0]["plant_code"]) as? String)!)
-        SpeciesImageView.image = UIImage(named: "Images/"+((speciesDict[0]["plant_code"]) as? String)! + "_1.jpg")
         if (speciesDict[0]["growth_form"] as! String) == "forb"
         {
+            SpeciesImageView.image = UIImage(named: "Images/"+((speciesDict[0]["plant_code"]) as? String)! + "_1.jpg")
             Label1.text = "Species Name: " + (speciesDict[0]["species_name"] as! String)
             Label2.text = "Common Name: " + (speciesDict[0]["common_name"] as! String)
             Label3.text = "Synonyms: " + (speciesDict[0]["synonyms"] as! String)
@@ -62,6 +61,7 @@ class SpeciesInfoViewController: UIViewController {
         }
         else if (speciesDict[0]["growth_form"] as! String) == "shrub/tree"
         {
+            SpeciesImageView.image = UIImage(named: "Images/"+((speciesDict[0]["plant_code"]) as? String)! + ".jpg")
             if (speciesDict[0]["leaf_type"] as! String) == "deciduous"
             {
                 Label1.text = "Species Name: " + (speciesDict[0]["species_name"] as! String)
@@ -78,7 +78,7 @@ class SpeciesInfoViewController: UIViewController {
                 /*
                 Label11.text = "Photo Credit: Brian Larson"
                 */
-                Label12.text = "Notes: " + (speciesDict[0]["notes"] as! String)
+                Label13.text = "Notes: " + (speciesDict[0]["notes"] as! String)
             }
             else if (speciesDict[0]["leaf_type"] as! String) == "needle" || (speciesDict[0]["leaf_type"] as! String) == "scale"
             {
@@ -97,11 +97,12 @@ class SpeciesInfoViewController: UIViewController {
                 /*
                 Label11.text = "Photo Credit: Brian Larson"
                 */
-                Label12.text = "Notes: " + (speciesDict[0]["notes"] as! String)
+                Label13.text = "Notes: " + (speciesDict[0]["notes"] as! String)
             }
         }
         else if (speciesDict[0]["growth_form"] as! String) == "graminoid"
         {
+            SpeciesImageView.image = UIImage(named: "Images/"+((speciesDict[0]["plant_code"]) as? String)! + "_1.jpg")
             if (speciesDict[0]["family_name"] as! String) == "Cyperaceae (Sedges)"
             {
                 Label1.text = "Species Name: " + (speciesDict[0]["species_name"] as! String)
@@ -118,7 +119,7 @@ class SpeciesInfoViewController: UIViewController {
                 /*
                 Label11.text = "Photo Credit: Brian Larson"
                 */
-                Label12.text = "Notes: " + (speciesDict[0]["notes"] as! String)
+                Label13.text = "Notes: " + (speciesDict[0]["notes"] as! String)
             }
             else if (speciesDict[0]["family_name"] as! String) == "Juncaceae (Rushes)"
             {
@@ -134,7 +135,7 @@ class SpeciesInfoViewController: UIViewController {
                 /*
                 Label9.text = "Photo Credit: Brian Larson"
                 */
-                Label10.text = "Notes: " + (speciesDict[0]["notes"] as! String)
+                Label13.text = "Notes: " + (speciesDict[0]["notes"] as! String)
             }
             else if (speciesDict[0]["family_name"] as! String) == "Poaceae (grasses)"
             {
@@ -149,7 +150,7 @@ class SpeciesInfoViewController: UIViewController {
                 Label9.text = "Florets Per Spikelet: " + (speciesDict[0]["florets_per_spikelet"] as! String)
                 Label10.text = "Stem Cross Section: " + (speciesDict[0]["stem_cross_section"] as! String)
                 Label11.text = "Habitat: " + (speciesDict[0]["habitat"] as! String)
-                Label11.text = "Photo Credit: " + (speciesDict[0]["photo_credit"] as! String)
+                Label12.text = "Photo Credit: " + (speciesDict[0]["photo_credit"] as! String)
                 /*
                 Label12.text = "Photo Credit: Brian Larson"
                 */
