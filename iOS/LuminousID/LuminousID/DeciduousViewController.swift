@@ -53,11 +53,11 @@ class DeciduousViewController: UIViewController, UITableViewDelegate, UITableVie
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "deciduousCell", for: indexPath) as! FieldGuideTableViewCell
-        cell.speciesNameCellLabel.text = self.speciesNames[indexPath.row]
-        cell.commonNameCellLabel.text = myDict[indexPath.row]["common_name"] as? String
-        if indexPath.row <= myDict.count{
-            let plantCodeString = myDict[indexPath.row]["plant_code"] as! String
-            cell.speciesPhoto.image = UIImage(named: "Images/" + plantCodeString + ".jpg")
+        if indexPath.row <= (myDict.count-1){
+            cell.speciesNameCellLabel.text = self.speciesNames[indexPath.row]
+            cell.commonNameCellLabel.text = myDict[indexPath.row]["common_name"] as? String
+            let plantCodeString = myDict[indexPath.row]["plant_code"] as! String?
+            cell.speciesPhoto.image = UIImage(named: "Images/" + plantCodeString! + ".jpg")
         }
         else{
             print("End of Table Error Handled.")
