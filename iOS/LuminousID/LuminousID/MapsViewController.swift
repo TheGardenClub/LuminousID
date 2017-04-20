@@ -4,7 +4,7 @@
 //
 //  Created by Kevin Rau on 4/19/17.
 //  Copyright © 2017 Garden Club. All rights reserved.
-//
+//  github.com/ForrestKnight/PokeFinder for reference to this code
 
 import UIKit
 import MapKit
