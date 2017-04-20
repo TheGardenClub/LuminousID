@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HWg-U9-Am5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HWg-U9-Am5">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -37,7 +37,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9T3-EO-3Er" id="LP8-4e-WNj">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mzs-N6-Aca">
@@ -160,7 +160,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gIw-Rb-FJQ" id="Cz0-qY-kqx">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Glossary Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iQ-f8-fwT">
@@ -413,7 +413,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4yD-r9-rVl" id="2cI-EY-kvk">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7CR-F6-x0H">
@@ -729,7 +729,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vIa-Ir-2ZP" id="t4u-UD-Tef">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="op4-eu-h2o">
@@ -806,7 +806,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lsa-YR-qja" id="8Zm-wF-E0n">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Agm-hh-Lf5">
@@ -883,7 +883,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cyD-zl-S5L" id="373-HA-ZqC">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CgN-oP-Ysv">
@@ -960,7 +960,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tRh-It-wJQ" id="Bxo-8d-8Ac">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tCC-Qg-Nzj">
@@ -1053,7 +1053,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GpW-aq-hiv" id="0hc-82-GEZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="STv-ju-E5v">
@@ -1516,7 +1516,7 @@
         <scene sceneID="LVQ-4o-EfQ">
             <objects>
                 <navigationController id="tjz-55-yMD" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="B0U-8I-PV3">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B0U-8I-PV3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1947,6 +1947,14 @@ This is where a how to page will go. But we will cross that bridge when we get t
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_img" translatesAutoresizingMaskIntoConstraints="NO" id="KQS-h6-nmN">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykm-sl-Muy">
+                                <rect key="frame" x="164" y="267" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Maps"/>
+                                <connections>
+                                    <segue destination="kdx-Ut-35h" kind="show" id="LGk-mf-Osd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1963,6 +1971,24 @@ This is where a how to page will go. But we will cross that bridge when we get t
                 <placeholder placeholderIdentifier="IBFirstResponder" id="In3-kc-G3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2644" y="-780"/>
+        </scene>
+        <!--Maps View Controller-->
+        <scene sceneID="PbB-qg-KqV">
+            <objects>
+                <viewController id="kdx-Ut-35h" customClass="MapsViewController" customModule="LuminousID" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MWW-QD-5kA"/>
+                        <viewControllerLayoutGuide type="bottom" id="g8L-am-Ond"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GL8-Iw-ebe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s4M-eS-y2t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3625" y="-1343"/>
         </scene>
         <!--Add Observation View Controller-->
         <scene sceneID="mD4-PK-8Mt">
@@ -2032,13 +2058,16 @@ This is where a how to page will go. But we will cross that bridge when we get t
                                             <action selector="capturePhotoWithSender:" destination="VO4-wA-qbY" eventType="touchUpInside" id="YZr-bs-3UP"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wh0-Nq-oXv">
+                                        <rect key="frame" x="263" y="31" width="73" height="30"/>
+                                        <state key="normal" title="Home"/>
+                                        <connections>
+                                            <action selector="closeQuickLook:" destination="VO4-wA-qbY" eventType="touchUpInside" id="tIy-m1-LMn"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSH-oC-JF5">
-                                        <rect key="frame" x="36" y="25" width="45" height="45"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="45" id="Azm-yX-RQd"/>
-                                            <constraint firstAttribute="height" constant="45" id="gW0-rK-Ksc"/>
-                                        </constraints>
+                                        <rect key="frame" x="35" y="22" width="46" height="48"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <segue destination="ZQo-vK-bmh" kind="show" identifier="QuickLookSegue" id="aKg-FS-q41">
                                                 <nil key="action"/>
@@ -2048,13 +2077,18 @@ This is where a how to page will go. But we will cross that bridge when we get t
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29792774820000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="zSH-oC-JF5" firstAttribute="leading" secondItem="c5J-7j-QAy" secondAttribute="leading" constant="35" id="3h5-vH-4zX"/>
                                     <constraint firstItem="ChC-A6-ooQ" firstAttribute="top" secondItem="c5J-7j-QAy" secondAttribute="topMargin" id="7dw-V5-NHk"/>
-                                    <constraint firstItem="zSH-oC-JF5" firstAttribute="top" secondItem="c5J-7j-QAy" secondAttribute="top" constant="25" id="Cql-29-atK"/>
+                                    <constraint firstItem="ChC-A6-ooQ" firstAttribute="leading" secondItem="zSH-oC-JF5" secondAttribute="trailing" constant="66" id="82W-c0-OpQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wh0-Nq-oXv" secondAttribute="bottom" constant="35" id="8FW-57-YD9"/>
                                     <constraint firstItem="ChC-A6-ooQ" firstAttribute="centerX" secondItem="c5J-7j-QAy" secondAttribute="centerX" id="MLs-1s-4ZY"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wh0-Nq-oXv" secondAttribute="trailing" constant="39" id="QTM-br-si7"/>
+                                    <constraint firstItem="Wh0-Nq-oXv" firstAttribute="leading" secondItem="ChC-A6-ooQ" secondAttribute="trailing" constant="36" id="WGp-nL-mU9"/>
                                     <constraint firstAttribute="height" constant="96" id="ZpR-YI-iJ3"/>
-                                    <constraint firstAttribute="bottom" secondItem="zSH-oC-JF5" secondAttribute="bottom" constant="26" id="laj-mO-ypk"/>
+                                    <constraint firstItem="Wh0-Nq-oXv" firstAttribute="top" secondItem="c5J-7j-QAy" secondAttribute="top" constant="31" id="gW1-aL-NzW"/>
+                                    <constraint firstItem="zSH-oC-JF5" firstAttribute="top" secondItem="c5J-7j-QAy" secondAttribute="top" constant="22" id="knU-5b-CMD"/>
                                     <constraint firstItem="ChC-A6-ooQ" firstAttribute="bottom" secondItem="c5J-7j-QAy" secondAttribute="bottomMargin" id="mTC-1Q-wiv"/>
-                                    <constraint firstItem="zSH-oC-JF5" firstAttribute="leading" secondItem="c5J-7j-QAy" secondAttribute="leading" constant="36" id="sxY-mT-3Wh"/>
+                                    <constraint firstAttribute="bottom" secondItem="zSH-oC-JF5" secondAttribute="bottom" constant="26" id="t9J-Lj-wOQ"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -2082,7 +2116,7 @@ This is where a how to page will go. But we will cross that bridge when we get t
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HwS-I6-18u" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1034" y="-4397"/>
+            <point key="canvasLocation" x="-1034.4000000000001" y="-4397.4512743628193"/>
         </scene>
         <!--Quick Look View Controller-->
         <scene sceneID="sji-Gs-v4h">
@@ -2098,24 +2132,15 @@ This is where a how to page will go. But we will cross that bridge when we get t
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W0i-c2-QTE">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FI7-Yo-1Al">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <connections>
-                                    <action selector="closeQuickLook:" destination="ZQo-vK-bmh" eventType="touchUpInside" id="e87-8W-9r6"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="W0i-c2-QTE" firstAttribute="top" secondItem="NPk-t4-Ll2" secondAttribute="bottom" id="NkT-oE-rml"/>
                             <constraint firstItem="W0i-c2-QTE" firstAttribute="leading" secondItem="scz-NO-DA0" secondAttribute="leading" id="TJm-fV-etE"/>
                             <constraint firstItem="V92-rg-yMX" firstAttribute="top" secondItem="W0i-c2-QTE" secondAttribute="bottom" id="XFo-ST-FbQ"/>
-                            <constraint firstAttribute="trailing" secondItem="FI7-Yo-1Al" secondAttribute="trailing" id="ZNP-Ym-DGX"/>
                             <constraint firstAttribute="trailing" secondItem="W0i-c2-QTE" secondAttribute="trailing" id="iCo-qU-oer"/>
-                            <constraint firstItem="FI7-Yo-1Al" firstAttribute="top" secondItem="NPk-t4-Ll2" secondAttribute="bottom" id="qpq-mt-kZ6"/>
-                            <constraint firstItem="V92-rg-yMX" firstAttribute="top" secondItem="FI7-Yo-1Al" secondAttribute="bottom" id="rHj-jA-G0v"/>
-                            <constraint firstItem="FI7-Yo-1Al" firstAttribute="leading" secondItem="scz-NO-DA0" secondAttribute="leading" id="zUy-WM-OIc"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -2153,9 +2178,9 @@ This is where a how to page will go. But we will cross that bridge when we get t
         <image name="trees_shrubs" width="200" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Kue-U9-UqJ"/>
         <segue reference="P5r-Qz-pJA"/>
         <segue reference="fdS-hd-rPB"/>
-        <segue reference="qod-tk-hDi"/>
+        <segue reference="2qF-J1-6gm"/>
+        <segue reference="ybr-Fu-XFr"/>
     </inferredMetricsTieBreakers>
 </document>

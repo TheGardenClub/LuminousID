@@ -1,44 +1,30 @@
 //
-//  QuickLookViewController.swift
+//  MapsViewController.swift
 //  LuminousID
 //
-//  Created by Kevin Rau on 4/6/17.
+//  Created by Kevin Rau on 4/19/17.
 //  Copyright © 2017 Garden Club. All rights reserved.
 //
 
 import UIKit
+import MapKit
+import Firebase
+import FirebaseDatabase
+import FirebaseAuth
+import GeoFire
 
-class QuickLookViewController: UIViewController {
-    
-    @IBOutlet weak var quickLookImage: UIImageView!
-    var photoImage: UIImage!
-    
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
-    override var prefersStatusBarHidden : Bool {
-        return true
-    }
-    
-    
+class MapsViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        if photoImage != nil {
-            quickLookImage.image = photoImage
-        }
+
+        // Do any additional setup after loading the view.
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
     
 
     /*

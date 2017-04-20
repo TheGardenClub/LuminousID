@@ -444,7 +444,8 @@ class AddObservationViewController: UIViewController {
         return Int(arc4random_uniform(UInt32(n)))
     }
     
-    
-    
+    @IBAction func closeQuickLook(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 
