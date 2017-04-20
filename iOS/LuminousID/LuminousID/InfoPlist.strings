@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  LuminousID
+
+  Created by Kevin Rau on 4/19/17.
+  Copyright © 2017 Garden Club. All rights reserved.
+*/
+
+"NSLocationWhenInUseUsageDescription" = "Using Data to Gather GPS Location";

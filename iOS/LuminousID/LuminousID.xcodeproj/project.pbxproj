@@ -11,6 +11,7 @@
 		71713055E46188FFCA42DA3B /* Pods_LuminousIDTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5A44B9D3CFAD03AF9E02B66 /* Pods_LuminousIDTests.framework */; };
 		823C0E98626025C3F05D8B95 /* Pods_LuminousID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B22DE81D532830EE0DC6C52 /* Pods_LuminousID.framework */; };
 		8828E9191EA8571B00285AEE /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8828E9181EA8571B00285AEE /* MapsViewController.swift */; };
+		8828E91C1EA8689600285AEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8828E91B1EA8689600285AEE /* InfoPlist.strings */; };
 		884F722D1E96AC5200985F5C /* QuickLookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884F722C1E96AC5200985F5C /* QuickLookViewController.swift */; };
 		A407C84D1E626069001CA327 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A407C84C1E626069001CA327 /* MainMenuViewController.swift */; };
 		A42260071E9C109E0010FEC5 /* GlossaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42260061E9C109E0010FEC5 /* GlossaryTableViewCell.swift */; };
@@ -70,6 +71,7 @@
 		4B22DE81D532830EE0DC6C52 /* Pods_LuminousID.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuminousID.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7664974A8EB952D828C2AC51 /* Pods_LuminousIDUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuminousIDUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8828E9181EA8571B00285AEE /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		8828E91B1EA8689600285AEE /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		884F722C1E96AC5200985F5C /* QuickLookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickLookViewController.swift; sourceTree = "<group>"; };
 		A0DAA00A9A5517336F67B021 /* Pods-LuminousIDUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuminousIDUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LuminousIDUITests/Pods-LuminousIDUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A407C84C1E626069001CA327 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				A427FB521E34089000011350 /* LaunchScreen.storyboard */,
 				A4B2DF441E60F4B9002F14D5 /* GoogleService-Info.plist */,
 				A427FB551E34089000011350 /* Info.plist */,
+				8828E91B1EA8689600285AEE /* InfoPlist.strings */,
 				A45861C91E61077800DAE2FC /* CreateUserViewController.swift */,
 				A4C3C1F91E610CFE003FC85A /* LogInViewController.swift */,
 				A407C84C1E626069001CA327 /* MainMenuViewController.swift */,
@@ -375,6 +378,7 @@
 				A427FB511E34089000011350 /* Assets.xcassets in Resources */,
 				A4E6ABC21E6E14D700EBE83C /* sample_photo.jpg in Resources */,
 				A427FB4F1E34089000011350 /* Main.storyboard in Resources */,
+				8828E91C1EA8689600285AEE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

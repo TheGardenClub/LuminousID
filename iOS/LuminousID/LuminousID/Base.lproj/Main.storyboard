@@ -1516,7 +1516,7 @@
         <scene sceneID="LVQ-4o-EfQ">
             <objects>
                 <navigationController id="tjz-55-yMD" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B0U-8I-PV3">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="B0U-8I-PV3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1983,12 +1983,26 @@ This is where a how to page will go. But we will cross that bridge when we get t
                     <view key="view" contentMode="scaleToFill" id="GL8-Iw-ebe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VAW-Pe-UzJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g8L-am-Ond" firstAttribute="top" secondItem="VAW-Pe-UzJ" secondAttribute="bottom" id="2ay-XK-Nea"/>
+                            <constraint firstAttribute="trailing" secondItem="VAW-Pe-UzJ" secondAttribute="trailing" id="30L-r6-EDS"/>
+                            <constraint firstItem="VAW-Pe-UzJ" firstAttribute="leading" secondItem="GL8-Iw-ebe" secondAttribute="leading" id="lE4-03-vaP"/>
+                            <constraint firstItem="VAW-Pe-UzJ" firstAttribute="top" secondItem="MWW-QD-5kA" secondAttribute="bottom" id="qvx-tt-0sN"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="VAW-Pe-UzJ" id="7jx-BW-ShC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s4M-eS-y2t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3625" y="-1343"/>
+            <point key="canvasLocation" x="3624.8000000000002" y="-1343.4782608695652"/>
         </scene>
         <!--Add Observation View Controller-->
         <scene sceneID="mD4-PK-8Mt">

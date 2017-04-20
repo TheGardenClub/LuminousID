@@ -28,6 +28,8 @@
 	<string>To Take Observation</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>To Show Observation</string>
+	<key>CFBundleDisplayName</key>
+	<string></string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>UIRequiredDeviceCapabilities</key>

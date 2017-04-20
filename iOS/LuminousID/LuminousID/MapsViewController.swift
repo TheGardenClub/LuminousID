@@ -13,28 +13,74 @@ import FirebaseDatabase
 import FirebaseAuth
 import GeoFire
 
-class MapsViewController: UIViewController {
-
+class MapsViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+    
+    @IBOutlet weak var mapView: MKMapView!
+    
+    let locationManager = CLLocationManager()
+    var mapHasCenteredOnce = false
+    var geoFire: GeoFire!
+    var geoFireRef: FIRDatabaseReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        mapView.delegate = self
+        mapView.userTrackingMode = MKUserTrackingMode.follow //The map follows user's location
+        
+        geoFireRef = FIRDatabase.database().reference()
+        geoFire = GeoFire(firebaseRef: geoFireRef)
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidAppear(_ animated: Bool) {
+        locationAuthStatus()
+    }
+    
+    func locationAuthStatus() {
+        //Only find location when app is in use
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+            
+            mapView.showsUserLocation = true //Shows user location
+        } else {
+            
+            locationManager.requestWhenInUseAuthorization() //Prompt "can I access your location"
+        }
+        
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        
+        if status == CLAuthorizationStatus.authorizedWhenInUse {
+            
+            mapView.showsUserLocation = true
+            
+        }
+        
+    }
+    
+    //Determining the size of region shown in the app upon launch
+    func centerMapOnLocation(location: CLLocation) {
+        
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, 2000, 2000)
+        
+        mapView.setRegion(coordinateRegion, animated: true)
+        
+    }
+    
+    //Tells map to center
+    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
+        
+        if let loc = userLocation.location {
+            
+            //Makes sure the map doesn't keep recentering while someone is walking and trying to pan to find pokemon
+            if !mapHasCenteredOnce {
+                centerMapOnLocation(location: loc)
+                mapHasCenteredOnce = true
+            }
+        }
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
