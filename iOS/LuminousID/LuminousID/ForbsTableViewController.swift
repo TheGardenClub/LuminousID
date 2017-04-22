@@ -49,7 +49,7 @@ class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableVi
 
     @IBAction func ForbsFilters(_ sender: Any) {
         pressedFilters = true
-        performSegue(withIdentifier: "toForbsFilters", sender: myDict)
+        performSegue(withIdentifier: "forbsFiltersPopover", sender: myDict)
         
     }
     
@@ -89,7 +89,7 @@ class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableVi
             speciesInfoVC.speciesDict = [myDict[row]]
         }
         else{
-            let filtersVC = segue.destination as! ForbsFilterViewController
+            let filtersVC = segue.destination as! ForbsFilterTableViewController
             filtersVC.filterDict = myDict
         }
         
