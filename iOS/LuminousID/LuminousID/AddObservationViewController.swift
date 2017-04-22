@@ -445,7 +445,10 @@ class AddObservationViewController: UIViewController {
     }
     
     @IBAction func closeQuickLook(_ sender: AnyObject) {
+        /*
         dismiss(animated: true, completion: nil)
+        */
+        self.navigationController?.popViewController(animated: true)
     }
 }
 
