@@ -17,6 +17,8 @@
 		A40CD22F1EAC065F007EA602 /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40CD22E1EAC065F007EA602 /* FilterTableViewCell.swift */; };
 		A40CD2311EAC0891007EA602 /* ForbsSpecificFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40CD2301EAC0891007EA602 /* ForbsSpecificFiltersViewController.swift */; };
 		A40CD2331EAC08FC007EA602 /* ForbsSpecificCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40CD2321EAC08FC007EA602 /* ForbsSpecificCellTableViewCell.swift */; };
+		A40CD2351EAC2FAF007EA602 /* FilterElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40CD2341EAC2FAF007EA602 /* FilterElement.swift */; };
+		A40CD2371EAC4290007EA602 /* FilterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40CD2361EAC4290007EA602 /* FilterList.swift */; };
 		A42260071E9C109E0010FEC5 /* GlossaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42260061E9C109E0010FEC5 /* GlossaryTableViewCell.swift */; };
 		A427FB4A1E34089000011350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427FB491E34089000011350 /* AppDelegate.swift */; };
 		A427FB4C1E34089000011350 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427FB4B1E34089000011350 /* ViewController.swift */; };
@@ -82,6 +84,8 @@
 		A40CD22E1EAC065F007EA602 /* FilterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
 		A40CD2301EAC0891007EA602 /* ForbsSpecificFiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForbsSpecificFiltersViewController.swift; sourceTree = "<group>"; };
 		A40CD2321EAC08FC007EA602 /* ForbsSpecificCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForbsSpecificCellTableViewCell.swift; sourceTree = "<group>"; };
+		A40CD2341EAC2FAF007EA602 /* FilterElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterElement.swift; sourceTree = "<group>"; };
+		A40CD2361EAC4290007EA602 /* FilterList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterList.swift; sourceTree = "<group>"; };
 		A42260061E9C109E0010FEC5 /* GlossaryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlossaryTableViewCell.swift; sourceTree = "<group>"; };
 		A427FB461E34089000011350 /* LuminousID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuminousID.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A427FB491E34089000011350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -199,11 +203,13 @@
 				A44B0E9E1EA415F700025A4D /* ForbsFilterViewController.swift */,
 				A4FCEE721EA983DD00618232 /* ForbsFilterTableViewController.swift */,
 				A40CD22E1EAC065F007EA602 /* FilterTableViewCell.swift */,
+				A40CD2361EAC4290007EA602 /* FilterList.swift */,
 				A4F1797D1E9C23FB00F7E11D /* GramsGlossaryViewController.swift */,
 				A427FB4B1E34089000011350 /* ViewController.swift */,
 				A427FB4D1E34089000011350 /* Main.storyboard */,
 				A40CD2321EAC08FC007EA602 /* ForbsSpecificCellTableViewCell.swift */,
 				A40CD2301EAC0891007EA602 /* ForbsSpecificFiltersViewController.swift */,
+				A40CD2341EAC2FAF007EA602 /* FilterElement.swift */,
 				A42260061E9C109E0010FEC5 /* GlossaryTableViewCell.swift */,
 				A427FB501E34089000011350 /* Assets.xcassets */,
 				A4F179811E9C25B800F7E11D /* grams_glossary_small_keyed */,
@@ -564,9 +570,11 @@
 				A40CD2331EAC08FC007EA602 /* ForbsSpecificCellTableViewCell.swift in Sources */,
 				A4C3C1FA1E610CFE003FC85A /* LogInViewController.swift in Sources */,
 				A46FF76B1E6508910001455E /* DeciduousViewController.swift in Sources */,
+				A40CD2371EAC4290007EA602 /* FilterList.swift in Sources */,
 				A42260071E9C109E0010FEC5 /* GlossaryTableViewCell.swift in Sources */,
 				884F722D1E96AC5200985F5C /* QuickLookViewController.swift in Sources */,
 				A49CAD0D1E64B7AC006CC4DE /* ForbsTableViewController.swift in Sources */,
+				A40CD2351EAC2FAF007EA602 /* FilterElement.swift in Sources */,
 				A407C84D1E626069001CA327 /* MainMenuViewController.swift in Sources */,
 				A4DF25D41E81C6150095AFD8 /* SettingsViewController.swift in Sources */,
 				A427FB4C1E34089000011350 /* ViewController.swift in Sources */,

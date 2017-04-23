@@ -17,7 +17,7 @@ class ForbsFilterViewController: UIViewController, UIPickerViewDelegate, UIPicke
     
     var inflorescenceOptions = ["I1", "I2", "I3"]
     var petalNumberOptions = ["1", "2", "3"]
-    
+
     
     var filterDict = [[String:AnyObject]]()
     override func viewDidLoad() {

@@ -8,30 +8,39 @@
 
 import UIKit
 
+protocol ForbsSpecificFilterProtocol{
+    func filterWasSelected(filter: FilterElement)
+}
+
 class ForbsSpecificFiltersViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    var attribute = ""
+    var attributeName = ""
     var attributeFilters = [String]()
     var row = 0
+
+    
+    var delegate:ForbsSpecificFilterProtocol?
+    
     override func viewDidLoad() {
-        if attribute == "Inflorescence"{
+
+        if attributeName == "Inflorescence"{
             attributeFilters = ["All", "corymbiform", "cyme", "head", "helicoid", "paniculate", "racemose", "solitary", "spicate", "unbellate", "other"]
         }
-        else if attribute == "Petal Number"{
+        else if attributeName == "Petal Number"{
             attributeFilters = ["All", "3", "4", "5", "6", "6+"]
         }
-        else if attribute == "Habitat"{
+        else if attributeName == "Habitat"{
             attributeFilters = ["All", "fellfield", "dry meadow", "moist meadow", "wet meadow", "snowbed", "subalpine"]
         }
-        else if attribute == "Flower Color"{
+        else if attributeName == "Flower Color"{
             attributeFilters = ["All", "white", "yellow", "orange", "red", "pink"]
         }
-        else if attribute == "Flower Shape"{
+        else if attributeName == "Flower Shape"{
             attributeFilters = ["All", "campanulate", "composite", "cruciform", "funnelform", "labiate", "papilionaceous", "radial", "reflexed", "rotate", "salverform", "stellate", "urceolate", "other"]
         }
-        else if attribute == "Leaf Shape"{
+        else if attributeName == "Leaf Shape"{
             attributeFilters = ["All", "dissected", "oblong", "palmate", "ternate", "other"]
         }
-        else if attribute == "Leaf Arrangement"{
+        else if attributeName == "Leaf Arrangement"{
             attributeFilters = ["All", "alternate", "basal", "cauline", "opposite", "rosette", "whorled", "other"]
         }
         
@@ -63,7 +72,9 @@ class ForbsSpecificFiltersViewController: UIViewController, UITableViewDataSourc
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         row = indexPath.row
         tableView.deselectRow(at: indexPath, animated: true)
-        self.navigationController?.popViewController(animated: true)
+        let filterChoice = FilterElement(attribute: attributeName, value: attributeFilters[indexPath.row])
+        self.delegate?.filterWasSelected(filter: filterChoice)
+        self.navigationController!.popViewController(animated: true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
