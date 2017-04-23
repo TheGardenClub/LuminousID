@@ -44,19 +44,28 @@ class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableVi
     }
 
     func filtersWereSelected(filterList: FilterList){
+        var satisfiesFilter = true
         listOfAttributes = filterList.attributes
         listOfValues = filterList.values
         var att = listOfAttributes[0]
         var val = listOfValues[0]
-        print (listOfAttributes)
-        print (listOfValues)
         for item in myDict{
             for var i in 0...(listOfAttributes.count - 1){
                 att = listOfAttributes[i]
                 val = listOfValues[i]
                 if item[att] as? String == val{
-                    print (item["species_name"] as! String)
+                    satisfiesFilter = true
                 }
+                else if val as? String == "All"{
+                    satisfiesFilter = true
+                }
+                else{
+                    satisfiesFilter = false
+                    break
+                }
+            }
+            if satisfiesFilter == true{
+                print (item["species_name"] as! String)
             }
         }
     }
