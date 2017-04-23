@@ -48,6 +48,7 @@ class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableVi
         listOfValues = filterList.values
         print (listOfAttributes)
         print (listOfValues)
+
     }
     
     
