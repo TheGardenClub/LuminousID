@@ -11,7 +11,7 @@ import Firebase
 import FirebaseDatabase
 import FirebaseAuth
 
-class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, ForbsFilterTableProtocol {
     @IBOutlet weak var forbsTable: UITableView!
     
     
@@ -22,6 +22,9 @@ class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableVi
     var row = 0
     var photoFileName = ""
     var pressedFilters = false
+    var listOfAttributes:[String] = []
+    var listOfValues:[String] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +43,14 @@ class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableVi
         // Do any additional setup after loading the view.
     }
 
-
+    func filtersWereSelected(filterList: FilterList){
+        listOfAttributes = filterList.attributes
+        listOfValues = filterList.values
+        print (listOfAttributes)
+        print (listOfValues)
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -90,6 +100,7 @@ class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableVi
         }
         else{
             let filtersVC = segue.destination as! ForbsFilterTableViewController
+            filtersVC.delegate = self
             filtersVC.filterDict = myDict
         }
         

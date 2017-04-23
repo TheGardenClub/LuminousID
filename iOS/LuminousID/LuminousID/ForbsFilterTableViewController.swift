@@ -13,9 +13,10 @@ protocol ForbsFilterTableProtocol{
 }
 
 class ForbsFilterTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, ForbsSpecificFilterProtocol {
+    
     var filterDict = [[String:AnyObject]]()
     var row = 0
-    var filterList = ["Inflorescence", "Petal Number", "Habitat", "Flower Color", "Flower Shape", "Leaf Shape", "Leaf Arrangement"]
+    var filtersList = ["Inflorescence", "Petal Number", "Habitat", "Flower Color", "Flower Shape", "Leaf Shape", "Leaf Arrangement"]
     var filterFormattedList = ["inflorescence", "petal_number", "habitat", "flower_color", "flower_shape", "leaf_shape", "leaf_arrangement"]
     var selectionList = ["All", "All", "All", "All", "All", "All", "All"]
     var filterAttribute = ""
@@ -40,9 +41,17 @@ class ForbsFilterTableViewController: UIViewController, UITableViewDelegate, UIT
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func SearchButton(_ sender: UIButton) {
+        let filters = FilterList(attributes: filterFormattedList, values: selectionList)
+        print (filters.attributes)
+        print (filters.values)
+        self.delegate?.filtersWereSelected(filterList: filters)
+        self.navigationController!.popViewController(animated: true)
+    }
+    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return filterList.count
+        return filtersList.count
     }
     
     func filterWasSelected(filter: FilterElement){
@@ -76,7 +85,7 @@ class ForbsFilterTableViewController: UIViewController, UITableViewDelegate, UIT
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "forbsFilterCell", for: indexPath) as! FilterTableViewCell
 
-        cell.FilterLabel.text = self.filterList[indexPath.row]
+        cell.FilterLabel.text = self.filtersList[indexPath.row]
         cell.SelectionLabel.text = self.selectionList[indexPath.row]
 
         return (cell)
@@ -87,13 +96,13 @@ class ForbsFilterTableViewController: UIViewController, UITableViewDelegate, UIT
         tableView.deselectRow(at: indexPath, animated: true)
         print(filterAttribute)
         print(filterValue)
-        performSegue(withIdentifier: "toForbsSpecificFilters", sender: filterList[indexPath.row])
+        performSegue(withIdentifier: "toForbsSpecificFilters", sender: filtersList[indexPath.row])
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let specificFiltersVC = segue.destination as! ForbsSpecificFiltersViewController
         specificFiltersVC.delegate = self
-        specificFiltersVC.attributeName = self.filterList[row]
+        specificFiltersVC.attributeName = self.filtersList[row]
         }
     /*
     // MARK: - Navigation
