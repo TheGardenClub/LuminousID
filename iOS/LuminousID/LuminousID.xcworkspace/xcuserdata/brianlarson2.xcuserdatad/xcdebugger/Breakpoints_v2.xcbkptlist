@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LuminousID/ForbsTableViewController.swift"
-            timestampString = "514678284.661649"
+            timestampString = "514693111.766628"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "filtersWereSelected(filterList:)"
             landmarkType = "7">
          </BreakpointContent>

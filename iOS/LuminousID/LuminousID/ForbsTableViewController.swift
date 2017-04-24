@@ -56,6 +56,8 @@ class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableVi
         var satisfiesFilter = true
         listOfAttributes = filterList.attributes
         listOfValues = filterList.values
+        print (listOfAttributes)
+        print (listOfValues)
         var att = listOfAttributes[0]
         var val = listOfValues[0]
         for item in myDict{
