@@ -43,8 +43,6 @@ class ForbsFilterTableViewController: UIViewController, UITableViewDelegate, UIT
     
     @IBAction func SearchButton(_ sender: UIButton) {
         let filters = FilterList(attributes: filterFormattedList, values: selectionList)
-        print (filters.attributes)
-        print (filters.values)
         self.delegate?.filtersWereSelected(filterList: filters)
         self.navigationController!.popViewController(animated: true)
     }
@@ -94,8 +92,6 @@ class ForbsFilterTableViewController: UIViewController, UITableViewDelegate, UIT
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         row = indexPath.row
         tableView.deselectRow(at: indexPath, animated: true)
-        print(filterAttribute)
-        print(filterValue)
         performSegue(withIdentifier: "toForbsSpecificFilters", sender: filtersList[indexPath.row])
     }
 

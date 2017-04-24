@@ -62,10 +62,10 @@ class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableVi
             for var i in 0...(listOfAttributes.count - 1){
                 att = listOfAttributes[i]
                 val = listOfValues[i]
-                if item[att] as? String == val{
+                if (item[att] as? String)?.lowercased().range(of: val) != nil {
                     satisfiesFilter = true
                 }
-                else if val as? String == "All"{
+                else if val == "All"{
                     satisfiesFilter = true
                 }
                 else{
