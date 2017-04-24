@@ -17,7 +17,7 @@ class ForbsFilterTableViewController: UIViewController, UITableViewDelegate, UIT
     var filterDict = [[String:AnyObject]]()
     var row = 0
     var filtersList = ["Family", "Flower Color", "Petal Number", "Flower Shape", "Leaf Arrangement", "Leaf Shape", "Habitat"]
-    var filterFormattedList = ["family", "flower_color", "petal_number", "flower_shape", "leaf_arrangement", "leaf_shape_filter", "habitat"]
+    var filterFormattedList = ["family_name", "flower_color", "petal_number", "flower_shape", "leaf_arrangement", "leaf_shape_filter", "habitat"]
     var selectionList = ["All", "All", "All", "All", "All", "All", "All"]
     var filterAttribute = ""
     var filterValue = ""

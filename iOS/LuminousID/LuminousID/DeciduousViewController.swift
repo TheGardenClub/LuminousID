@@ -18,6 +18,7 @@ class DeciduousViewController: UIViewController, UITableViewDelegate, UITableVie
     var handle:FIRDatabaseHandle?
     var ref:FIRDatabaseReference?
     var row = 0
+    var pressedFilters = false
     
     @IBOutlet weak var deciduousTable: UITableView!
     override func viewDidLoad() {
@@ -49,6 +50,11 @@ class DeciduousViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     
+    @IBAction func FilterButton(_ sender: Any) {
+        pressedFilters = true
+        performSegue(withIdentifier: "toDeciduousFilters", sender: myDict)
+    }
+    
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
@@ -68,14 +74,20 @@ class DeciduousViewController: UIViewController, UITableViewDelegate, UITableVie
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        pressedFilters = false
         row = indexPath.row
         tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "toSpeciesFromDeciduous", sender: speciesNames[indexPath.row])
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let speciesInfoVC = segue.destination as! SpeciesInfoViewController
-        speciesInfoVC.speciesDict = [myDict[row]]
+        if pressedFilters == false{
+            let speciesInfoVC = segue.destination as! SpeciesInfoViewController
+            speciesInfoVC.speciesDict = [myDict[row]]
+        }
+        else{
+            let filtersVC = segue.destination as! DeciduousFiltersViewController
+        }
         
     }
     /*

@@ -387,7 +387,7 @@
             </objects>
             <point key="canvasLocation" x="-3858.4000000000001" y="37.331334332833585"/>
         </scene>
-        <!--Sedges Specific Filters View Controller-->
+        <!--Filter Title-->
         <scene sceneID="cTE-3k-XYZ">
             <objects>
                 <viewController id="tNk-rk-w0i" customClass="SedgesSpecificFiltersViewController" customModule="LuminousID" customModuleProvider="target" sceneMemberID="viewController">
@@ -398,17 +398,72 @@
                     <view key="view" contentMode="scaleToFill" id="Zt6-hJ-ydJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_img" translatesAutoresizingMaskIntoConstraints="NO" id="cOj-jL-vAq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cg1-JW-Djz">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="sedgesSpecificFilterCell" rowHeight="75" id="IyO-HX-dJx" customClass="ForbsSpecificCellTableViewCell" customModule="LuminousID" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IyO-HX-dJx" id="RQX-cv-p2Q">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TJ5-8A-ccb">
+                                                    <rect key="frame" x="16" y="1" width="70" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="uh4-kL-Qgx"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attribute" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0O-tM-249">
+                                                    <rect key="frame" x="94" y="25" width="190" height="24"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="N0O-tM-249" secondAttribute="trailing" constant="83" id="4NV-3g-NNb"/>
+                                                <constraint firstItem="TJ5-8A-ccb" firstAttribute="top" secondItem="RQX-cv-p2Q" secondAttribute="topMargin" constant="-7" id="FDF-Sm-6ih"/>
+                                                <constraint firstItem="TJ5-8A-ccb" firstAttribute="leading" secondItem="RQX-cv-p2Q" secondAttribute="leadingMargin" constant="8" id="RdJ-PM-8l2"/>
+                                                <constraint firstItem="N0O-tM-249" firstAttribute="leading" secondItem="TJ5-8A-ccb" secondAttribute="trailing" constant="8" symbolic="YES" id="Vsa-pi-vu8"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="TJ5-8A-ccb" secondAttribute="bottom" constant="-5" id="bpN-Hm-d4g"/>
+                                                <constraint firstItem="N0O-tM-249" firstAttribute="centerY" secondItem="RQX-cv-p2Q" secondAttribute="centerY" id="wwx-bO-17Q"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="AttributeImage" destination="TJ5-8A-ccb" id="Y1m-eV-IeR"/>
+                                            <outlet property="AttributeLabel" destination="N0O-tM-249" id="ona-gI-nor"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="tNk-rk-w0i" id="em1-vd-skA"/>
+                                    <outlet property="delegate" destination="tNk-rk-w0i" id="Gql-ty-zgs"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Filter Title" id="FMX-2H-MKX"/>
+                    <connections>
+                        <outlet property="navBar" destination="FMX-2H-MKX" id="XaP-zb-Pdn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r8r-IQ-Cww" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3788" y="-4209"/>
+            <point key="canvasLocation" x="-3788" y="-4209.4452773613193"/>
         </scene>
-        <!--View Controller-->
+        <!--Filter Title-->
         <scene sceneID="53c-uK-9gY">
             <objects>
-                <viewController id="4eK-Zj-nvd" sceneMemberID="viewController">
+                <viewController id="4eK-Zj-nvd" customClass="RushesSpecificFiltersViewController" customModule="LuminousID" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kmo-zJ-ACe"/>
                         <viewControllerLayoutGuide type="bottom" id="tQL-D5-RgE"/>
@@ -416,14 +471,69 @@
                     <view key="view" contentMode="scaleToFill" id="j2p-1z-8jB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_img" translatesAutoresizingMaskIntoConstraints="NO" id="fPt-FB-zcu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eKR-c2-1fh">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="rushesSpecificFilterCell" rowHeight="75" id="El9-MK-O9x" customClass="ForbsSpecificCellTableViewCell" customModule="LuminousID" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="El9-MK-O9x" id="Y71-cY-ku4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l9g-np-TRk">
+                                                    <rect key="frame" x="16" y="1" width="70" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="YxC-R5-ggL"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attribute" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyc-7Q-mKf">
+                                                    <rect key="frame" x="94" y="25" width="190" height="24"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="l9g-np-TRk" secondAttribute="bottom" constant="-5" id="Awg-bD-WSK"/>
+                                                <constraint firstItem="l9g-np-TRk" firstAttribute="leading" secondItem="Y71-cY-ku4" secondAttribute="leadingMargin" constant="8" id="VIx-j1-lT0"/>
+                                                <constraint firstItem="Yyc-7Q-mKf" firstAttribute="leading" secondItem="l9g-np-TRk" secondAttribute="trailing" constant="8" symbolic="YES" id="dB7-j3-if8"/>
+                                                <constraint firstItem="Yyc-7Q-mKf" firstAttribute="centerY" secondItem="Y71-cY-ku4" secondAttribute="centerY" id="rJJ-R6-cBS"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Yyc-7Q-mKf" secondAttribute="trailing" constant="83" id="xmv-D5-SGb"/>
+                                                <constraint firstItem="l9g-np-TRk" firstAttribute="top" secondItem="Y71-cY-ku4" secondAttribute="topMargin" constant="-7" id="yhX-Lj-OOJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="AttributeImage" destination="l9g-np-TRk" id="0yG-Ff-2we"/>
+                                            <outlet property="AttributeLabel" destination="Yyc-7Q-mKf" id="1Kx-aL-qHV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="4eK-Zj-nvd" id="crQ-SG-GZ3"/>
+                                    <outlet property="delegate" destination="4eK-Zj-nvd" id="wca-yI-vzi"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Filter Title" id="wnB-4e-aRg"/>
+                    <connections>
+                        <outlet property="navBar" destination="wnB-4e-aRg" id="lZ4-ux-60x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bTy-sm-e10" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2559" y="-4209"/>
+            <point key="canvasLocation" x="-2559.1999999999998" y="-4209.4452773613193"/>
         </scene>
-        <!--Sedges Filters View Controller-->
+        <!--Filters-->
         <scene sceneID="zjD-O2-kj1">
             <objects>
                 <viewController id="Adv-Tg-Zlz" customClass="SedgesFiltersViewController" customModule="LuminousID" customModuleProvider="target" sceneMemberID="viewController">
@@ -434,20 +544,87 @@
                     <view key="view" contentMode="scaleToFill" id="YUg-Ig-GIV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_img" translatesAutoresizingMaskIntoConstraints="NO" id="Bf7-hg-96X">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5uc-ZY-MAq">
+                                <rect key="frame" x="0.0" y="64" width="375" height="543"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sedgesFilterCell" rowHeight="75" id="ifG-S8-eie" customClass="FilterTableViewCell" customModule="LuminousID" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ifG-S8-eie" id="O5o-Ch-ZJv">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cgq-W0-v1x">
+                                                    <rect key="frame" x="25" y="12" width="251" height="25"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kco-Ei-XgW">
+                                                    <rect key="frame" x="58" y="41" width="105" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="105" id="AWZ-mT-IJs"/>
+                                                        <constraint firstAttribute="height" constant="21" id="CbC-6g-lbR"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kco-Ei-XgW" firstAttribute="leading" secondItem="O5o-Ch-ZJv" secondAttribute="leadingMargin" constant="50" id="0G9-Ay-ScB"/>
+                                                <constraint firstItem="kco-Ei-XgW" firstAttribute="top" secondItem="Cgq-W0-v1x" secondAttribute="bottom" constant="4" id="1oV-xw-qP2"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="kco-Ei-XgW" secondAttribute="bottom" constant="4" id="U0f-zH-Cnp"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Cgq-W0-v1x" secondAttribute="trailing" constant="91" id="WRr-X9-gYq"/>
+                                                <constraint firstItem="Cgq-W0-v1x" firstAttribute="top" secondItem="O5o-Ch-ZJv" secondAttribute="topMargin" constant="4" id="gU2-Zo-fGP"/>
+                                                <constraint firstItem="Cgq-W0-v1x" firstAttribute="leading" secondItem="O5o-Ch-ZJv" secondAttribute="leadingMargin" constant="17" id="nH7-5R-aac"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="FilterLabel" destination="Cgq-W0-v1x" id="A3T-u3-MY2"/>
+                                            <outlet property="SelectionLabel" destination="kco-Ei-XgW" id="kZC-Fi-FLt"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Adv-Tg-Zlz" id="hDj-ON-xrz"/>
+                                    <outlet property="delegate" destination="Adv-Tg-Zlz" id="YSw-p3-e05"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTi-jt-69M">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.60941993620000001" green="0.97680455450000003" blue="0.62834863529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="SearchButton:" destination="Adv-Tg-Zlz" eventType="touchUpInside" id="wJR-B1-cBn"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Filters" id="Ihl-Bw-1vw"/>
                     <connections>
+                        <outlet property="sedgesFilterTable" destination="5uc-ZY-MAq" id="wFb-uS-9MW"/>
                         <segue destination="tNk-rk-w0i" kind="show" identifier="toSedgesSpecificFilters" id="Led-I6-yGc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BzG-Z7-duB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3788" y="-3471"/>
+            <point key="canvasLocation" x="-3788" y="-3471.8140929535234"/>
         </scene>
-        <!--View Controller-->
+        <!--Filters-->
         <scene sceneID="fKq-El-6gn">
             <objects>
-                <viewController id="oCy-2y-fcR" sceneMemberID="viewController">
+                <viewController id="oCy-2y-fcR" customClass="RushesFiltersViewController" customModule="LuminousID" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nQQ-iT-sjF"/>
                         <viewControllerLayoutGuide type="bottom" id="g1Q-q3-QXm"/>
@@ -455,20 +632,86 @@
                     <view key="view" contentMode="scaleToFill" id="Srf-zv-L6s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_img" translatesAutoresizingMaskIntoConstraints="NO" id="KmN-zl-fTe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B2z-gm-dxi">
+                                <rect key="frame" x="0.0" y="64" width="375" height="543"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="rushesFilterCell" rowHeight="75" id="af5-6f-3Y0" customClass="FilterTableViewCell" customModule="LuminousID" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="af5-6f-3Y0" id="2dt-R4-fkg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqV-Ti-S5r">
+                                                    <rect key="frame" x="25" y="12" width="251" height="25"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhF-Mo-65I">
+                                                    <rect key="frame" x="58" y="41" width="105" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="1gk-n4-S7P"/>
+                                                        <constraint firstAttribute="width" constant="105" id="tVZ-tM-xs0"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uqV-Ti-S5r" firstAttribute="leading" secondItem="2dt-R4-fkg" secondAttribute="leadingMargin" constant="17" id="28z-tV-fiH"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="dhF-Mo-65I" secondAttribute="bottom" constant="4" id="2Ax-6E-eBl"/>
+                                                <constraint firstItem="dhF-Mo-65I" firstAttribute="leading" secondItem="2dt-R4-fkg" secondAttribute="leadingMargin" constant="50" id="4O6-82-lLM"/>
+                                                <constraint firstItem="uqV-Ti-S5r" firstAttribute="top" secondItem="2dt-R4-fkg" secondAttribute="topMargin" constant="4" id="UTN-uT-iA4"/>
+                                                <constraint firstItem="dhF-Mo-65I" firstAttribute="top" secondItem="uqV-Ti-S5r" secondAttribute="bottom" constant="4" id="b7b-Fo-O2G"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="uqV-Ti-S5r" secondAttribute="trailing" constant="91" id="rri-nH-7fA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="FilterLabel" destination="uqV-Ti-S5r" id="SFx-Pq-3qC"/>
+                                            <outlet property="SelectionLabel" destination="dhF-Mo-65I" id="LrC-xM-dhE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="oCy-2y-fcR" id="BLw-eh-1xo"/>
+                                    <outlet property="delegate" destination="oCy-2y-fcR" id="fyn-9h-bTI"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfg-Lx-nEQ">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.60941993620000001" green="0.97680455450000003" blue="0.62834863529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="SearchButton:" destination="oCy-2y-fcR" eventType="touchUpInside" id="RpY-z5-HVo"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Filters" id="VtP-SJ-OD6"/>
                     <connections>
+                        <outlet property="rushesFilterTable" destination="B2z-gm-dxi" id="Mpp-Md-kjE"/>
                         <segue destination="4eK-Zj-nvd" kind="show" identifier="toRushesSpecificFilters" id="HsF-kI-5zj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ve6-gU-jDY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2559" y="-3471"/>
+            <point key="canvasLocation" x="-2559.1999999999998" y="-3471.8140929535234"/>
         </scene>
-        <!--View Controller-->
+        <!--Filters-->
         <scene sceneID="AC9-QA-yiy">
             <objects>
-                <viewController id="fgh-Ea-AxY" sceneMemberID="viewController">
+                <viewController id="fgh-Ea-AxY" customClass="GrassesFiltersViewController" customModule="LuminousID" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8BG-GZ-8UD"/>
                         <viewControllerLayoutGuide type="bottom" id="quj-GC-hbX"/>
@@ -476,20 +719,88 @@
                     <view key="view" contentMode="scaleToFill" id="FZV-Rs-OK0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_img" translatesAutoresizingMaskIntoConstraints="NO" id="WSk-YM-6nE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oHz-5f-hDH">
+                                <rect key="frame" x="0.0" y="64" width="375" height="551"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="grassesFilterCell" rowHeight="75" id="Amu-FC-NTY" customClass="FilterTableViewCell" customModule="LuminousID" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Amu-FC-NTY" id="qCt-yc-YeY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFf-5f-XSG">
+                                                    <rect key="frame" x="25" y="12" width="251" height="25"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxQ-cv-1nR">
+                                                    <rect key="frame" x="58" y="41" width="105" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="RbQ-XU-OZG"/>
+                                                        <constraint firstAttribute="width" constant="105" id="eiZ-b2-Gio"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="GFf-5f-XSG" secondAttribute="trailing" constant="91" id="AJp-rK-sJs"/>
+                                                <constraint firstItem="GFf-5f-XSG" firstAttribute="top" secondItem="qCt-yc-YeY" secondAttribute="topMargin" constant="4" id="BBx-CH-yuH"/>
+                                                <constraint firstItem="dxQ-cv-1nR" firstAttribute="leading" secondItem="qCt-yc-YeY" secondAttribute="leadingMargin" constant="50" id="Mql-U9-Nxj"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="dxQ-cv-1nR" secondAttribute="bottom" constant="4" id="aMZ-b7-NF1"/>
+                                                <constraint firstItem="GFf-5f-XSG" firstAttribute="leading" secondItem="qCt-yc-YeY" secondAttribute="leadingMargin" constant="17" id="g7b-bw-NIU"/>
+                                                <constraint firstItem="dxQ-cv-1nR" firstAttribute="top" secondItem="GFf-5f-XSG" secondAttribute="bottom" constant="4" id="uUa-c5-c2Q"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="FilterLabel" destination="GFf-5f-XSG" id="LgM-Yy-HoP"/>
+                                            <outlet property="SelectionLabel" destination="dxQ-cv-1nR" id="RKi-1v-ar0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="fgh-Ea-AxY" id="FNE-1t-g8e"/>
+                                    <outlet property="delegate" destination="fgh-Ea-AxY" id="qmM-Wp-erG"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCz-WE-hSK">
+                                <rect key="frame" x="0.0" y="607" width="378" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.60941993620000001" green="0.97680455450000003" blue="0.62834863529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SearchButton:" destination="fgh-Ea-AxY" eventType="touchUpInside" id="fFd-J3-ETe"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Filters" id="qky-sl-v79"/>
                     <connections>
+                        <outlet property="grassesFilterTable" destination="oHz-5f-hDH" id="7kr-Sb-HF0"/>
                         <segue destination="Xy7-bI-392" kind="show" identifier="toGrassesSpecificFilters" id="hLX-XP-ZVw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vk7-g0-fgq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1332" y="-3471"/>
+            <point key="canvasLocation" x="-1332" y="-3471.8140929535234"/>
         </scene>
-        <!--View Controller-->
+        <!--Deciduous Specific Filters View Controller-->
         <scene sceneID="BZZ-g3-bG2">
             <objects>
-                <viewController id="qic-86-nKZ" sceneMemberID="viewController">
+                <viewController id="qic-86-nKZ" customClass="DeciduousSpecificFiltersViewController" customModule="LuminousID" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yzD-qx-8MG"/>
                         <viewControllerLayoutGuide type="bottom" id="YE2-q2-3fs"/>
@@ -497,17 +808,23 @@
                     <view key="view" contentMode="scaleToFill" id="6HI-q8-ftS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_img" translatesAutoresizingMaskIntoConstraints="NO" id="FS3-pM-VRz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kdV-yZ-JQR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="-4209"/>
+            <point key="canvasLocation" x="380" y="-4209.4452773613193"/>
         </scene>
-        <!--View Controller-->
+        <!--Needle Specific Filters View Controller-->
         <scene sceneID="HnM-Co-1cr">
             <objects>
-                <viewController id="xUi-lt-0xw" sceneMemberID="viewController">
+                <viewController id="xUi-lt-0xw" customClass="NeedleSpecificFiltersViewController" customModule="LuminousID" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vGS-aW-fRW"/>
                         <viewControllerLayoutGuide type="bottom" id="xAU-D5-w53"/>
@@ -515,17 +832,23 @@
                     <view key="view" contentMode="scaleToFill" id="FKr-Zt-EtX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_img" translatesAutoresizingMaskIntoConstraints="NO" id="jLV-sF-yID">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RgS-zC-lCd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1644" y="-4209"/>
+            <point key="canvasLocation" x="1644" y="-4209.4452773613193"/>
         </scene>
-        <!--View Controller-->
+        <!--Filters-->
         <scene sceneID="kAJ-Hw-GzX">
             <objects>
-                <viewController id="TNP-Ih-1Eb" sceneMemberID="viewController">
+                <viewController id="TNP-Ih-1Eb" customClass="DeciduousFiltersViewController" customModule="LuminousID" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1BC-B5-4JV"/>
                         <viewControllerLayoutGuide type="bottom" id="App-0i-W9c"/>
@@ -533,29 +856,32 @@
                     <view key="view" contentMode="scaleToFill" id="Irh-zD-B4E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_img" translatesAutoresizingMaskIntoConstraints="NO" id="ckE-gj-Eyr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Filters" id="lQB-FL-OqG"/>
                     <connections>
                         <segue destination="qic-86-nKZ" kind="show" identifier="toDeciduousSpecificFilters" id="wMH-qP-UJa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qDx-2e-SR5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="-3472"/>
+            <point key="canvasLocation" x="380" y="-3472.7136431784111"/>
         </scene>
-        <!--View Controller-->
+        <!--Filters-->
         <scene sceneID="vaZ-kk-EgW">
             <objects>
-                <viewController id="R2X-pP-5H6" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Zdk-ZK-55j"/>
-                        <viewControllerLayoutGuide type="bottom" id="PFa-lV-hsY"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0My-I5-Rwm">
+                <viewController id="R2X-pP-5H6" customClass="NeedleFiltersViewController" customModule="LuminousID" customModuleProvider="target" sceneMemberID="viewController">
+                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_img" id="6yo-ZK-Esp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <navigationItem key="navigationItem" title="Filters" id="rJj-4f-kBh"/>
                     <connections>
                         <segue destination="xUi-lt-0xw" kind="show" identifier="toNeedleSpecificFilters" id="h3b-88-o4L"/>
                     </connections>
@@ -564,10 +890,10 @@
             </objects>
             <point key="canvasLocation" x="1644" y="-3473"/>
         </scene>
-        <!--View Controller-->
+        <!--Filter Table-->
         <scene sceneID="WNR-QS-WzP">
             <objects>
-                <viewController id="Xy7-bI-392" sceneMemberID="viewController">
+                <viewController id="Xy7-bI-392" customClass="GrassesSpecificFiltersViewController" customModule="LuminousID" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WuG-7Q-VM8"/>
                         <viewControllerLayoutGuide type="bottom" id="y5H-FU-hcg"/>
@@ -575,12 +901,67 @@
                     <view key="view" contentMode="scaleToFill" id="6pO-96-guv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_img" translatesAutoresizingMaskIntoConstraints="NO" id="WIi-gn-rnH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2BC-ec-Hal">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="grassesSpecificFilterCell" rowHeight="75" id="8f5-OI-8h2" customClass="ForbsSpecificCellTableViewCell" customModule="LuminousID" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8f5-OI-8h2" id="zFa-gf-ILA">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8ge-f8-ybm">
+                                                    <rect key="frame" x="16" y="1" width="70" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="QQZ-gu-Tuj"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attribute" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwx-4P-vhl">
+                                                    <rect key="frame" x="94" y="25" width="190" height="24"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kwx-4P-vhl" firstAttribute="leading" secondItem="8ge-f8-ybm" secondAttribute="trailing" constant="8" symbolic="YES" id="QKZ-pI-jmZ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="8ge-f8-ybm" secondAttribute="bottom" constant="-5" id="Qwp-Y3-muq"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="kwx-4P-vhl" secondAttribute="trailing" constant="83" id="aIg-EL-Z7C"/>
+                                                <constraint firstItem="8ge-f8-ybm" firstAttribute="top" secondItem="zFa-gf-ILA" secondAttribute="topMargin" constant="-7" id="pF2-D1-7rO"/>
+                                                <constraint firstItem="kwx-4P-vhl" firstAttribute="centerY" secondItem="zFa-gf-ILA" secondAttribute="centerY" id="uMn-Uo-v49"/>
+                                                <constraint firstItem="8ge-f8-ybm" firstAttribute="leading" secondItem="zFa-gf-ILA" secondAttribute="leadingMargin" constant="8" id="zZg-aR-CAi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="AttributeImage" destination="8ge-f8-ybm" id="QHe-hL-8LI"/>
+                                            <outlet property="AttributeLabel" destination="kwx-4P-vhl" id="tIu-bd-LID"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Xy7-bI-392" id="0y5-tz-Bht"/>
+                                    <outlet property="delegate" destination="Xy7-bI-392" id="1cd-tu-JjV"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Filter Table" id="Ymw-k3-YBb"/>
+                    <connections>
+                        <outlet property="navBar" destination="Ymw-k3-YBb" id="Vy8-1Z-X7s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iGX-J3-UjE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1332" y="-4209"/>
+            <point key="canvasLocation" x="-1332" y="-4209.4452773613193"/>
         </scene>
         <!--Sedges-->
         <scene sceneID="oau-iS-jS7">
@@ -901,7 +1282,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ftc-Yk-Bje" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2538" y="-5087"/>
+            <point key="canvasLocation" x="-2564" y="-5701"/>
         </scene>
         <!--Rushes-->
         <scene sceneID="uAm-Fs-Xig">
@@ -969,7 +1350,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Rushes" id="oEX-4d-ixU">
-                        <barButtonItem key="rightBarButtonItem" title="Filters" id="8hW-pa-HjU"/>
+                        <barButtonItem key="rightBarButtonItem" title="Filters" id="8hW-pa-HjU">
+                            <connections>
+                                <action selector="FilterButton:" destination="eQ6-Mk-aYC" id="3ct-xr-8gI"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="juncaceaeTable" destination="6G1-P7-7PB" id="did-O1-koe"/>
@@ -1047,7 +1432,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Grasses" id="vPF-0u-KcZ">
-                        <barButtonItem key="rightBarButtonItem" title="Filters" id="ppG-V4-hUU"/>
+                        <barButtonItem key="rightBarButtonItem" title="Filters" id="ppG-V4-hUU">
+                            <connections>
+                                <action selector="FilterButton:" destination="JhN-yi-hdt" id="aMg-FB-Qwx"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="poaceaeTable" destination="qD7-q2-FDI" id="gRs-7Z-6kQ"/>
@@ -1125,7 +1514,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Deciduous" id="zFR-A8-ZS6">
-                        <barButtonItem key="rightBarButtonItem" title="Filters" id="t5z-PH-i5n"/>
+                        <barButtonItem key="rightBarButtonItem" title="Filters" id="t5z-PH-i5n">
+                            <connections>
+                                <action selector="FilterButton:" destination="hHB-g8-noD" id="x54-yD-B2w"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="deciduousTable" destination="pUq-4U-ru9" id="NZL-bL-kWO"/>
@@ -1203,7 +1596,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Needle" id="Xob-Li-Jld">
-                        <barButtonItem key="rightBarButtonItem" title="Filters" id="eDL-6Z-0jd"/>
+                        <barButtonItem key="rightBarButtonItem" title="Filters" id="eDL-6Z-0jd">
+                            <connections>
+                                <action selector="FilterButton:" destination="gxh-Df-B70" id="tfU-XO-r4R"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="needleTable" destination="njQ-yk-Pcn" id="MXF-2n-cR2"/>
@@ -1246,23 +1643,23 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LwO-4n-3c2">
                                                     <rect key="frame" x="16" y="1" width="70" height="70"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="70" id="9Og-Gd-q4J"/>
+                                                        <constraint firstAttribute="width" constant="70" id="jlM-CE-1VQ"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attribute" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEP-To-knS">
-                                                    <rect key="frame" x="118" y="25" width="139" height="24"/>
+                                                    <rect key="frame" x="94" y="25" width="190" height="24"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="DEP-To-knS" firstAttribute="leading" secondItem="LwO-4n-3c2" secondAttribute="trailing" constant="32" id="2gt-33-sa8"/>
-                                                <constraint firstItem="LwO-4n-3c2" firstAttribute="leading" secondItem="rHG-RG-9xw" secondAttribute="leadingMargin" constant="8" id="aXt-Ly-Rw4"/>
-                                                <constraint firstItem="DEP-To-knS" firstAttribute="centerX" secondItem="rHG-RG-9xw" secondAttribute="centerX" id="jC3-Ps-XSo"/>
-                                                <constraint firstItem="LwO-4n-3c2" firstAttribute="top" secondItem="rHG-RG-9xw" secondAttribute="topMargin" constant="-7" id="qrt-pD-xKo"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="LwO-4n-3c2" secondAttribute="bottom" constant="-5" id="xHv-GD-AZ6"/>
-                                                <constraint firstItem="DEP-To-knS" firstAttribute="centerY" secondItem="rHG-RG-9xw" secondAttribute="centerY" id="ypy-lf-BPl"/>
+                                                <constraint firstItem="LwO-4n-3c2" firstAttribute="top" secondItem="rHG-RG-9xw" secondAttribute="topMargin" constant="-7" id="MgP-nw-PEq"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="LwO-4n-3c2" secondAttribute="bottom" constant="-5" id="Nlv-6X-cB4"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="DEP-To-knS" secondAttribute="trailing" constant="83" id="XMO-hk-ygd"/>
+                                                <constraint firstItem="DEP-To-knS" firstAttribute="centerY" secondItem="rHG-RG-9xw" secondAttribute="centerY" id="syf-FY-POA"/>
+                                                <constraint firstItem="LwO-4n-3c2" firstAttribute="leading" secondItem="rHG-RG-9xw" secondAttribute="leadingMargin" constant="8" id="wWf-cX-aJY"/>
+                                                <constraint firstItem="DEP-To-knS" firstAttribute="leading" secondItem="LwO-4n-3c2" secondAttribute="trailing" constant="8" symbolic="YES" id="zOO-40-fOy"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -2486,7 +2883,7 @@ This is where a how to page will go. But we will cross that bridge when we get t
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HwS-I6-18u" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1332" y="-5087"/>
+            <point key="canvasLocation" x="-1358" y="-5701"/>
         </scene>
         <!--Quick Look View Controller-->
         <scene sceneID="sji-Gs-v4h">
@@ -2521,7 +2918,7 @@ This is where a how to page will go. But we will cross that bridge when we get t
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q4t-8j-uat" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-74" y="-5087"/>
+            <point key="canvasLocation" x="-100" y="-5701"/>
         </scene>
     </scenes>
     <resources>
@@ -2551,6 +2948,6 @@ This is where a how to page will go. But we will cross that bridge when we get t
         <segue reference="P5r-Qz-pJA"/>
         <segue reference="fdS-hd-rPB"/>
         <segue reference="2qF-J1-6gm"/>
-        <segue reference="rcz-Ct-agN"/>
+        <segue reference="ybr-Fu-XFr"/>
     </inferredMetricsTieBreakers>
 </document>

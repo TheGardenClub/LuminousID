@@ -12,7 +12,7 @@ import FirebaseDatabase
 import FirebaseAuth
 
 
-class CyperaceaeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CyperaceaeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, SedgesFilterTableProtocol {
     
     @IBOutlet weak var cyperaceaeTable: UITableView!
     var myDict = [[String:AnyObject]]()
@@ -21,6 +21,10 @@ class CyperaceaeViewController: UIViewController, UITableViewDelegate, UITableVi
     var ref:FIRDatabaseReference?
     var row = 0
     var pressedFilters = false
+    var originalDict = [[String:AnyObject]]()
+    var originalSpeciesNames:[String] = []
+    var listOfAttributes:[String] = []
+    var listOfValues:[String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +39,8 @@ class CyperaceaeViewController: UIViewController, UITableViewDelegate, UITableVi
                 }
                 
             }
+            self.originalDict = self.myDict
+            self.originalSpeciesNames = self.speciesNames
             self.cyperaceaeTable.reloadData()
         })
         // Do any additional setup after loading the view.
@@ -50,7 +56,42 @@ class CyperaceaeViewController: UIViewController, UITableViewDelegate, UITableVi
         return speciesNames.count
     }
     
-    
+    func filtersWereSelected(filterList: FilterList){
+        var filterDict = [[String:AnyObject]]()
+        var filteredSpeciesNames:[String] = []
+        myDict = originalDict
+        speciesNames = originalSpeciesNames
+        var satisfiesFilter = true
+        listOfAttributes = filterList.attributes
+        listOfValues = filterList.values
+        print (listOfAttributes)
+        print (listOfValues)
+        var att = listOfAttributes[0]
+        var val = listOfValues[0]
+        for item in myDict{
+            for var i in 0...(listOfAttributes.count - 1){
+                att = listOfAttributes[i]
+                val = listOfValues[i]
+                if (item[att] as? String)?.lowercased().range(of: val) != nil {
+                    satisfiesFilter = true
+                }
+                else if val == "All"{
+                    satisfiesFilter = true
+                }
+                else{
+                    satisfiesFilter = false
+                    break
+                }
+            }
+            if satisfiesFilter == true{
+                filterDict.append(item)
+                filteredSpeciesNames.append(item["species_name"] as! String)
+            }
+        }
+        myDict = filterDict
+        speciesNames = filteredSpeciesNames
+        cyperaceaeTable.reloadData()
+    }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
@@ -88,6 +129,8 @@ class CyperaceaeViewController: UIViewController, UITableViewDelegate, UITableVi
         }
         else{
             let filtersVC = segue.destination as! SedgesFiltersViewController
+            filtersVC.delegate = self
+            filtersVC.filterDict = myDict
         }
         
     }
