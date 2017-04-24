@@ -16,7 +16,10 @@ class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     
     var myDict = [[String:AnyObject]]()
+    var originalDict = [[String:AnyObject]]()
     var speciesNames:[String] = []
+    
+    var originalSpeciesNames:[String] = []
     var handle:FIRDatabaseHandle?
     var ref:FIRDatabaseReference?
     var row = 0
@@ -38,12 +41,18 @@ class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableVi
                     self.speciesNames.append(item["species_name"] as! String)
                 }
             }
+            self.originalDict = self.myDict
+            self.originalSpeciesNames = self.speciesNames
             self.forbsTable.reloadData()
         })
         // Do any additional setup after loading the view.
     }
 
     func filtersWereSelected(filterList: FilterList){
+        var filterDict = [[String:AnyObject]]()
+        var filteredSpeciesNames:[String] = []
+        myDict = originalDict
+        speciesNames = originalSpeciesNames
         var satisfiesFilter = true
         listOfAttributes = filterList.attributes
         listOfValues = filterList.values
@@ -65,9 +74,13 @@ class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableVi
                 }
             }
             if satisfiesFilter == true{
-                print (item["species_name"] as! String)
+                filterDict.append(item)
+                filteredSpeciesNames.append(item["species_name"] as! String)
             }
         }
+        myDict = filterDict
+        speciesNames = filteredSpeciesNames
+        forbsTable.reloadData()
     }
     
     

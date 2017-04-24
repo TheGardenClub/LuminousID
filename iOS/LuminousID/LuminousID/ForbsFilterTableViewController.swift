@@ -16,8 +16,8 @@ class ForbsFilterTableViewController: UIViewController, UITableViewDelegate, UIT
     
     var filterDict = [[String:AnyObject]]()
     var row = 0
-    var filtersList = ["Inflorescence", "Petal Number", "Habitat", "Flower Color", "Flower Shape", "Leaf Shape", "Leaf Arrangement"]
-    var filterFormattedList = ["inflorescence", "petal_number", "habitat", "flower_color", "flower_shape", "leaf_shape", "leaf_arrangement"]
+    var filtersList = ["Family", "Flower Color", "Petal Number", "Flower Shape", "Leaf Arrangement", "Leaf Shape", "Habitat"]
+    var filterFormattedList = ["family", "flower_color", "petal_number", "flower_shape", "leaf_arrangement", "leaf_shape", "habitat"]
     var selectionList = ["All", "All", "All", "All", "All", "All", "All"]
     var filterAttribute = ""
     var filterValue = ""
@@ -57,25 +57,25 @@ class ForbsFilterTableViewController: UIViewController, UITableViewDelegate, UIT
     func filterWasSelected(filter: FilterElement){
         filterAttribute = filter.attribute
         filterValue = filter.value
-        if filterAttribute == "Inflorescence"{
+        if filterAttribute == "Family"{
             selectionList[0] = filterValue
         }
-        else if filterAttribute == "Petal Number"{
+        else if filterAttribute == "Flower Color"{
             selectionList[1] = filterValue
         }
-        else if filterAttribute == "Habitat"{
+        else if filterAttribute == "Petal Number"{
             selectionList[2] = filterValue
         }
-        else if filterAttribute == "Flower Color"{
+        else if filterAttribute == "Flower Shape"{
             selectionList[3] = filterValue
         }
-        else if filterAttribute == "Flower Shape"{
+        else if filterAttribute == "Leaf Arrangement"{
             selectionList[4] = filterValue
         }
         else if filterAttribute == "Leaf Shape"{
             selectionList[5] = filterValue
         }
-        else if filterAttribute == "Leaf Arrangement"{
+        else if filterAttribute == "Habitat"{
             selectionList[6] = filterValue
         }
         forbsFilterTable.reloadData()
