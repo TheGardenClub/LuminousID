@@ -62,7 +62,9 @@ class JuncaceaeViewController: UIViewController, UITableViewDelegate, UITableVie
             cell.speciesPhoto.image = UIImage(named: "Images/" + plantCodeString! + "_1.jpg")
         }
         else{
-            print("End of Table Error Handled.")
+            print("Table Reloaded.")
+            juncaceaeTable.reloadData()
+            
         }
         return (cell)
     }

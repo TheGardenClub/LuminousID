@@ -20,6 +20,7 @@ class CyperaceaeViewController: UIViewController, UITableViewDelegate, UITableVi
     var handle:FIRDatabaseHandle?
     var ref:FIRDatabaseReference?
     var row = 0
+    var pressedFilters = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,20 +63,32 @@ class CyperaceaeViewController: UIViewController, UITableViewDelegate, UITableVi
             cell.speciesPhoto.image = UIImage(named: "Images/" + plantCodeString! + "_1.jpg")
         }
         else{
-            print("End of Table Error Handled.")
+            print("Table Reloaded.")
+            cyperaceaeTable.reloadData()
+            
         }
         return (cell)
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        pressedFilters = false
         row = indexPath.row
         tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "toSpeciesFromCyperaceae", sender: speciesNames[indexPath.row])
     }
     
+    @IBAction func FilterButton(_ sender: Any) {
+        pressedFilters = true
+        performSegue(withIdentifier: "toSedgesFilters", sender: myDict)
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let speciesInfoVC = segue.destination as! SpeciesInfoViewController
-        speciesInfoVC.speciesDict = [myDict[row]]
+        if pressedFilters == false{
+            let speciesInfoVC = segue.destination as! SpeciesInfoViewController
+            speciesInfoVC.speciesDict = [myDict[row]]
+        }
+        else{
+            let filtersVC = segue.destination as! SedgesFiltersViewController
+        }
         
     }
     /*

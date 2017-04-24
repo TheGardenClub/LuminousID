@@ -19,6 +19,16 @@
 		A40CD2331EAC08FC007EA602 /* ForbsSpecificCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40CD2321EAC08FC007EA602 /* ForbsSpecificCellTableViewCell.swift */; };
 		A40CD2351EAC2FAF007EA602 /* FilterElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40CD2341EAC2FAF007EA602 /* FilterElement.swift */; };
 		A40CD2371EAC4290007EA602 /* FilterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40CD2361EAC4290007EA602 /* FilterList.swift */; };
+		A41DBB281EAE862F00DF4887 /* SedgesFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DBB271EAE862F00DF4887 /* SedgesFiltersViewController.swift */; };
+		A41DBB2A1EAE864100DF4887 /* SedgesSpecificFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DBB291EAE864100DF4887 /* SedgesSpecificFiltersViewController.swift */; };
+		A41DBB2C1EAE88DC00DF4887 /* RushesFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DBB2B1EAE88DC00DF4887 /* RushesFiltersViewController.swift */; };
+		A41DBB2E1EAE88F300DF4887 /* RushesSpecificFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DBB2D1EAE88F300DF4887 /* RushesSpecificFiltersViewController.swift */; };
+		A41DBB311EAE896000DF4887 /* GrassesFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DBB301EAE896000DF4887 /* GrassesFiltersViewController.swift */; };
+		A41DBB331EAE897400DF4887 /* GrassesSpecificFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DBB321EAE897400DF4887 /* GrassesSpecificFiltersViewController.swift */; };
+		A41DBB361EAE89C100DF4887 /* NeedleFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DBB351EAE89C100DF4887 /* NeedleFiltersViewController.swift */; };
+		A41DBB381EAE89D400DF4887 /* NeedleSpecificFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DBB371EAE89D400DF4887 /* NeedleSpecificFiltersViewController.swift */; };
+		A41DBB3B1EAE8A0F00DF4887 /* DeciduousFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DBB3A1EAE8A0F00DF4887 /* DeciduousFiltersViewController.swift */; };
+		A41DBB3D1EAE8A1E00DF4887 /* DeciduousSpecificFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DBB3C1EAE8A1E00DF4887 /* DeciduousSpecificFiltersViewController.swift */; };
 		A42260071E9C109E0010FEC5 /* GlossaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42260061E9C109E0010FEC5 /* GlossaryTableViewCell.swift */; };
 		A427FB4A1E34089000011350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427FB491E34089000011350 /* AppDelegate.swift */; };
 		A427FB4C1E34089000011350 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427FB4B1E34089000011350 /* ViewController.swift */; };
@@ -27,7 +37,6 @@
 		A427FB541E34089000011350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A427FB521E34089000011350 /* LaunchScreen.storyboard */; };
 		A427FB5F1E34089000011350 /* LuminousIDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427FB5E1E34089000011350 /* LuminousIDTests.swift */; };
 		A427FB6A1E34089000011350 /* LuminousIDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427FB691E34089000011350 /* LuminousIDUITests.swift */; };
-		A44B0E9F1EA415F700025A4D /* ForbsFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44B0E9E1EA415F700025A4D /* ForbsFilterViewController.swift */; };
 		A45861CA1E61077800DAE2FC /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45861C91E61077800DAE2FC /* CreateUserViewController.swift */; };
 		A46FF7691E6507C30001455E /* WoodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46FF7681E6507C30001455E /* WoodyViewController.swift */; };
 		A46FF76B1E6508910001455E /* DeciduousViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46FF76A1E6508910001455E /* DeciduousViewController.swift */; };
@@ -86,6 +95,16 @@
 		A40CD2321EAC08FC007EA602 /* ForbsSpecificCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForbsSpecificCellTableViewCell.swift; sourceTree = "<group>"; };
 		A40CD2341EAC2FAF007EA602 /* FilterElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterElement.swift; sourceTree = "<group>"; };
 		A40CD2361EAC4290007EA602 /* FilterList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterList.swift; sourceTree = "<group>"; };
+		A41DBB271EAE862F00DF4887 /* SedgesFiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SedgesFiltersViewController.swift; sourceTree = "<group>"; };
+		A41DBB291EAE864100DF4887 /* SedgesSpecificFiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SedgesSpecificFiltersViewController.swift; sourceTree = "<group>"; };
+		A41DBB2B1EAE88DC00DF4887 /* RushesFiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RushesFiltersViewController.swift; sourceTree = "<group>"; };
+		A41DBB2D1EAE88F300DF4887 /* RushesSpecificFiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RushesSpecificFiltersViewController.swift; sourceTree = "<group>"; };
+		A41DBB301EAE896000DF4887 /* GrassesFiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrassesFiltersViewController.swift; sourceTree = "<group>"; };
+		A41DBB321EAE897400DF4887 /* GrassesSpecificFiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrassesSpecificFiltersViewController.swift; sourceTree = "<group>"; };
+		A41DBB351EAE89C100DF4887 /* NeedleFiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleFiltersViewController.swift; sourceTree = "<group>"; };
+		A41DBB371EAE89D400DF4887 /* NeedleSpecificFiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleSpecificFiltersViewController.swift; sourceTree = "<group>"; };
+		A41DBB3A1EAE8A0F00DF4887 /* DeciduousFiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeciduousFiltersViewController.swift; sourceTree = "<group>"; };
+		A41DBB3C1EAE8A1E00DF4887 /* DeciduousSpecificFiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeciduousSpecificFiltersViewController.swift; sourceTree = "<group>"; };
 		A42260061E9C109E0010FEC5 /* GlossaryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlossaryTableViewCell.swift; sourceTree = "<group>"; };
 		A427FB461E34089000011350 /* LuminousID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuminousID.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A427FB491E34089000011350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,7 +119,6 @@
 		A427FB651E34089000011350 /* LuminousIDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuminousIDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A427FB691E34089000011350 /* LuminousIDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminousIDUITests.swift; sourceTree = "<group>"; };
 		A427FB6B1E34089000011350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A44B0E9E1EA415F700025A4D /* ForbsFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForbsFilterViewController.swift; sourceTree = "<group>"; };
 		A45861C91E61077800DAE2FC /* CreateUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		A46FF7681E6507C30001455E /* WoodyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoodyViewController.swift; sourceTree = "<group>"; };
 		A46FF76A1E6508910001455E /* DeciduousViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeciduousViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +190,117 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A41DBB211EAE81CB00DF4887 /* Forbs */ = {
+			isa = PBXGroup;
+			children = (
+				A4FCEE721EA983DD00618232 /* ForbsFilterTableViewController.swift */,
+				A40CD2301EAC0891007EA602 /* ForbsSpecificFiltersViewController.swift */,
+				A49CAD0C1E64B7AC006CC4DE /* ForbsTableViewController.swift */,
+			);
+			name = Forbs;
+			sourceTree = "<group>";
+		};
+		A41DBB221EAE84A000DF4887 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A4DAD53E1E8065BF000F8073 /* FieldGuideTableViewCell.swift */,
+				A40CD22E1EAC065F007EA602 /* FilterTableViewCell.swift */,
+				A40CD2361EAC4290007EA602 /* FilterList.swift */,
+				A40CD2341EAC2FAF007EA602 /* FilterElement.swift */,
+				A40CD2321EAC08FC007EA602 /* ForbsSpecificCellTableViewCell.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		A41DBB231EAE84EB00DF4887 /* Glossary */ = {
+			isa = PBXGroup;
+			children = (
+				A4E04E501E9EDD0B00F50CFC /* GlossaryInfoViewController.swift */,
+				A4F1797B1E9C23EA00F7E11D /* ForbsGlossaryViewController.swift */,
+				A4F1797D1E9C23FB00F7E11D /* GramsGlossaryViewController.swift */,
+				A42260061E9C109E0010FEC5 /* GlossaryTableViewCell.swift */,
+			);
+			name = Glossary;
+			sourceTree = "<group>";
+		};
+		A41DBB241EAE854900DF4887 /* Sedges (Cyperaceae) */ = {
+			isa = PBXGroup;
+			children = (
+				A4E745151E6504F30051058B /* CyperaceaeViewController.swift */,
+				A41DBB271EAE862F00DF4887 /* SedgesFiltersViewController.swift */,
+				A41DBB291EAE864100DF4887 /* SedgesSpecificFiltersViewController.swift */,
+			);
+			name = "Sedges (Cyperaceae)";
+			sourceTree = "<group>";
+		};
+		A41DBB2F1EAE891500DF4887 /* Rushes (Juncaceae) */ = {
+			isa = PBXGroup;
+			children = (
+				A49CAD121E64F358006CC4DE /* JuncaceaeViewController.swift */,
+				A41DBB2B1EAE88DC00DF4887 /* RushesFiltersViewController.swift */,
+				A41DBB2D1EAE88F300DF4887 /* RushesSpecificFiltersViewController.swift */,
+			);
+			name = "Rushes (Juncaceae)";
+			sourceTree = "<group>";
+		};
+		A41DBB341EAE898300DF4887 /* Grasses (Poaceae) */ = {
+			isa = PBXGroup;
+			children = (
+				A49CAD141E6501AF006CC4DE /* PoaceaeViewController.swift */,
+				A41DBB301EAE896000DF4887 /* GrassesFiltersViewController.swift */,
+				A41DBB321EAE897400DF4887 /* GrassesSpecificFiltersViewController.swift */,
+			);
+			name = "Grasses (Poaceae)";
+			sourceTree = "<group>";
+		};
+		A41DBB391EAE89DD00DF4887 /* Needle */ = {
+			isa = PBXGroup;
+			children = (
+				A41DBB351EAE89C100DF4887 /* NeedleFiltersViewController.swift */,
+				A41DBB371EAE89D400DF4887 /* NeedleSpecificFiltersViewController.swift */,
+				A46FF76C1E65089D0001455E /* NeedleViewController.swift */,
+			);
+			name = Needle;
+			sourceTree = "<group>";
+		};
+		A41DBB3E1EAE8A2600DF4887 /* Deciduous */ = {
+			isa = PBXGroup;
+			children = (
+				A46FF76A1E6508910001455E /* DeciduousViewController.swift */,
+				A41DBB3A1EAE8A0F00DF4887 /* DeciduousFiltersViewController.swift */,
+				A41DBB3C1EAE8A1E00DF4887 /* DeciduousSpecificFiltersViewController.swift */,
+			);
+			name = Deciduous;
+			sourceTree = "<group>";
+		};
+		A41DBB3F1EAE8A4E00DF4887 /* Add Observation and Maps */ = {
+			isa = PBXGroup;
+			children = (
+				A490EAED1E842A0C00CFA2C6 /* AddObservationViewController.swift */,
+				884F722C1E96AC5200985F5C /* QuickLookViewController.swift */,
+				8828E9181EA8571B00285AEE /* MapsViewController.swift */,
+			);
+			name = "Add Observation and Maps";
+			sourceTree = "<group>";
+		};
+		A41DBB401EAE8AB200DF4887 /* Field Guide Exclusives */ = {
+			isa = PBXGroup;
+			children = (
+				A49CAD0E1E64EABE006CC4DE /* GraminoidsViewController.swift */,
+				A46FF7681E6507C30001455E /* WoodyViewController.swift */,
+			);
+			name = "Field Guide Exclusives";
+			sourceTree = "<group>";
+		};
+		A41DBB411EAE8B0B00DF4887 /* Create Account and Log In */ = {
+			isa = PBXGroup;
+			children = (
+				A45861C91E61077800DAE2FC /* CreateUserViewController.swift */,
+				A4C3C1F91E610CFE003FC85A /* LogInViewController.swift */,
+			);
+			name = "Create Account and Log In";
+			sourceTree = "<group>";
+		};
 		A427FB3D1E34089000011350 = {
 			isa = PBXGroup;
 			children = (
@@ -198,46 +327,32 @@
 			isa = PBXGroup;
 			children = (
 				A427FB491E34089000011350 /* AppDelegate.swift */,
-				A4F1797B1E9C23EA00F7E11D /* ForbsGlossaryViewController.swift */,
-				A4E04E501E9EDD0B00F50CFC /* GlossaryInfoViewController.swift */,
-				A44B0E9E1EA415F700025A4D /* ForbsFilterViewController.swift */,
-				A4FCEE721EA983DD00618232 /* ForbsFilterTableViewController.swift */,
-				A40CD22E1EAC065F007EA602 /* FilterTableViewCell.swift */,
-				A40CD2361EAC4290007EA602 /* FilterList.swift */,
-				A4F1797D1E9C23FB00F7E11D /* GramsGlossaryViewController.swift */,
 				A427FB4B1E34089000011350 /* ViewController.swift */,
 				A427FB4D1E34089000011350 /* Main.storyboard */,
-				A40CD2321EAC08FC007EA602 /* ForbsSpecificCellTableViewCell.swift */,
-				A40CD2301EAC0891007EA602 /* ForbsSpecificFiltersViewController.swift */,
-				A40CD2341EAC2FAF007EA602 /* FilterElement.swift */,
-				A42260061E9C109E0010FEC5 /* GlossaryTableViewCell.swift */,
 				A427FB501E34089000011350 /* Assets.xcassets */,
-				A4F179811E9C25B800F7E11D /* grams_glossary_small_keyed */,
-				A4F1797F1E9C259500F7E11D /* forbs_glossary_small_keyed */,
-				A4E678C71E9322CA00E804E4 /* Images */,
 				A427FB521E34089000011350 /* LaunchScreen.storyboard */,
+				A407C84C1E626069001CA327 /* MainMenuViewController.swift */,
+				A4E6ABBF1E6DFA5100EBE83C /* SpeciesInfoViewController.swift */,
+				A4DF25D31E81C6150095AFD8 /* SettingsViewController.swift */,
+				A41DBB411EAE8B0B00DF4887 /* Create Account and Log In */,
+				A41DBB221EAE84A000DF4887 /* Shared */,
+				A41DBB231EAE84EB00DF4887 /* Glossary */,
+				A41DBB211EAE81CB00DF4887 /* Forbs */,
+				A41DBB391EAE89DD00DF4887 /* Needle */,
+				A41DBB3E1EAE8A2600DF4887 /* Deciduous */,
+				A41DBB341EAE898300DF4887 /* Grasses (Poaceae) */,
+				A41DBB2F1EAE891500DF4887 /* Rushes (Juncaceae) */,
+				A41DBB241EAE854900DF4887 /* Sedges (Cyperaceae) */,
+				A41DBB3F1EAE8A4E00DF4887 /* Add Observation and Maps */,
+				A41DBB401EAE8AB200DF4887 /* Field Guide Exclusives */,
+				A4E6ABC11E6E14D700EBE83C /* sample_photo.jpg */,
+				A46FF76E1E65129F0001455E /* Snippet.ttf */,
 				A4B2DF441E60F4B9002F14D5 /* GoogleService-Info.plist */,
 				A427FB551E34089000011350 /* Info.plist */,
 				8828E91B1EA8689600285AEE /* InfoPlist.strings */,
-				A45861C91E61077800DAE2FC /* CreateUserViewController.swift */,
-				A4C3C1F91E610CFE003FC85A /* LogInViewController.swift */,
-				A407C84C1E626069001CA327 /* MainMenuViewController.swift */,
-				A49CAD0C1E64B7AC006CC4DE /* ForbsTableViewController.swift */,
-				A49CAD0E1E64EABE006CC4DE /* GraminoidsViewController.swift */,
-				A49CAD121E64F358006CC4DE /* JuncaceaeViewController.swift */,
-				A49CAD141E6501AF006CC4DE /* PoaceaeViewController.swift */,
-				A4E745151E6504F30051058B /* CyperaceaeViewController.swift */,
-				A46FF7681E6507C30001455E /* WoodyViewController.swift */,
-				A46FF76A1E6508910001455E /* DeciduousViewController.swift */,
-				A46FF76C1E65089D0001455E /* NeedleViewController.swift */,
-				A4E6ABBF1E6DFA5100EBE83C /* SpeciesInfoViewController.swift */,
-				A46FF76E1E65129F0001455E /* Snippet.ttf */,
-				A4E6ABC11E6E14D700EBE83C /* sample_photo.jpg */,
-				A4DAD53E1E8065BF000F8073 /* FieldGuideTableViewCell.swift */,
-				A4DF25D31E81C6150095AFD8 /* SettingsViewController.swift */,
-				A490EAED1E842A0C00CFA2C6 /* AddObservationViewController.swift */,
-				884F722C1E96AC5200985F5C /* QuickLookViewController.swift */,
-				8828E9181EA8571B00285AEE /* MapsViewController.swift */,
+				A4F179811E9C25B800F7E11D /* grams_glossary_small_keyed */,
+				A4F1797F1E9C259500F7E11D /* forbs_glossary_small_keyed */,
+				A4E678C71E9322CA00E804E4 /* Images */,
 			);
 			path = LuminousID;
 			sourceTree = "<group>";
@@ -559,18 +674,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41DBB2A1EAE864100DF4887 /* SedgesSpecificFiltersViewController.swift in Sources */,
+				A41DBB331EAE897400DF4887 /* GrassesSpecificFiltersViewController.swift in Sources */,
 				A49CAD131E64F358006CC4DE /* JuncaceaeViewController.swift in Sources */,
 				A4F1797C1E9C23EA00F7E11D /* ForbsGlossaryViewController.swift in Sources */,
 				A4FCEE731EA983DD00618232 /* ForbsFilterTableViewController.swift in Sources */,
-				A44B0E9F1EA415F700025A4D /* ForbsFilterViewController.swift in Sources */,
 				8828E9191EA8571B00285AEE /* MapsViewController.swift in Sources */,
 				A49CAD0F1E64EABE006CC4DE /* GraminoidsViewController.swift in Sources */,
 				A40CD2311EAC0891007EA602 /* ForbsSpecificFiltersViewController.swift in Sources */,
+				A41DBB3B1EAE8A0F00DF4887 /* DeciduousFiltersViewController.swift in Sources */,
 				A4E745161E6504F30051058B /* CyperaceaeViewController.swift in Sources */,
 				A40CD2331EAC08FC007EA602 /* ForbsSpecificCellTableViewCell.swift in Sources */,
 				A4C3C1FA1E610CFE003FC85A /* LogInViewController.swift in Sources */,
+				A41DBB2C1EAE88DC00DF4887 /* RushesFiltersViewController.swift in Sources */,
 				A46FF76B1E6508910001455E /* DeciduousViewController.swift in Sources */,
 				A40CD2371EAC4290007EA602 /* FilterList.swift in Sources */,
+				A41DBB311EAE896000DF4887 /* GrassesFiltersViewController.swift in Sources */,
+				A41DBB3D1EAE8A1E00DF4887 /* DeciduousSpecificFiltersViewController.swift in Sources */,
+				A41DBB381EAE89D400DF4887 /* NeedleSpecificFiltersViewController.swift in Sources */,
+				A41DBB361EAE89C100DF4887 /* NeedleFiltersViewController.swift in Sources */,
 				A42260071E9C109E0010FEC5 /* GlossaryTableViewCell.swift in Sources */,
 				884F722D1E96AC5200985F5C /* QuickLookViewController.swift in Sources */,
 				A49CAD0D1E64B7AC006CC4DE /* ForbsTableViewController.swift in Sources */,
@@ -584,7 +706,9 @@
 				A490EAEE1E842A0C00CFA2C6 /* AddObservationViewController.swift in Sources */,
 				A46FF76D1E65089D0001455E /* NeedleViewController.swift in Sources */,
 				A4E04E511E9EDD0B00F50CFC /* GlossaryInfoViewController.swift in Sources */,
+				A41DBB2E1EAE88F300DF4887 /* RushesSpecificFiltersViewController.swift in Sources */,
 				A46FF7691E6507C30001455E /* WoodyViewController.swift in Sources */,
+				A41DBB281EAE862F00DF4887 /* SedgesFiltersViewController.swift in Sources */,
 				A45861CA1E61077800DAE2FC /* CreateUserViewController.swift in Sources */,
 				A4DAD53F1E8065BF000F8073 /* FieldGuideTableViewCell.swift in Sources */,
 				A4E6ABC01E6DFA5100EBE83C /* SpeciesInfoViewController.swift in Sources */,

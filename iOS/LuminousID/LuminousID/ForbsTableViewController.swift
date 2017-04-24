@@ -116,7 +116,9 @@ class ForbsTableViewController: UIViewController, UITableViewDelegate, UITableVi
             cell.speciesPhoto.image = UIImage(named: "Images/" + plantCodeString! + "_1.jpg")
         }
         else{
-            print("End of Table Error Handled.")
+            print("Table Reloaded.")
+            forbsTable.reloadData()
+            
         }
         return (cell)
     }

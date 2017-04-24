@@ -60,7 +60,9 @@ class DeciduousViewController: UIViewController, UITableViewDelegate, UITableVie
             cell.speciesPhoto.image = UIImage(named: "Images/" + plantCodeString! + ".jpg")
         }
         else{
-            print("End of Table Error Handled.")
+            print("Table Reloaded.")
+            deciduousTable.reloadData()
+            
         }
         return (cell)
     }

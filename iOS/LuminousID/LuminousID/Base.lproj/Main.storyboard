@@ -387,6 +387,201 @@
             </objects>
             <point key="canvasLocation" x="-3858.4000000000001" y="37.331334332833585"/>
         </scene>
+        <!--Sedges Specific Filters View Controller-->
+        <scene sceneID="cTE-3k-XYZ">
+            <objects>
+                <viewController id="tNk-rk-w0i" customClass="SedgesSpecificFiltersViewController" customModule="LuminousID" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I8f-Td-5rI"/>
+                        <viewControllerLayoutGuide type="bottom" id="GOl-bA-saK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zt6-hJ-ydJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r8r-IQ-Cww" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3788" y="-4209"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="53c-uK-9gY">
+            <objects>
+                <viewController id="4eK-Zj-nvd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kmo-zJ-ACe"/>
+                        <viewControllerLayoutGuide type="bottom" id="tQL-D5-RgE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j2p-1z-8jB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bTy-sm-e10" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2559" y="-4209"/>
+        </scene>
+        <!--Sedges Filters View Controller-->
+        <scene sceneID="zjD-O2-kj1">
+            <objects>
+                <viewController id="Adv-Tg-Zlz" customClass="SedgesFiltersViewController" customModule="LuminousID" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oos-9R-FH4"/>
+                        <viewControllerLayoutGuide type="bottom" id="Eya-ZL-RbA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YUg-Ig-GIV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="tNk-rk-w0i" kind="show" identifier="toSedgesSpecificFilters" id="Led-I6-yGc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BzG-Z7-duB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3788" y="-3471"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fKq-El-6gn">
+            <objects>
+                <viewController id="oCy-2y-fcR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nQQ-iT-sjF"/>
+                        <viewControllerLayoutGuide type="bottom" id="g1Q-q3-QXm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Srf-zv-L6s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="4eK-Zj-nvd" kind="show" identifier="toRushesSpecificFilters" id="HsF-kI-5zj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ve6-gU-jDY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2559" y="-3471"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AC9-QA-yiy">
+            <objects>
+                <viewController id="fgh-Ea-AxY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8BG-GZ-8UD"/>
+                        <viewControllerLayoutGuide type="bottom" id="quj-GC-hbX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FZV-Rs-OK0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="Xy7-bI-392" kind="show" identifier="toGrassesSpecificFilters" id="hLX-XP-ZVw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vk7-g0-fgq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1332" y="-3471"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BZZ-g3-bG2">
+            <objects>
+                <viewController id="qic-86-nKZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yzD-qx-8MG"/>
+                        <viewControllerLayoutGuide type="bottom" id="YE2-q2-3fs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6HI-q8-ftS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kdV-yZ-JQR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="-4209"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HnM-Co-1cr">
+            <objects>
+                <viewController id="xUi-lt-0xw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vGS-aW-fRW"/>
+                        <viewControllerLayoutGuide type="bottom" id="xAU-D5-w53"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FKr-Zt-EtX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RgS-zC-lCd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1644" y="-4209"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kAJ-Hw-GzX">
+            <objects>
+                <viewController id="TNP-Ih-1Eb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1BC-B5-4JV"/>
+                        <viewControllerLayoutGuide type="bottom" id="App-0i-W9c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Irh-zD-B4E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="qic-86-nKZ" kind="show" identifier="toDeciduousSpecificFilters" id="wMH-qP-UJa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qDx-2e-SR5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="-3472"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vaZ-kk-EgW">
+            <objects>
+                <viewController id="R2X-pP-5H6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zdk-ZK-55j"/>
+                        <viewControllerLayoutGuide type="bottom" id="PFa-lV-hsY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0My-I5-Rwm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="xUi-lt-0xw" kind="show" identifier="toNeedleSpecificFilters" id="h3b-88-o4L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h4y-9h-ElC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1644" y="-3473"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WNR-QS-WzP">
+            <objects>
+                <viewController id="Xy7-bI-392" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WuG-7Q-VM8"/>
+                        <viewControllerLayoutGuide type="bottom" id="y5H-FU-hcg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6pO-96-guv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iGX-J3-UjE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1332" y="-4209"/>
+        </scene>
         <!--Sedges-->
         <scene sceneID="oau-iS-jS7">
             <objects>
@@ -453,11 +648,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sedges" id="mcq-Bw-lUa">
-                        <barButtonItem key="rightBarButtonItem" title="Filters" id="hS3-0s-dRo"/>
+                        <barButtonItem key="rightBarButtonItem" title="Filters" id="hS3-0s-dRo">
+                            <connections>
+                                <action selector="FilterButton:" destination="8F2-d9-nbo" id="E31-N9-hH3"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="cyperaceaeTable" destination="Ddv-NT-vYv" id="jLY-RV-A5O"/>
                         <segue destination="jcs-6x-Zpk" kind="show" identifier="toSpeciesFromCyperaceae" id="nIL-yk-tW3"/>
+                        <segue destination="Adv-Tg-Zlz" kind="show" identifier="toSedgesFilters" id="oEK-kx-G1O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uoS-Dm-Z6r" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -774,6 +974,7 @@
                     <connections>
                         <outlet property="juncaceaeTable" destination="6G1-P7-7PB" id="did-O1-koe"/>
                         <segue destination="jcs-6x-Zpk" kind="show" identifier="toSpeciesFromJuncaceae" id="rcz-Ct-agN"/>
+                        <segue destination="oCy-2y-fcR" kind="show" identifier="toRushesFilters" id="sQo-Wm-d93"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fIO-us-Tsd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -851,6 +1052,7 @@
                     <connections>
                         <outlet property="poaceaeTable" destination="qD7-q2-FDI" id="gRs-7Z-6kQ"/>
                         <segue destination="jcs-6x-Zpk" kind="show" identifier="toSpeciesFromPoaceae" id="ybr-Fu-XFr"/>
+                        <segue destination="fgh-Ea-AxY" kind="show" identifier="toGrassesFilters" id="fTc-qa-RW0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tVX-gj-dB0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -928,6 +1130,7 @@
                     <connections>
                         <outlet property="deciduousTable" destination="pUq-4U-ru9" id="NZL-bL-kWO"/>
                         <segue destination="jcs-6x-Zpk" kind="show" identifier="toSpeciesFromDeciduous" id="VZf-0b-36f"/>
+                        <segue destination="TNP-Ih-1Eb" kind="show" identifier="toDeciduousFilters" id="Fkg-BP-Onm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FoH-hQ-aU2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1005,6 +1208,7 @@
                     <connections>
                         <outlet property="needleTable" destination="njQ-yk-Pcn" id="MXF-2n-cR2"/>
                         <segue destination="jcs-6x-Zpk" kind="show" identifier="toSpeciesFromNeedle" id="Kue-U9-UqJ"/>
+                        <segue destination="R2X-pP-5H6" kind="show" identifier="toNeedleFilters" id="1kM-g2-bJE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zhc-Lh-bMy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2346,7 +2550,7 @@ This is where a how to page will go. But we will cross that bridge when we get t
     <inferredMetricsTieBreakers>
         <segue reference="P5r-Qz-pJA"/>
         <segue reference="fdS-hd-rPB"/>
-        <segue reference="rcz-Ct-agN"/>
         <segue reference="2qF-J1-6gm"/>
+        <segue reference="rcz-Ct-agN"/>
     </inferredMetricsTieBreakers>
 </document>

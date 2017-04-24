@@ -62,7 +62,9 @@ class PoaceaeViewController: UIViewController, UITableViewDelegate, UITableViewD
             cell.speciesPhoto.image = UIImage(named: "Images/" + plantCodeString! + "_1.jpg")
         }
         else{
-            print("End of Table Error Handled.")
+            print("Table Reloaded.")
+            poaceaeTable.reloadData()
+            
         }
         return (cell)
     }

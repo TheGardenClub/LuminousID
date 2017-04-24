@@ -62,7 +62,9 @@ class NeedleViewController: UIViewController, UITableViewDelegate, UITableViewDa
             cell.speciesPhoto.image = UIImage(named: "Images/" + plantCodeString! + ".jpg")
         }
         else{
-            print("End of Table Error Handled.")
+            print("Table Reloaded.")
+            needleTable.reloadData()
+            
         }
         return (cell)
     }
