@@ -44,6 +44,11 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>SimpleExif.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -57,7 +62,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>8851669425804E61E6DC3E50587CBAC5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B4CC71B3394A4822693797551BE96CAE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA735311AF8B0CE2FD2B2BD5B24EF18A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
