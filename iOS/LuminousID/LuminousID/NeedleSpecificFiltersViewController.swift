@@ -28,16 +28,19 @@ class NeedleSpecificFiltersViewController: UIViewController, UITableViewDataSour
         self.navBar.title = attributeName
         
         if attributeName == "Family"{
-            attributeFilters = ["All", "betulaceae", "caprifolaceae", "ericaceae", "fabaceae", "grossulariaceae", "rosaceae", "salicaceae"]
+            attributeFilters = ["All", "cupressaceae", "pinaceae"]
         }
-        else if attributeName == "Leaf Arrangement"{
-            attributeFilters = ["All", "alternate", "opposite"]
+        else if attributeName == "Needle Arrangement"{
+            attributeFilters = ["All", "fascicles", "solitary"]
         }
-        else if attributeName == "Leaf Margin"{
-            attributeFilters = ["All", "entire", "lobed", "toothed", "toothed/lobed", "undulate"]
+        else if attributeName == "Needles Per Fascicle"{
+            attributeFilters = ["All", "2", "3", "5"]
         }
-        else if attributeName == "Leaf Shape"{
-            attributeFilters = ["All", "dissected", "oblong", "round"]
+        else if attributeName == "Needle Apex"{
+            attributeFilters = ["All", "acute", "blunt"]
+        }
+        else if attributeName == "Cone"{
+            attributeFilters = ["All", "fused scales", "soft scales, upward growing", "soft scales, downward hanging", "prickle, hard scales, downward hanging", "hard scales, downward hanging"]
         }
         super.viewDidLoad()
         

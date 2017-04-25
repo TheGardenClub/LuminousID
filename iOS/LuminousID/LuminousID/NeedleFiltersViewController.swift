@@ -16,9 +16,9 @@ class NeedleFiltersViewController: UIViewController, UITableViewDelegate, UITabl
     
     var filterDict = [[String:AnyObject]]()
     var row = 0
-    var filtersList = ["Family","Leaf Arrangement", "Leaf Margin", "Leaf Shape"]
-    var filterFormattedList = ["family_name", "leaf_arrangement", "leaf_margin", "leaf_shape"]
-    var selectionList = ["All", "All", "All", "All"]
+    var filtersList = ["Family", "Needle Arrangement", "Needle Per Fascicle", "Needle Apex", "Cone"]
+    var filterFormattedList = ["family_name", "needle_arrangement", "needle_per_fascicle", "needle_apex", "cone"]
+    var selectionList = ["All", "All", "All", "All", "All"]
     var filterAttribute = ""
     var filterValue = ""
     
@@ -59,14 +59,17 @@ class NeedleFiltersViewController: UIViewController, UITableViewDelegate, UITabl
         if filterAttribute == "Family"{
             selectionList[0] = filterValue
         }
-        else if filterAttribute == "Leaf Arrangement"{
+        else if filterAttribute == "Needle Arrangement"{
             selectionList[1] = filterValue
         }
-        else if filterAttribute == "Leaf Margin"{
+        else if filterAttribute == "Needles Per Fascicle"{
             selectionList[2] = filterValue
         }
-        else if filterAttribute == "Leaf Shape"{
+        else if filterAttribute == "Needle Apex"{
             selectionList[3] = filterValue
+        }
+        else if filterAttribute == "Cone"{
+            selectionList[4] = filterValue
         }
         needleFilterTable.reloadData()
     }
