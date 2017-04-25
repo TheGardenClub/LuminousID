@@ -1,0 +1,6 @@
+framework module SimpleExif {
+  umbrella header "SimpleExif-umbrella.h"
+
+  export *
+  module * { export * }
+}

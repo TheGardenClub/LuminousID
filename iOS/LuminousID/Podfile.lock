@@ -34,12 +34,14 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.8)
+  - SimpleExif (0.0.1)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - GeoFire (from `https://github.com/firebase/geofire-objc.git`)
+  - SimpleExif
 
 EXTERNAL SOURCES:
   GeoFire:
@@ -60,7 +62,8 @@ SPEC CHECKSUMS:
   GeoFire: ef73103b88eb026c27212c40ea16757d6ad362ea
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
+  SimpleExif: 61ba6dce666641dc4b925d9d26a2694e68ebbf4b
 
-PODFILE CHECKSUM: cdf3841862d32673cdc7110330be4077c4a19f35
+PODFILE CHECKSUM: 64d64756f04101fc0656bcd5da405354418de4b8
 
 COCOAPODS: 1.2.1
