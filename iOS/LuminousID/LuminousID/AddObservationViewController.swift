@@ -340,6 +340,7 @@ class AddObservationViewController: UIViewController {
         imageOutput.captureStillImageAsynchronously (from: connection) {
             (sampleBuffer: CMSampleBuffer?, error: Error?) -> Void in
             if sampleBuffer != nil {
+                
                 let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(sampleBuffer)
                 let image = UIImage(data: imageData!)
                 self.savePhotoToLibrary(image: image!)
@@ -366,6 +367,7 @@ class AddObservationViewController: UIViewController {
         }
     }
     
+
     
     
     func setPhotoThumbnail(_ image: UIImage) {
