@@ -11,7 +11,7 @@ import Firebase
 import FirebaseDatabase
 import FirebaseAuth
 
-class DeciduousViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class DeciduousViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, DeciduousFilterTableProtocol {
 
     var myDict = [[String:AnyObject]]()
     var speciesNames:[String] = []
@@ -19,6 +19,10 @@ class DeciduousViewController: UIViewController, UITableViewDelegate, UITableVie
     var ref:FIRDatabaseReference?
     var row = 0
     var pressedFilters = false
+    var originalDict = [[String:AnyObject]]()
+    var originalSpeciesNames:[String] = []
+    var listOfAttributes:[String] = []
+    var listOfValues:[String] = []
     
     @IBOutlet weak var deciduousTable: UITableView!
     override func viewDidLoad() {
@@ -34,6 +38,8 @@ class DeciduousViewController: UIViewController, UITableViewDelegate, UITableVie
                 }
                 
             }
+            self.originalDict = self.myDict
+            self.originalSpeciesNames = self.speciesNames
             self.deciduousTable.reloadData()
         })
         // Do any additional setup after loading the view.
@@ -55,6 +61,42 @@ class DeciduousViewController: UIViewController, UITableViewDelegate, UITableVie
         performSegue(withIdentifier: "toDeciduousFilters", sender: myDict)
     }
     
+    func filtersWereSelected(filterList: FilterList){
+        var filterDict = [[String:AnyObject]]()
+        var filteredSpeciesNames:[String] = []
+        myDict = originalDict
+        speciesNames = originalSpeciesNames
+        var satisfiesFilter = true
+        listOfAttributes = filterList.attributes
+        listOfValues = filterList.values
+        print (listOfAttributes)
+        print (listOfValues)
+        var att = listOfAttributes[0]
+        var val = listOfValues[0]
+        for item in myDict{
+            for var i in 0...(listOfAttributes.count - 1){
+                att = listOfAttributes[i]
+                val = listOfValues[i]
+                if (item[att] as? String)?.lowercased().range(of: val) != nil {
+                    satisfiesFilter = true
+                }
+                else if val == "All"{
+                    satisfiesFilter = true
+                }
+                else{
+                    satisfiesFilter = false
+                    break
+                }
+            }
+            if satisfiesFilter == true{
+                filterDict.append(item)
+                filteredSpeciesNames.append(item["species_name"] as! String)
+            }
+        }
+        myDict = filterDict
+        speciesNames = filteredSpeciesNames
+        deciduousTable.reloadData()
+    }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
@@ -87,6 +129,8 @@ class DeciduousViewController: UIViewController, UITableViewDelegate, UITableVie
         }
         else{
             let filtersVC = segue.destination as! DeciduousFiltersViewController
+            filtersVC.delegate = self
+            filtersVC.filterDict = myDict
         }
         
     }
