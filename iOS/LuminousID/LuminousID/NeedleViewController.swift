@@ -12,7 +12,7 @@ import FirebaseDatabase
 import FirebaseAuth
 
 
-class NeedleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class NeedleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, NeedleFilterTableProtocol {
 
     @IBOutlet weak var needleTable: UITableView!
     var myDict = [[String:AnyObject]]()
@@ -21,8 +21,11 @@ class NeedleViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var ref:FIRDatabaseReference?
     var row = 0
     var pressedFilters = false
-   
-    @IBOutlet weak var deciduousTable: UITableView!
+    var originalDict = [[String:AnyObject]]()
+    var originalSpeciesNames:[String] = []
+    var listOfAttributes:[String] = []
+    var listOfValues:[String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = FIRDatabase.database().reference().child("speciesid").child("field_guide").child("woody").child("needle")
@@ -36,6 +39,8 @@ class NeedleViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 }
                 
             }
+            self.originalDict = self.myDict
+            self.originalSpeciesNames = self.speciesNames
             self.needleTable.reloadData()
         })
         // Do any additional setup after loading the view.
@@ -58,6 +63,42 @@ class NeedleViewController: UIViewController, UITableViewDelegate, UITableViewDa
         performSegue(withIdentifier: "toNeedleFilters", sender: myDict)
     }
     
+    func filtersWereSelected(filterList: FilterList){
+        var filterDict = [[String:AnyObject]]()
+        var filteredSpeciesNames:[String] = []
+        myDict = originalDict
+        speciesNames = originalSpeciesNames
+        var satisfiesFilter = true
+        listOfAttributes = filterList.attributes
+        listOfValues = filterList.values
+        print (listOfAttributes)
+        print (listOfValues)
+        var att = listOfAttributes[0]
+        var val = listOfValues[0]
+        for item in myDict{
+            for var i in 0...(listOfAttributes.count - 1){
+                att = listOfAttributes[i]
+                val = listOfValues[i]
+                if (item[att] as? String)?.lowercased().range(of: val) != nil {
+                    satisfiesFilter = true
+                }
+                else if val == "All"{
+                    satisfiesFilter = true
+                }
+                else{
+                    satisfiesFilter = false
+                    break
+                }
+            }
+            if satisfiesFilter == true{
+                filterDict.append(item)
+                filteredSpeciesNames.append(item["species_name"] as! String)
+            }
+        }
+        myDict = filterDict
+        speciesNames = filteredSpeciesNames
+        needleTable.reloadData()
+    }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
@@ -90,6 +131,8 @@ class NeedleViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
         else{
             let filtersVC = segue.destination as! NeedleFiltersViewController
+            filtersVC.delegate = self
+            filtersVC.filterDict = myDict
         }
     }
     /*

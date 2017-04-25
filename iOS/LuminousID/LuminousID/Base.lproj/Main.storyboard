@@ -85,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J7y-EO-MR0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2847.1999999999998" y="1620.5397301349326"/>
+            <point key="canvasLocation" x="-2854" y="1678"/>
         </scene>
         <!--Glossary-->
         <scene sceneID="Pp3-B9-XR5">
@@ -208,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYo-IV-D4v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1671.2" y="1620.5397301349326"/>
+            <point key="canvasLocation" x="-1658" y="1679"/>
         </scene>
         <!--Glossary Item-->
         <scene sceneID="tt4-0U-UuK">
@@ -242,7 +242,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NY4-ie-rlw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2247.1999999999998" y="2346.4767616191907"/>
+            <point key="canvasLocation" x="-2246" y="2445"/>
         </scene>
         <!--Log In View Controller-->
         <scene sceneID="uu8-hu-n48">
@@ -893,7 +893,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="grassesSpecificFilterCell" rowHeight="75" id="cXf-mg-idW" customClass="ForbsSpecificCellTableViewCell" customModule="LuminousID" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="needleSpecificFilterCell" rowHeight="75" id="cXf-mg-idW" customClass="ForbsSpecificCellTableViewCell" customModule="LuminousID" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cXf-mg-idW" id="4WA-cD-HwT">
@@ -928,11 +928,18 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="xUi-lt-0xw" id="l67-7Q-mc4"/>
+                                    <outlet property="delegate" destination="xUi-lt-0xw" id="9qO-2V-d5u"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Filter Title" id="kJU-MA-jm5"/>
+                    <connections>
+                        <outlet property="navBar" destination="kJU-MA-jm5" id="MUN-XU-ncu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RgS-zC-lCd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1086,6 +1093,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="R2X-pP-5H6" id="MeB-Vj-BKc"/>
+                                    <outlet property="delegate" destination="R2X-pP-5H6" id="kgn-YN-AN5"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hS-kp-73o">
                                 <rect key="frame" x="0.0" y="608" width="375" height="60"/>
@@ -1093,12 +1104,16 @@
                                 <color key="backgroundColor" red="0.60941993620000001" green="0.97680455450000003" blue="0.62834863529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="SearchButton:" destination="R2X-pP-5H6" eventType="touchUpInside" id="dda-T1-24Y"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Filters" id="rJj-4f-kBh"/>
                     <connections>
+                        <outlet property="needleFilterTable" destination="mPf-cL-LKH" id="X7S-7k-XqV"/>
                         <segue destination="xUi-lt-0xw" kind="show" identifier="toNeedleSpecificFilters" id="h3b-88-o4L"/>
                     </connections>
                 </viewController>
@@ -1789,7 +1804,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Common Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xm-1Y-j77">
                                                     <rect key="frame" x="94" y="45" width="254" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
                                                     <color key="textColor" red="0.40813228629999998" green="0.40813228629999998" blue="0.40813228629999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -2764,7 +2779,7 @@ If you’re interested in using this app as an informal learning tool with stude
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LHQ-a8-xnE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-369" y="2145"/>
+            <point key="canvasLocation" x="-466" y="2052"/>
         </scene>
         <!--How To-->
         <scene sceneID="Grr-bT-2Lm">
@@ -2841,7 +2856,7 @@ This is where a how to page will go. But we will cross that bridge when we get t
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pWE-gw-VGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="540" y="1771"/>
+            <point key="canvasLocation" x="543" y="1678"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="AoA-g4-Hob">
@@ -2859,7 +2874,7 @@ This is where a how to page will go. But we will cross that bridge when we get t
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nnv-Ek-ObP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="78" y="927"/>
+            <point key="canvasLocation" x="33" y="915"/>
         </scene>
         <!--Settings-->
         <scene sceneID="YGv-MM-nZU">
@@ -2899,7 +2914,7 @@ This is where a how to page will go. But we will cross that bridge when we get t
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2nw-59-UXI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2644" y="927"/>
+            <point key="canvasLocation" x="2644" y="916"/>
         </scene>
         <!--My Observations-->
         <scene sceneID="jzo-Iz-fwE">
@@ -3165,8 +3180,8 @@ This is where a how to page will go. But we will cross that bridge when we get t
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="P5r-Qz-pJA"/>
-        <segue reference="fdS-hd-rPB"/>
+        <segue reference="6bT-B6-5SC"/>
         <segue reference="2qF-J1-6gm"/>
-        <segue reference="Kue-U9-UqJ"/>
+        <segue reference="VZf-0b-36f"/>
     </inferredMetricsTieBreakers>
 </document>
