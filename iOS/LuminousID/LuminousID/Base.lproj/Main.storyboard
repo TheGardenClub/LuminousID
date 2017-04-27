@@ -2500,7 +2500,7 @@
         <scene sceneID="LVQ-4o-EfQ">
             <objects>
                 <navigationController id="tjz-55-yMD" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="B0U-8I-PV3">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B0U-8I-PV3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

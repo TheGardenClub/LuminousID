@@ -7,8 +7,22 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class QuickLookViewController: UIViewController {
+    
+    
+    var min = 0
+    var hr = 0
+    var ts = 7.465433456
+    var species = ""
+    var gpsLat = 0.0
+    var gpsLong = 0.0
+    var name =  ""
+    var ref:FIRDatabaseReference?
+    
     
     @IBOutlet weak var quickLookImage: UIImageView!
     var photoImage: UIImage!
@@ -27,6 +41,9 @@ class QuickLookViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        ref = FIRDatabase.database().reference()
+        name = "\(ts)" + "_" + (FIRAuth.auth()?.currentUser?.uid)!
+        print(name)
         super.viewDidLoad()
         if photoImage != nil {
             quickLookImage.image = photoImage

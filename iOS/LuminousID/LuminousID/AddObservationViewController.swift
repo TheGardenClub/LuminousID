@@ -24,6 +24,12 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
     var activeInput: AVCaptureDeviceInput!
     var lat = 0.0
     var long = 0.0
+    var date = Date()
+    var calendar = Calendar.current
+    var hour:Int = 0
+    var minutes:Int = 0
+    var timestamp = 0.0
+    
     
     let manager = CLLocationManager()
     
@@ -71,7 +77,11 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
-        
+        hour = calendar.component(.hour, from: date)
+        minutes = calendar.component(.minute, from: date)
+        print(date)
+        print(hour)
+        print(minutes)
         
         print (speciesObsDict["species_name"] as! String)
     }
@@ -374,7 +384,8 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
         let connection = imageOutput.connection(withMediaType: AVMediaTypeVideo)
         let currentLat = self.lat
         let currentLong = self.long
-        
+        timestamp = NSDate().timeIntervalSince1970
+        print(timestamp)
         print(currentLat)
         print(currentLong)
         
@@ -399,10 +410,13 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
                 print("Error capturing photo: \(String(describing: error?.localizedDescription))")
             }
         }
-        performSegue(withIdentifier: "ShowTakenPic", sender: <#T##Any?#>)
+        performSegue(withIdentifier: "ShowTakenPic", sender: nil)
+        
     }
     
 
+
+        
     
     // MARK: - Helpers
     func savePhotoToLibrary(image: UIImage) {
@@ -467,9 +481,19 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
             if let image = thumbnail.backgroundImage(for: UIControlState()) {
                 quickLook.photoImage = image
             } else {
-                quickLook.photoImage = UIImage(named: "Penguin")
+                quickLook.photoImage = UIImage(named: "Obs")
             }
+        }else if segue.identifier == "ShowTakenPic"{
+            let QuickLookVC = segue.destination as! QuickLookViewController
+            QuickLookVC.min = minutes
+            QuickLookVC.hr = hour
+            QuickLookVC.gpsLat = lat
+            QuickLookVC.gpsLong = long
+            QuickLookVC.ts = timestamp
+            let image = thumbnail.backgroundImage(for: UIControlState())
+            QuickLookVC.photoImage = image
         }
+
     }
     
     func currentVideoOrientation() -> AVCaptureVideoOrientation {
