@@ -54,7 +54,13 @@ class SpeciesInfoViewController: UIViewController {
             /*
             Label12.text = "Photo Credit: Brian Larson"
             */
-            Label13.text = "Notes: " + (speciesDict[0]["notes"] as! String)
+            if (speciesDict[0]["notes"] as! String) == "NA"{
+                Label13.text = "Notes: " + "none"
+            }
+            else {
+                Label13.text = "Notes: " + (speciesDict[0]["notes"] as! String)
+            }
+            
             /*
             titleLabel.text = (speciesDict[0]["species_name"] as! String)
             */
@@ -78,7 +84,12 @@ class SpeciesInfoViewController: UIViewController {
                 /*
                 Label11.text = "Photo Credit: Brian Larson"
                 */
-                Label13.text = "Notes: " + (speciesDict[0]["notes"] as! String)
+                if (speciesDict[0]["notes"] as! String) == "NA"{
+                    Label13.text = "Notes: " + "none"
+                }
+                else {
+                    Label13.text = "Notes: " + (speciesDict[0]["notes"] as! String)
+                }
             }
             else if (speciesDict[0]["leaf_type"] as! String) == "needle" || (speciesDict[0]["leaf_type"] as! String) == "scale"
             {
@@ -97,7 +108,12 @@ class SpeciesInfoViewController: UIViewController {
                 /*
                 Label11.text = "Photo Credit: Brian Larson"
                 */
-                Label13.text = "Notes: " + (speciesDict[0]["notes"] as! String)
+                if (speciesDict[0]["notes"] as! String) == "NA"{
+                    Label13.text = "Notes: " + "none"
+                }
+                else {
+                    Label13.text = "Notes: " + (speciesDict[0]["notes"] as! String)
+                }
             }
         }
         else if (speciesDict[0]["growth_form"] as! String) == "graminoid"
@@ -135,7 +151,12 @@ class SpeciesInfoViewController: UIViewController {
                 /*
                 Label9.text = "Photo Credit: Brian Larson"
                 */
-                Label13.text = "Notes: " + (speciesDict[0]["notes"] as! String)
+                if (speciesDict[0]["notes"] as! String) == "NA"{
+                    Label13.text = "Notes: " + "none"
+                }
+                else {
+                    Label13.text = "Notes: " + (speciesDict[0]["notes"] as! String)
+                }
             }
             else if (speciesDict[0]["family_name"] as! String) == "Poaceae (grasses)"
             {
@@ -154,7 +175,12 @@ class SpeciesInfoViewController: UIViewController {
                 /*
                 Label12.text = "Photo Credit: Brian Larson"
                 */
-                Label13.text = "Notes: " + (speciesDict[0]["notes"] as! String)
+                if (speciesDict[0]["notes"] as! String) == "NA"{
+                    Label13.text = "Notes: " + "none"
+                }
+                else {
+                    Label13.text = "Notes: " + (speciesDict[0]["notes"] as! String)
+                }
                 
             }
             else
