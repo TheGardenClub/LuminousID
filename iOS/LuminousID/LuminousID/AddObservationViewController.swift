@@ -13,18 +13,35 @@ import FirebaseAuth
 import FirebaseDatabase
 import AVFoundation
 import Photos
+import CoreLocation
+import GeoFire
 
-class AddObservationViewController: UIViewController {
+class AddObservationViewController: UIViewController, CLLocationManagerDelegate {
     var speciesObsDict = [String:AnyObject]()
     let captureSession = AVCaptureSession()
     let imageOutput = AVCaptureStillImageOutput()
     var previewLayer: AVCaptureVideoPreviewLayer!
     var activeInput: AVCaptureDeviceInput!
+    var lat = 0.0
+    var long = 0.0
     
+    let manager = CLLocationManager()
+    
+    var mapHasCenteredOnce = false
+    var geoFire: GeoFire!
+    var geoFireRef: FIRDatabaseReference!
+    
+    
+
     var focusMarker: UIImageView!
     var exposureMarker: UIImageView!
     var resetMarker: UIImageView!
     fileprivate var adjustingExposureContext: String = ""
+    
+    var ref:FIRDatabaseReference?
+    
+
+
     
     @IBOutlet weak var camPreview: UIView!
     @IBOutlet weak var thumbnail: UIButton!
@@ -47,6 +64,15 @@ class AddObservationViewController: UIViewController {
         setupSession()
         setupPreview()
         startSession()
+        
+        geoFireRef = FIRDatabase.database().reference()
+        geoFire = GeoFire(firebaseRef: geoFireRef)
+        manager.delegate = self
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.requestWhenInUseAuthorization()
+        manager.startUpdatingLocation()
+        
+        
         print (speciesObsDict["species_name"] as! String)
     }
     
@@ -61,7 +87,7 @@ class AddObservationViewController: UIViewController {
     }
     
     // MARK: - Setup session and preview
-    
+
     func setupSession() {
         captureSession.sessionPreset = AVCaptureSessionPresetHigh
         let camera = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
@@ -330,9 +356,28 @@ class AddObservationViewController: UIViewController {
         
     }
     
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        let location = locations[0]
+        
+        let span:MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
+        let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
+        lat = myLocation.latitude
+        long = myLocation.longitude
+
+        
+    }
+    
     // MARK: - Capture photo
     @IBAction func capturePhoto(sender: AnyObject) {
         let connection = imageOutput.connection(withMediaType: AVMediaTypeVideo)
+        let currentLat = self.lat
+        let currentLong = self.long
+        
+        print(currentLat)
+        print(currentLong)
+        
         if (connection?.isVideoOrientationSupported)! {
             connection?.videoOrientation = currentVideoOrientation()
         }
@@ -343,14 +388,21 @@ class AddObservationViewController: UIViewController {
                 
                 let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(sampleBuffer)
                 let image = UIImage(data: imageData!)
+
+                
                 self.savePhotoToLibrary(image: image!)
+                
+
                 
                 
             } else {
                 print("Error capturing photo: \(String(describing: error?.localizedDescription))")
             }
         }
+        performSegue(withIdentifier: "ShowTakenPic", sender: <#T##Any?#>)
     }
+    
+
     
     // MARK: - Helpers
     func savePhotoToLibrary(image: UIImage) {
@@ -452,5 +504,12 @@ class AddObservationViewController: UIViewController {
         */
         self.navigationController?.popViewController(animated: true)
     }
+    
+
+    
+    
+    
 }
+
+
 

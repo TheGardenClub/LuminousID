@@ -277,8 +277,8 @@
 			isa = PBXGroup;
 			children = (
 				A490EAED1E842A0C00CFA2C6 /* AddObservationViewController.swift */,
-				884F722C1E96AC5200985F5C /* QuickLookViewController.swift */,
 				8828E9181EA8571B00285AEE /* MapsViewController.swift */,
+				884F722C1E96AC5200985F5C /* QuickLookViewController.swift */,
 			);
 			name = "Add Observation and Maps";
 			sourceTree = "<group>";
