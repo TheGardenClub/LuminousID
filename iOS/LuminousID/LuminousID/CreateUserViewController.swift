@@ -18,7 +18,7 @@ class CreateUserViewController: UIViewController {
     @IBOutlet weak var userName: UITextField!
     
     var userNamePath = ""
-    
+    var emailPath = ""
     var ref:FIRDatabaseReference?
     
     override func viewDidLoad() {
@@ -63,13 +63,13 @@ class CreateUserViewController: UIViewController {
         {
             FIRAuth.auth()?.createUser(withEmail: userEmail.text!, password: userPass.text!) { (user, error) in
                 
-                
                 if error == nil
                 {
                     self.userNamePath = "speciesid/accounts/" + (user?.uid)! + "/username"
-                    self.ref?.child("speciesid").child("accounts").child((user?.uid)!).setValue(["researcher": false])
+                    self.emailPath = "speciesid/accounts/" + (user?.uid)! + "/email"
+                    self.ref?.child("speciesid").child("accounts").child((user?.uid)!).setValue(["researcher": 0])
                     self.ref?.child(self.userNamePath).setValue(self.userName.text)
-                    
+                    self.ref?.child(self.emailPath).setValue(self.userEmail.text)
                     self.performSegue(withIdentifier: "toMainMenuFromCreate", sender: nil)
                 }
                 else

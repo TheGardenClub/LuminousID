@@ -38,6 +38,9 @@
 		A427FB5F1E34089000011350 /* LuminousIDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427FB5E1E34089000011350 /* LuminousIDTests.swift */; };
 		A427FB6A1E34089000011350 /* LuminousIDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427FB691E34089000011350 /* LuminousIDUITests.swift */; };
 		A45861CA1E61077800DAE2FC /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45861C91E61077800DAE2FC /* CreateUserViewController.swift */; };
+		A465B7DD1EB296DD003B0536 /* MyObservationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A465B7DC1EB296DD003B0536 /* MyObservationsViewController.swift */; };
+		A465B7DF1EB298D7003B0536 /* MyObservationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A465B7DE1EB298D7003B0536 /* MyObservationsTableViewCell.swift */; };
+		A465B7E11EB29A58003B0536 /* Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A465B7E01EB29A58003B0536 /* Observation.swift */; };
 		A46FF7691E6507C30001455E /* WoodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46FF7681E6507C30001455E /* WoodyViewController.swift */; };
 		A46FF76B1E6508910001455E /* DeciduousViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46FF76A1E6508910001455E /* DeciduousViewController.swift */; };
 		A46FF76D1E65089D0001455E /* NeedleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46FF76C1E65089D0001455E /* NeedleViewController.swift */; };
@@ -120,6 +123,9 @@
 		A427FB691E34089000011350 /* LuminousIDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminousIDUITests.swift; sourceTree = "<group>"; };
 		A427FB6B1E34089000011350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A45861C91E61077800DAE2FC /* CreateUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
+		A465B7DC1EB296DD003B0536 /* MyObservationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyObservationsViewController.swift; sourceTree = "<group>"; };
+		A465B7DE1EB298D7003B0536 /* MyObservationsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyObservationsTableViewCell.swift; sourceTree = "<group>"; };
+		A465B7E01EB29A58003B0536 /* Observation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observation.swift; sourceTree = "<group>"; };
 		A46FF7681E6507C30001455E /* WoodyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoodyViewController.swift; sourceTree = "<group>"; };
 		A46FF76A1E6508910001455E /* DeciduousViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeciduousViewController.swift; sourceTree = "<group>"; };
 		A46FF76C1E65089D0001455E /* NeedleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleViewController.swift; sourceTree = "<group>"; };
@@ -328,11 +334,14 @@
 			children = (
 				A427FB491E34089000011350 /* AppDelegate.swift */,
 				A427FB4B1E34089000011350 /* ViewController.swift */,
+				A465B7DC1EB296DD003B0536 /* MyObservationsViewController.swift */,
 				A427FB4D1E34089000011350 /* Main.storyboard */,
 				A427FB501E34089000011350 /* Assets.xcassets */,
 				A427FB521E34089000011350 /* LaunchScreen.storyboard */,
 				A407C84C1E626069001CA327 /* MainMenuViewController.swift */,
 				A4E6ABBF1E6DFA5100EBE83C /* SpeciesInfoViewController.swift */,
+				A465B7E01EB29A58003B0536 /* Observation.swift */,
+				A465B7DE1EB298D7003B0536 /* MyObservationsTableViewCell.swift */,
 				A4DF25D31E81C6150095AFD8 /* SettingsViewController.swift */,
 				A41DBB411EAE8B0B00DF4887 /* Create Account and Log In */,
 				A41DBB221EAE84A000DF4887 /* Shared */,
@@ -684,9 +693,11 @@
 				A40CD2311EAC0891007EA602 /* ForbsSpecificFiltersViewController.swift in Sources */,
 				A41DBB3B1EAE8A0F00DF4887 /* DeciduousFiltersViewController.swift in Sources */,
 				A4E745161E6504F30051058B /* CyperaceaeViewController.swift in Sources */,
+				A465B7E11EB29A58003B0536 /* Observation.swift in Sources */,
 				A40CD2331EAC08FC007EA602 /* ForbsSpecificCellTableViewCell.swift in Sources */,
 				A4C3C1FA1E610CFE003FC85A /* LogInViewController.swift in Sources */,
 				A41DBB2C1EAE88DC00DF4887 /* RushesFiltersViewController.swift in Sources */,
+				A465B7DD1EB296DD003B0536 /* MyObservationsViewController.swift in Sources */,
 				A46FF76B1E6508910001455E /* DeciduousViewController.swift in Sources */,
 				A40CD2371EAC4290007EA602 /* FilterList.swift in Sources */,
 				A41DBB311EAE896000DF4887 /* GrassesFiltersViewController.swift in Sources */,
@@ -700,6 +711,7 @@
 				A407C84D1E626069001CA327 /* MainMenuViewController.swift in Sources */,
 				A4DF25D41E81C6150095AFD8 /* SettingsViewController.swift in Sources */,
 				A427FB4C1E34089000011350 /* ViewController.swift in Sources */,
+				A465B7DF1EB298D7003B0536 /* MyObservationsTableViewCell.swift in Sources */,
 				A40CD22F1EAC065F007EA602 /* FilterTableViewCell.swift in Sources */,
 				A49CAD151E6501AF006CC4DE /* PoaceaeViewController.swift in Sources */,
 				A427FB4A1E34089000011350 /* AppDelegate.swift in Sources */,
