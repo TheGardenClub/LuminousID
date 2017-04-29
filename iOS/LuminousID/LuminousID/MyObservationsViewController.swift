@@ -37,6 +37,7 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
     var username:String = ""
     var photoName: String = ""
     var fullPhotoName: String = ""
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,21 +52,24 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
         print("username:" + username)
         print("Photo Name: " + photoName)
         if species_name != ""{
-            fullPhotoName = photoName + ".jpg"
             species_names = defaults.stringArray(forKey: "savedSpeciesNames") ?? [String]()
             datetimes = defaults.stringArray(forKey: "savedDateTimes") ?? [String]()
             synceds = defaults.array(forKey: "savedSynceds") as? [Bool] ?? [Bool]()
+            photoNames = defaults.stringArray(forKey: "savedPhotoNames") ?? [String]()
             species_names.append(species_name)
             datetimes.append(datetime)
             synceds.append(is_synced)
+            photoNames.append(fullPhotoName)
             defaults.set(species_names, forKey: "savedSpeciesNames")
             defaults.set(datetimes, forKey: "savedDateTimes")
             defaults.set(synceds, forKey: "savedSynceds")
+            defaults.set(photoNames, forKey: "savedPhotoNames")
         }
         else{
             species_names = defaults.stringArray(forKey: "savedSpeciesNames") ?? [String]()
             datetimes = defaults.stringArray(forKey: "savedDateTimes") ?? [String]()
             synceds = defaults.array(forKey: "savedSynceds") as? [Bool] ?? [Bool]()
+            photoNames = defaults.stringArray(forKey: "savedPhotoNames") ?? [String]()
         }
         // Do any additional setup after loading the view.
     }
@@ -86,8 +90,13 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myObsCell", for: indexPath) as! MyObservationsTableViewCell
+        if indexPath.row < (species_names.count-1){
+        
+        var fileUrl = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent(photoNames[indexPath.row])
+
         cell.myObsSpeciesLabel.text = species_names[indexPath.row]
         cell.myObsDateLabel.text = datetimes[indexPath.row]
+        cell.myObsImageView.image = UIImage(contentsOfFile: fileUrl.path)!
         if synceds[indexPath.row] == false{
             cell.myObsSyncedLabel.text = "Not Synced"
             cell.myObsSyncedLabel.textColor = UIColor.red
@@ -95,6 +104,10 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
         else{
             cell.myObsSyncedLabel.text = "Synced"
             cell.myObsSyncedLabel.textColor = UIColor.green
+        }
+        }
+        else{
+            myObsTable.reloadData()
         }
         
         return (cell)

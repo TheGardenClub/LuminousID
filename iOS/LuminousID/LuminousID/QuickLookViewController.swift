@@ -106,6 +106,7 @@ class QuickLookViewController: UIViewController {
             MyObsVC.datetime = datetimeQL
             MyObsVC.comment = commentsBox.text
             MyObsVC.photoName = name
+            MyObsVC.fullPhotoName = fullImageName
         }
         else{
             print("whoops, something went wrong")
