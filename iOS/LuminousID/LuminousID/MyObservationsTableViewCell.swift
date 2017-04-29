@@ -14,7 +14,6 @@ class MyObservationsTableViewCell: UITableViewCell {
     @IBOutlet weak var myObsSpeciesLabel: UILabel!
     @IBOutlet weak var myObsDateLabel: UILabel!
     @IBOutlet weak var myObsSyncedLabel: UILabel!
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

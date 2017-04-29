@@ -10,21 +10,67 @@ import UIKit
 
 class MyObservationsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var comments:[String] = ["comment1", "comment2"]
+    @IBOutlet weak var myObsTable: UITableView!
     var timestamps:[String] = []
     var dates:[String] = []
     var times:[String] = []
+    var datetimes:[String] = []
+    var synceds:[Bool] = []
+    var species_names:[String] = []
     var lats:[Double] = []
     var longs:[Double] = []
-    var synceds:[Bool] = []
     var verifieds:[Int] = []
     var plant_codes:[String] = []
-    var species_names:[String] = []
+    let defaults = UserDefaults.standard
     var usernames:[String] = []
+    var photoNames:[String] = []
+    var comment:String = ""
+    var datetime:String = ""
+    var date:String = ""
+    var time:String = ""
+    var gps_lat:Double = 0.0
+    var gps_long:Double = 0.0
+    var is_synced:Bool = false
+    var is_verified:Int = 0
+    var plant_code:String = ""
+    var species_name:String = ""
+    var username:String = ""
+    var photoName: String = ""
+    var fullPhotoName: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("comment: " + comment)
+        print("datetime: " + datetime)
+        print(gps_lat)
+        print(gps_long)
+        print(is_synced)
+        print(is_verified)
+        print("plant_code: " + plant_code)
+        print("species_name: " + species_name)
+        print("username:" + username)
+        print("Photo Name: " + photoName)
+        if species_name != ""{
+            fullPhotoName = photoName + ".jpg"
+            species_names = defaults.stringArray(forKey: "savedSpeciesNames") ?? [String]()
+            datetimes = defaults.stringArray(forKey: "savedDateTimes") ?? [String]()
+            synceds = defaults.array(forKey: "savedSynceds") as? [Bool] ?? [Bool]()
+            species_names.append(species_name)
+            datetimes.append(datetime)
+            synceds.append(is_synced)
+            defaults.set(species_names, forKey: "savedSpeciesNames")
+            defaults.set(datetimes, forKey: "savedDateTimes")
+            defaults.set(synceds, forKey: "savedSynceds")
+        }
+        else{
+            species_names = defaults.stringArray(forKey: "savedSpeciesNames") ?? [String]()
+            datetimes = defaults.stringArray(forKey: "savedDateTimes") ?? [String]()
+            synceds = defaults.array(forKey: "savedSynceds") as? [Bool] ?? [Bool]()
+        }
         // Do any additional setup after loading the view.
+    }
+    @IBAction func BackToMenu(_ sender: UIBarButtonItem) {
+        navigationController?.popToRootViewController(animated: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,15 +80,29 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return 1
+        return species_names.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myObsCell", for: indexPath) as! MyObservationsTableViewCell
+        cell.myObsSpeciesLabel.text = species_names[indexPath.row]
+        cell.myObsDateLabel.text = datetimes[indexPath.row]
+        if synceds[indexPath.row] == false{
+            cell.myObsSyncedLabel.text = "Not Synced"
+            cell.myObsSyncedLabel.textColor = UIColor.red
+        }
+        else{
+            cell.myObsSyncedLabel.text = "Synced"
+            cell.myObsSyncedLabel.textColor = UIColor.green
+        }
+        
         return (cell)
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        myObsTable.reloadData()
+    }
     /*
     // MARK: - Navigation
 

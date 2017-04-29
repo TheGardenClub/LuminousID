@@ -29,15 +29,13 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
     var hour:Int = 0
     var minutes:Int = 0
     var timestamp = 0.0
-    
-    
+    var user = FIRAuth.auth()?.currentUser
     let manager = CLLocationManager()
-    
+    var userNamePath = ""
     var mapHasCenteredOnce = false
     var geoFire: GeoFire!
     var geoFireRef: FIRDatabaseReference!
-    
-    
+    var userName = ""
 
     var focusMarker: UIImageView!
     var exposureMarker: UIImageView!
@@ -84,6 +82,8 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
         print(minutes)
         
         print (speciesObsDict["species_name"] as! String)
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -381,36 +381,48 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
     
     // MARK: - Capture photo
     @IBAction func capturePhoto(sender: AnyObject) {
-        let connection = imageOutput.connection(withMediaType: AVMediaTypeVideo)
-        let currentLat = self.lat
-        let currentLong = self.long
-        timestamp = NSDate().timeIntervalSince1970
-        print(timestamp)
-        print(currentLat)
-        print(currentLong)
-        
-        if (connection?.isVideoOrientationSupported)! {
-            connection?.videoOrientation = currentVideoOrientation()
-        }
-        
-        imageOutput.captureStillImageAsynchronously (from: connection) {
-            (sampleBuffer: CMSampleBuffer?, error: Error?) -> Void in
-            if sampleBuffer != nil {
-                
-                let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(sampleBuffer)
-                let image = UIImage(data: imageData!)
-
-                
-                self.savePhotoToLibrary(image: image!)
-                
-
-                
-                
-            } else {
-                print("Error capturing photo: \(String(describing: error?.localizedDescription))")
+        if ((user) != nil){
+            let connection = imageOutput.connection(withMediaType: AVMediaTypeVideo)
+            let currentLat = self.lat
+            let currentLong = self.long
+            timestamp = NSDate().timeIntervalSince1970
+            print(timestamp)
+            print(currentLat)
+            print(currentLong)
+            
+            if (connection?.isVideoOrientationSupported)! {
+                connection?.videoOrientation = currentVideoOrientation()
             }
+            
+            imageOutput.captureStillImageAsynchronously (from: connection) {
+                (sampleBuffer: CMSampleBuffer?, error: Error?) -> Void in
+                if sampleBuffer != nil {
+                    
+                    let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(sampleBuffer)
+                    let image = UIImage(data: imageData!)
+                    
+                    self.savePhotoToLibrary(image: image!)
+                    
+                    
+                    
+                    
+                } else {
+                    print("Error capturing photo: \(String(describing: error?.localizedDescription))")
+                }
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.25) {
+                self.performSegue(withIdentifier: "ShowTakenPic", sender: nil)
+            }
+            
+            
         }
-        performSegue(withIdentifier: "ShowTakenPic", sender: nil)
+        else{
+            let alertController = UIAlertController(title: "Oops!", message: "You must be logged in to take observations.", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            self.present(alertController, animated: true, completion: nil)
+
+        }
+        
         
     }
     
@@ -485,13 +497,23 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
             }
         }else if segue.identifier == "ShowTakenPic"{
             let QuickLookVC = segue.destination as! QuickLookViewController
+            self.userNamePath = "speciesid/accounts/" + (user?.uid)!
             QuickLookVC.min = minutes
             QuickLookVC.hr = hour
             QuickLookVC.gpsLat = lat
             QuickLookVC.gpsLong = long
             QuickLookVC.ts = timestamp
-            let image = thumbnail.backgroundImage(for: UIControlState())
-            QuickLookVC.photoImage = image
+            QuickLookVC.speciesObsDictQL = speciesObsDict
+            QuickLookVC.plantCodeQL = speciesObsDict["plant_code"] as! String
+            QuickLookVC.speciesNameQL = speciesObsDict["species_name"] as! String
+            QuickLookVC.dateQL = date
+            if let image = thumbnail.backgroundImage(for: UIControlState()){
+               QuickLookVC.photoImage = image
+                print("looks like it worked")
+            }
+            else{
+                print("couldn't set the image")
+            }
         }
 
     }
