@@ -67,17 +67,24 @@ class QuickLookViewController: UIViewController {
         print(gpsLong)
         print(plantCodeQL)
         print(speciesNameQL)
-        fullImageName = name + ".jpg"
+        
         
         
         ref = FIRDatabase.database().reference()
         name = "\(ts)" + "_" + (FIRAuth.auth()?.currentUser?.uid)!
+        fullImageName = name + ".jpg"
         datetimeQL = "\(dateQL)"
         print (datetimeQL)
         print(name)
-        let dirPaths = filemgr.urls(for: .documentDirectory, in: .userDomainMask)
-        let docsDir = dirPaths[0].path
+        let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent(fullImageName)
         let jpgImageData = UIImageJPEGRepresentation(photoImage, 1.0)
+        do {
+            try jpgImageData?.write(to: fileURL, options: .atomic)
+        }
+        catch{
+            print("mistakes were made")
+        }
+        print (fileURL)
         super.viewDidLoad()
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(CreateUserViewController.dismissKeyboard))
