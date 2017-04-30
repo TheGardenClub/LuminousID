@@ -19,6 +19,20 @@ class MainMenuViewController: UIViewController {
     var user = FIRAuth.auth()?.currentUser
     @IBOutlet var logOutButton: UIButton!
     @IBOutlet var userEmailLabel: UILabel!
+    
+    @IBAction func MyObsButton(_ sender: Any) {
+        if FIRAuth.auth()?.currentUser?.email != nil
+        {
+            performSegue(withIdentifier: "toMyObsFromMenu", sender: nil)
+        }
+        else
+        {
+            let alertController = UIAlertController(title: "Oops!", message: "You must be signed in to access My Observations.", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            self.present(alertController, animated: true, completion: nil)
+        }
+    }
+    
     override func viewDidLoad() {
         ref = FIRDatabase.database().reference()
         if FIRAuth.auth()?.currentUser?.email != nil
