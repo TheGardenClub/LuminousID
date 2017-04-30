@@ -65,7 +65,7 @@ class SpeciesInfoViewController: UIViewController {
             titleLabel.text = (speciesDict[0]["species_name"] as! String)
             */
         }
-        else if (speciesDict[0]["growth_form"] as! String) == "shrub/tree"
+        else if (speciesDict[0]["growth_form"] as! String) == "tree/shrub"
         {
             SpeciesImageView.image = UIImage(named: "Images/"+((speciesDict[0]["plant_code"]) as? String)! + ".jpg")
             if (speciesDict[0]["leaf_type"] as! String) == "deciduous"

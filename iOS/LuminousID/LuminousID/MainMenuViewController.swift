@@ -13,11 +13,14 @@ import FirebaseDatabase
 
 
 class MainMenuViewController: UIViewController {
-
-
+    
+    var userNamePath = ""
+    var ref:FIRDatabaseReference?
+    var user = FIRAuth.auth()?.currentUser
     @IBOutlet var logOutButton: UIButton!
     @IBOutlet var userEmailLabel: UILabel!
     override func viewDidLoad() {
+        ref = FIRDatabase.database().reference()
         if FIRAuth.auth()?.currentUser?.email != nil
         {
             self.userEmailLabel.text = FIRAuth.auth()?.currentUser?.email
@@ -27,6 +30,19 @@ class MainMenuViewController: UIViewController {
             self.userEmailLabel.text = "Guest"
             logOutButton.setTitle("Log In", for: .normal)
         }
+        /*
+
+        FIRDatabase.database().reference().child(userNamePath).observeSingleEvent(of: .value, with: {(snap) in
+            if let snapDict = snap.value as? [String:AnyObject]{
+                self.username = snapDict["username"] as? String
+            }
+            else{
+                self.username = ""
+                
+            }
+            print (self.username)
+        })
+        */
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }

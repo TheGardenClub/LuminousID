@@ -401,7 +401,20 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
                     let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(sampleBuffer)
                     let image = UIImage(data: imageData!)
                     
-                    self.savePhotoToLibrary(image: image!)
+                    let photoLibrary = PHPhotoLibrary.shared()
+                    photoLibrary.performChanges({
+                        PHAssetChangeRequest.creationRequestForAsset(from: image!)
+                    }) { (success: Bool, error: Error?) -> Void in
+                        if success {
+                            // Set thumbnail
+                            self.savePhotoToLibrary(image: image!)
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.25) {
+                                self.performSegue(withIdentifier: "ShowTakenPic", sender: nil)
+                            }
+                        }
+                    }
+                    
+                    
                     
                     
                     
@@ -409,9 +422,6 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
                 } else {
                     print("Error capturing photo: \(String(describing: error?.localizedDescription))")
                 }
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.25) {
-                self.performSegue(withIdentifier: "ShowTakenPic", sender: nil)
             }
             
             

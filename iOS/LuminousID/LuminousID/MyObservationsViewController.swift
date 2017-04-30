@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class MyObservationsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var comments:[String] = ["comment1", "comment2"]
+    var comments:[String] = []
     @IBOutlet weak var myObsTable: UITableView!
     var timestamps:[String] = []
     var dates:[String] = []
@@ -24,6 +27,9 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
     let defaults = UserDefaults.standard
     var usernames:[String] = []
     var photoNames:[String] = []
+    var gpsAccuracys:[String] = []
+    var obsNames:[String] = []
+    var fullPhotoNames:[String] = []
     var comment:String = ""
     var datetime:String = ""
     var date:String = ""
@@ -37,42 +43,77 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
     var username:String = ""
     var photoName: String = ""
     var fullPhotoName: String = ""
-
-    
+    var fName: String = ""
+    var ref:FIRDatabaseReference?
+    var userNamePath = ""
+    var gpsAccuracy = "10m"
+    var user = FIRAuth.auth()?.currentUser
     override func viewDidLoad() {
+        ref = FIRDatabase.database().reference()
         super.viewDidLoad()
-        print("comment: " + comment)
-        print("datetime: " + datetime)
-        print(gps_lat)
-        print(gps_long)
-        print(is_synced)
-        print(is_verified)
-        print("plant_code: " + plant_code)
-        print("species_name: " + species_name)
-        print("username:" + username)
-        print("Photo Name: " + photoName)
+ 
+        userNamePath = "speciesid/accounts/" + (user?.uid)!
+
         if species_name != ""{
             species_names = defaults.stringArray(forKey: "savedSpeciesNames") ?? [String]()
             datetimes = defaults.stringArray(forKey: "savedDateTimes") ?? [String]()
             synceds = defaults.array(forKey: "savedSynceds") as? [Bool] ?? [Bool]()
             photoNames = defaults.stringArray(forKey: "savedPhotoNames") ?? [String]()
+            comments = defaults.stringArray(forKey: "savedComments") ?? [String]()
+            lats = defaults.array(forKey: "savedLats") as? [Double] ?? [Double]()
+            longs = defaults.array(forKey: "savedLongs") as? [Double] ?? [Double]()
+            verifieds = defaults.array(forKey: "savedVerifieds") as? [Int] ?? [Int]()
+            plant_codes = defaults.stringArray(forKey: "savedPlantCodes") ?? [String]()
+            usernames = defaults.stringArray(forKey: "savedUsernames") ?? [String]()
+            gpsAccuracys = defaults.stringArray(forKey: "savedAccuracys") ?? [String]()
+            fullPhotoNames = defaults.stringArray(forKey: "savedFullPhotoNames") ?? [String]()
+            
             species_names.append(species_name)
             datetimes.append(datetime)
             synceds.append(is_synced)
-            photoNames.append(fullPhotoName)
+            photoNames.append(photoName)
+            comments.append(comment)
+            lats.append(gps_lat)
+            longs.append(gps_long)
+            verifieds.append(is_verified)
+            plant_codes.append(plant_code)
+            usernames.append(username)
+            gpsAccuracys.append(gpsAccuracy)
+            fullPhotoNames.append(fullPhotoName)
+            
+            
             defaults.set(species_names, forKey: "savedSpeciesNames")
             defaults.set(datetimes, forKey: "savedDateTimes")
             defaults.set(synceds, forKey: "savedSynceds")
             defaults.set(photoNames, forKey: "savedPhotoNames")
+            defaults.set(comments, forKey: "savedComments")
+            defaults.set(lats, forKey: "savedLats")
+            defaults.set(longs, forKey: "savedLongs")
+            defaults.set(verifieds, forKey: "savedVerifieds")
+            defaults.set(plant_codes, forKey: "savedPlantCodes")
+            defaults.set(usernames, forKey: "savedUsernames")
+            defaults.set(gpsAccuracys, forKey: "savedAccuracys")
+            defaults.set(fullPhotoNames, forKey: "savedFullPhotoNames")
+            
         }
         else{
             species_names = defaults.stringArray(forKey: "savedSpeciesNames") ?? [String]()
             datetimes = defaults.stringArray(forKey: "savedDateTimes") ?? [String]()
             synceds = defaults.array(forKey: "savedSynceds") as? [Bool] ?? [Bool]()
             photoNames = defaults.stringArray(forKey: "savedPhotoNames") ?? [String]()
+            comments = defaults.stringArray(forKey: "savedComments") ?? [String]()
+            lats = defaults.array(forKey: "savedLats") as? [Double] ?? [Double]()
+            longs = defaults.array(forKey: "savedLongs") as? [Double] ?? [Double]()
+            verifieds = defaults.array(forKey: "savedVerifieds") as? [Int] ?? [Int]()
+            plant_codes = defaults.stringArray(forKey: "savedPlantCodes") ?? [String]()
+            usernames = defaults.stringArray(forKey: "savedUsernames") ?? [String]()
+            gpsAccuracys = defaults.stringArray(forKey: "savedAccuracys") ?? [String]()
+            fullPhotoNames = defaults.stringArray(forKey: "savedFullPhotoNames") ?? [String]()
+            
         }
         // Do any additional setup after loading the view.
     }
+
     @IBAction func BackToMenu(_ sender: UIBarButtonItem) {
         navigationController?.popToRootViewController(animated: true)
     }
@@ -90,9 +131,9 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myObsCell", for: indexPath) as! MyObservationsTableViewCell
-        if indexPath.row < (species_names.count-1){
+        if indexPath.row <= (species_names.count-1){
         
-        var fileUrl = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent(photoNames[indexPath.row])
+        var fileUrl = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent(fullPhotoNames[indexPath.row])
 
         cell.myObsSpeciesLabel.text = species_names[indexPath.row]
         cell.myObsDateLabel.text = datetimes[indexPath.row]
@@ -113,6 +154,31 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
         return (cell)
     }
 
+    @IBAction func TopSyncButton(_ sender: Any) {
+        self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["species_name": species_names[0]])
+        self.ref?.child(("speciesid/observations/" + photoNames[0] + "/comments")).setValue(comments[0])
+        self.ref?.child(("speciesid/observations/" + photoNames[0] + "/gps_accuracy")).setValue(gpsAccuracys[0])
+        self.ref?.child(("speciesid/observations/" + photoNames[0] + "/gps_lat")).setValue(lats[0])
+        self.ref?.child(("speciesid/observations/" + photoNames[0] + "/gps_long")).setValue(longs[0])
+        self.ref?.child(("speciesid/observations/" + photoNames[0] + "/is_synced")).setValue(true)
+        self.ref?.child(("speciesid/observations/" + photoNames[0] + "/is_verified")).setValue(verifieds[0])
+        self.ref?.child(("speciesid/observations/" + photoNames[0] + "/plant_code")).setValue(plant_codes[0])
+        self.ref?.child(("speciesid/observations/" + photoNames[0] + "/datetime")).setValue(datetimes[0])
+        self.ref?.child(("speciesid/observations/" + photoNames[0] + "/username")).setValue(usernames[0])
+        /*
+        self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["comments": comments[0]])
+        self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["gps_accuracy": gpsAccuracys[0]])
+        self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["gps_lat": lats[0]])
+        self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["gps_long": longs[0]])
+        self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["is_synced": true])
+        self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["is_verified": verifieds[0]])
+        self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["plant_code": plant_codes[0]])
+        self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["datetime": datetimes[0]])
+        self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["username": usernames[0]])
+        */
+    }
+    
+    
     override func viewDidAppear(_ animated: Bool) {
         myObsTable.reloadData()
     }

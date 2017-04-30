@@ -39,7 +39,9 @@ class QuickLookViewController: UIViewController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     @IBAction func AddObsButton(_ sender: Any) {
-        performSegue(withIdentifier: "addObsSegue", sender: nil)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.25) {
+            self.performSegue(withIdentifier: "addObsSegue", sender: nil)
+        }
     }
     @IBAction func RetakePhotoButton(_ sender: Any) {
         navigationController?.popViewController(animated: true)
@@ -71,19 +73,23 @@ class QuickLookViewController: UIViewController {
         
         
         ref = FIRDatabase.database().reference()
-        name = "\(ts)" + "_" + (FIRAuth.auth()?.currentUser?.uid)!
+        name = "\(Int(ts))" + "_" + (FIRAuth.auth()?.currentUser?.uid)!
         fullImageName = name + ".jpg"
         datetimeQL = "\(dateQL)"
         print (datetimeQL)
         print(name)
         let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent(fullImageName)
+        print("1")
         let jpgImageData = UIImageJPEGRepresentation(photoImage, 1.0)
+        print("2")
         do {
             try jpgImageData?.write(to: fileURL, options: .atomic)
+            print("3")
         }
         catch{
             print("mistakes were made")
         }
+        print("4)")
         print (fileURL)
         super.viewDidLoad()
         
@@ -95,6 +101,7 @@ class QuickLookViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "addObsSegue"{
+            print(name)
             let MyObsVC = segue.destination as! MyObservationsViewController
             MyObsVC.datetime = datetimeQL
             MyObsVC.gps_lat = gpsLat
@@ -107,6 +114,7 @@ class QuickLookViewController: UIViewController {
             MyObsVC.comment = commentsBox.text
             MyObsVC.photoName = name
             MyObsVC.fullPhotoName = fullImageName
+            
         }
         else{
             print("whoops, something went wrong")
