@@ -159,29 +159,38 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
     @IBAction func TopSyncButton(_ sender: Any) {
         let storageRef = storage.reference()
         var obsRef = storage.reference()
-        var fileUrl = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent(fullPhotoNames[0])
-        let obsImage = try! Data(contentsOf: fileUrl)
-        obsRef = storageRef.child("observations/"+fullPhotoNames[0])
         
-        let uploadTask = obsRef.put(obsImage, metadata: nil) { (metadata, error) in
-            guard let metadata = metadata else {
-                // Uh-oh, an error occurred!
+        let metaData = FIRStorageMetadata()
+        metaData.contentType = "image/jpg"
+        
+        for var i in 0...(species_names.count - 1){
+        var fileUrl = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent(fullPhotoNames[i])
+        var obsImage = try! Data(contentsOf: fileUrl)
+        obsRef = storageRef.child("observations/"+fullPhotoNames[i])
+        var uploadTask = obsRef.put(obsImage, metadata: metaData) { (metaData, error) in
+            if var error = error {
+                print(error.localizedDescription)
                 return
             }
+            else{
             // Metadata contains file metadata such as size, content-type, and download URL.
-            let downloadURL = metadata.downloadURL
+            var downloadURL = metaData?.downloadURL
+            }
         }
-        self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["species_name": species_names[0]])
-        self.ref?.child(("speciesid/observations/" + photoNames[0] + "/comments")).setValue(comments[0])
-        self.ref?.child(("speciesid/observations/" + photoNames[0] + "/gps_accuracy")).setValue(gpsAccuracys[0])
-        self.ref?.child(("speciesid/observations/" + photoNames[0] + "/gps_lat")).setValue(lats[0])
-        self.ref?.child(("speciesid/observations/" + photoNames[0] + "/gps_long")).setValue(longs[0])
-        self.ref?.child(("speciesid/observations/" + photoNames[0] + "/is_synced")).setValue(true)
-        self.ref?.child(("speciesid/observations/" + photoNames[0] + "/is_verified")).setValue(verifieds[0])
-        self.ref?.child(("speciesid/observations/" + photoNames[0] + "/plant_code")).setValue(plant_codes[0])
-        self.ref?.child(("speciesid/observations/" + photoNames[0] + "/datetime")).setValue(datetimes[0])
-        self.ref?.child(("speciesid/observations/" + photoNames[0] + "/username")).setValue(usernames[0])
-        
+        self.ref?.child("speciesid").child("observations").child(photoNames[i]).setValue(["species_name": species_names[i]])
+        self.ref?.child(("speciesid/observations/" + photoNames[i] + "/comments")).setValue(comments[i])
+        self.ref?.child(("speciesid/observations/" + photoNames[i] + "/gps_accuracy")).setValue(gpsAccuracys[i])
+        self.ref?.child(("speciesid/observations/" + photoNames[i] + "/gps_lat")).setValue(lats[i])
+        self.ref?.child(("speciesid/observations/" + photoNames[i] + "/gps_long")).setValue(longs[i])
+        self.ref?.child(("speciesid/observations/" + photoNames[i] + "/is_synced")).setValue(true)
+        self.ref?.child(("speciesid/observations/" + photoNames[i] + "/is_verified")).setValue(verifieds[i])
+        self.ref?.child(("speciesid/observations/" + photoNames[i] + "/plant_code")).setValue(plant_codes[i])
+        self.ref?.child(("speciesid/observations/" + photoNames[i] + "/datetime")).setValue(datetimes[i])
+        self.ref?.child(("speciesid/observations/" + photoNames[i] + "/username")).setValue(usernames[i])
+        synceds[i] = true
+        }
+        defaults.set(synceds, forKey: "savedSynceds")
+        myObsTable.reloadData()
         /*
         self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["comments": comments[0]])
         self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["gps_accuracy": gpsAccuracys[0]])
