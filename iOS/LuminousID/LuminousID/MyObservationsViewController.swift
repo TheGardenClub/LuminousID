@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import FirebaseDatabase
-
+import FirebaseStorage
 class MyObservationsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var comments:[String] = []
     @IBOutlet weak var myObsTable: UITableView!
@@ -48,6 +48,8 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
     var userNamePath = ""
     var gpsAccuracy = "10m"
     var user = FIRAuth.auth()?.currentUser
+    let storage = FIRStorage.storage()
+    
     override func viewDidLoad() {
         ref = FIRDatabase.database().reference()
         super.viewDidLoad()
@@ -155,6 +157,20 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
     }
 
     @IBAction func TopSyncButton(_ sender: Any) {
+        let storageRef = storage.reference()
+        var obsRef = storage.reference()
+        var fileUrl = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent(fullPhotoNames[0])
+        let obsImage = try! Data(contentsOf: fileUrl)
+        obsRef = storageRef.child("observations/"+fullPhotoNames[0])
+        
+        let uploadTask = obsRef.put(obsImage, metadata: nil) { (metadata, error) in
+            guard let metadata = metadata else {
+                // Uh-oh, an error occurred!
+                return
+            }
+            // Metadata contains file metadata such as size, content-type, and download URL.
+            let downloadURL = metadata.downloadURL
+        }
         self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["species_name": species_names[0]])
         self.ref?.child(("speciesid/observations/" + photoNames[0] + "/comments")).setValue(comments[0])
         self.ref?.child(("speciesid/observations/" + photoNames[0] + "/gps_accuracy")).setValue(gpsAccuracys[0])
@@ -165,6 +181,7 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
         self.ref?.child(("speciesid/observations/" + photoNames[0] + "/plant_code")).setValue(plant_codes[0])
         self.ref?.child(("speciesid/observations/" + photoNames[0] + "/datetime")).setValue(datetimes[0])
         self.ref?.child(("speciesid/observations/" + photoNames[0] + "/username")).setValue(usernames[0])
+        
         /*
         self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["comments": comments[0]])
         self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["gps_accuracy": gpsAccuracys[0]])
