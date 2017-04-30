@@ -27,7 +27,7 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
     let defaults = UserDefaults.standard
     var usernames:[String] = []
     var photoNames:[String] = []
-    var gpsAccuracys:[String] = []
+    var gpsAccuracys:[Double] = []
     var obsNames:[String] = []
     var fullPhotoNames:[String] = []
     var comment:String = ""
@@ -46,7 +46,7 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
     var fName: String = ""
     var ref:FIRDatabaseReference?
     var userNamePath = ""
-    var gpsAccuracy = "10m"
+    var gpsAccuracy = 0.0
     var user = FIRAuth.auth()?.currentUser
     let storage = FIRStorage.storage()
     
@@ -67,7 +67,7 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
             verifieds = defaults.array(forKey: "savedVerifieds") as? [Int] ?? [Int]()
             plant_codes = defaults.stringArray(forKey: "savedPlantCodes") ?? [String]()
             usernames = defaults.stringArray(forKey: "savedUsernames") ?? [String]()
-            gpsAccuracys = defaults.stringArray(forKey: "savedAccuracys") ?? [String]()
+            gpsAccuracys = defaults.array(forKey: "savedAccuracys") as? [Double] ?? [Double]()
             fullPhotoNames = defaults.stringArray(forKey: "savedFullPhotoNames") ?? [String]()
             
             species_names.append(species_name)
@@ -109,7 +109,7 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
             verifieds = defaults.array(forKey: "savedVerifieds") as? [Int] ?? [Int]()
             plant_codes = defaults.stringArray(forKey: "savedPlantCodes") ?? [String]()
             usernames = defaults.stringArray(forKey: "savedUsernames") ?? [String]()
-            gpsAccuracys = defaults.stringArray(forKey: "savedAccuracys") ?? [String]()
+            gpsAccuracys = defaults.array(forKey: "savedAccuracys") as? [Double] ?? [Double]()
             fullPhotoNames = defaults.stringArray(forKey: "savedFullPhotoNames") ?? [String]()
             
         }

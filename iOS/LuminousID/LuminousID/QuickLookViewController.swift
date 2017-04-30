@@ -27,10 +27,11 @@ class QuickLookViewController: UIViewController {
     var speciesNameQL = ""
     var userNameQL = ""
     var datetimeQL = ""
-    var dateQL = Date()
+    var dateQL = ""
     let filemgr = FileManager.default
     var fullImageName = ""
     var newPath = ""
+    var accQL = 0.0
     @IBOutlet weak var quickLookImage: UIImageView!
     var photoImage: UIImage!
     
@@ -75,7 +76,7 @@ class QuickLookViewController: UIViewController {
         ref = FIRDatabase.database().reference()
         name = "\(Int(ts))" + "_" + (FIRAuth.auth()?.currentUser?.uid)!
         fullImageName = name + ".jpg"
-        datetimeQL = "\(dateQL)"
+        datetimeQL = dateQL
         print (datetimeQL)
         print(name)
         let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent(fullImageName)
@@ -114,7 +115,7 @@ class QuickLookViewController: UIViewController {
             MyObsVC.comment = commentsBox.text
             MyObsVC.photoName = name
             MyObsVC.fullPhotoName = fullImageName
-            
+            MyObsVC.gpsAccuracy = accQL
         }
         else{
             print("whoops, something went wrong")

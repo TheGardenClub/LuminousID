@@ -36,10 +36,12 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
     var geoFire: GeoFire!
     var geoFireRef: FIRDatabaseReference!
     var userName = ""
-
+    let formatter = DateFormatter()
     var focusMarker: UIImageView!
     var exposureMarker: UIImageView!
     var resetMarker: UIImageView!
+    var dateString = ""
+    var accuracy = 0.0
     fileprivate var adjustingExposureContext: String = ""
     
     var ref:FIRDatabaseReference?
@@ -71,6 +73,9 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
         
         geoFireRef = FIRDatabase.database().reference()
         geoFire = GeoFire(firebaseRef: geoFireRef)
+        formatter.dateStyle = DateFormatter.Style.short
+        formatter.timeStyle = DateFormatter.Style.medium
+        dateString = formatter.string(from: date)
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestWhenInUseAuthorization()
@@ -78,6 +83,7 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
         hour = calendar.component(.hour, from: date)
         minutes = calendar.component(.minute, from: date)
         print(date)
+        print(dateString)
         print(hour)
         print(minutes)
         
@@ -375,6 +381,8 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
         let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
         lat = myLocation.latitude
         long = myLocation.longitude
+        accuracy = location.horizontalAccuracy
+        
 
         
     }
@@ -385,11 +393,12 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
             let connection = imageOutput.connection(withMediaType: AVMediaTypeVideo)
             let currentLat = self.lat
             let currentLong = self.long
+            let currentAccuracy = self.accuracy
             timestamp = NSDate().timeIntervalSince1970
             print(timestamp)
             print(currentLat)
             print(currentLong)
-            
+            print (currentAccuracy)
             if (connection?.isVideoOrientationSupported)! {
                 connection?.videoOrientation = currentVideoOrientation()
             }
@@ -516,7 +525,8 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
             QuickLookVC.speciesObsDictQL = speciesObsDict
             QuickLookVC.plantCodeQL = speciesObsDict["plant_code"] as! String
             QuickLookVC.speciesNameQL = speciesObsDict["species_name"] as! String
-            QuickLookVC.dateQL = date
+            QuickLookVC.dateQL = dateString
+            QuickLookVC.accQL = accuracy
             if let image = thumbnail.backgroundImage(for: UIControlState()){
                QuickLookVC.photoImage = image
                 print("looks like it worked")
