@@ -39,18 +39,20 @@ class SpeciesInfoViewController: UIViewController {
         if (speciesDict[0]["growth_form"] as! String) == "forb"
         {
             SpeciesImageView.image = UIImage(named: "Images/"+((speciesDict[0]["plant_code"]) as? String)! + "_1.jpg")
+            /*
             Label1.text = "Species Name: " + (speciesDict[0]["species_name"] as! String)
-            Label2.text = "Common Name: " + (speciesDict[0]["common_name"] as! String)
-            Label3.text = "Synonyms: " + (speciesDict[0]["synonyms"] as! String)
+             */
+            Label1.text = "Common Name: " + (speciesDict[0]["common_name"] as! String)
+            Label2.text = "Synonyms: " + (speciesDict[0]["synonyms"] as! String)
             Label4.text = "Growth Form: " + (speciesDict[0]["growth_form"] as! String)
-            Label5.text = "Family Name: " + (speciesDict[0]["family_name"] as! String)
-            Label6.text = "Leaf Shape: " + (speciesDict[0]["leaf_shape_filter"] as! String)
+            Label3.text = "Family: " + (speciesDict[0]["family_name"] as! String)
+            Label8.text = "Leaf Shape: " + (speciesDict[0]["leaf_shape_filter"] as! String)
             Label7.text = "Leaf Arrangement: " + (speciesDict[0]["leaf_arrangement"] as! String)
-            Label8.text = "Petal Number: " + (speciesDict[0]["petal_number"] as! String)
-            Label9.text = "Flower Shape: " + (speciesDict[0]["flower_shape"] as! String)
-            Label10.text = "Flower Color: " + (speciesDict[0]["flower_color"] as! String)
-            Label11.text = "Habitat: " + (speciesDict[0]["habitat"] as! String)
-            Label12.text = "Photo Credit: " + (speciesDict[0]["photo_credit"] as! String)
+            Label6.text = "Petal Number: " + (speciesDict[0]["petal_number"] as! String)
+            Label5.text = "Flower Shape: " + (speciesDict[0]["flower_shape"] as! String)
+            Label4.text = "Flower Color: " + (speciesDict[0]["flower_color"] as! String)
+            Label9.text = "Habitat: " + (speciesDict[0]["habitat"] as! String)
+            Label10.text = "Photo Credit: " + (speciesDict[0]["photo_credit"] as! String)
             /*
             Label12.text = "Photo Credit: Brian Larson"
             */

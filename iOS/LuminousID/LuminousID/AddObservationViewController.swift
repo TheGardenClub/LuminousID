@@ -31,7 +31,6 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
     var timestamp = 0.0
     var user = FIRAuth.auth()?.currentUser
     let manager = CLLocationManager()
-    var userNamePath = ""
     var mapHasCenteredOnce = false
     var geoFire: GeoFire!
     var geoFireRef: FIRDatabaseReference!
@@ -64,9 +63,29 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
         super.viewWillDisappear(animated)
     }
     
+    func getUsername() -> String {
+        var userNamePath = "speciesid/accounts/" + (user?.uid)!
+        var un = ""
+        FIRDatabase.database().reference().child(userNamePath).observeSingleEvent(of: .value, with: {(snap) in
+            if let snapDict = snap.value as? [String:AnyObject]{
+                un = (snapDict["username"] as? String)!
+
+                print(un)
+            }
+            else{
+                un = ""
+                print("whoops")
+            }
+        })
+        print(un)
+        return un
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        
         setupSession()
         setupPreview()
         startSession()
@@ -86,7 +105,8 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
         print(dateString)
         print(hour)
         print(minutes)
-        
+        userName = getUsername()
+        print (userName)
         print (speciesObsDict["species_name"] as! String)
         
         
@@ -516,7 +536,6 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
             }
         }else if segue.identifier == "ShowTakenPic"{
             let QuickLookVC = segue.destination as! QuickLookViewController
-            self.userNamePath = "speciesid/accounts/" + (user?.uid)!
             QuickLookVC.min = minutes
             QuickLookVC.hr = hour
             QuickLookVC.gpsLat = lat

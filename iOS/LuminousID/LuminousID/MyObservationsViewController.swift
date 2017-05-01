@@ -54,7 +54,6 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
         ref = FIRDatabase.database().reference()
         super.viewDidLoad()
  
-        userNamePath = "speciesid/accounts/" + (user?.uid)!
 
         if species_name != ""{
             species_names = defaults.stringArray(forKey: "savedSpeciesNames") ?? [String]()
