@@ -37,7 +37,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9T3-EO-3Er" id="LP8-4e-WNj">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mzs-N6-Aca">
@@ -160,7 +160,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gIw-Rb-FJQ" id="Cz0-qY-kqx">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Glossary Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iQ-f8-fwT">
@@ -412,7 +412,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IyO-HX-dJx" id="RQX-cv-p2Q">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TJ5-8A-ccb">
@@ -485,7 +485,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="El9-MK-O9x" id="Y71-cY-ku4">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l9g-np-TRk">
@@ -558,7 +558,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ifG-S8-eie" id="O5o-Ch-ZJv">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cgq-W0-v1x">
@@ -646,7 +646,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="af5-6f-3Y0" id="2dt-R4-fkg">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqV-Ti-S5r">
@@ -734,7 +734,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Amu-FC-NTY" id="qCt-yc-YeY">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFf-5f-XSG">
@@ -824,7 +824,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jc8-M9-5eL" id="iAD-tb-QdH">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SDe-a3-KsT">
@@ -897,7 +897,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cXf-mg-idW" id="4WA-cD-HwT">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4TE-r5-1d4">
@@ -970,7 +970,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W06-9f-E9h" id="OYb-0f-F3V">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLI-sT-3JF">
@@ -1058,7 +1058,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JWy-UM-vSA" id="i2x-dg-b7L">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5l-6I-urc">
@@ -1146,7 +1146,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8f5-OI-8h2" id="zFa-gf-ILA">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8ge-f8-ybm">
@@ -1220,7 +1220,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4yD-r9-rVl" id="2cI-EY-kvk">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7CR-F6-x0H">
@@ -1541,7 +1541,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vIa-Ir-2ZP" id="t4u-UD-Tef">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="op4-eu-h2o">
@@ -1623,7 +1623,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lsa-YR-qja" id="8Zm-wF-E0n">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Agm-hh-Lf5">
@@ -1705,7 +1705,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cyD-zl-S5L" id="373-HA-ZqC">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CgN-oP-Ysv">
@@ -1787,7 +1787,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tRh-It-wJQ" id="Bxo-8d-8Ac">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tCC-Qg-Nzj">
@@ -1868,7 +1868,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PRI-dg-Mqt" id="rHG-RG-9xw">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LwO-4n-3c2">
@@ -1939,7 +1939,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zJZ-K1-VH1" id="pLT-Qu-jXn">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Od-s9-SRb">
@@ -2041,7 +2041,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GpW-aq-hiv" id="0hc-82-GEZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="STv-ju-E5v">
@@ -2644,10 +2644,10 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="2287"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u79-iP-oem">
-                                        <rect key="frame" x="31" y="29" width="313" height="1995"/>
+                                        <rect key="frame" x="28" y="29" width="320" height="1995"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1995" id="1ax-Xe-qCz"/>
+                                            <constraint firstAttribute="height" constant="1995" id="CwY-Mk-GbF"/>
                                         </constraints>
                                         <attributedString key="attributedText">
                                             <fragment>
@@ -2655,7 +2655,7 @@
 </string>
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="2" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -2668,7 +2668,7 @@
 </string>
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -2679,7 +2679,7 @@
 </string>
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="2" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -2688,7 +2688,7 @@
                                             <fragment content="This website and app was designed and developed during a two-year collaboration between the ">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -2697,7 +2697,7 @@
                                             <fragment content="Computer Science Department">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <url key="NSLink" string="http://www.colorado.edu/cs/senior-capstone/sponsor-senior-project"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
@@ -2707,7 +2707,7 @@
                                             <fragment content=", the ">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -2716,7 +2716,7 @@
                                             <fragment content="Environmental Studies Program">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <url key="NSLink" string="http://www.colorado.edu/envs/"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
@@ -2726,7 +2726,7 @@
                                             <fragment content=", and the ">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -2735,7 +2735,7 @@
                                             <fragment content="Institute of Arctic and Alpine Research">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <url key="NSLink" string="https://instaar.colorado.edu/"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
@@ -2746,7 +2746,7 @@
                                                 <string key="content"> at the University of Colorado, Boulder. The species in the field guides are a representative, but not exhaustive, list of species growing at the University of Colorado’s </string>
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -2755,7 +2755,7 @@
                                             <fragment content="Mountain Research Station">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <url key="NSLink" string="http://www.colorado.edu/mrs/"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
@@ -2769,7 +2769,7 @@
 </string>
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -2780,7 +2780,7 @@
 </string>
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="2" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -2789,7 +2789,7 @@
                                             <fragment content="Ryan M. O'Connell">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <url key="NSLink" string="https://ryanmoconnell.carbonmade.com/"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
@@ -2808,7 +2808,7 @@ Jennifer Baumann
 </string>
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -2819,7 +2819,7 @@ Jennifer Baumann
 </string>
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="2" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -2828,7 +2828,7 @@ Jennifer Baumann
                                             <fragment content="Nathalie Chardon">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <url key="NSLink" string="http://www.nathaliechardon.weebly.com/"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
@@ -2843,7 +2843,7 @@ Jane Smith
 </string>
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -2854,7 +2854,7 @@ Jane Smith
 </string>
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="2" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -2864,7 +2864,7 @@ Jane Smith
                                                 <string key="content">This project has been made possible with support from the National Science Foundation via a Long Term Research in Environmental Biology grant to DF Doak and WF Morris and the Long Term Ecological Research (LTER) program at </string>
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -2873,7 +2873,7 @@ Jane Smith
                                             <fragment content="Niwot Ridge">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <url key="NSLink" string="http://niwot.colorado.edu/"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
@@ -2883,7 +2883,7 @@ Jane Smith
                                             <fragment content=". The ">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -2892,7 +2892,7 @@ Jane Smith
                                             <fragment content="United States Geological Survey">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <url key="NSLink">
                                                         <string key="string">https://store.usgs.gov/b2c_usgs/usgs/maplocator/(xcm=r3standardpitrex_prd&amp;layout=6_1_61_48&amp;uiarea=2&amp;ctype=areaDetails&amp;carea=%24ROOT)/.do</string>
                                                     </url>
@@ -2908,7 +2908,7 @@ Jane Smith
 </string>
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -2919,24 +2919,24 @@ Jane Smith
 </string>
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="2" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
                                                 </attributes>
                                             </fragment>
                                             <fragment>
-                                                <mutableString key="content">Image Use: Images included in this website and app have been made freely available by their owners for education and research purposes. Contributors retain the full copyright for their images. Images may be used only in unmodified form for personal or educational use and are NOT available for commercial use unless permission is first obtained from the copyright holder. Any image used in a non-commercial publication, report, or as a web link, must credit the photographer or artist, as well as the name of the website hosting the image.
+                                                <string key="content">Image Use: Images included in this website and app have been made freely available by their owners for education and research purposes. Contributors retain the full copyright for their images. Images may be used only in unmodified form for personal or educational use and are NOT available for commercial use unless permission is first obtained from the copyright holder. Any image used in a non-commercial publication, report, or as a web link, must credit the photographer or artist, as well as the name of the website hosting the image.
 
 
 Illustration Credit: All illustrations included in the Luminous ID app were created by Jane G. Smith.
 
 
 Photo Credits:
-*Biopix: A. Neuman, J.C. Schou | </mutableString>
+*Biopix: A. Neuman, J.C. Schou | </string>
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -2945,7 +2945,7 @@ Photo Credits:
                                             <fragment content="http://calphotos.berkeley.edu">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <url key="NSLink" string="http://calphotos.berkeley.edu/"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
@@ -2958,7 +2958,7 @@ William D. Bowman
 *CalPhotos Photo Database: B. Anacker, B. Breckling, R. T. Hawke, S. Matson, K. Morse, A. Schusteff, D. Wm. Taylor, A. Trnkoczy | </string>
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -2967,7 +2967,7 @@ William D. Bowman
                                             <fragment content="http://calphotos.berkeley.edu">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <url key="NSLink" string="http://calphotos.berkeley.edu/"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
@@ -2981,7 +2981,7 @@ N. I. Chardon
 *SEINet data portal, Arizona - New Mexico Chapter: P. J. Alexander, T. Ayers, B. Gratwicke, L. R. Landrum, M. Licher |</string>
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -2990,7 +2990,7 @@ N. I. Chardon
                                             <fragment content="http://swbiodiversity.org">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <url key="NSLink" string="http://swbiodiversity.org/"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
@@ -3004,7 +3004,7 @@ The New York Botanical Garden
 *USDA-NRCS PLANTS Database | E.G. Hurd, N.L. Shaw, J. Mastrogiuseppe, L.C. Smithman and S. Goodrich. 1998. Field guide to Intermountain sedges. General Technical Report RMS-GTR-10. USDA Forest Service, RMRS, Ogden.</string>
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -3014,33 +3014,33 @@ The New York Botanical Garden
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garden_club_logo" translatesAutoresizingMaskIntoConstraints="NO" id="4HM-jF-Zjf">
-                                        <rect key="frame" x="78" y="2032" width="219" height="168"/>
+                                        <rect key="frame" x="78" y="2060" width="219" height="168"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="u79-iP-oem" firstAttribute="centerX" secondItem="4XW-Sr-t0Y" secondAttribute="centerX" id="9gC-ne-rfP"/>
-                                    <constraint firstAttribute="trailing" secondItem="u79-iP-oem" secondAttribute="trailing" constant="31" id="FrO-dl-ZGa"/>
-                                    <constraint firstAttribute="trailing" secondItem="u79-iP-oem" secondAttribute="trailing" constant="31" id="GQ8-R7-Blu"/>
-                                    <constraint firstItem="u79-iP-oem" firstAttribute="leading" secondItem="4XW-Sr-t0Y" secondAttribute="leading" constant="31" id="RIC-9F-LGz"/>
-                                    <constraint firstItem="u79-iP-oem" firstAttribute="top" secondItem="4XW-Sr-t0Y" secondAttribute="top" constant="29" id="S8Q-YC-N5a"/>
-                                    <constraint firstItem="4HM-jF-Zjf" firstAttribute="top" secondItem="u79-iP-oem" secondAttribute="bottom" constant="8" symbolic="YES" id="fDd-MO-GvM"/>
-                                    <constraint firstItem="u79-iP-oem" firstAttribute="centerX" secondItem="4HM-jF-Zjf" secondAttribute="centerX" id="fbg-0v-0t0"/>
-                                    <constraint firstItem="4HM-jF-Zjf" firstAttribute="leading" secondItem="4XW-Sr-t0Y" secondAttribute="leading" constant="78" id="hra-u1-cMb"/>
-                                    <constraint firstItem="u79-iP-oem" firstAttribute="top" secondItem="4XW-Sr-t0Y" secondAttribute="top" constant="29" id="jgb-R5-92P"/>
-                                    <constraint firstAttribute="bottom" secondItem="4HM-jF-Zjf" secondAttribute="bottom" constant="87" id="vvd-Ro-ZUn"/>
+                                    <constraint firstAttribute="trailing" secondItem="u79-iP-oem" secondAttribute="trailing" constant="27" id="8LD-QA-NWc"/>
+                                    <constraint firstItem="u79-iP-oem" firstAttribute="top" secondItem="4XW-Sr-t0Y" secondAttribute="top" constant="29" id="9pi-tq-wJc"/>
+                                    <constraint firstItem="u79-iP-oem" firstAttribute="top" secondItem="4XW-Sr-t0Y" secondAttribute="top" constant="29" id="BhG-Lb-iIa"/>
+                                    <constraint firstItem="4HM-jF-Zjf" firstAttribute="leading" secondItem="4XW-Sr-t0Y" secondAttribute="leading" constant="78" id="Ey0-ME-exc"/>
+                                    <constraint firstItem="u79-iP-oem" firstAttribute="centerX" secondItem="4HM-jF-Zjf" secondAttribute="centerX" id="Nh0-xE-BqF"/>
+                                    <constraint firstItem="u79-iP-oem" firstAttribute="centerX" secondItem="4XW-Sr-t0Y" secondAttribute="centerX" id="cFC-d8-w3J"/>
+                                    <constraint firstAttribute="trailing" secondItem="u79-iP-oem" secondAttribute="trailing" constant="27" id="foP-kn-nb8"/>
+                                    <constraint firstAttribute="bottom" secondItem="4HM-jF-Zjf" secondAttribute="bottom" constant="59" id="gNN-dL-O0f"/>
+                                    <constraint firstItem="4HM-jF-Zjf" firstAttribute="top" secondItem="u79-iP-oem" secondAttribute="bottom" constant="36" id="t6s-6H-pnl"/>
+                                    <constraint firstItem="u79-iP-oem" firstAttribute="leading" secondItem="4XW-Sr-t0Y" secondAttribute="leading" constant="28" id="vBI-tx-gbb"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4XW-Sr-t0Y" firstAttribute="top" secondItem="hVY-8t-qWc" secondAttribute="bottom" id="4Xr-3e-Sht"/>
-                            <constraint firstItem="Ofk-D1-eFA" firstAttribute="trailing" secondItem="4XW-Sr-t0Y" secondAttribute="trailing" id="HTu-63-Dbt"/>
-                            <constraint firstAttribute="trailing" secondItem="Ofk-D1-eFA" secondAttribute="trailing" id="YNq-zc-1ad"/>
-                            <constraint firstItem="Ofk-D1-eFA" firstAttribute="leading" secondItem="zEX-e2-wxl" secondAttribute="leading" id="ZOT-gH-urE"/>
-                            <constraint firstItem="4XW-Sr-t0Y" firstAttribute="bottom" secondItem="4Y8-aH-9rU" secondAttribute="top" id="cqc-Ov-Z31"/>
-                            <constraint firstAttribute="bottom" secondItem="Ofk-D1-eFA" secondAttribute="bottom" id="inM-Hi-UJ9"/>
-                            <constraint firstItem="Ofk-D1-eFA" firstAttribute="top" secondItem="zEX-e2-wxl" secondAttribute="top" id="one-N6-qqk"/>
-                            <constraint firstItem="Ofk-D1-eFA" firstAttribute="leading" secondItem="4XW-Sr-t0Y" secondAttribute="leading" id="pvW-5B-zGh"/>
+                            <constraint firstItem="4XW-Sr-t0Y" firstAttribute="top" secondItem="hVY-8t-qWc" secondAttribute="bottom" id="KSJ-au-dUT"/>
+                            <constraint firstItem="Ofk-D1-eFA" firstAttribute="leading" secondItem="4XW-Sr-t0Y" secondAttribute="leading" id="RKd-Nu-JkU"/>
+                            <constraint firstAttribute="bottom" secondItem="Ofk-D1-eFA" secondAttribute="bottom" id="W2J-ib-e8j"/>
+                            <constraint firstAttribute="trailing" secondItem="Ofk-D1-eFA" secondAttribute="trailing" id="a7g-AH-gdO"/>
+                            <constraint firstItem="Ofk-D1-eFA" firstAttribute="trailing" secondItem="4XW-Sr-t0Y" secondAttribute="trailing" id="aDn-WX-TSQ"/>
+                            <constraint firstItem="4XW-Sr-t0Y" firstAttribute="bottom" secondItem="4Y8-aH-9rU" secondAttribute="top" id="hwJ-Bl-6mE"/>
+                            <constraint firstItem="Ofk-D1-eFA" firstAttribute="leading" secondItem="zEX-e2-wxl" secondAttribute="leading" id="n6n-ab-RZC"/>
+                            <constraint firstItem="Ofk-D1-eFA" firstAttribute="top" secondItem="zEX-e2-wxl" secondAttribute="top" id="yl9-ql-Lty"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="About Us" image="about_us_tab" id="l8C-o5-qSf"/>
@@ -3061,41 +3061,79 @@ The New York Botanical Garden
                         <viewControllerLayoutGuide type="bottom" id="yNj-zf-VAs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ewD-EX-ges">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_img" translatesAutoresizingMaskIntoConstraints="NO" id="sLf-Xb-Id1">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6U1-YI-RoP">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="600"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="szN-fs-Ybb">
-                                        <rect key="frame" x="20" y="22" width="334" height="524"/>
+                                        <rect key="frame" x="20" y="38" width="334" height="524"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="524" id="5iS-Ip-v7k"/>
-                                        </constraints>
                                         <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Identify:
+Use the filter function in the field guide to narrow down the list of possible species you are looking at during your research visit or hike to the </string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Mountain Research Station">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
+                                                    <url key="NSLink">
+                                                        <string key="string">https://www.google.com/maps/place/Mountain+Research+Station/@40.0291905,-105.5405166,13.73z/data=!4m5!3m4!1s0x876bc5b39ca2cd79:0x8ba793f05f31bf1a!8m2!3d40.0320851!4d-105.5357297!5m1!1e4</string>
+                                                    </url>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" and ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Niwot Ridge.">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
+                                                    <url key="NSLink">
+                                                        <string key="string">https://www.google.com/maps/place/Niwot+Ridge/@40.0558115,-105.6091937,13.32z/data=!4m13!1m7!3m6!1s0x876bd01f4fba0207:0xcf7d1e35c2c848bd!2sNiwot+Ridge!3b1!8m2!3d40.0597085!4d-105.6169466!3m4!1s0x876bd01f4fba0207:0xcf7d1e35c2c848bd!8m2!3d40.0597085!4d-105.6169466!5m1!1e4</string>
+                                                    </url>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
                                             <fragment>
                                                 <string key="content">
 
 
+Share:
+Record the plants you observe with the app, and once you are back with cell reception or wifi your observations will get uploaded to this website. The more observations we get from you, the better Niwot Ridge scientists will be able to carry out their research on how species are responding to climate change!
 
 
-
-
-
-
-
-
-How To:
-
-This is where a how to page will go. But we will cross that bridge when we get there.</string>
+Explore:
+Interested in finding more individuals of a certain species? Check out our website on a computer at luminousid.org to view other's observations.</string>
                                                 <attributes>
-                                                    <color key="NSColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="system" size="18"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
@@ -3103,28 +3141,34 @@ This is where a how to page will go. But we will cross that bridge when we get t
                                     </textView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="szN-fs-Ybb" firstAttribute="bottom" secondItem="6U1-YI-RoP" secondAttribute="bottomMargin" id="CDp-r0-qJk"/>
-                                    <constraint firstItem="szN-fs-Ybb" firstAttribute="leading" secondItem="6U1-YI-RoP" secondAttribute="leading" constant="20" id="GEa-fw-5Qd"/>
-                                    <constraint firstItem="szN-fs-Ybb" firstAttribute="centerX" secondItem="6U1-YI-RoP" secondAttribute="centerX" id="Qn0-VM-ScJ"/>
-                                    <constraint firstItem="szN-fs-Ybb" firstAttribute="top" secondItem="6U1-YI-RoP" secondAttribute="top" constant="22" id="h1k-ST-ooc"/>
-                                    <constraint firstAttribute="trailing" secondItem="szN-fs-Ybb" secondAttribute="trailing" constant="21" id="rZ1-Er-GjB"/>
+                                    <constraint firstAttribute="trailing" secondItem="szN-fs-Ybb" secondAttribute="trailing" constant="21" id="0AP-Ey-fA2"/>
+                                    <constraint firstAttribute="bottom" secondItem="szN-fs-Ybb" secondAttribute="bottom" constant="38" id="1aL-X2-Wg4"/>
+                                    <constraint firstItem="szN-fs-Ybb" firstAttribute="top" secondItem="6U1-YI-RoP" secondAttribute="top" constant="38" id="2Ls-Il-Ce0"/>
+                                    <constraint firstItem="szN-fs-Ybb" firstAttribute="centerY" secondItem="6U1-YI-RoP" secondAttribute="centerY" id="Ozq-NC-7l7"/>
+                                    <constraint firstItem="szN-fs-Ybb" firstAttribute="centerX" secondItem="6U1-YI-RoP" secondAttribute="centerX" id="W3w-gB-hIo"/>
+                                    <constraint firstItem="szN-fs-Ybb" firstAttribute="top" secondItem="6U1-YI-RoP" secondAttribute="top" constant="38" id="XqP-or-MXy"/>
+                                    <constraint firstItem="szN-fs-Ybb" firstAttribute="leading" secondItem="6U1-YI-RoP" secondAttribute="leading" constant="20" id="bWY-Fo-16e"/>
+                                    <constraint firstItem="szN-fs-Ybb" firstAttribute="leading" secondItem="6U1-YI-RoP" secondAttribute="leading" constant="20" id="cgv-Vf-IiF"/>
+                                    <constraint firstAttribute="trailing" secondItem="szN-fs-Ybb" secondAttribute="trailing" constant="21" id="lR4-Fq-gmJ"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="sLf-Xb-Id1" firstAttribute="trailing" secondItem="6U1-YI-RoP" secondAttribute="trailing" id="0sc-fH-kjJ"/>
-                            <constraint firstItem="sLf-Xb-Id1" firstAttribute="leading" secondItem="6U1-YI-RoP" secondAttribute="leading" id="IES-Cl-5l7"/>
-                            <constraint firstItem="sLf-Xb-Id1" firstAttribute="leading" secondItem="ewD-EX-ges" secondAttribute="leading" id="Sys-u8-iXD"/>
-                            <constraint firstItem="sLf-Xb-Id1" firstAttribute="top" secondItem="ewD-EX-ges" secondAttribute="top" id="UXV-5G-JhC"/>
-                            <constraint firstItem="6U1-YI-RoP" firstAttribute="bottom" secondItem="yNj-zf-VAs" secondAttribute="top" id="bon-sP-lXz"/>
-                            <constraint firstAttribute="trailing" secondItem="sLf-Xb-Id1" secondAttribute="trailing" id="c0s-hZ-Xjj"/>
-                            <constraint firstItem="6U1-YI-RoP" firstAttribute="top" secondItem="eFa-fo-kDQ" secondAttribute="bottom" id="lh8-fA-bfM"/>
-                            <constraint firstAttribute="bottom" secondItem="sLf-Xb-Id1" secondAttribute="bottom" id="wmU-eS-dyA"/>
+                            <constraint firstItem="6U1-YI-RoP" firstAttribute="top" secondItem="eFa-fo-kDQ" secondAttribute="bottom" id="52h-gv-fDM"/>
+                            <constraint firstAttribute="trailing" secondItem="sLf-Xb-Id1" secondAttribute="trailing" id="6Gw-Ot-0Iu"/>
+                            <constraint firstItem="sLf-Xb-Id1" firstAttribute="trailing" secondItem="6U1-YI-RoP" secondAttribute="trailing" id="AWC-kM-1f8"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="6U1-YI-RoP" secondAttribute="bottom" constant="36" id="FrH-xY-qEJ"/>
+                            <constraint firstAttribute="bottom" secondItem="sLf-Xb-Id1" secondAttribute="bottom" id="Qfn-GB-QFJ"/>
+                            <constraint firstItem="sLf-Xb-Id1" firstAttribute="leading" secondItem="6U1-YI-RoP" secondAttribute="leading" id="cEo-4o-ztU"/>
+                            <constraint firstItem="sLf-Xb-Id1" firstAttribute="leading" secondItem="ewD-EX-ges" secondAttribute="leading" id="hHm-mV-Hjx"/>
+                            <constraint firstItem="sLf-Xb-Id1" firstAttribute="top" secondItem="ewD-EX-ges" secondAttribute="top" id="sgF-TR-MbI"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="How To" image="HowTo_tab" id="czz-4V-hbB"/>
                     <navigationItem key="navigationItem" title="How To" id="eL0-rM-XLP"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="700"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pWE-gw-VGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3212,7 +3256,7 @@ This is where a how to page will go. But we will cross that bridge when we get t
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cjC-cH-TsI" id="JFE-5R-Xlx">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vYN-cJ-ePh">
