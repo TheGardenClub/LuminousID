@@ -37,6 +37,7 @@
 		A427FB541E34089000011350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A427FB521E34089000011350 /* LaunchScreen.storyboard */; };
 		A427FB5F1E34089000011350 /* LuminousIDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427FB5E1E34089000011350 /* LuminousIDTests.swift */; };
 		A427FB6A1E34089000011350 /* LuminousIDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427FB691E34089000011350 /* LuminousIDUITests.swift */; };
+		A42EF1801EB6BD6D004915F3 /* ViewObservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42EF17F1EB6BD6D004915F3 /* ViewObservationViewController.swift */; };
 		A45861CA1E61077800DAE2FC /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45861C91E61077800DAE2FC /* CreateUserViewController.swift */; };
 		A465B7DD1EB296DD003B0536 /* MyObservationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A465B7DC1EB296DD003B0536 /* MyObservationsViewController.swift */; };
 		A465B7DF1EB298D7003B0536 /* MyObservationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A465B7DE1EB298D7003B0536 /* MyObservationsTableViewCell.swift */; };
@@ -122,6 +123,7 @@
 		A427FB651E34089000011350 /* LuminousIDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuminousIDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A427FB691E34089000011350 /* LuminousIDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminousIDUITests.swift; sourceTree = "<group>"; };
 		A427FB6B1E34089000011350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42EF17F1EB6BD6D004915F3 /* ViewObservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewObservationViewController.swift; sourceTree = "<group>"; };
 		A45861C91E61077800DAE2FC /* CreateUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		A465B7DC1EB296DD003B0536 /* MyObservationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyObservationsViewController.swift; sourceTree = "<group>"; };
 		A465B7DE1EB298D7003B0536 /* MyObservationsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyObservationsTableViewCell.swift; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 			children = (
 				A427FB491E34089000011350 /* AppDelegate.swift */,
 				A427FB4B1E34089000011350 /* ViewController.swift */,
+				A42EF17F1EB6BD6D004915F3 /* ViewObservationViewController.swift */,
 				A465B7DC1EB296DD003B0536 /* MyObservationsViewController.swift */,
 				A427FB4D1E34089000011350 /* Main.storyboard */,
 				A427FB501E34089000011350 /* Assets.xcassets */,
@@ -699,6 +702,7 @@
 				A41DBB2C1EAE88DC00DF4887 /* RushesFiltersViewController.swift in Sources */,
 				A465B7DD1EB296DD003B0536 /* MyObservationsViewController.swift in Sources */,
 				A46FF76B1E6508910001455E /* DeciduousViewController.swift in Sources */,
+				A42EF1801EB6BD6D004915F3 /* ViewObservationViewController.swift in Sources */,
 				A40CD2371EAC4290007EA602 /* FilterList.swift in Sources */,
 				A41DBB311EAE896000DF4887 /* GrassesFiltersViewController.swift in Sources */,
 				A41DBB3D1EAE8A1E00DF4887 /* DeciduousSpecificFiltersViewController.swift in Sources */,

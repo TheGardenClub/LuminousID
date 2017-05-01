@@ -49,6 +49,7 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
     var gpsAccuracy = 0.0
     var user = FIRAuth.auth()?.currentUser
     let storage = FIRStorage.storage()
+    var row = 0
     
     override func viewDidLoad() {
         ref = FIRDatabase.database().reference()
@@ -154,6 +155,27 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
         
         return (cell)
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        row = indexPath.row
+
+        tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "toViewObservation", sender: species_names[indexPath.row])
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let viewObsVC = segue.destination as! ViewObservationViewController
+
+        viewObsVC.obsDate = datetimes[row]
+
+        viewObsVC.obsLat = lats[row]
+
+        viewObsVC.obsLong = longs[row]
+
+        viewObsVC.speciesImageName = fullPhotoNames[row]
+        
+        viewObsVC.speciesName = species_names[row]
+
+    }
 
     @IBAction func TopSyncButton(_ sender: Any) {
         let storageRef = storage.reference()
@@ -190,19 +212,44 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
         }
         defaults.set(synceds, forKey: "savedSynceds")
         myObsTable.reloadData()
-        /*
-        self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["comments": comments[0]])
-        self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["gps_accuracy": gpsAccuracys[0]])
-        self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["gps_lat": lats[0]])
-        self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["gps_long": longs[0]])
-        self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["is_synced": true])
-        self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["is_verified": verifieds[0]])
-        self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["plant_code": plant_codes[0]])
-        self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["datetime": datetimes[0]])
-        self.ref?.child("speciesid").child("observations").child(photoNames[0]).setValue(["username": usernames[0]])
-        */
     }
     
+    @IBAction func BottomSyncButton(_ sender: Any) {
+        let storageRef = storage.reference()
+        var obsRef = storage.reference()
+        
+        let metaData = FIRStorageMetadata()
+        metaData.contentType = "image/jpg"
+        
+        for var i in 0...(species_names.count - 1){
+            var fileUrl = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent(fullPhotoNames[i])
+            var obsImage = try! Data(contentsOf: fileUrl)
+            obsRef = storageRef.child("observations/"+fullPhotoNames[i])
+            var uploadTask = obsRef.put(obsImage, metadata: metaData) { (metaData, error) in
+                if var error = error {
+                    print(error.localizedDescription)
+                    return
+                }
+                else{
+                    // Metadata contains file metadata such as size, content-type, and download URL.
+                    var downloadURL = metaData?.downloadURL
+                }
+            }
+            self.ref?.child("speciesid").child("observations").child(photoNames[i]).setValue(["species_name": species_names[i]])
+            self.ref?.child(("speciesid/observations/" + photoNames[i] + "/comments")).setValue(comments[i])
+            self.ref?.child(("speciesid/observations/" + photoNames[i] + "/gps_accuracy")).setValue(gpsAccuracys[i])
+            self.ref?.child(("speciesid/observations/" + photoNames[i] + "/gps_lat")).setValue(lats[i])
+            self.ref?.child(("speciesid/observations/" + photoNames[i] + "/gps_long")).setValue(longs[i])
+            self.ref?.child(("speciesid/observations/" + photoNames[i] + "/is_synced")).setValue(true)
+            self.ref?.child(("speciesid/observations/" + photoNames[i] + "/is_verified")).setValue(verifieds[i])
+            self.ref?.child(("speciesid/observations/" + photoNames[i] + "/plant_code")).setValue(plant_codes[i])
+            self.ref?.child(("speciesid/observations/" + photoNames[i] + "/datetime")).setValue(datetimes[i])
+            self.ref?.child(("speciesid/observations/" + photoNames[i] + "/username")).setValue(usernames[i])
+            synceds[i] = true
+        }
+        defaults.set(synceds, forKey: "savedSynceds")
+        myObsTable.reloadData()
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         myObsTable.reloadData()
