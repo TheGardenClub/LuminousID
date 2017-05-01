@@ -2634,99 +2634,423 @@
                         <viewControllerLayoutGuide type="bottom" id="4Y8-aH-9rU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zEX-e2-wxl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_img" translatesAutoresizingMaskIntoConstraints="NO" id="Ofk-D1-eFA">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="2400"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XW-Sr-t0Y">
-                                <rect key="frame" x="0.0" y="64" width="375" height="1379"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="2287"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garden_club_logo" translatesAutoresizingMaskIntoConstraints="NO" id="4HM-jF-Zjf">
-                                        <rect key="frame" x="78" y="34" width="219" height="170"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="170" id="Ljc-VA-a7X"/>
-                                        </constraints>
-                                    </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u79-iP-oem">
-                                        <rect key="frame" x="19" y="224" width="336" height="1135"/>
+                                        <rect key="frame" x="31" y="29" width="313" height="1995"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1135" id="Jzy-HI-xlK"/>
+                                            <constraint firstAttribute="height" constant="1995" id="1ax-Xe-qCz"/>
                                         </constraints>
                                         <attributedString key="attributedText">
                                             <fragment>
-                                                <string key="content">Who We Are:
+                                                <string key="content">Goals:
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="2" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">The goals of this website and app are to a) increase citizen engagement at the Long-Term Ecological Research site on Niwot Ridge, and b) build up a geographic and photographic dataset of plant species, in order to record how species’ geographic distributions and phenology (timing of flowering) are shifting with climatic changes.
 
-We are the Garden Club, a crew of developers out of the University of Colorado that created this app as part of our Senior Design Project.  
 
-Developers: 
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">Design and Development:
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="2" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="This website and app was designed and developed during a two-year collaboration between the ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Computer Science Department">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <url key="NSLink" string="http://www.colorado.edu/cs/senior-capstone/sponsor-senior-project"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=", the ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Environmental Studies Program">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <url key="NSLink" string="http://www.colorado.edu/envs/"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=", and the ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Institute of Arctic and Alpine Research">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <url key="NSLink" string="https://instaar.colorado.edu/"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content"> at the University of Colorado, Boulder. The species in the field guides are a representative, but not exhaustive, list of species growing at the University of Colorado’s </string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Mountain Research Station">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <url key="NSLink" string="http://www.colorado.edu/mrs/"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content"> and Niwot Ridge.
 
-Ryan O’Connell
-Brian Larson
+
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">Developers aka "The Garden Club":
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="2" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Ryan M. O'Connell">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <url key="NSLink" string="https://ryanmoconnell.carbonmade.com/"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
 Chase Springer
-D’Vreaux Fontaine
+D’Vreux Fontaine
+Brian Larson
 Kevin Rau
 Jennifer Baumann
 
-In Collaboration With:
 
-Nathalie Chardon
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">In collaboration with:
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="2" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Nathalie Chardon">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <url key="NSLink" string="http://www.nathaliechardon.weebly.com/"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
 Jane Smith
 
-Support:
 
-Provided by the National Science Foundation through a Long Term Research in Environmental Biology grant to DF Doak and WF Morris and the Long Term Ecological Research program at Niwot Ridge.
-
-Species Information:
-
-The species in this app are a representative, but not exhaustive, list of species growing at the University of Colorado’s Mountain Research Station and Niwot Ridge. For more information regarding the species or their attributes, please contact Dr. Jane Smith (jane.g.smith@colorado.edu).
-
-Education and Outreach:
-
-If you’re interested in using this app as an informal learning tool with students of any age, or as part of a citizen science project, please contact Niwot Ridge LTER Education and Outreach Coordinator Dr. Alexandra Rose (alexandra.rose@colorado.edu) for supporting resources and to let us know how you’re using the app.</string>
+</string>
                                                 <attributes>
-                                                    <color key="NSColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">Support:
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="2" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">This project has been made possible with support from the National Science Foundation via a Long Term Research in Environmental Biology grant to DF Doak and WF Morris and the Long Term Ecological Research (LTER) program at </string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Niwot Ridge">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <url key="NSLink" string="http://niwot.colorado.edu/"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=". The ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="United States Geological Survey">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <url key="NSLink">
+                                                        <string key="string">https://store.usgs.gov/b2c_usgs/usgs/maplocator/(xcm=r3standardpitrex_prd&amp;layout=6_1_61_48&amp;uiarea=2&amp;ctype=areaDetails&amp;carea=%24ROOT)/.do</string>
+                                                    </url>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content"> provided the topographical maps.
+
+
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">Images:
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="2" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <mutableString key="content">Image Use: Images included in this website and app have been made freely available by their owners for education and research purposes. Contributors retain the full copyright for their images. Images may be used only in unmodified form for personal or educational use and are NOT available for commercial use unless permission is first obtained from the copyright holder. Any image used in a non-commercial publication, report, or as a web link, must credit the photographer or artist, as well as the name of the website hosting the image.
+
+
+Illustration Credit: All illustrations included in the Luminous ID app were created by Jane G. Smith.
+
+
+Photo Credits:
+*Biopix: A. Neuman, J.C. Schou | </mutableString>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="http://calphotos.berkeley.edu">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <url key="NSLink" string="http://calphotos.berkeley.edu/"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+William D. Bowman
+*CalPhotos Photo Database: B. Anacker, B. Breckling, R. T. Hawke, S. Matson, K. Morse, A. Schusteff, D. Wm. Taylor, A. Trnkoczy | </string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="http://calphotos.berkeley.edu">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <url key="NSLink" string="http://calphotos.berkeley.edu/"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+N. I. Chardon
+*R. H. Mohlenbrock, USDA-NRCS PLANTS Database | USDA NRCS. 1992. Western wetland flora: Field office guide to plant species. West Region, Sacramento.
+*SEINet data portal, Arizona - New Mexico Chapter: P. J. Alexander, T. Ayers, B. Gratwicke, L. R. Landrum, M. Licher |</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="http://swbiodiversity.org">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <url key="NSLink" string="http://swbiodiversity.org/"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+J. G. Smith
+The New York Botanical Garden
+*USDA-NRCS PLANTS Database | E.G. Hurd, N.L. Shaw, J. Mastrogiuseppe, L.C. Smithman and S. Goodrich. 1998. Field guide to Intermountain sedges. General Technical Report RMS-GTR-10. USDA Forest Service, RMRS, Ogden.</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garden_club_logo" translatesAutoresizingMaskIntoConstraints="NO" id="4HM-jF-Zjf">
+                                        <rect key="frame" x="78" y="2032" width="219" height="168"/>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="u79-iP-oem" secondAttribute="trailing" constant="20" id="3c6-Qt-NA9"/>
-                                    <constraint firstItem="u79-iP-oem" firstAttribute="centerX" secondItem="4XW-Sr-t0Y" secondAttribute="centerX" id="8Ew-lg-0t5"/>
-                                    <constraint firstItem="4HM-jF-Zjf" firstAttribute="centerX" secondItem="u79-iP-oem" secondAttribute="centerX" id="D9E-8P-5JO"/>
-                                    <constraint firstItem="u79-iP-oem" firstAttribute="top" secondItem="4HM-jF-Zjf" secondAttribute="bottom" constant="20" id="MC0-Pr-YQx"/>
-                                    <constraint firstItem="u79-iP-oem" firstAttribute="leading" secondItem="4XW-Sr-t0Y" secondAttribute="leading" constant="19" id="Rm0-0D-N1V"/>
-                                    <constraint firstAttribute="bottom" secondItem="u79-iP-oem" secondAttribute="bottom" constant="20" id="WFE-cp-VsS"/>
-                                    <constraint firstItem="4HM-jF-Zjf" firstAttribute="leading" secondItem="4XW-Sr-t0Y" secondAttribute="leading" constant="78" id="XCE-h2-b4Z"/>
-                                    <constraint firstItem="4HM-jF-Zjf" firstAttribute="top" secondItem="4XW-Sr-t0Y" secondAttribute="top" constant="34" id="aiS-GO-WHR"/>
+                                    <constraint firstItem="u79-iP-oem" firstAttribute="centerX" secondItem="4XW-Sr-t0Y" secondAttribute="centerX" id="9gC-ne-rfP"/>
+                                    <constraint firstAttribute="trailing" secondItem="u79-iP-oem" secondAttribute="trailing" constant="31" id="FrO-dl-ZGa"/>
+                                    <constraint firstAttribute="trailing" secondItem="u79-iP-oem" secondAttribute="trailing" constant="31" id="GQ8-R7-Blu"/>
+                                    <constraint firstItem="u79-iP-oem" firstAttribute="leading" secondItem="4XW-Sr-t0Y" secondAttribute="leading" constant="31" id="RIC-9F-LGz"/>
+                                    <constraint firstItem="u79-iP-oem" firstAttribute="top" secondItem="4XW-Sr-t0Y" secondAttribute="top" constant="29" id="S8Q-YC-N5a"/>
+                                    <constraint firstItem="4HM-jF-Zjf" firstAttribute="top" secondItem="u79-iP-oem" secondAttribute="bottom" constant="8" symbolic="YES" id="fDd-MO-GvM"/>
+                                    <constraint firstItem="u79-iP-oem" firstAttribute="centerX" secondItem="4HM-jF-Zjf" secondAttribute="centerX" id="fbg-0v-0t0"/>
+                                    <constraint firstItem="4HM-jF-Zjf" firstAttribute="leading" secondItem="4XW-Sr-t0Y" secondAttribute="leading" constant="78" id="hra-u1-cMb"/>
+                                    <constraint firstItem="u79-iP-oem" firstAttribute="top" secondItem="4XW-Sr-t0Y" secondAttribute="top" constant="29" id="jgb-R5-92P"/>
+                                    <constraint firstAttribute="bottom" secondItem="4HM-jF-Zjf" secondAttribute="bottom" constant="87" id="vvd-Ro-ZUn"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Ofk-D1-eFA" secondAttribute="bottom" id="BH5-MT-xEH"/>
-                            <constraint firstItem="Ofk-D1-eFA" firstAttribute="leading" secondItem="zEX-e2-wxl" secondAttribute="leading" id="TGm-DK-XsU"/>
-                            <constraint firstAttribute="trailing" secondItem="Ofk-D1-eFA" secondAttribute="trailing" id="VaE-IB-jDa"/>
-                            <constraint firstItem="Ofk-D1-eFA" firstAttribute="top" secondItem="zEX-e2-wxl" secondAttribute="top" id="dAW-eE-Zef"/>
-                            <constraint firstItem="4Y8-aH-9rU" firstAttribute="top" secondItem="4XW-Sr-t0Y" secondAttribute="bottom" constant="8" symbolic="YES" id="jxp-ZJ-i0R"/>
-                            <constraint firstItem="4XW-Sr-t0Y" firstAttribute="top" secondItem="hVY-8t-qWc" secondAttribute="bottom" id="mx8-Dp-gaV"/>
-                            <constraint firstItem="Ofk-D1-eFA" firstAttribute="leading" secondItem="4XW-Sr-t0Y" secondAttribute="leading" id="vT8-Ti-KKk"/>
-                            <constraint firstItem="Ofk-D1-eFA" firstAttribute="trailing" secondItem="4XW-Sr-t0Y" secondAttribute="trailing" id="zuV-zL-l7H"/>
+                            <constraint firstItem="4XW-Sr-t0Y" firstAttribute="top" secondItem="hVY-8t-qWc" secondAttribute="bottom" id="4Xr-3e-Sht"/>
+                            <constraint firstItem="Ofk-D1-eFA" firstAttribute="trailing" secondItem="4XW-Sr-t0Y" secondAttribute="trailing" id="HTu-63-Dbt"/>
+                            <constraint firstAttribute="trailing" secondItem="Ofk-D1-eFA" secondAttribute="trailing" id="YNq-zc-1ad"/>
+                            <constraint firstItem="Ofk-D1-eFA" firstAttribute="leading" secondItem="zEX-e2-wxl" secondAttribute="leading" id="ZOT-gH-urE"/>
+                            <constraint firstItem="4XW-Sr-t0Y" firstAttribute="bottom" secondItem="4Y8-aH-9rU" secondAttribute="top" id="cqc-Ov-Z31"/>
+                            <constraint firstAttribute="bottom" secondItem="Ofk-D1-eFA" secondAttribute="bottom" id="inM-Hi-UJ9"/>
+                            <constraint firstItem="Ofk-D1-eFA" firstAttribute="top" secondItem="zEX-e2-wxl" secondAttribute="top" id="one-N6-qqk"/>
+                            <constraint firstItem="Ofk-D1-eFA" firstAttribute="leading" secondItem="4XW-Sr-t0Y" secondAttribute="leading" id="pvW-5B-zGh"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="About Us" image="about_us_tab" id="l8C-o5-qSf"/>
+                    <navigationItem key="navigationItem" title="About Us" id="LCS-cd-0AQ"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="1500"/>
+                    <size key="freeformSize" width="375" height="2400"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LHQ-a8-xnE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-466" y="2052"/>
+            <point key="canvasLocation" x="-482.39999999999998" y="2456.6716641679163"/>
         </scene>
         <!--How To-->
         <scene sceneID="Grr-bT-2Lm">
@@ -2800,6 +3124,7 @@ This is where a how to page will go. But we will cross that bridge when we get t
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="How To" image="HowTo_tab" id="czz-4V-hbB"/>
+                    <navigationItem key="navigationItem" title="How To" id="eL0-rM-XLP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pWE-gw-VGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
