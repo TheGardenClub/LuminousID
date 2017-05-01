@@ -116,6 +116,7 @@ class QuickLookViewController: UIViewController {
             MyObsVC.photoName = name
             MyObsVC.fullPhotoName = fullImageName
             MyObsVC.gpsAccuracy = accQL
+            MyObsVC.username = userNameQL
         }
         else{
             print("whoops, something went wrong")

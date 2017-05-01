@@ -41,6 +41,7 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
     var resetMarker: UIImageView!
     var dateString = ""
     var accuracy = 0.0
+    var userNamePath = ""
     fileprivate var adjustingExposureContext: String = ""
     
     var ref:FIRDatabaseReference?
@@ -89,7 +90,16 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
         setupSession()
         setupPreview()
         startSession()
-        
+        userNamePath = "speciesid/accounts/" + (user?.uid)!
+        FIRDatabase.database().reference().child(userNamePath).observeSingleEvent(of: .value, with: {(snap) in
+            if let snapDict = snap.value as? [String:AnyObject]{
+                self.userName = (snapDict["username"] as? String)!
+            }
+            else{
+                self.userName = ""
+                
+            }
+        })
         geoFireRef = FIRDatabase.database().reference()
         geoFire = GeoFire(firebaseRef: geoFireRef)
         formatter.dateStyle = DateFormatter.Style.short
@@ -105,8 +115,9 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
         print(dateString)
         print(hour)
         print(minutes)
-        userName = getUsername()
-        print (userName)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.25) {
+        print (self.userName)
+        }
         print (speciesObsDict["species_name"] as! String)
         
         
@@ -546,6 +557,7 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
             QuickLookVC.speciesNameQL = speciesObsDict["species_name"] as! String
             QuickLookVC.dateQL = dateString
             QuickLookVC.accQL = accuracy
+            QuickLookVC.userNameQL = userName
             if let image = thumbnail.backgroundImage(for: UIControlState()){
                QuickLookVC.photoImage = image
                 print("looks like it worked")
