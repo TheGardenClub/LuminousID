@@ -2476,8 +2476,8 @@
                             <constraint firstItem="jMG-93-b7a" firstAttribute="centerX" secondItem="bdX-Eb-ubW" secondAttribute="centerX" id="I0H-D7-FAK"/>
                             <constraint firstItem="s53-xe-yOV" firstAttribute="centerX" secondItem="bdX-Eb-ubW" secondAttribute="centerX" id="JNl-G9-haX"/>
                             <constraint firstItem="dV1-8a-SDF" firstAttribute="top" secondItem="s53-xe-yOV" secondAttribute="bottom" constant="67" id="Q53-Ht-iRn"/>
+                            <constraint firstItem="jMG-93-b7a" firstAttribute="centerY" secondItem="bdX-Eb-ubW" secondAttribute="centerY" id="SyW-oY-F1s"/>
                             <constraint firstItem="dV1-8a-SDF" firstAttribute="top" secondItem="jMG-93-b7a" secondAttribute="bottom" constant="8" id="jiR-pk-Yfb"/>
-                            <constraint firstItem="bdX-Eb-ubW" firstAttribute="top" secondItem="s53-xe-yOV" secondAttribute="bottom" constant="-300" id="moF-fQ-027"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Field Guide" id="U2K-cD-Vwt"/>
