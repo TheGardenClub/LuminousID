@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "469"
             endingLineNumber = "469"
-            landmarkName = "showMarkerAtPoint(_:marker:)"
+            landmarkName = "capturePhoto(sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -45,7 +45,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "355"
             endingLineNumber = "355"
-            landmarkName = "setFlashMode(_:)"
+            landmarkName = "resetFocusAndExposure()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -61,7 +61,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "366"
             endingLineNumber = "366"
-            landmarkName = "setFlashMode(_:)"
+            landmarkName = "resetFocusAndExposure()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
