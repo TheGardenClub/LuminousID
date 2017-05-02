@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class SpeciesInfoViewController: UIViewController {
 
@@ -29,7 +32,7 @@ class SpeciesInfoViewController: UIViewController {
     
     
     var speciesDict = [[String:AnyObject]]()
-    
+    var user = FIRAuth.auth()?.currentUser
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navBar.title = (speciesDict[0]["species_name"] as! String)
@@ -228,7 +231,16 @@ class SpeciesInfoViewController: UIViewController {
         addObsVC.speciesObsDict = speciesDict[0]
     }
     @IBAction func camera_button(_ sender: Any) {
+        if ((user) != nil){
         performSegue(withIdentifier: "toCameraFromSpeciesInfo", sender: speciesDict[0])
+        }
+        else{
+            let alertController = UIAlertController(title: "Oops!", message: "You must be logged in to take observations.", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            self.present(alertController, animated: true, completion: nil)
+            
+        }
+        
     }
     /*
     // MARK: - Navigation
