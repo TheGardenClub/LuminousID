@@ -474,7 +474,7 @@
 				TargetAttributes = {
 					A427FB451E34089000011350 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = B7873R5TDF;
+						DevelopmentTeam = SH2399R5U2;
 						ProvisioningStyle = Automatic;
 					};
 					A427FB591E34089000011350 = {
@@ -879,9 +879,9 @@
 			baseConfigurationReference = B92C76FA9419BD828960B4F3 /* Pods-LuminousID.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = B7873R5TDF;
+				DEVELOPMENT_TEAM = SH2399R5U2;
 				INFOPLIST_FILE = LuminousID/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Garden-Club.LuminousID";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -895,9 +895,9 @@
 			baseConfigurationReference = 0CF5977283A11F0BB40F9564 /* Pods-LuminousID.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = B7873R5TDF;
+				DEVELOPMENT_TEAM = SH2399R5U2;
 				INFOPLIST_FILE = LuminousID/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Garden-Club.LuminousID";
 				PRODUCT_NAME = "$(TARGET_NAME)";
