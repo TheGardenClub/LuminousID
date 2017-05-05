@@ -6,6 +6,10 @@
 //  Copyright © 2017 Garden Club. All rights reserved.
 //
 
+/*
+    This view manages logging in, continuing as a guest, and navigating to the create account view.
+ */
+
 import UIKit
 import Firebase
 import FirebaseAuth
@@ -15,11 +19,18 @@ class LogInViewController: UIViewController {
 
     @IBOutlet weak var loginEmail: UITextField!
     @IBOutlet weak var loginPass: UITextField!
+    
+    /*
+        Once the view loads, if there is a user signed in, it skips this view.
+     */
     override func viewDidAppear(_ animated: Bool) {
         if FIRAuth.auth()?.currentUser?.email != nil{
             self.performSegue(withIdentifier: "toMainMenuFromLogin", sender: nil)
         }
     }
+    /*
+        Loads a tap recognizer to dismiss keyboard when the user taps on the screen
+     */
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -28,7 +39,9 @@ class LogInViewController: UIViewController {
         view.addGestureRecognizer(tap)
         
     }
-    
+    /*
+        Dismisses Keyboard
+     */
     func dismissKeyboard(){
         view.endEditing(true)
     }
@@ -37,10 +50,15 @@ class LogInViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    /*
+        Skips signing in, and segues to main menu view
+     */
     @IBAction func continueAsGuest(_ sender: Any) {
         self.performSegue(withIdentifier: "toMainMenuFromLogin", sender: nil)
     }
+    /*
+        On button press, check to make sure the credentials are correct and sign the user in. Then it segues to the main menu view. It also handles error messages for incorect credentials and improperly formatted credentials.
+     */
     @IBAction func loginUser(_ sender: Any) {
         if self.loginEmail.text == "" || self.loginPass.text == ""
         {

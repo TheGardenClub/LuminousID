@@ -383,7 +383,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6d-8j-9H5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3858.4000000000001" y="37.331334332833585"/>
+            <point key="canvasLocation" x="-3866" y="36"/>
         </scene>
         <!--Filter Title-->
         <scene sceneID="cTE-3k-XYZ">
@@ -3593,7 +3593,7 @@ Interested in finding more individuals of a certain species? Check out our websi
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="fdS-hd-rPB"/>
-        <segue reference="KMq-JO-Sfn"/>
+        <segue reference="P5r-Qz-pJA"/>
         <segue reference="ITx-By-buF"/>
         <segue reference="qod-tk-hDi"/>
         <segue reference="Kue-U9-UqJ"/>
