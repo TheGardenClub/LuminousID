@@ -8,7 +8,9 @@
 
 import UIKit
 
-
+/*
+    This view manages a table view of all of the Forbs glossary terms. Unlike th eother table views, all options and their photos are hardcoded in lists.
+ */
 class ForbsGlossaryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var row = 0
@@ -31,7 +33,9 @@ class ForbsGlossaryViewController: UIViewController, UITableViewDataSource, UITa
         return (forbsGlossaryList.count)
     }
     
-    
+    /*
+        Defines the appearance of each cell, including name of glossary item and its picture.
+    */
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
@@ -46,11 +50,19 @@ class ForbsGlossaryViewController: UIViewController, UITableViewDataSource, UITa
         return (cell)
     }
     
+    /*
+        Defines the behavior when an option is selected. In this case, a segue to the Glossary Info VC
+    */
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         row = indexPath.row
         tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "toGlossaryInfoFromForbs", sender: forbsGlossaryList[indexPath.row])
     }
+    
+    /*
+        prepares the Glossary Info VC with the appropriate selection information
+    */
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let glossaryInfoVC = segue.destination as! GlossaryInfoViewController

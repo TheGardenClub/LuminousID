@@ -202,6 +202,7 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
         
         viewObsVC.speciesName = species_names[row]
 
+        viewObsVC.obsNotes = comments[row]
     }
     
     /*
