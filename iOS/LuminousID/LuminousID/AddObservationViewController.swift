@@ -16,6 +16,10 @@ import Photos
 import CoreLocation
 import GeoFire
 
+/*
+    This View manages capturing and saving an image and passing along the metadata to the next VC
+ */
+
 class AddObservationViewController: UIViewController, CLLocationManagerDelegate {
     var speciesObsDict = [String:AnyObject]()
     let captureSession = AVCaptureSession()
@@ -64,6 +68,10 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
         super.viewWillDisappear(animated)
     }
     
+    /*
+        This function gets the username of the current user
+     */
+    
     func getUsername() -> String {
         var userNamePath = "speciesid/accounts/" + (user?.uid)!
         var un = ""
@@ -81,6 +89,11 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
         print(un)
         return un
     }
+    
+    
+    /*
+        Set up objects for gathering the appropriate meta data later
+     */
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -129,12 +142,20 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
     }
     
     
+    /*
+        Hides status bar
+     */
+    
     override var prefersStatusBarHidden : Bool {
         return true
     }
     
     // MARK: - Setup session and preview
-
+    
+    /*
+        Sets up the camera session so the user can take an observation
+     */
+    
     func setupSession() {
         captureSession.sessionPreset = AVCaptureSessionPresetHigh
         let camera = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
@@ -155,6 +176,10 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
         }
         
     }
+    
+    /*
+        Sets up the viewable area for the camera, and adds the standard camera functionalities like exposure and focus settings
+     */
     
     func setupPreview() {
         // Configure previewLayer
@@ -188,6 +213,10 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
         camPreview.addSubview(resetMarker)
     }
     
+    /*
+        For starting the camera session
+     */
+    
     func startSession() {
         if !captureSession.isRunning {
             videoQueue().async {
@@ -195,6 +224,10 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
             }
         }
     }
+    
+    /*
+        For stopping the camera session
+     */
     
     func stopSession() {
         if captureSession.isRunning {
@@ -209,6 +242,12 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
     }
     
     // MARK: - Configure
+    
+    
+    /*
+        Allows for switching between back and front cameras
+     */
+    
     @IBAction func switchCameras(_ sender: AnyObject) {
         // Make sure the device has more than 1 camera.
         if AVCaptureDevice.devices(withMediaType: AVMediaTypeVideo).count > 1 {
@@ -250,6 +289,12 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
     }
     
     // MARK: Focus Methods
+    
+    
+    /*
+        Adds tap to focus functionality
+     */
+    
     func tapToFocus(_ recognizer: UIGestureRecognizer) {
         if activeInput.device.isFocusPointOfInterestSupported {
             let point = recognizer.location(in: camPreview)
@@ -258,6 +303,10 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
             focusAtPoint(pointOfInterest)
         }
     }
+    
+    /*
+        Performs the actual actions necessary to focus
+     */
     
     func focusAtPoint(_ point: CGPoint) {
         let device = activeInput.device
@@ -276,6 +325,11 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
     }
     
     // MARK: Exposure Methods
+    
+    /*
+        Adds tap to expose funcitonality
+     */
+    
     func tapToExpose(_ recognizer: UIGestureRecognizer) {
         if activeInput.device.isExposurePointOfInterestSupported {
             let point = recognizer.location(in: camPreview)
@@ -284,6 +338,10 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
             exposeAtPoint(pointOfInterest)
         }
     }
+    
+    /*
+        Performs the actual actions to set the exposure
+     */
     
     func exposeAtPoint(_ point: CGPoint) {
         let device = activeInput.device
@@ -340,7 +398,11 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
         }
     }
     
-    // MARK: Reset Focus and Exposure
+    
+    /*
+        Reset focus and exposure
+     */
+    
     func resetFocusAndExposure() {
         let device = activeInput.device
         let focusMode = AVCaptureFocusMode.continuousAutoFocus
@@ -375,7 +437,11 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
         }
     }
     
-    // MARK: Flash Modes
+    
+    /*
+        Set the flash mode
+     */
+    
     @IBAction func setFlashMode(_ sender: AnyObject) {
         
         let device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
@@ -404,6 +470,10 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
     }
     
     
+    /*
+        this function serves to get location information like lat, long, and accuracy
+     */
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         let location = locations[0]
@@ -418,7 +488,11 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
         
     }
     
-    // MARK: - Capture photo
+    
+    /*
+        Captures the photo, gets its timestamp, its lat, long, and accuracy. It also saves the photo to the library. It then segues to the view observation VC
+     */
+    
     @IBAction func capturePhoto(sender: AnyObject) {
         if ((user) != nil){
             let connection = imageOutput.connection(withMediaType: AVMediaTypeVideo)
@@ -480,7 +554,6 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
 
         
     
-    // MARK: - Helpers
     func savePhotoToLibrary(image: UIImage) {
         let photoLibrary = PHPhotoLibrary.shared()
         photoLibrary.performChanges({
@@ -496,6 +569,12 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
     }
     
 
+    
+    
+    
+    /*
+        Helpers
+     */
     
     
     func setPhotoThumbnail(_ image: UIImage) {
@@ -535,6 +614,10 @@ class AddObservationViewController: UIViewController, CLLocationManagerDelegate 
             })
         }
     }
+    
+    /*
+        Prepares to segue by updating all of the photo's information on the Quick Look VC
+     */
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "QuickLookSegue" {

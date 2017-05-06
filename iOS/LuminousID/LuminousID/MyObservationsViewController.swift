@@ -11,6 +11,12 @@ import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 import FirebaseStorage
+
+
+/*
+    This view is complicated, but it manages the data persistence of all of the observations. All photos are saved to the documents folder in the App directory. Everything else is saved in a list with user defaults. These values are retrieved and updated everytime this screen is launched. This view displays all of the user's observations.
+ */
+
 class MyObservationsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var comments:[String] = []
     @IBOutlet weak var myObsTable: UITableView!
@@ -50,6 +56,10 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
     var user = FIRAuth.auth()?.currentUser
     let storage = FIRStorage.storage()
     var row = 0
+    
+    /*
+        Retrieve all of the stored data from user defaults
+     */
     
     override func viewDidLoad() {
         ref = FIRDatabase.database().reference()
@@ -115,7 +125,11 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
         }
         // Do any additional setup after loading the view.
     }
-
+    
+    /*
+        Custom back button that pops the VC
+     */
+    
     @IBAction func BackToMenu(_ sender: UIBarButtonItem) {
         navigationController?.popToRootViewController(animated: true)
     }
@@ -125,10 +139,18 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
         // Dispose of any resources that can be recreated.
     }
     
+    /*
+        make a row for every observation
+     */
+    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return species_names.count
     }
+    
+    /*
+        Specifies what goes into each cell. In this case, Species Name, Date, is_synced, and Image
+     */
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
@@ -162,6 +184,11 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
         tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "toViewObservation", sender: species_names[indexPath.row])
     }
+    
+    /*
+        Passes all the metadata of the observation over to the next VC
+     */
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let viewObsVC = segue.destination as! ViewObservationViewController
 
@@ -176,7 +203,11 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
         viewObsVC.speciesName = species_names[row]
 
     }
-
+    
+    /*
+        Creates observations in Firebase and updates all of their information accordingly
+     */
+    
     @IBAction func TopSyncButton(_ sender: Any) {
         let storageRef = storage.reference()
         var obsRef = storage.reference()
@@ -213,6 +244,10 @@ class MyObservationsViewController: UIViewController, UITableViewDelegate, UITab
         defaults.set(synceds, forKey: "savedSynceds")
         myObsTable.reloadData()
     }
+    
+    /*
+        Same as above, but this button was removed
+     */
     
     @IBAction func BottomSyncButton(_ sender: Any) {
         let storageRef = storage.reference()

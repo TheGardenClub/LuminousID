@@ -11,6 +11,10 @@ import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 
+/*
+    This view manages reviewing the observation, adding comments, and either adding the observation or going back to the camera
+ */
+
 class QuickLookViewController: UIViewController {
     
     var speciesObsDictQL = [String:AnyObject]()
@@ -62,6 +66,10 @@ class QuickLookViewController: UIViewController {
         }
     }
     
+    /*
+        Creates a file URL for the photo and saves it to memory
+     */
+    
     override func viewDidLoad() {
         print(min)
         print(hr)
@@ -77,12 +85,11 @@ class QuickLookViewController: UIViewController {
         name = "\(Int(ts))" + "_" + (FIRAuth.auth()?.currentUser?.uid)!
         fullImageName = name + ".jpg"
         datetimeQL = dateQL
-        print (datetimeQL)
-        print(name)
+
         let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent(fullImageName)
-        print("1")
+
         let jpgImageData = UIImageJPEGRepresentation(photoImage, 1.0)
-        print("2")
+
         do {
             try jpgImageData?.write(to: fileURL, options: .atomic)
             print("3")
@@ -90,8 +97,7 @@ class QuickLookViewController: UIViewController {
         catch{
             print("mistakes were made")
         }
-        print("4)")
-        print (fileURL)
+
         super.viewDidLoad()
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(CreateUserViewController.dismissKeyboard))
@@ -99,6 +105,10 @@ class QuickLookViewController: UIViewController {
         view.addGestureRecognizer(tap)
         
     }
+    
+    /*
+        Passes all of the information about the observation over to the My Observations VC
+     */
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "addObsSegue"{

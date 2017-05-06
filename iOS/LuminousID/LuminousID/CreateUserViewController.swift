@@ -6,6 +6,10 @@
 //  Copyright © 2017 Garden Club. All rights reserved.
 //
 
+/*
+    This view manages creating an account, segueing to the log in view, and segueing to the main menu view
+ */
+
 import UIKit
 import Firebase
 import FirebaseAuth
@@ -20,7 +24,9 @@ class CreateUserViewController: UIViewController {
     var userNamePath = ""
     var emailPath = ""
     var ref:FIRDatabaseReference?
-    
+    /*
+        Grabs a reference to the firebase database, and initialize the keyboard tap recognizer
+     */
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = FIRDatabase.database().reference()
@@ -33,6 +39,10 @@ class CreateUserViewController: UIViewController {
         
     }
     
+    /*
+        Dismisses keyboard
+     */
+    
     func dismissKeyboard(){
         view.endEditing(true)
     }
@@ -42,6 +52,10 @@ class CreateUserViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    /*
+        Checks the formatting of the users credentials, and if they are okay, creates the account in firebase and segues to the main menu screen. The is_researcher, username, and email fields are also updated in firebase. If the credentials are improperly formatted, it displays a pop-up error message.
+     */
     
     @IBAction func createUser(_ sender: Any) {
         if self.userEmail.text == "" || self.userPass.text == "" || self.userName.text == ""

@@ -6,7 +6,17 @@
 //  Copyright © 2017 Garden Club. All rights reserved.
 //
 
+
+/*
+    This view manages the specific options in each filter category, and returns the selection back to the Filter VC.
+ */
+
+
 import UIKit
+
+/*
+    Protocol for managing elements in the Filters VC
+ */
 
 protocol ForbsSpecificFilterProtocol{
     func filterWasSelected(filter: FilterElement)
@@ -20,7 +30,15 @@ class ForbsSpecificFiltersViewController: UIViewController, UITableViewDataSourc
     @IBOutlet weak var navBar: UINavigationItem!
     
     
+    /*
+        Delegate for Filters VC
+     */
+    
     var delegate:ForbsSpecificFilterProtocol?
+    
+    /*
+        Depending on the Filters VC selection, populates the table with the appropriate options
+     */
     
     override func viewDidLoad() {
         
@@ -65,6 +83,10 @@ class ForbsSpecificFiltersViewController: UIViewController, UITableViewDataSourc
     
     
     
+    /*
+        Manages the cells' apprearance. If possible, displays a supplementary image with each option.
+     */
+    
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "forbsSpecificFilterCell", for: indexPath) as! ForbsSpecificCellTableViewCell
@@ -98,6 +120,10 @@ class ForbsSpecificFiltersViewController: UIViewController, UITableViewDataSourc
         }
         return (cell)
     }
+    
+    /*
+        On selection, update the Filters VC, and return to it.
+     */
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         row = indexPath.row

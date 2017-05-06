@@ -12,6 +12,11 @@ import FirebaseAuth
 import FirebaseDatabase
 
 
+/*
+    This view serves as the main menu of the app. It handles segueing to the Field Guide, About, My Observations, and Glossary Views.
+ */
+
+
 class MainMenuViewController: UIViewController {
     
     var userNamePath = ""
@@ -19,6 +24,10 @@ class MainMenuViewController: UIViewController {
     var user = FIRAuth.auth()?.currentUser
     @IBOutlet var logOutButton: UIButton!
     @IBOutlet var userEmailLabel: UILabel!
+    
+    /*
+        Segues to My Observations view if there is a user signed in, and displays a message if not.
+     */
     
     @IBAction func MyObsButton(_ sender: Any) {
         if FIRAuth.auth()?.currentUser?.email != nil
@@ -32,6 +41,10 @@ class MainMenuViewController: UIViewController {
             self.present(alertController, animated: true, completion: nil)
         }
     }
+    
+    /*
+        Checks if a user is signed in, and displayed their email if they are, and Guest if they aren't
+     */
     
     override func viewDidLoad() {
         ref = FIRDatabase.database().reference()
@@ -66,7 +79,11 @@ class MainMenuViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
+    /*
+        Logs the user out and segues back to log in view
+     */
+    
     @IBAction func logOut(_ sender: Any) {
         try! FIRAuth.auth()?.signOut()
         self.performSegue(withIdentifier: "toLoginFromMainMenu", sender: nil)

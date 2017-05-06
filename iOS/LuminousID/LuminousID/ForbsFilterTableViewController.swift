@@ -8,9 +8,18 @@
 
 import UIKit
 
+/*
+    This view manages the filter categories for the Forbs Table View VC. It generates lists of attributes, and values that it passes back for the updated table.
+ */
+
+/*
+    Protocol for passing the information back to the Forbs Table VC
+ */
+
 protocol ForbsFilterTableProtocol{
     func filtersWereSelected(filterList: FilterList)
 }
+
 
 class ForbsFilterTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, ForbsSpecificFilterProtocol {
     
@@ -41,16 +50,28 @@ class ForbsFilterTableViewController: UIViewController, UITableViewDelegate, UIT
         // Dispose of any resources that can be recreated.
     }
     
+    /*
+        On search button press, return the lists to the Forbs Table VC
+     */
+    
     @IBAction func SearchButton(_ sender: UIButton) {
         let filters = FilterList(attributes: filterFormattedList, values: selectionList)
         self.delegate?.filtersWereSelected(filterList: filters)
         self.navigationController!.popViewController(animated: true)
     }
     
+    /*
+        Make a row for every item in filtersList
+     */
+    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return filtersList.count
     }
+    
+    /*
+        Passes info to the Specific Filters VC so it knows which item was selected
+     */
     
     func filterWasSelected(filter: FilterElement){
         filterAttribute = filter.attribute
@@ -81,6 +102,10 @@ class ForbsFilterTableViewController: UIViewController, UITableViewDelegate, UIT
         forbsFilterTable.reloadData()
     }
     
+    /*
+        Manages the loyout of each cell, listing the filter category and the selection if there is one.
+     */
+    
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "forbsFilterCell", for: indexPath) as! FilterTableViewCell
@@ -91,12 +116,20 @@ class ForbsFilterTableViewController: UIViewController, UITableViewDelegate, UIT
         return (cell)
     }
     
+    /*
+        Performs a segue to the Specific Filters VC when a selection is made
+     */
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         row = indexPath.row
         tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "toForbsSpecificFilters", sender: filtersList[indexPath.row])
     }
-
+    
+    /*
+        Prepares for the segue by passing the selected attribute to the Specific Filters VC
+     */
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let specificFiltersVC = segue.destination as! ForbsSpecificFiltersViewController
         specificFiltersVC.delegate = self
