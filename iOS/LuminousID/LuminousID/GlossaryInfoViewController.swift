@@ -8,6 +8,10 @@
 
 import UIKit
 
+/*
+    This view simply displays the picture of the glossary term that was selected in the previous VCs
+ */
+
 class GlossaryInfoViewController: UIViewController {
     
     var imageName = ""
