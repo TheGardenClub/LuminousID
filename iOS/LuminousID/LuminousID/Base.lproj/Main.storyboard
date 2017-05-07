@@ -415,7 +415,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attribute" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0O-tM-249">
-                                                    <rect key="frame" x="94" y="25" width="229" height="24"/>
+                                                    <rect key="frame" x="94" y="25" width="190" height="24"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -866,7 +866,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attribute" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Wd-yq-4mR">
-                                                    <rect key="frame" x="94" y="25" width="229" height="24"/>
+                                                    <rect key="frame" x="94" y="25" width="190" height="24"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -2395,7 +2395,7 @@
         <scene sceneID="LVQ-4o-EfQ">
             <objects>
                 <navigationController id="tjz-55-yMD" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B0U-8I-PV3">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="B0U-8I-PV3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -3606,8 +3606,8 @@ Search for a variety of different species using the field guide as a reference, 
         <image name="sedges" width="200" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fdS-hd-rPB"/>
         <segue reference="P5r-Qz-pJA"/>
+        <segue reference="fdS-hd-rPB"/>
         <segue reference="ITx-By-buF"/>
         <segue reference="qod-tk-hDi"/>
         <segue reference="Kue-U9-UqJ"/>
