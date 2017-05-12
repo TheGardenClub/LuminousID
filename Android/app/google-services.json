@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "794603922973",
+    "firebase_url": "https://speciesid-ca814.firebaseio.com",
+    "project_id": "speciesid-ca814",
+    "storage_bucket": "speciesid-ca814.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794603922973:android:0d3222a6a790512e",
+        "android_client_info": {
+          "package_name": "com.luminousid.lumiousid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794603922973-7095sqetthef6n2du6l5ftj3icvtss08.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.luminousid.lumiousid",
+            "certificate_hash": "5746531e8b1d4bd948e64ad1453e2c4e918d59cb"
+          }
+        },
+        {
+          "client_id": "794603922973-1p21it3toe1dcvm28nshbmiard8hsvq5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn5cmonFcxRxqknTRbMuR4JuehAY5Z3ZU"
+        },
+        {
+          "current_key": "AIzaSyCppUmZykYgv6NalROkPg9MEi3e8GzSXGw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "794603922973-ke3tkr7elaqvlpflnsegbu8n3q7l3h60.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Garden-Club.LuminousID"
+              }
+            },
+            {
+              "client_id": "794603922973-1p21it3toe1dcvm28nshbmiard8hsvq5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794603922973:android:6ad881ee1ca14b3a",
+        "android_client_info": {
+          "package_name": "com.luminousmossboss.luminous"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794603922973-1p21it3toe1dcvm28nshbmiard8hsvq5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn5cmonFcxRxqknTRbMuR4JuehAY5Z3ZU"
+        },
+        {
+          "current_key": "AIzaSyCppUmZykYgv6NalROkPg9MEi3e8GzSXGw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

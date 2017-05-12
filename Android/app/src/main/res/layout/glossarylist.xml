@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TwoLineListItem xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:paddingTop="2dip"
+    android:paddingBottom="2dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/glossary_nameText"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5sp"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:text="Inflorescence"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/glossaryThumbnail"
+        android:layout_toEndOf="@+id/glossaryThumbnail" />
+
+    <ImageView
+        android:id="@+id/glossaryThumbnail"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+</TwoLineListItem>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lumi_homescreen_background_img"
+    tools:context="com.luminousid.luminousid.Woody_FieldGuideActivity">
+
+    <Button
+        android:id="@+id/deciduousButton"
+        android:layout_width="300sp"
+        android:layout_height="85sp"
+        android:layout_marginTop="145dp"
+        android:background="@drawable/deciduous_title"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/needleButton"
+        android:layout_alignStart="@+id/needleButton" />
+
+    <Button
+        android:id="@+id/needleButton"
+        android:layout_width="300sp"
+        android:layout_height="85sp"
+        android:background="@drawable/needle_title"
+        android:layout_below="@+id/deciduousButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60sp" />
+
+</RelativeLayout>

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Luminous Identification">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminous ID - Field Guide</title>
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Luminous ID">
+    <meta name="theme-color" content="#303F9F">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Luminous ID">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#303F9F">
+
+    <!-- Tile icon for Win8 -->
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <meta name="msapplication-navbutton-color" content="#303F9F">
+
+    <!-- Material Design Lite -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Snippet" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Menu -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a class="navbar-brand" href="index.html">Luminous ID</a>
+            </div>
+            <div class="navbar-collapse collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="fieldguide.html">Field Guide</a></li>
+                    <li><a href="observations.html">Observations</a></li>
+                    <li><a href="mobileapps.html">Mobile Apps</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="sisu.html">Sign In/Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- *****************************************************************************************************************
+     BODY
+     ***************************************************************************************************************** -->
+    <div id="twrap">
+
+        <h1 style="text-shadow: 2px 2px #000000;">Field Guide</h1>
+
+        <h2></h2>
+        <h4 id="filtersss" style="text-shadow: 1px 1px #000000" ;>No Filters</h4>
+
+
+        <div class="dropdown">
+
+            <style>
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    background: #384453;
+                }
+                
+                ul li {
+                    display: block;
+                    position: relative;
+                    float: left;
+                    background: #384453;
+                }
+                /* This hides the dropdowns */
+                
+                li ul {
+                    display: none;
+                }
+                
+                ul li a {
+                    display: block;
+                    padding: 1em;
+                    text-decoration: none;
+                    white-space: nowrap;
+                    color: #fff;
+                }
+                
+                ul li a:hover {
+                    background: #202730;
+                }
+                /* Display the dropdown */
+                
+                li:hover>ul {
+                    display: block;
+                    position: absolute;
+                }
+                
+                li:hover li {
+                    float: none;
+                }
+                
+                li:hover a {
+                    background: #202730;
+                }
+                
+                li:hover li a:hover {
+                    background: #161b2b;
+                }
+                
+                .main-navigation li ul li {
+                    border-top: 0;
+                }
+                /* Displays second level dropdowns to the right of the first level dropdown */
+                
+                ul ul ul {
+                    left: 100%;
+                    top: 0;
+                }
+                /* Simple clearfix */
+                
+                ul:before,
+                ul:after {
+                    content: " ";
+                    /* 1 */
+                    display: table;
+                    /* 2 */
+                }
+                
+                ul:after {
+                    clear: both;
+                }
+            </style>
+            <!-- Filter buttons -->
+            <ul id="myDropdown" class="main-navigation">
+                <li>
+                    <a tableindex="-1" href="javascript:forbFilter('63','63');">Forbs (Flowering Plants)</a>
+                    <ul>
+                        <li>
+                            <a tableindex="-1" href="#"> Flower Color </a>
+                            <ul>
+                                <li> <a href="javascript:forbFilter('flower_color', 'red');"> red </a> </li>
+                                <li> <a href="javascript:forbFilter('flower_color', 'blue');"> blue </a> </li>
+                                <li> <a href="javascript:forbFilter('flower_color', 'white');"> white </a> </li>
+                                <li> <a href="javascript:forbFilter('flower_color', 'green');"> green </a> </li>
+                                <li> <a href="javascript:forbFilter('flower_color', 'yellow');"> yellow </a> </li>
+                                <li> <a href="javascript:forbFilter('flower_color', 'orange');"> orange </a> </li>
+                                <li> <a href="javascript:forbFilter('flower_color', 'pink');"> pink </a> </li>
+                                <li> <a href="javascript:forbFilter('flower_color', 'purple');"> purple </a> </li>
+                                <li> <a href="javascript:forbFilter('flower_color', 'other');"> other </a> </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a tableindex="-1" href="#"> Flower Shape </a>
+                            <ul>
+                                <li> <a href="javascript:forbFilter('flower_shape', 'composite');"> composite </a> </li>
+                                <li> <a href="javascript:forbFilter('flower_shape', 'urceolate');"> urceolate </a> </li>
+                                <li> <a href="javascript:forbFilter('flower_shape', 'radial');"> radial </a> </li>
+                                <li> <a href="javascript:forbFilter('flower_shape', 'labiate');"> labiate </a> </li>
+                                <li> <a href="javascript:forbFilter('flower_shape', 'campanulate');"> campanulate </a> </li>
+                                <li> <a href="javascript:forbFilter('flower_shape', 'funnelform');"> funnelform </a> </li>
+                                <li> <a href="javascript:forbFilter('flower_shape', 'papilionaceous');"> papilionaceous </a> </li>
+                                <li> <a href="javascript:forbFilter('flower_shape', 'reflexed');"> reflexed </a> </li>
+                                <li> <a href="javascript:forbFilter('flower_shape', 'other');"> other </a> </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a tableindex="-1" href="#"> Habitat </a>
+                            <ul>
+                                <li> <a href="javascript:forbFilter('habitat', 'dry meadow');"> dry meadow</a> </li>
+                                <li> <a href="javascript:forbFilter('habitat', 'moist meadow');"> moist meadow </a> </li>
+                                <li> <a href="javascript:forbFilter('habitat', 'wet meadow');"> wet meadow  </a> </li>
+                                <li> <a href="javascript:forbFilter('habitat', 'snowbed');"> snowbed </a> </li>
+                                <li> <a href="javascript:forbFilter('habitat', 'subalpine');"> subalpine </a> </li>
+                                <li> <a href="javascript:forbFilter('habitat', 'talus');"> talus </a></li>
+                                <li> <a href="javascript:forbFilter('habitat', 'fellfield');"> fellfield </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a tableindex="-1" href="#"> Leaf Arrangement </a>
+                            <ul>
+                                <li> <a href="javascript:forbFilter('leaf_arrangement', 'basal');"> basal </a> </li>
+                                <li> <a href="javascript:forbFilter('leaf_arrangement', 'opposite');"> opposite </a> </li>
+                                <li> <a href="javascript:forbFilter('leaf_arrangement', 'alternate');"> alternate </a> </li>
+                                <li> <a href="javascript:forbFilter('leaf_arrangement', 'cushion');"> cushion </a> </li>
+                                <li> <a href="javascript:forbFilter('leaf_arrangement', 'whorled');"> whorled </a> </li>
+                                <li> <a href="javascript:forbFilter('leaf_arrangement', 'other');"> other </a> </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a tableindex="-1" href="#"> Leaf Shape </a>
+                            <ul>
+                                <li> <a href="javascript:forbFilter('leaf_shape', 'oblong');"> oblong </a> </li>
+                                <li> <a href="javascript:forbFilter('leaf_shape', 'palmate');"> palmate </a> </li>
+                                <li> <a href="javascript:forbFilter('leaf_shape', 'round');"> round </a> </li>
+                                <li> <a href="javascript:forbFilter('leaf_shape', 'ternate');"> ternate </a> </li>
+                                <li> <a href="javascript:forbFilter('leaf_shape', 'other');"> other </a> </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a tableindex="-1" href="#"> Petal Number </a>
+                            <ul>
+                                <li> <a href="javascript:forbFilter('petal_number', '3');"> 3 </a> </li>
+                                <li> <a href="javascript:forbFilter('petal_number', '4');"> 4 </a> </li>
+                                <li> <a href="javascript:forbFilter('petal_number', '5');"> 5 </a> </li>
+                                <li> <a href="javascript:forbFilter('petal_number', '6');"> 6 </a> </li>
+                                <li> <a href="javascript:forbFilter('petal_number', '6+');"> &gt; 6 </a> </li>
+                                <li> <a href="javascript:forbFilter('petal_number', 'absent');"> absent </a> </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a tableindex="-1" href="#"> Family Name </a>
+                            <ul>
+                                <li> <a href="javascript:forbFilter('family_name', 'Alliaceae');"> Alliaceae </a> </li>
+                                <li> <a href="javascript:forbFilter('family_name', 'Apiaceae');"> Apiaceae </a> </li>
+                                <li> <a href="javascript:forbFilter('family_name', 'Asteraceae');"> Asteraceae </a> </li>
+                                <li> <a href="javascript:forbFilter('family_name', 'Boraginaceaea');"> Boraginaceae </a> </li>
+                                <li> <a href="javascript:forbFilter('family_name', 'Brassicaceae');"> Brassicaceae </a> </li>
+                                <li> <a href="javascript:forbFilter('family_name', 'Campanulaceae');"> Campanulaceae </a> </li>
+                                <li> <a href="javascript:forbFilter('family_name', 'Caryophyllaceae');"> Caryophyllaceae </a> </li>
+                                <li> <a href="javascript:forbFilter('family_name', 'Crassulaceae');"> Crassulaceae </a> </li>
+                                <li> <a href="javascript:forbFilter('family_name', 'Fabaceae');"> Fabaceae </a> </li>
+                                <li> <a href="javascript:forbFilter('family_name', 'Genianaceae');"> Gentianaceae </a> </li>
+                                <li> <a href="javascript:forbFilter('family_name', 'Hydrophyllaceae');"> Hydrophyllaceae </a> </li>
+                                <li> <a href="javascript:forbFilter('family_name', 'Liliaceae');"> Liliaceae </a> </li>
+                                <li> <a href="javascript:forbFilter('family_name', 'Melanthiaceae');"> Melanthiaceae </a> </li>
+                                <li> <a href="javascript:forbFilter('family_name', 'Montiaceae');"> Montiaceae </a> </li>
+                                <li> <a href="javascript:forbFilter('family_name', 'Onagraveae');"> Onagraceae </a> </li>
+                                <li> <a href="javascript:forbFilter('family_name', 'Orobanchaceae');"> Orobanchaceae </a> </li>
+                                <li> <a href="javascript:forbFilter('family_name', 'Plantaginaceae');"> Plantaginaceae </a> </li>
+                                <li> <a href="javascript:forbFilter('family_name', 'Polemoniaceae');"> Polemoniaceae </a> </li>
+                                <li> <a href="javascript:forbFilter('family_name', 'Polygonaceae');"> Polygonaceae </a> </li>
+                                <li> <a href="javascript:forbFilter('family_name', 'Primulaceae');"> Primulaceae </a> </li>
+                                <li> <a href="javascript:forbFilter('family_name', 'Ranunculaceae');"> Ranunculaceae </a> </li>
+                                <li> <a href="javascript:forbFilter('family_name', 'Roseaceae');"> Roseaceae </a> </li>
+                                <li> <a href="javascript:forbFilter('family_name', 'Saxifragaceae');"> Saxifragaceae </a> </li>
+                                <li> <a href="javascript:forbFilter('family_name', 'Violaceae');"> Violaceae </a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a tableindex="-1" href="javascript:gramFilter('N/A', '63', '63');"> Graminoids (Grasses)</a>
+                    <ul>
+                        <li>
+                            <a tableindex="-1" href="javascript:gramFilter('cyperaceae', '63', '63');"> Cyperaceae </a>
+                            <ul>
+                                <li>
+                                    <a tableindex="-1" href="#"> Stem Cross-Section</a>
+                                    <ul>
+                                        <li> <a href="javascript:gramFilter('cyperaceae', 'stem_cross-section', 'round and hollow');"> round and hollow </a> </li>
+                                        <li> <a href="javascript:gramFilter('cyperaceae', 'stem_cross-section', 'round and solid');"> round and solid </a> </li>
+                                        <li> <a href="javascript:gramFilter('cyperaceae', 'stem_cross-section', 'triangular and solid');"> triangular and solid </a> </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a tableindex="-1" href="#"> Leaf Blade</a>
+                                    <ul>
+                                        <li> <a href="javascript:gramFilter('cyperaceae', 'leaf_blade', 'flat');"> flat </a> </li>
+                                        <li> <a href="javascript:gramFilter('cyperaceae', 'leaf_blade', 'involute');"> involute </a> </li>
+                                        <li> <a href="javascript:gramFilter('cyperaceae', 'leaf_blade', 'keeled');"> keeled </a> </li>
+                                        <li> <a href="javascript:gramFilter('cyperaceae', 'leaf_blade', 'absent');"> absent </a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a tableindex="-1" href="#"> Spike Color</a>
+                                    <ul>
+                                        <li> <a href="javascript:gramFilter('cyperaceae', 'spike_color', 'light');"> light </a> </li>
+                                        <li> <a href="javascript:gramFilter('cyperaceae', 'spike_color', 'medium');"> medium </a> </li>
+                                        <li> <a href="javascript:gramFilter('cyperaceae', 'spike_color', 'dark');"> dark </a> </li>
+                                        <li> <a href="javascript:gramFilter('cyperaceae', 'spike_color', 'black');"> black </a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a tableindex="-1" href="#"> Inflorescence</a>
+                                    <ul>
+                                        <li> <a href="javascript:gramFilter('cyperaceae', 'inflorescence', '1 distinct spike');"> 1 distinct spike </a> </li>
+                                        <li> <a href="javascript:gramFilter('cyperaceae', 'inflorescence', '2+ distinct spikes');"> 2+ distinct spikes </a> </li>
+                                        <li> <a href="javascript:gramFilter('cyperaceae', 'inflorescence', 'globose_head');"> globose head </a> </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a tableindex="-1" href="#"> Habitat</a>
+                                    <ul>
+                                        <li> <a href="javascript:gramFilter('cyperaceae', 'habitat', 'dry meadow');"> dry meadow</a> </li>
+                                        <li> <a href="javascript:gramFilter('cyperaceae', 'habitat', 'moist meadow');"> moist meadow </a> </li>
+                                        <li> <a href="javascript:gramFilter('cyperaceae', 'habitat', 'wet meadow');"> wet meadow  </a> </li>
+                                        <li> <a href="javascript:gramFilter('cyperaceae', 'habitat', 'snowbed');"> snowbed </a> </li>
+                                        <li> <a href="javascript:gramFilter('cyperaceae', 'habitat', 'subalpine');"> subalpine </a> </li>
+                                        <li> <a href="javascript:gramFilter('cyperaceae', 'habitat', 'talus');"> talus </a></li>
+                                        <li> <a href="javascript:gramFilter('cyperaceae', 'habitat', 'fellfield');"> fellfield </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a tableindex="-1" href="javascript:gramFilter('poaceae', '63', '63');"> Poaceae</a>
+                            <ul>
+                                <li>
+                                    <a tableindex="-1" href="#"> Stem Cross-Section </a>
+                                    <ul>
+                                        <li> <a href="javascript:gramFilter('poaceae', 'stem_cross-section', 'round and hollow');"> round and hollow </a> </li>
+                                        <li> <a href="javascript:gramFilter('poaceae', 'stem_cross-section', 'round and solid');"> round and solid </a> </li>
+                                        <li> <a href="javascript:gramFilter('poaceae', 'stem_cross-section', 'triangular and solid');"> triangular and solid </a> </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a tableindex="-1" href="#"> Leaf Blade</a>
+                                    <ul>
+                                        <li> <a href="javascript:gramFilter('poaceae', 'leaf_blade', 'flat');"> flat </a> </li>
+                                        <li> <a href="javascript:gramFilter('poaceae', 'leaf_blade', 'involute');"> involute </a> </li>
+                                        <li> <a href="javascript:gramFilter('poaceae', 'leaf_blade', 'keeled');"> keeled </a> </li>
+                                        <li> <a href="javascript:gramFilter('poaceae', 'leaf_blade', 'absent');"> absent </a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a tableindex="-1" href="#"> Awns</a>
+                                    <ul>
+                                        <li> <a href="javascript:gramFilter('poaceae', 'awns', 'bent');"> bent </a> </li>
+                                        <li> <a href="javascript:gramFilter('poaceae', 'awns', 'straight');"> straight </a> </li>
+                                        <li> <a href="javascript:gramFilter('poaceae', 'awns', 'twisted');"> twisted </a> </li>
+                                        <li> <a href="javascript:gramFilter('poaceae', 'awns', 'absent');"> absent </a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a tableindex="-1" href="#"> Inflorescence</a>
+                                    <ul>
+                                        <li> <a href="javascript:gramFilter('poaceae', 'inflorescence', 'open');"> open </a> </li>
+                                        <li> <a href="javascript:gramFilter('poaceae', 'inflorescence', 'contracted');"> contracted </a> </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a tableindex="-1" href="#"> Florets per Spikelet </a>
+                                    <ul>
+                                        <li> <a href="javascript:gramFilter('poaceae', 'florets_per_spikelet', '1');"> 1 </a> </li>
+                                        <li> <a href="javascript:gramFilter('poaceae', 'florets_per_spikelet', '2+');"> 2+ </a> </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="test" tableindex="-1" href="#"> Habitat</a>
+                                    <ul>
+                                        <li> <a href="javascript:gramFilter('poaceae', 'habitat', 'dry meadow');"> dry meadow</a> </li>
+                                        <li> <a href="javascript:gramFilter('poaceae', 'habitat', 'moist meadow');"> moist meadow </a> </li>
+                                        <li> <a href="javascript:gramFilter('poaceae', 'habitat', 'wet meadow');"> wet meadow  </a> </li>
+                                        <li> <a href="javascript:gramFilter('poaceae', 'habitat', 'snowbed');"> snowbed </a> </li>
+                                        <li> <a href="javascript:gramFilter('poaceae', 'habitat', 'subalpine');"> subalpine </a> </li>
+                                        <li> <a href="javascript:gramFilter('poaceae', 'habitat', 'talus');"> talus </a></li>
+                                        <li> <a href="javascript:gramFilter('poaceae', 'habitat', 'fellfield');"> fellfield </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a tableindex="-1" href="javascript:gramFilter('juncaceae', '63', '63');"> Juncaceae </a>
+                            <ul>
+                                <li>
+                                    <a tableindex="-1" href="#"> Stem Cross-Section</a>
+                                    <ul>
+                                        <li> <a href="javascript:gramFilter('juncaceae', 'stem_cross-section', 'round and hollow');"> round and hollow </a> </li>
+                                        <li> <a href="javascript:gramFilter('juncaceae', 'stem_cross-section', 'round and solid');"> round and solid </a> </li>
+                                        <li> <a href="javascript:gramFilter('juncaceae', 'stem_cross-section', 'triangular and solid');"> triangular and solid </a> </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a tableindex="-1" href="#"> Leaf Blade</a>
+                                    <ul>
+                                        <li> <a href="javascript:gramFilter('juncaceae', 'leaf_blade', 'flat');"> flat </a> </li>
+                                        <li> <a href="javascript:gramFilter('juncaceae', 'leaf_blade', 'involute');"> involute </a> </li>
+                                        <li> <a href="javascript:gramFilter('juncaceae', 'leaf_blade', 'keeled');"> keeled </a> </li>
+                                        <li> <a href="javascript:gramFilter('juncaceae', 'leaf_blade', 'absent');"> absent </a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a tableindex="-1" href="#"> Habitat </a>
+                                    <ul>
+                                        <li> <a href="javascript:gramFilter('juncaceae', 'habitat', 'dry meadow');"> dry meadow</a> </li>
+                                        <li> <a href="javascript:gramFilter('juncaceae', 'habitat', 'moist meadow');"> moist meadow </a> </li>
+                                        <li> <a href="javascript:gramFilter('juncaceae', 'habitat', 'wet meadow');"> wet meadow  </a> </li>
+                                        <li> <a href="javascript:gramFilter('juncaceae', 'habitat', 'snowbed');"> snowbed </a> </li>
+                                        <li> <a href="javascript:gramFilter('juncaceae', 'habitat', 'subalpine');"> subalpine </a> </li>
+                                        <li> <a href="javascript:gramFilter('juncaceae', 'habitat', 'talus');"> talus </a></li>
+                                        <li> <a href="javascript:gramFilter('juncaceae', 'habitat', 'fellfield');"> fellfield </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a tableindex="-1" href="javascript:woodyFilter('N/A', '63', '63');"> Trees &#38; Shrubs  </a>
+                    <ul>
+                        <li>
+                            <a tableindex="-1" href="javascript:woodyFilter('needle', '63', '63');"> Needle</a>
+                            <ul>
+                                <li>
+                                    <a tableindex="-1" href="#"> Needle Arrangement</a>
+                                    <ul>
+                                        <li> <a href="javascript:woodyFilter('needle', 'needle_arrangement', 'solitary');"> solitary </a> </li>
+                                        <li> <a href="javascript:woodyFilter('needle', 'needle_arrangement', 'fascicles');"> fascicles </a> </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a tableindex="-1" href="#"> Needle Apex </a>
+                                    <ul>
+                                        <li> <a href="javascript:woodyFilter('needle', 'needle_apex', 'blunt');"> blunt </a> </li>
+                                        <li> <a href="javascript:woodyFilter('needle', 'needle_apex', 'acute');"> acute </a> </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a tableindex="-1" href="#"> Cone </a>
+                                    <ul>
+                                        <li> <a href="javascript:woodyFilter('needle', 'cone', 'soft scales');"> soft scales </a> </li>
+                                        <li> <a href="javascript:woodyFilter('needle', 'cone', 'hard scales');"> hard scales </a> </li>
+                                        <li> <a href="javascript:woodyFilter('needle', 'cone', 'downward hanging');"> downward hanging </a> </li>
+                                        <li> <a href="javascript:woodyFilter('needle', 'cone', 'upward growing');"> upward growing </a></li>
+                                        <li> <a href="javascript:woodyFilter('needle', 'cone', 'prickle');"> prickle </a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a tableindex="-1" href="#"> Family Name </a>
+                                    <ul>
+                                        <li> <a href="javascript:woodyFilter('needle', 'family_name', 'Pinaceae');"> Pinaceae </a> </li>
+                                        <li> <a href="javascript:woodyFilter('needle', 'family_name', 'Cupressaceae');"> Cupressaceae </a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a tableindex="-1" href="javascript:woodyFilter('Deciduous', '63', '63');"> Deciduous </a>
+                            <ul>
+                                <li>
+                                    <a tableindex="-1" href="#"> Leaf Margin </a>
+                                    <ul>
+                                        <li> <a href="javascript:woodyFilter('deciduous', 'leaf_margin', 'toothed');"> toothed </a> </li>
+                                        <li> <a href="javascript:woodyFilter('deciduous', 'leaf_margin', 'lobed');"> lobed </a> </li>
+                                        <li> <a href="javascript:woodyFilter('deciduous', 'leaf_margin', 'entire');"> entire </a> </li>
+                                        <li> <a href="javascript:woodyFilter('deciduous', 'leaf_margin', 'undulate');"> undulate </a> </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a tableindex="-1" href="#"> Leaf Shape</a>
+                                    <ul>
+                                        <li> <a href="javascript:woodyFilter('deciduous', 'leaf_shape', 'round');"> round </a> </li>
+                                        <li> <a href="javascript:woodyFilter('deciduous', 'leaf_shape', 'oblong');"> oblong </a> </li>
+                                        <li> <a href="javascript:woodyFilter('deciduous', 'leaf_shape', 'palmate');"> palmate </a> </li>
+                                        <li> <a href="javascript:woodyFilter('deciduous', 'leaf_shape', 'dissected');"> dissected </a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a tableindex="-1" href="#"> Leaf Arrangement</a>
+                                    <ul>
+                                        <li> <a href="javascript:woodyFilter('deciduous', 'leaf_arrangement', 'alternate');"> alternate </a> </li>
+                                        <li> <a href="javascript:woodyFilter('deciduous', 'leaf_arrangement', 'opposite');"> opposite </a> </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a tableindex="-1" href="#"> Family Name</a>
+                                    <ul>
+                                        <li> <a href="javascript:woodyFilter('deciduous', 'family_name', 'Betulaceae');"> Betulaceae</a> </li>
+                                        <li> <a href="javascript:woodyFilter('deciduous', 'family_name', 'Caprifoliaceae');"> Caprifoliaceae </a> </li>
+                                        <li> <a href="javascript:woodyFilter('deciduous', 'family_name', 'Ericaceae');"> Ericaceae  </a> </li>
+                                        <li> <a href="javascript:woodyFilter('deciduous', 'family_name', 'Fabaceae');"> Fabaceae </a> </li>
+                                        <li> <a href="javascript:woodyFilter('deciduous', 'family_name', 'Grossulariaceae');"> Grossulariaceae </a> </li>
+                                        <li> <a href="javascript:woodyFilter('deciduous', 'family_name', 'Roseaceae');"> Roseaceae </a></li>
+                                        <li> <a href="javascript:woodyFilter('deciduous', 'family_name', 'Salicaceae');"> Salicaceae </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a tableindex="-1" href="#"> Scale</a>
+                            <ul>
+                                <li>
+                                    <a tableindex="-1" href="#"> Cone</a>
+                                    <ul>
+                                        <li> <a href="javascript:woodyFilter('needle', 'cone', 'fused scales');"> fused scales </a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li> <a href="javascript:removeAll();"> Remove All Filters </a> </li>
+            </ul>
+        </div>
+        <!-- Iframes control each side, hidden values are used to dynamically change things -->
+        <div class="field_guide_section">
+            <iframe id="left_frame" src="fieldguide_data.html" style="height:550px;width:50%;"></iframe>
+            <iframe id="right_frame" src="fieldguide_display.html" style="height:550px;width:50%;"></iframe>
+            <h2 id="display_species" style="display:none;">Achillea millefolium</h2>
+            <h2 id="display_common_name" style="display:none;">Garret common yarrow</h2>
+            <h2 id="display_family_name" style="display:none;">Asteraceae</h2>
+            <h2 id="display_synonyms" style="display:none;">Achillea lanulosa</h2>
+            <h2 id="display_growth_form" style="display:none;">forb</h2>
+            <h2 id="display_flower_color" style="display:none;">white</h2>
+            <h2 id="display_flower_shape" style="display:none;">composite</h2>
+            <h2 id="display_habitat" style="display:none;">dry meadow and wet meadow</h2>
+            <h2 id="display_leaf_arrangement" style="display:none;">alternate</h2>
+            <h2 id="display_leaf_shape_filter" style="display:none;">other</h2>
+            <h2 id="display_petal_number" style="display:none;">NA</h2>
+            <h2 id="display_notes" style="display:none;">NA</h2>
+            <h2 id="display_photo_credit" style="display:none;">JG Smith</h2>
+
+            <h2 id="display_inflorescence" style="display:none;">NA</h2>
+            <h2 id="display_leaf_blade" style="display:none;">NA</h2>
+            <h2 id="display_spike_color" style="display:none;">NA</h2>
+            <h2 id="display_stem_cross_section" style="display:none;">NA</h2>
+            <h2 id="display_awns" style="display:none;">NA</h2>
+            <h2 id="display_florets_per_spikelet" style="display:none;">NA</h2>
+            <h2 id="display_cone" style="display:none;">NA</h2>
+            <h2 id="display_leaf_margin" style="display:none;">NA</h2>
+            <h2 id="display_leaf_shape" style="display:none;">NA</h2>
+            <h2 id="display_leaf_type" style="display:none;">NA</h2>
+            <h2 id="display_needle_apex" style="display:none;">NA</h2>
+            <h2 id="display_needle_arrangement" style="display:none;">NA</h2>
+            <h2 id="display_needle_per_fascile" style="display:none;">NA</h2>
+            <h2 id="category" style="display:none;">NA</h2>
+            <h2 id="subcat" style="display:none;">NA</h2>
+            <h2 id="fil" style="display:none;">NA</h2>
+            <h2 id="cat2" style="display:none;">NA</h2>
+            <h2 id="change" style="display:none;">false</h2>
+            <h2 id="plant_code" style="display:none;">NA</h2>
+        </div>
+
+
+    </div>
+    <!-- firebase and jquery set up -->
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyALD0AZe1fPShuzIcNLHh87eERLXXpx3ks",
+            authDomain: "speciesid-ca814.firebaseapp.com",
+            databaseURL: "https://speciesid-ca814.firebaseio.com",
+            storageBucket: "speciesid-ca814.appspot.com",
+            messagingSenderId: "794603922973"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <script src="assets/js/fieldguide.js"></script>
+    <!-- removeAll resets the filters, xFilter sets up the filter list as well as set up the attributes to apply filters. -->
+    <script>
+        function removeAll() {
+            document.getElementById("change").textContent = 'true'
+            document.getElementById("category").textContent = "N/A"
+            document.getElementById("subcat").textContent = "63"
+            document.getElementById("fil").textContent = "63"
+            document.getElementById("cat2").textContent = "N/A"
+            document.getElementById("filtersss").textContent = 'No Filters'
+        }
+
+        function shower() {   
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        function forbFilter(subcat, fil) {
+            document.getElementById("change").textContent = 'true'
+            if (document.getElementById("category").innerHTML !== "Forbs") {
+                if (subcat == '63') {
+                    document.getElementById("category").textContent = "Forbs"
+                    document.getElementById("subcat").textContent = subcat
+                    document.getElementById("fil").textContent = fil
+                    document.getElementById("filtersss").textContent = "Forbs "
+                } else {
+                    document.getElementById("category").textContent = "Forbs"
+                    document.getElementById("subcat").textContent = subcat
+                    document.getElementById("fil").textContent = fil
+                    document.getElementById("filtersss").textContent = "Forbs (Flowering Plants) >> " + subcat + ' : ' + fil + ' , '
+                }
+            } else {
+                if (!(subcat == '63')) {
+                    document.getElementById("subcat").textContent = document.getElementById("subcat").textContent + ' , ' + subcat
+                    document.getElementById("fil").textContent = document.getElementById("fil").textContent + ' , ' + fil
+                    document.getElementById("filtersss").textContent = document.getElementById("filtersss").textContent + subcat + ' : ' + fil + ' , '
+                }
+            }
+
+        }
+
+        function gramFilter(category, subcat, fil) {
+            document.getElementById("change").textContent = 'true'
+            if (document.getElementById("category").innerHTML !== "Gram") {
+                document.getElementById("category").textContent = "Gram"
+                document.getElementById("subcat").textContent = subcat
+                document.getElementById("fil").textContent = fil
+                document.getElementById("cat2").textContent = category
+                if (category == 'N/A') {
+                    document.getElementById("filtersss").textContent = "Graminoids"
+                } else {
+                    if (subcat == '63') {
+                        document.getElementById("filtersss").textContent = "Graminoids (Grasses) > " + category + " >> "
+                    } else {
+                        document.getElementById("filtersss").textContent = "Graminoids (Grasses) > " + category + " >> " + subcat + ' : ' + fil + ' , '
+                    }
+                }
+
+            } else if (document.getElementById("cat2").textContent !== category) {
+                document.getElementById("subcat").textContent = subcat
+                document.getElementById("fil").textContent = fil
+                document.getElementById("cat2").textContent = category
+                if (subcat == '63') {
+                    document.getElementById("filtersss").textContent = "Graminoids (Grasses) > " + category + " >> "
+                } else {
+                    document.getElementById("filtersss").textContent = "Graminoids (Grasses) > " + category + " >> " + subcat + ' : ' + fil + ' , '
+                }
+            } else {
+                if (!(subcat == '63')) {
+                    document.getElementById("subcat").textContent = document.getElementById("subcat").textContent + ' , ' + subcat
+                    document.getElementById("fil").textContent = document.getElementById("fil").textContent + ' , ' + fil
+                    document.getElementById("filtersss").textContent = document.getElementById("filtersss").textContent + subcat + ' : ' + fil + ' , '
+                }
+            }
+
+        }
+
+        function woodyFilter(category, subcat, fil) {
+            document.getElementById("change").textContent = 'true'
+            if (document.getElementById("category").innerHTML !== "Woody") {
+                document.getElementById("category").textContent = "Woody"
+                document.getElementById("subcat").textContent = subcat
+                document.getElementById("fil").textContent = fil
+                document.getElementById("cat2").textContent = category
+                if (category == 'N/A') {
+                    document.getElementById("filtersss").textContent = "Trees & Shrubs"
+                } else {
+                    if (subcat == '63') {
+                        document.getElementById("filtersss").textContent = "Trees & Shrubs > " + category + " >> "
+                    } else {
+                        document.getElementById("filtersss").textContent = "Trees & Shrubs  > " + category + " >> " + subcat + ' : ' + fil + ' , '
+                    }
+                }
+
+            } else if (document.getElementById("cat2").textContent !== category) {
+                document.getElementById("subcat").textContent = subcat
+                document.getElementById("fil").textContent = fil
+                document.getElementById("cat2").textContent = category
+                if (subcat == '63') {
+                    document.getElementById("filtersss").textContent = "Trees & Shrubs  > " + category + " >> "
+                } else {
+                    document.getElementById("filtersss").textContent = "Trees & Shrubs  > " + category + " >> " + subcat + ' : ' + fil + ' , '
+                }
+            } else {
+                if (!(subcat == '63')) {
+                    document.getElementById("subcat").textContent = document.getElementById("subcat").textContent + ',' + subcat
+                    document.getElementById("fil").textContent = document.getElementById("fil").textContent + ',' + fil
+                    document.getElementById("filtersss").textContent = document.getElementById("filtersss").textContent + subcat + ' : ' + fil + ' , '
+                }
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">LuminousID</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password </string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_short">Login</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- Strings related to filtering -->
+    <string name="family_prompt">Family</string>
+    <string name="habitat_prompt">Habitat</string>
+
+    <string name="forbs_flowercolor_prompt">Flower Color</string>
+    <string name="forbs_petalnumber_prompt">Petal Number</string>
+    <string name="forbs_flowershape_prompt">Flower Shape</string>
+    <string name="forbs_leafarrangement_prompt">Leaf Arrangement</string>
+    <string name="forbs_leafshape_prompt">Leaf Shape</string>
+
+    <string name="gram_stemcrosssection_prompt">Stem Cross-Section</string>
+    <string name="gram_leafblade_prompt">Leaf Blade</string>
+
+    <string name="cyper_inflorescence_prompt">Inflorescence</string>
+    <string name="cyper_spikecolor_prompt">Spike Color</string>
+
+    <string name="poa_inflorescence_prompt">Inflorescence</string>
+    <string name="poa_floretsperspikelet_prompt">Florets per Spikelet</string>
+    <string name="poa_awns_prompt">Awns</string>
+
+    <string name="woody_family_prompt">Family</string>
+
+    <string name="needle_leaftype_prompt">Leaf Type</string>
+    <string name="needle_needlearrangement_prompt">Needle Arrangement</string>
+    <string name="needle_needlesperfascicle_prompt">Needles per Fascicle</string>
+    <string name="needle_needleapex_prompt">Needle Apex</string>
+    <string name="needle_cone_prompt">Cone</string>
+
+    <string name="deci_leafarrangement_prompt">Leaf Arrangement</string>
+    <string name="deci_leafshape_prompt">Leaf Shape</string>
+
+    <string-array name="habitat_array">
+        <item>All</item>
+        <item>fellfield</item>
+        <item>dry meadow</item>
+        <item>moist meadow</item>
+        <item>wet meadow</item>
+        <item>snowbed</item>
+        <item>talus</item>
+        <item>subalpine</item>
+    </string-array>
+
+    <string-array name="forbs_family_array">
+        <item>All</item>
+        <item>Alliaceae</item>
+        <item>Apiaceae</item>
+        <item>Asteraceae</item>
+        <item>Boraginaceae</item>
+        <item>Brassicaceae</item>
+        <item>Campanulaceae</item>
+        <item>Caryophyllaceae</item>
+        <item>Crassulaceae</item>
+        <item>Fabaceae</item>
+        <item>Gentianaceae</item>
+        <item>Hydrophyllaceae</item>
+        <item>Liliaceae</item>
+        <item>Melanthiaceae</item>
+        <item>Montiaceae</item>
+        <item>Onagraceae</item>
+        <item>Orobanchaceae</item>
+        <item>Plantaginaceae</item>
+        <item>Polemoniaceae</item>
+        <item>Polygonaceae</item>
+        <item>Primulaceae</item>
+        <item>Ranunculaceae</item>
+        <item>Roseaceae</item>
+        <item>Saxifragaceae</item>
+        <item>Violaceae</item>
+    </string-array>
+
+    <string-array name="forbs_flowercolor_array">
+        <item>All</item>
+        <item>blue</item>
+        <item>green</item>
+        <item>orange</item>
+        <item>pink</item>
+        <item>purple</item>
+        <item>red</item>
+        <item>white</item>
+        <item>yellow</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="forbs_petalnumber_array">
+        <item>All</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6+</item>
+        <item>absent</item>
+    </string-array>
+
+    <string-array name="forbs_flowershape_array">
+        <item>All</item>
+        <item>campanulate</item>
+        <item>composite</item>
+        <item>funnelform</item>
+        <item>labiate</item>
+        <item>papilionaceous</item>
+        <item>radial</item>
+        <item>reflexed</item>
+        <item>urceolate</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="forbs_leafarrangement_array">
+        <item>All</item>
+        <item>alternate</item>
+        <item>basal</item>
+        <item>cushion</item>
+        <item>opposite</item>
+        <item>whorled</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="forbs_leafshape_array">
+        <item>All</item>
+        <item>oblong</item>
+        <item>palmate</item>
+        <item>round</item>
+        <item>ternate</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="gram_stemcrosssection_array">
+        <item>All</item>
+        <item>round, hollow</item>
+        <item>round, solid</item>
+        <item>triangular, solid</item>
+    </string-array>
+
+    <string-array name="gram_leafblade_array">
+        <item>All</item>
+        <item>flat</item>
+        <item>involute</item>
+        <item>keeled</item>
+        <item>absent</item>
+    </string-array>
+
+    <string-array name="poa_inflorescence_array">
+        <item>All</item>
+        <item>open</item>
+        <item>contracted</item>
+    </string-array>
+
+    <string-array name="poa_floretsperspikelet_array">
+        <item>All</item>
+        <item>1</item>
+        <item>2+</item>
+    </string-array>
+
+    <string-array name="poa_awns_array">
+        <item>All</item>
+        <item>bent</item>
+        <item>straight</item>
+        <item>twisted</item>
+        <item>absent</item>
+    </string-array>
+
+    <string-array name="cyper_inflorescence_array">
+        <item>All</item>
+        <item>1 distinct spike</item>
+        <item>2+ distinct spikes</item>
+        <item>globose head</item>
+    </string-array>
+
+    <string-array name="cyper_spikecolor_array">
+        <item>All</item>
+        <item>light</item>
+        <item>medium</item>
+        <item>dark</item>
+        <item>black</item>
+    </string-array>
+
+    <string-array name="woody_family_array">
+        <item>All</item>
+        <item>Betulaceae</item>
+        <item>Caprifoliaceae</item>
+        <item>Ericaceae</item>
+        <item>Fabaceae</item>
+        <item>Grossulariaceae</item>
+        <item>Cupressaceae</item>
+        <item>Pinaceae</item>
+        <item>Rosaceae</item>
+        <item>Salicaceae</item>
+    </string-array>
+
+    <string-array name="needle_leaftype_array">
+        <item>All</item>
+        <item>needle</item>
+        <item>scale</item>
+    </string-array>
+
+    <string-array name="needle_needlearrangement_array">
+        <item>All</item>
+        <item>fascicles</item>
+        <item>solitary</item>
+    </string-array>
+
+    <string-array name="needle_needlesperfascicle_array">
+        <item>All</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="needle_needleapex_array">
+        <item>All</item>
+        <item>blunt</item>
+        <item>acute</item>
+    </string-array>
+
+    <string-array name="needle_cone_array">
+        <item>All</item>
+        <item>prickle</item>
+        <item>hard scales</item>
+        <item>soft scales</item>
+        <item>fused scales</item>
+        <item>upward growing</item>
+        <item>downward hanging</item>
+    </string-array>
+
+    <string-array name="deci_leafarrangement_array">
+        <item>All</item>
+        <item>opposite</item>
+        <item>alternate</item>
+    </string-array>
+
+    <string-array name="deci_leafshape_array">
+        <item>All</item>
+        <item>dissected</item>
+        <item>oblong</item>
+        <item>palmate</item>
+        <item>round</item>
+        <item>ternate</item>
+        <item>other</item>
+    </string-array>
+
+</resources>

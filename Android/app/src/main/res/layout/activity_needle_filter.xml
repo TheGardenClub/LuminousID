@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:ignore="MissingPrefix"
+    tools:context="com.luminousid.luminousid.PlantFilterActivity">
+
+    <TextView
+        android:id="@+id/needleFilterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        fontPath="fonts/Snippet.ttf"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:text="Needle Filtering" />
+
+    <Spinner
+        android:id="@+id/familyMenu"
+        android:layout_width="195dp"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/woody_family_array"
+        android:prompt="@string/woody_family_prompt"
+        android:layout_below="@+id/needleFilterText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp" />
+
+    <TextView
+        android:id="@+id/familyPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/woody_family_prompt"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_alignTop="@+id/familyMenu"
+        android:layout_toLeftOf="@+id/familyMenu"
+        android:layout_toStartOf="@+id/familyMenu" />
+
+    <Spinner
+        android:id="@+id/leaftypeMenu"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/needle_leaftype_array"
+        android:prompt="@string/needle_leaftype_prompt"
+        android:layout_below="@+id/familyMenu"
+        android:layout_toRightOf="@+id/familyPrompt"
+        android:layout_toEndOf="@+id/familyPrompt"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/leaftypePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/needle_leaftype_prompt"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_alignBaseline="@+id/leaftypeMenu"
+        android:layout_alignBottom="@+id/leaftypeMenu"
+        android:layout_alignRight="@+id/familyPrompt"
+        android:layout_alignEnd="@+id/familyPrompt" />
+
+    <Spinner
+        android:id="@+id/needlearrangementMenu"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/needle_needlearrangement_array"
+        android:prompt="@string/needle_needlearrangement_prompt"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/leaftypeMenu"
+        android:layout_alignLeft="@+id/leaftypeMenu"
+        android:layout_alignStart="@+id/leaftypeMenu" />
+
+    <TextView
+        android:id="@+id/needlearrangementPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/needle_needlearrangement_prompt"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_alignTop="@+id/needlearrangementMenu"
+        android:layout_alignRight="@+id/leaftypePrompt"
+        android:layout_alignEnd="@+id/leaftypePrompt" />
+
+    <Spinner
+        android:id="@+id/needlesperfascicleMenu"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:entries="@array/needle_needlesperfascicle_array"
+        android:prompt="@string/needle_needlesperfascicle_prompt"
+        android:layout_below="@+id/needlearrangementMenu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp" />
+
+    <TextView
+        android:id="@+id/needlesperfasciclePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/needle_needlesperfascicle_prompt"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_alignTop="@+id/needlesperfascicleMenu"
+        android:layout_alignRight="@+id/needlearrangementPrompt"
+        android:layout_alignEnd="@+id/needlearrangementPrompt" />
+
+    <Spinner
+        android:id="@+id/needleapexMenu"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:entries="@array/needle_needleapex_array"
+        android:prompt="@string/needle_needleapex_prompt"
+        android:layout_below="@+id/needlesperfascicleMenu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp" />
+
+    <TextView
+        android:id="@+id/needleapexPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/needle_needleapex_prompt"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_alignTop="@+id/needleapexMenu"
+        android:layout_alignRight="@+id/needlesperfasciclePrompt"
+        android:layout_alignEnd="@+id/needlesperfasciclePrompt" />
+
+    <Spinner
+        android:id="@+id/coneMenu"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:entries="@array/needle_cone_array"
+        android:prompt="@string/needle_cone_prompt"
+        android:layout_below="@+id/needleapexMenu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp" />
+
+    <TextView
+        android:id="@+id/conePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/needle_cone_prompt"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_alignTop="@+id/coneMenu"
+        android:layout_alignRight="@+id/needleapexPrompt"
+        android:layout_alignEnd="@+id/needleapexPrompt" />
+
+    <Spinner
+        android:id="@+id/habitatMenu"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:entries="@array/habitat_array"
+        android:prompt="@string/habitat_prompt"
+        android:layout_below="@+id/coneMenu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp" />
+
+    <TextView
+        android:id="@+id/habitatPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/habitat_prompt"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_alignTop="@+id/habitatMenu"
+        android:layout_alignRight="@+id/needleapexPrompt"
+        android:layout_alignEnd="@+id/needleapexPrompt" />
+
+    <Button
+        android:id="@+id/applyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="Apply"
+        fontPath="fonts/Snippet.ttf"/>
+
+</RelativeLayout>

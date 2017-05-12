@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:id="@+id/activity_home_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/lumi_homescreen_background_img"
+    tools:context="com.luminousid.luminousid.Home_screenActivity">
+
+    <TextView
+        android:text="guest@nowhere.com"
+        android:textSize="20dp"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginStatus"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Log Out"
+        android:textSize="15dp"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logoutButton"
+        android:textColor="@android:color/white"
+        android:background="@android:color/transparent"
+        android:layout_alignBaseline="@+id/loginStatus"
+        android:layout_alignBottom="@+id/loginStatus"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/lumiLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/logoutButton"
+        android:layout_marginTop="27dp"
+        android:cropToPadding="false"
+        app:srcCompat="@mipmap/lumi_logo" />
+
+    <ImageButton
+        android:id="@+id/fieldguideButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/fieldguideText"
+        android:layout_alignStart="@+id/fieldguideText"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/fieldguidenormal" />
+
+    <TextView
+        android:id="@+id/fieldguideText"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fieldguideButton"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:text="Field Guide"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/observationsButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/fieldguideText"
+        android:layout_alignLeft="@+id/obsText"
+        android:layout_alignStart="@+id/obsText"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:background="@drawable/myobservationsnormal" />
+
+    <TextView
+        android:id="@+id/obsText"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/observationsButton"
+        android:text="My Observations"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/glossaryButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/fieldguideButton"
+        android:layout_alignStart="@+id/fieldguideButton"
+        android:layout_alignTop="@+id/howtoButton"
+        android:background="@drawable/glossary" />
+
+    <TextView
+        android:id="@+id/glossaryText"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/glossaryButton"
+        android:layout_alignRight="@+id/glossaryButton"
+        android:layout_below="@+id/glossaryButton"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Glossary"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/howtoButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/aboutnormal"
+        android:layout_below="@+id/observationsButton"
+        android:layout_alignLeft="@+id/observationsButton"
+        android:layout_alignStart="@+id/observationsButton" />
+
+    <TextView
+        android:id="@+id/aboutText"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/howtoButton"
+        android:layout_alignStart="@+id/howtoButton"
+        android:layout_below="@+id/howtoButton"
+        android:layout_centerHorizontal="true"
+        android:text="About"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+</RelativeLayout>

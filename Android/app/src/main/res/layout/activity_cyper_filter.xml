@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:ignore="MissingPrefix"
+    tools:context="com.luminousid.luminousid.PlantFilterActivity">
+
+    <TextView
+        android:id="@+id/cyperFilterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        fontPath="fonts/Snippet.ttf"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:text="Cyperaceae Filtering" />
+
+    <Spinner
+        android:id="@+id/stemcrosssectionMenu"
+        android:layout_width="195dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/gram_stemcrosssection_array"
+        android:prompt="@string/gram_stemcrosssection_prompt"
+        android:layout_below="@+id/cyperFilterText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp" />
+
+    <TextView
+        android:id="@+id/stemcrosssectionPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stem Cross-Section"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_alignTop="@+id/stemcrosssectionMenu"
+        android:layout_toLeftOf="@+id/stemcrosssectionMenu"
+        android:layout_toStartOf="@+id/stemcrosssectionMenu" />
+
+    <Spinner
+        android:id="@+id/leafbladeMenu"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/gram_leafblade_array"
+        android:prompt="@string/gram_leafblade_prompt"
+        android:layout_below="@+id/stemcrosssectionMenu"
+        android:layout_toRightOf="@+id/stemcrosssectionPrompt"
+        android:layout_toEndOf="@+id/stemcrosssectionPrompt"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/leafbladePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gram_leafblade_prompt"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_alignBaseline="@+id/leafbladeMenu"
+        android:layout_alignBottom="@+id/leafbladeMenu"
+        android:layout_alignRight="@+id/stemcrosssectionPrompt"
+        android:layout_alignEnd="@+id/stemcrosssectionPrompt" />
+
+    <Spinner
+        android:id="@+id/inflorescenceMenu"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/cyper_inflorescence_array"
+        android:prompt="@string/cyper_inflorescence_prompt"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/leafbladeMenu"
+        android:layout_alignLeft="@+id/leafbladeMenu"
+        android:layout_alignStart="@+id/leafbladeMenu" />
+
+    <TextView
+        android:id="@+id/inflorescencePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cyper_inflorescence_prompt"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_alignTop="@+id/inflorescenceMenu"
+        android:layout_alignRight="@+id/leafbladePrompt"
+        android:layout_alignEnd="@+id/leafbladePrompt" />
+
+    <Spinner
+        android:id="@+id/spikecolorMenu"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:entries="@array/cyper_spikecolor_array"
+        android:prompt="@string/cyper_spikecolor_prompt"
+        android:layout_below="@+id/inflorescenceMenu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp" />
+
+    <TextView
+        android:id="@+id/spikecolorPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cyper_spikecolor_prompt"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_alignTop="@+id/spikecolorMenu"
+        android:layout_alignRight="@+id/inflorescencePrompt"
+        android:layout_alignEnd="@+id/inflorescencePrompt" />
+
+    <Spinner
+        android:id="@+id/habitatMenu"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:entries="@array/habitat_array"
+        android:prompt="@string/habitat_prompt"
+        android:layout_below="@+id/spikecolorMenu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp" />
+
+    <TextView
+        android:id="@+id/habitatPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/habitat_prompt"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_alignTop="@+id/habitatMenu"
+        android:layout_alignRight="@+id/spikecolorPrompt"
+        android:layout_alignEnd="@+id/spikecolorPrompt" />
+
+    <Button
+        android:id="@+id/applyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="Apply"
+        fontPath="fonts/Snippet.ttf"/>
+
+</RelativeLayout>

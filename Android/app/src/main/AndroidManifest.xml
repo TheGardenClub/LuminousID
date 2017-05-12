@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.luminousid.luminousid"
+    android:versionCode="3"
+    android:versionName="2.0">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- - Permission to allow app to get best location services -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- Says that the app  uses a camera and writes to external storage -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".FontHelper"
+        android:allowBackup="true"
+        android:icon="@mipmap/lumi_app_logo"
+        android:label="Luminous ID"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".open_screenActivity"
+            android:label="Luminous ID"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".Home_screenActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".Forbs_FieldGuideActivity" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".plantDetailActivity" />
+        <activity android:name=".Intro_FieldGuideActivity" />
+        <activity android:name=".Cyperaceae_FieldGuideActivity" />
+        <activity android:name=".Woody_FieldGuideActivity" />
+        <activity android:name=".Deciduous_FieldGuideActivity" />
+        <activity android:name=".Needle_FieldGuideActivity" />
+        <activity android:name=".Graminoids_FieldGuideActivity" />
+        <activity android:name=".Juncaceae_FieldGuideActivity" />
+        <activity android:name=".Poaceae_FieldGuideActivity" />
+        <activity android:name=".PlantFilterActivity" />
+        <activity android:name=".Glossary_IntroActivity" />
+        <activity android:name=".glossaryDetailActivity" />
+        <activity android:name=".Glossary_ListActivity" />
+        <activity android:name=".MyObservationsActivity" />
+        <activity android:name=".AddObsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewObs" />
+
+        <!-- add file provider for add observation -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".HowToActivity"></activity>
+    </application>
+
+</manifest>

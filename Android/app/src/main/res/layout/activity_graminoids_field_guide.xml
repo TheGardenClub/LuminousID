@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lumi_homescreen_background_img"
+    tools:context="com.luminousid.luminousid.Graminoids_FieldGuideActivity">
+
+    <Button
+        android:id="@+id/cyperButton"
+        android:layout_width="300sp"
+        android:layout_height="85sp"
+        android:layout_marginBottom="60sp"
+        android:background="@drawable/cyperaceae_title"
+        android:layout_above="@+id/juncaButton"
+        android:layout_alignLeft="@+id/juncaButton"
+        android:layout_alignStart="@+id/juncaButton" />
+
+    <Button
+        android:id="@+id/juncaButton"
+        android:layout_width="300sp"
+        android:layout_height="85sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/juncaceae_title"/>
+
+    <Button
+        android:id="@+id/poaButton"
+        android:layout_width="300sp"
+        android:layout_height="85sp"
+        android:layout_alignEnd="@+id/juncaButton"
+        android:layout_alignRight="@+id/juncaButton"
+        android:layout_below="@+id/juncaButton"
+        android:layout_marginTop="60sp"
+        android:background="@drawable/poaceae_title"/>
+
+</RelativeLayout>

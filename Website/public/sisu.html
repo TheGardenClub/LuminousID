@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Luminous Identification">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminous ID - Account</title>
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Luminous ID">
+    <meta name="theme-color" content="#303F9F">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Luminous ID">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#303F9F">
+
+    <!-- Tile icon for Win8 -->
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <meta name="msapplication-navbutton-color" content="#303F9F">
+
+    <!-- Material Design Lite -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Snippet" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_ITyC1Rh89kgg4MDfzXjh3");
+       })();
+    </script>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Luminous ID</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li><a href="fieldguide.html">Field Guide</a></li>
+            <li><a href="observations.html">Observations</a></li>
+            <li><a href="mobileapps.html">Mobile Apps</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="sisu.html">Sign In/Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  <!-- *****************************************************************************************************************
+   BODY
+   ***************************************************************************************************************** -->
+  <div id="twrap">
+
+    <h1 style="text-shadow: 2px 2px #000000">Sign In/Up</h1>
+    <br></br>
+
+    <div class="home_section">
+
+      <!-- In Account -->
+
+      <h2 id="welcome_txt" class="hide" style="color:#dddddd;;margin-bottom:50px"></h2>
+      <h4 id="user_email" class="hide" style="color:#dddddd;"></h4>
+      <h4 id="user_status" class="hide" style="color:#dddddd;margin-bottom:50px"></h4>
+
+      <img src="assets/img/check.png" id="check_mark" align="middle" class="icons hide" style="display: inline-block;margin-bottom:50px">
+      <img src="assets/img/check.png" id="check_mark2" align="middle" class="icons hide" style="display: inline-block;margin-bottom:50px">
+
+      <div>
+        <button id="reset_password_txt" class="btn btn-action hide" style="height:35px">Reset Password</button>
+        <button id="verify_researcher_btn" class="btn btn-action hide" style="height:35px">Verify Me</button>
+        <button id="btnLogout" class="btn btn-action hide" style="height:35px">Log out</button>
+        <h4 id="recent_observations" class="hide" style="text-align:center;color:#dddddd;"></h4>
+        <h4 id="no_observations" class="hide" style="text-align:center;"></h4>
+      </div>
+
+      <!-- Verify Researcher -->
+      <button id="verify_researcher_submit" class="btn btn-action hide" style="height:32px;width:90px">Submit</button>
+      <button id="verify_researcher_quit" class="btn btn-action hide" style="height:32px;width:90px">Quit</button>
+      <input id="verify_researcher_input" type="email" style="height:32px;width:200px" class="hide" placeholder="Email">
+      <h2 id="verify_researcher_text" class="hide" style="color:#dddddd;">Who would verify you as a researcher?</h2>
+
+      <!-- Reset password -->
+      <button id="reset_password_yes" class="btn btn-action hide" style="height:32px;width:90px">Yes</button>
+      <button id="reset_password_no" class="btn btn-action hide" style="height:32px;width:90px">No</button>
+      <h2 id="reset_password_text" class="hide" style="color:#dddddd;">Would you like to reset your password?</h2>
+
+      <!-- Forgot password -->
+
+      <h2 id="forgot_password_text" class="hide" style="color:#dddddd;">Please type in your email address</h2>
+      <input id="forgot_password_input" type="email" style="height:32px;width:200px" class="hide" placeholder="Email">
+      <button id="forgot_password_submit" class="btn btn-action hide" style="height:32px;width:90px;">Submit</button>
+      <button id="forgot_password_quit" class="btn btn-action hide" style="height:32px;width:90px;">Quit</button>
+
+      <!-- Outside Account -->
+
+      <div align="left" style="float:left;width:50%;">
+        <h2 id="have_account_txt" style="color:#dddddd;">Have an account?</h2>
+        <br></br>
+        <input id="txtEmail_login" type="email" style="height:32px;width:200px" placeholder="Email">
+        <br></br>
+        <input id="txtPassword_login" type="password" style="height:32px;width:200px" placeholder="Password">
+        <br></br>
+        <button id="btnLogin" class="btn btn-action" style="height:32px;width:90px">Log in</button>
+        <br></br>
+        <button id="forgot_password_btn" class="btn btn-action">Forgot password?</button>
+      </div>
+      <div align="left" style="float:right;width:50%">
+        <h2 id="dont_have_account_txt" style="color:#dddddd;">Don't have an account?</h2>
+        <br></br>
+        <input id="txtUsername_create" type="email" style="height:32px;width:200px" placeholder="Username">
+        <br></br>
+        <input id="txtEmail_create" type="email" style="height:32px;width:200px" placeholder="Email">
+        <br></br>
+        <input id="txtPassword_create" type="password" style="height:32px;width:200px" placeholder="Password">
+        <br></br>
+        <input id="txtPassword_create_2" type="password" style="height:32px;width:200px" placeholder="Retype Password">
+        <br></br>
+        <button id="btnSignUp" class="btn btn-secondary" style="height:32px;width:90px">Sign up</button>
+      </div>
+    </div>
+	</div>
+
+  <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyALD0AZe1fPShuzIcNLHh87eERLXXpx3ks",
+      authDomain: "speciesid-ca814.firebaseapp.com",
+      databaseURL: "https://speciesid-ca814.firebaseio.com",
+      storageBucket: "speciesid-ca814.appspot.com",
+      messagingSenderId: "794603922973"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <script src="assets/js/app.js"></script>
+
+  </body>
+</html>
+

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:configChanges="orientation"
+    android:screenOrientation="portrait"
+    tools:ignore="MissingPrefix"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".AddObsActivity">
+
+
+    <TextView
+        android:id="@+id/obsSpeciesName"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="SpeciesName"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="300sp"
+        android:layout_height="200sp"
+        android:layout_marginTop="50sp"
+        android:rotation="90"
+        app:srcCompat="@android:drawable/editbox_dropdown_light_frame"
+        android:layout_below="@+id/obsSpeciesName"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/TimeDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time and Date"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="5sp"
+        android:layout_above="@+id/GPSlat"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/GPSlat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lat"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_above="@+id/GPSlong"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/GPSlong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="long"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="23dp"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_above="@+id/editText2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:layout_above="@+id/submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fontPath="fonts/Snippet.ttf"
+        android:text="Submit"
+        android:layout_marginBottom="13dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

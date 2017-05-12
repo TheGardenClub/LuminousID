@@ -1,0 +1,7 @@
+{
+  "name": "Species Identification",
+  "short_name": "Species ID",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait"
+}

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:ignore="MissingPrefix"
+    tools:context="com.luminousid.luminousid.PlantFilterActivity">
+
+    <TextView
+        android:id="@+id/deciFilterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        fontPath="fonts/Snippet.ttf"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:text="Deciduous Filtering" />
+
+    <Spinner
+        android:id="@+id/familyMenu"
+        android:layout_width="195dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/woody_family_array"
+        android:prompt="@string/woody_family_prompt"
+        android:layout_below="@+id/deciFilterText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp" />
+
+    <TextView
+        android:id="@+id/familyPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/woody_family_prompt"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_alignTop="@+id/familyMenu"
+        android:layout_toLeftOf="@+id/familyMenu"
+        android:layout_toStartOf="@+id/familyMenu" />
+
+    <Spinner
+        android:id="@+id/leafarrangementMenu"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/deci_leafarrangement_array"
+        android:prompt="@string/gram_leafblade_prompt"
+        android:layout_below="@+id/familyMenu"
+        android:layout_toRightOf="@+id/familyPrompt"
+        android:layout_toEndOf="@+id/familyPrompt"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/leafarrangementPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deci_leafarrangement_prompt"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_alignBaseline="@+id/leafarrangementMenu"
+        android:layout_alignBottom="@+id/leafarrangementMenu"
+        android:layout_alignRight="@+id/familyPrompt"
+        android:layout_alignEnd="@+id/familyPrompt" />
+
+    <Spinner
+        android:id="@+id/leafshapeMenu"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/deci_leafshape_array"
+        android:prompt="@string/deci_leafshape_prompt"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/leafarrangementMenu"
+        android:layout_alignLeft="@+id/leafarrangementMenu"
+        android:layout_alignStart="@+id/leafarrangementMenu" />
+
+    <TextView
+        android:id="@+id/leafshapePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deci_leafshape_prompt"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_alignTop="@+id/leafshapeMenu"
+        android:layout_alignRight="@+id/leafarrangementPrompt"
+        android:layout_alignEnd="@+id/leafarrangementPrompt" />
+
+    <Button
+        android:id="@+id/applyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="Apply"
+        fontPath="fonts/Snippet.ttf"/>
+
+</RelativeLayout>

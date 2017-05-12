@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Luminous Identification">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminous ID - Field Guide Data</title>
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Luminous ID">
+    <meta name="theme-color" content="#303F9F">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Luminous ID">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#303F9F">
+
+    <!-- Tile icon for Win8 -->
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <meta name="msapplication-navbutton-color" content="#303F9F">
+
+    <!-- Material Design Lite -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Snippet" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- *****************************************************************************************************************
+     BODY
+     ***************************************************************************************************************** -->
+     
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyALD0AZe1fPShuzIcNLHh87eERLXXpx3ks",
+        authDomain: "speciesid-ca814.firebaseapp.com",
+        databaseURL: "https://speciesid-ca814.firebaseio.com",
+        storageBucket: "speciesid-ca814.appspot.com",
+        messagingSenderId: "794603922973"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script src="assets/js/fieldguide_data.js"></script>
+
+  </body>
+</html>
+

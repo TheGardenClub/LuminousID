@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:ignore="MissingPrefix"
+    tools:context="com.luminousid.luminousid.PlantFilterActivity">
+
+    <TextView
+        android:id="@+id/forbsFilterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        fontPath="fonts/Snippet.ttf"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:text="Forbs Filtering" />
+
+    <Spinner
+        android:id="@+id/familyMenu"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:entries="@array/forbs_family_array"
+        android:prompt="@string/family_prompt"
+        android:layout_below="@+id/forbsFilterText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp" />
+
+    <TextView
+        android:id="@+id/familyPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Family"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_alignTop="@+id/familyMenu"
+        android:layout_toLeftOf="@+id/familyMenu"
+        android:layout_toStartOf="@+id/familyMenu" />
+
+    <Spinner
+        android:id="@+id/flowercolorMenu"
+        android:layout_width="195dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/forbs_flowercolor_array"
+        android:prompt="@string/forbs_flowercolor_prompt"
+        android:layout_below="@+id/familyMenu"
+        android:layout_alignLeft="@+id/familyMenu"
+        android:layout_alignStart="@+id/familyMenu" />
+
+    <TextView
+        android:id="@+id/flowercolorPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flower Color"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_alignTop="@+id/flowercolorMenu"
+        android:layout_toLeftOf="@+id/flowercolorMenu"
+        android:layout_toStartOf="@+id/flowercolorMenu" />
+
+    <Spinner
+        android:id="@+id/flowershapeMenu"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/forbs_flowershape_array"
+        android:prompt="@string/forbs_flowershape_prompt"
+        android:layout_below="@+id/flowercolorMenu"
+        android:layout_toRightOf="@+id/flowercolorPrompt"
+        android:layout_toEndOf="@+id/flowercolorPrompt"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/flowershapePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flower Shape"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_alignTop="@+id/flowershapeMenu"
+        android:layout_toLeftOf="@+id/flowershapeMenu"
+        android:layout_toStartOf="@+id/flowershapeMenu" />
+
+    <Spinner
+        android:id="@+id/petalnumberMenu"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/forbs_petalnumber_array"
+        android:prompt="@string/forbs_petalnumber_prompt"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/flowershapeMenu"
+        android:layout_alignLeft="@+id/flowershapeMenu"
+        android:layout_alignStart="@+id/flowershapeMenu" />
+
+    <TextView
+        android:id="@+id/petalnumberPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Petal Number"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_alignBottom="@+id/petalnumberMenu"
+        android:layout_alignLeft="@+id/flowershapePrompt"
+        android:layout_alignStart="@+id/flowershapePrompt" />
+
+    <Spinner
+        android:id="@+id/leafarrangementMenu"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:entries="@array/forbs_leafarrangement_array"
+        android:prompt="@string/forbs_leafarrangement_prompt"
+        android:layout_below="@+id/petalnumberMenu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp" />
+
+    <TextView
+        android:id="@+id/leafarrangementPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leaf Arrangement"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_alignTop="@+id/leafarrangementMenu"
+        android:layout_toLeftOf="@+id/leafarrangementMenu"
+        android:layout_toStartOf="@+id/leafarrangementMenu" />
+
+    <Spinner
+        android:id="@+id/leafshapeMenu"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:entries="@array/forbs_leafshape_array"
+        android:prompt="@string/forbs_leafshape_prompt"
+        android:layout_below="@+id/leafarrangementMenu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp" />
+
+    <TextView
+        android:id="@+id/leafshapePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leaf Shape"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_alignTop="@+id/leafshapeMenu"
+        android:layout_toLeftOf="@+id/leafshapeMenu"
+        android:layout_toStartOf="@+id/leafshapeMenu" />
+
+    <Spinner
+        android:id="@+id/habitatMenu"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:entries="@array/habitat_array"
+        android:prompt="@string/habitat_prompt"
+        android:layout_below="@+id/leafshapeMenu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp" />
+
+    <TextView
+        android:id="@+id/habitatPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Habitat"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_alignTop="@+id/habitatMenu"
+        android:layout_toLeftOf="@+id/habitatMenu"
+        android:layout_toStartOf="@+id/habitatMenu" />
+
+    <Button
+        android:id="@+id/applyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="Apply"
+        fontPath="fonts/Snippet.ttf"/>
+
+</RelativeLayout>

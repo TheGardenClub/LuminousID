@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Luminous Identification">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminous ID - Field Guide Data</title>
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Luminous ID">
+    <meta name="theme-color" content="#303F9F">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Luminous ID">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#303F9F">
+
+    <!-- Tile icon for Win8 -->
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <meta name="msapplication-navbutton-color" content="#303F9F">
+
+    <!-- Material Design Lite -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Snippet" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- *****************************************************************************************************************
+     BODY
+     ***************************************************************************************************************** -->
+    <div>
+          <h4></h4>
+
+          <img height="200" width="200"/>
+
+          <!-- ALL -->
+          <h2 id="display_species" align="center">Achillea millefolium</h2> 
+
+          <!-- ALL -->
+          <h4 id="display_common_name_main" style="float:left;width:50%;">Common Name:</h4>
+          <h5 id="display_common_name" style="float:right;width:50%;">Garret common yarrow</h5>
+
+          <!-- ALL -->
+          <div style="clear: both">
+              <h4 id="display_synonyms_main" style="float:left;width:50%;">Synonym:</h4>
+              <h5 id="display_synonyms" style="float:right;width:50%;">Achillea lanulosa</h5>
+          </div>
+
+          <!-- ALL -->
+          <div style="clear: both">
+              <h4 id="display_family_name_main" style="float:left;width:50%;">Family Name:</h4>
+              <h5 id="display_family_name" style="float:right;width:50%;">Asteraceae</h5>
+          </div>
+
+          <!-- ALL -->
+          <div style="clear: both">
+              <h4 id="display_growth_form_main" style="float:left;width:50%;">Growth Form:</h4>
+              <h5 id="display_growth_form" style="float:right;width:50%;">forb</h5>
+          </div>
+
+          <!-- Forbs -->
+          <div id="flower_color_div" style="clear: both">
+              <h4 id="display_flower_color_main" style="float:left;width:50%;">Flower Color:</h4>
+              <h5 id="display_flower_color" style="float:right;width:50%;">white</h5>
+          </div>
+
+          <!-- Forbs -->
+          <div id="flower_shape_div" style="clear: both">
+              <h4 id="display_flower_shape_main" style="float:left;width:50%;">Flower Shape:</h4>
+              <h5 id="display_flower_shape" style="float:right;width:50%;">composite</h5>
+          </div>
+
+          <!-- Forbs -->
+          <div id="petal_number_div" style="clear: both">
+              <h4 id="display_petal_number_main" style="float:left;width:50%;">Petal Number:</h4>
+              <h5 id="display_petal_number" style="float:right;width:50%;">NA</h5>
+          </div>
+
+          <!-- Forbs, Woody (Deciduous) -->
+          <div id="leaf_arrangement_div" style="clear: both">
+              <h4 id="display_leaf_arrangement_main" style="float:left;width:50%;">Leaf Arrangement:</h4>
+              <h5 id="display_leaf_arrangement" style="float:right;width:50%;">alternate</h5>
+          </div>
+
+          <!-- Forbs -->
+          <div id="leaf_shape_filter_div" style="clear: both">
+              <h4 id="display_leaf_shape_filter_main" style="float:left;width:50%;">Leaf Shape Filter:</h4>
+              <h5 id="display_leaf_shape_filter" style="float:right;width:50%;">other</h5>
+          </div>
+
+          <!-- Graminoids (Cyperaceae, Juncaceae, Poaceae) -->
+          <div id="stem_cross_section_div" style="clear: both">
+              <h4 id="display_stem_cross_section_main" style="float:left;width:50%;display:none">Stem Cross Section:</h4>
+              <h5 id="display_stem_cross_section" style="float:right;width:50%;display:none">NA</h5>
+          </div>
+
+          <!-- Graminoids (Cyperaceae, Juncaceae, Poaceae) -->
+          <div id="leaf_blade_div" style="clear: both">
+              <h4 id="display_leaf_blade_main" style="float:left;width:50%;display:none">Leaf Blade:</h4>
+              <h5 id="display_leaf_blade" style="float:right;width:50%;display:none">NA</h5>
+          </div>
+
+          <!-- Graminoids (Cyperaceae) -->
+          <div id="spike_color_div" style="clear: both">
+              <h4 id="display_spike_color_main" style="float:left;width:50%;display:none">Spike Color:</h4>
+              <h5 id="display_spike_color" style="float:right;width:50%;display:none">NA</h5>
+          </div>
+
+          <!-- Graminoids (Poaceae) -->
+          <div id="awns_div" style="clear: both">
+              <h4 id="display_awns_main" style="float:left;width:50%;display:none">Awns:</h4>
+              <h5 id="display_awns" style="float:right;width:50%;display:none">NA</h5>
+          </div>
+
+          <!-- Graminoids (Cyperaceae, Poaceae) -->
+          <div id="inflorescence_div" style="clear: both">
+              <h4 id="display_inflorescence_main" style="float:left;width:50%;display:none">Inflorescence:</h4>
+              <h5 id="display_inflorescence" style="float:right;width:50%;display:none">NA</h5>
+          </div>
+
+          <!-- Graminoids (Poaceae) -->
+          <div id="florets_per_spikelet_div" style="clear: both">
+              <h4 id="display_florets_per_spikelet_main" style="float:left;width:50%;display:none">Florets Per Spikelet:</h4>
+              <h5 id="display_florets_per_spikelet" style="float:right;width:50%;display:none">NA</h5>
+          </div>
+
+          <!-- Woody (Deciduous, Needle) -->
+          <div id="leaf_type_div" style="clear: both">
+              <h4 id="display_leaf_type_main" style="float:left;width:50%;display:none">Leaf Type:</h4>
+              <h5 id="display_leaf_type" style="float:right;width:50%;display:none">NA</h5>
+          </div>
+
+          <!-- Woody (Needle) -->
+          <div id="needle_arrangement_div" style="clear: both">
+              <h4 id="display_needle_arrangement_main" style="float:left;width:50%;display:none">Needle Arrangement:</h4>
+              <h5 id="display_needle_arrangement" style="float:right;width:50%;display:none">NA</h5>
+          </div>
+
+          <!-- Woody (Needle) -->
+          <div id="needle_per_fascile_div" style="clear: both">
+              <h4 id="display_needle_per_fascile_main" style="float:left;width:50%;display:none">Needle Per Fascile:</h4>
+              <h5 id="display_needle_per_fascile" style="float:right;width:50%;display:none">NA</h5>
+          </div>
+
+          <!-- Woody (Deciduous) -->
+          <div id="leaf_margin_div" style="clear: both">
+              <h4 id="display_leaf_margin_main" style="float:left;width:50%;display:none">Leaf Margin:</h4>
+              <h5 id="display_leaf_margin" style="float:right;width:50%;display:none">NA</h5>
+          </div>
+
+          <!-- Woody (Deciduous) -->
+          <div id="leaf_shape_div" style="clear: both">
+              <h4 id="display_leaf_shape_main" style="float:left;width:50%;display:none">Leaf Shape:</h4>
+              <h5 id="display_leaf_shape" style="float:right;width:50%;display:none">NA</h5>
+          </div>
+
+          <!-- Woody (Needle) -->
+          <div id="needle_apex_div" style="clear: both">
+              <h4 id="display_needle_apex_main" style="float:left;width:50%;display:none">Needle Apex:</h4>
+              <h5 id="display_needle_apex" style="float:right;width:50%;display:none">NA</h5>
+          </div>
+
+          <!-- Woody (Deciduous, Needle) -->
+          <div id="cone_div" style="clear: both">
+              <h4 id="display_cone_main" style="float:left;width:50%;display:none">Cone:</h4>
+              <h5 id="display_cone" style="float:right;width:50%;display:none">NA</h5>
+          </div>
+
+          <!-- Forbs, Graminoids (Cyperaceae, Juncaceae, Poaceae) -->
+          <div id="habitat_div" style="clear: both">
+              <h4 id="display_habitat_main" style="float:left;width:50%;">Habitat:</h4>
+              <h5 id="display_habitat" style="float:right;width:50%;">dry meadow and wet meadow</h5>
+          </div>
+
+          <!-- ALL -->
+          <div style="clear: both">
+              <h4 id="display_photo_credit_main" style="float:left;width:50%;">Photo Credit:</h4>
+              <h5 id="display_photo_credit" style="float:right;width:50%;">JG Smith</h5>
+          </div>
+
+          <!-- ALL -->
+          <div style="clear: both">
+              <h4 id="display_notes_main" style="float:left;width:50%;">Notes:</h4>
+              <h5 id="display_notes" style="float:right;width:50%;">NA</h5>
+          </div>
+
+    </div>
+   
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyALD0AZe1fPShuzIcNLHh87eERLXXpx3ks",
+        authDomain: "speciesid-ca814.firebaseapp.com",
+        databaseURL: "https://speciesid-ca814.firebaseio.com",
+        storageBucket: "speciesid-ca814.appspot.com",
+        messagingSenderId: "794603922973"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script src="assets/js/fieldguide_display.js"></script>
+
+  </body>
+</html>
+

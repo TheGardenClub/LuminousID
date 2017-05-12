@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Luminous Identification">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminous ID - Observation</title>
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Luminous ID">
+    <meta name="theme-color" content="#303F9F">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Luminous ID">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#303F9F">
+
+    <!-- Tile icon for Win8 -->
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <meta name="msapplication-navbutton-color" content="#303F9F">
+
+    <!-- Material Design Lite -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Snippet" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a class="navbar-brand" href="index.html">Luminous ID</a>
+            </div>
+            <div class="navbar-collapse collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="fieldguide.html">Field Guide</a></li>
+                    <li><a href="observations.html">Observations</a></li>
+                    <li><a href="mobileapps.html">Mobile Apps</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="sisu.html">Sign In/Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- *****************************************************************************************************************
+	 BODY
+	 ***************************************************************************************************************** -->
+    <div id="twrap">
+
+        <h1 style="text-shadow: 2px 2px #000000">Observations</h1>
+
+        <h2></h2>
+        <h4 id="total_observations" style="text-shadow: 1px 1px #000000" ;>Total: </h4>
+
+        <button id="verified_btn" class="btn btn-action" style="height:32px;width:90px" onclick="showMarkers_verified();">Verified</button>
+        <button id="not_verified_btn" class="btn btn-action" style="height:32px;width:120px" onclick="showMarkers_not_verified();">Not Verified</button>
+        <button id="all_btn" class="btn btn-action" style="height:32px;width:90px" onclick="showMarkers();">All</button>
+
+        <div class="dropdown_obs">
+            <button onclick="myFunction_obs()" class="btn btn-action" style="height:32px;width:200px">Filter</button>
+            <div id="myDropdown_obs" class="dropdown-content_obs">
+                <input type="text" placeholder="Search.." id="myInput_obs" onkeyup="filterFunction_obs()">
+                <ul style="max-height: 250px; height: 250px; overflow: auto;">
+                    <a href="#Abies lasiocarpa" onclick="showMarkers_species('Abies lasiocarpa')">Abies lasiocarpa</a>
+                    <a href="#Achillea millefolium" onclick="showMarkers_species('Achillea millefolium')">Achillea millefolium</a>
+                    <a href="#Aconitum columbianum" onclick="showMarkers_species('Aconitum columbianum')">Aconitum columbianum</a>
+                    <a href="#Agrostis sp." onclick="showMarkers_species('Agrostis sp.')">Agrostis sp.</a>
+                    <a href="#Allium geyeri" onclick="showMarkers_species('Allium geyeri')">Allium geyeri</a>
+                    <a href="#Androsace septentrionalis" onclick="showMarkers_species('Androsace septentrionalis')">Androsace septentrionalis</a>
+                    <a href="#Anemone patens" onclick="showMarkers_species('Anemone patens')">Anemone patens</a>
+                    <a href="#Angelica grayi" onclick="showMarkers_species('Angelica grayi')">Angelica grayi</a>
+                    <a href="#Antennaria media" onclick="showMarkers_species('Antennaria media')">Antennaria media</a>
+                    <a href="#Antennaria rosea" onclick="showMarkers_species('Antennaria rosea')">Antennaria rosea</a>
+                    <a href="#Aquilegia coerulea" onclick="showMarkers_species('Aquilegia coerulea')">Aquilegia coerulea</a>
+                    <a href="#Arenaria fendleri" onclick="showMarkers_species('Arenaria fendleri')">Arenaria fendleri</a>
+                    <a href="#Artemisia arctica" onclick="showMarkers_species('Artemisia arctica')">Artemisia arctica</a>
+                    <a href="#Artemisia campestris" onclick="showMarkers_species('Artemisia campestris')">Artemisia campestris</a>
+                    <a href="#Artemisia pattersonii" onclick="showMarkers_species('Artemisia pattersonii')">Artemisia pattersonii</a>
+                    <a href="#Artemisia scopulorum" onclick="showMarkers_species('Artemisia scopulorum')">Artemisia scopulorum</a>
+                    <a href="#Besseya alpina" onclick="showMarkers_species('Besseya alpina')">Besseya alpina</a>
+                    <a href="#Betula fontinalis" onclick="showMarkers_species('Betula fontinalis')">Betula fontinalis</a>
+                    <a href="#Betula glandulosa" onclick="showMarkers_species('Betula glandulosa')">Betula glandulosa</a>
+                    <a href="#Bistorta bistortoides" onclick="showMarkers_species('Bistorta bistortoides')">Bistorta bistortoides</a>
+                    <a href="#Bistorta vivipara" onclick="showMarkers_species('Bistorta vivipara')">Bistorta vivipara</a>
+                    <a href="#Calamagrostis purpurascens" onclick="showMarkers_species('Calamagrostis purpurascens')">Calamagrostis purpurascens</a>
+                    <a href="#Caltha leptosepala" onclick="showMarkers_species('Caltha leptosepala')">Caltha leptosepala</a>
+                    <a href="#Campanula rotundifolia" onclick="showMarkers_species('Campanula rotundifolia')">Campanula rotundifolia</a>
+                    <a href="#Campanula uniflora" onclick="showMarkers_species('Campanula uniflora')">Campanula uniflora</a>
+                    <a href="#Carex albonigra" onclick="showMarkers_species('Carex albonigra')">Carex albonigra</a>
+                    <a href="#Carex aquatilis" onclick="showMarkers_species('Carex aquatilis')">Carex aquatilis</a>
+                    <a href="#Carex arapahoensis" onclick="showMarkers_species('Carex arapahoensis')">Carex arapahoensis</a>
+                    <a href="#Carex capillaris" onclick="showMarkers_species('Carex capillaris')">Carex capillaris</a>
+                    <a href="#Carex ebenea" onclick="showMarkers_species('Carex ebenea')">Carex ebenea</a>
+                    <a href="#Carex elynoides" onclick="showMarkers_species('Carex elynoides')">Carex elynoides</a>
+                    <a href="#Carex haydeniana" onclick="showMarkers_species('Carex haydeniana')">Carex haydeniana</a>
+                    <a href="#Carex heteroneura" onclick="showMarkers_species('Carex heteroneura')">Carex heteroneura</a>
+                    <a href="#Carex illota" onclick="showMarkers_species('Carex illota')">Carex illota</a>
+                    <a href="#Carex lachenalii" onclick="showMarkers_species('Carex lachenalii')">Carex lachenalii</a>
+                    <a href="#Carex microglochin" onclick="showMarkers_species('Carex microglochin')">Carex microglochin</a>
+                    <a href="#Carex misandra" onclick="showMarkers_species('Carex misandra')">Carex misandra</a>
+                    <a href="#Carex nelsonii" onclick="showMarkers_species('Carex nelsonii')">Carex nelsonii</a>
+                    <a href="#Carex nigricans" onclick="showMarkers_species('Carex nigricans')">Carex nigricans</a>
+                    <a href="#Carex nova" onclick="showMarkers_species('Carex nova')">Carex nova</a>
+                    <a href="#Carex perglobosa" onclick="showMarkers_species('Carex perglobosa')">Carex perglobosa</a>
+                    <a href="#Carex phaeocephala" onclick="showMarkers_species('Carex phaeocephala')">Carex phaeocephala</a>
+                    <a href="#Carex praeceptorum" onclick="showMarkers_species('Carex praeceptorum')">Carex praeceptorum</a>
+                    <a href="#Carex pyrenaica" onclick="showMarkers_species('Carex pyrenaica')">Carex pyrenaica</a>
+                    <a href="#Carex rossii" onclick="showMarkers_species('Carex rossii')">Carex rossii</a>
+                    <a href="#Carex rupestris" onclick="showMarkers_species('Carex rupestris')">Carex rupestris</a>
+                    <a href="#Carex scopulorum" onclick="showMarkers_species('Carex scopulorum')">Carex scopulorum</a>
+                    <a href="#Carex siccata" onclick="showMarkers_species('Carex siccata')">Carex siccata</a>
+                    <a href="#Carex vernacula" onclick="showMarkers_species('Carex vernacula')">Carex vernacula</a>
+                    <a href="#Cerastium arvense" onclick="showMarkers_species('Cerastium arvense')">Cerastium arvense</a>
+                    <a href="#Chamerion angustifolium" onclick="showMarkers_species('Chamerion angustifolium')">Chamerion angustifolium</a>
+                    <a href="#Chionophila jamesii" onclick="showMarkers_species('Chionophila jamesii')">Chionophila jamesii</a>
+                    <a href="#Cirsium scopulorum" onclick="showMarkers_species('Cirsium scopulorum')">Cirsium scopulorum</a>
+                    <a href="#Danthonia intermedia" onclick="showMarkers_species('Danthonia intermedia')">Danthonia intermedia</a>
+                    <a href="#Dasiphora fruticosa" onclick="showMarkers_species('Dasiphora fruticosa')">Dasiphora fruticosa</a>
+                    <a href="#Deschampsia caespitosa" onclick="showMarkers_species('Deschampsia caespitosa')">Deschampsia caespitosa</a>
+                    <a href="#Dodecatheon pulchellum" onclick="showMarkers_species('Dodecatheon pulchellum')">Dodecatheon pulchellum</a>
+                    <a href="#Dryas octopetala" onclick="showMarkers_species('Dryas octopetala')">Dryas octopetala</a>
+                    <a href="#Elymus scribneri" onclick="showMarkers_species('Elymus scribneri')">Elymus scribneri</a>
+                    <a href="#Epilobium anagallidifolium" onclick="showMarkers_species('Epilobium anagallidifolium')">Epilobium anagallidifolium</a>
+                    <a href="#Erigeron glacialis" onclick="showMarkers_species('Erigeron glacialis')">Erigeron glacialis</a>
+                    <a href="#Erigeron melanocephalus" onclick="showMarkers_species('Erigeron melanocephalus')">Erigeron melanocephalus</a>
+                    <a href="#Erigeron pinnatisectus" onclick="showMarkers_species('Erigeron pinnatisectus')">Erigeron pinnatisectus</a>
+                    <a href="#Erigeron simplex" onclick="showMarkers_species('Erigeron simplex')">Erigeron simplex</a>
+                    <a href="#Eritrichium nanum" onclick="showMarkers_species('Eritrichium nanum')">Eritrichium nanum</a>
+                    <a href="#Erysimum capitatum" onclick="showMarkers_species('Erysimum capitatum')">Erysimum capitatum</a>
+                    <a href="#Festuca sp." onclick="showMarkers_species('Festuca sp.')">Festuca sp.</a>
+                    <a href="#Frasera speciosa" onclick="showMarkers_species('Frasera speciosa')">Frasera speciosa</a>
+                    <a href="#Gentiana algida" onclick="showMarkers_species('Gentiana algida')">Gentiana algida</a>
+                    <a href="#Gentiana parryi" onclick="showMarkers_species('Gentiana parryi')">Gentiana parryi</a>
+                    <a href="#Gentiana prostrata" onclick="showMarkers_species('Gentiana prostrata')">Gentiana prostrata</a>
+                    <a href="#Gentianella amarella" onclick="showMarkers_species('Gentianella amarella')">Gentianella amarella</a>
+                    <a href="#Gentianella tenella" onclick="showMarkers_species('Gentianella tenella')">Gentianella tenella</a>
+                    <a href="#Gentianopsis barbellata" onclick="showMarkers_species('Gentianopsis barbellata')">Gentianopsis barbellata</a>
+                    <a href="#Geum rossii" onclick="showMarkers_species('Geum rossii')">Geum rossii</a>
+                    <a href="#Helictotrichon mortonianum" onclick="showMarkers_species('Helictotrichon mortonianum')">Helictotrichon mortonianum</a>
+                    <a href="#Heuchera parvifolia" onclick="showMarkers_species('Heuchera parvifolia')">Heuchera parvifolia</a>
+                    <a href="#Hieracium gracile" onclick="showMarkers_species('Hieracium gracile')">Hieracium gracile</a>
+                    <a href="#Juncus biglumis" onclick="showMarkers_species('Juncus biglumis')">Juncus biglumis</a>
+                    <a href="#Juncus castaneus" onclick="showMarkers_species('Juncus castaneus')">Juncus castaneus</a>
+                    <a href="#Juncus drummondii" onclick="showMarkers_species('Juncus drummondii')">Juncus drummondii</a>
+                    <a href="#Juncus mertensianus" onclick="showMarkers_species('Juncus mertensianus')">Juncus mertensianus</a>
+                    <a href="#Juncus parryi" onclick="showMarkers_species('Juncus parryi')">Juncus parryi</a>
+                    <a href="#Juncus triglumis" onclick="showMarkers_species('Juncus triglumis')">Juncus triglumis</a>
+                    <a href="#Juniperus communis" onclick="showMarkers_species('Juniperus communis')">Juniperus communis</a>
+                    <a href="#Kalmia polifolia" onclick="showMarkers_species('Kalmia polifolia')">Kalmia polifolia</a>
+                    <a href="#Kobresia myosuroides" onclick="showMarkers_species('Kobresia myosuroides')">Kobresia myosuroides</a>
+                    <a href="#Lewisia pygmaea" onclick="showMarkers_species('Lewisia pygmaea')">Lewisia pygmaea</a>
+                    <a href="#Ligusticum tenuifolium" onclick="showMarkers_species('Ligusticum tenuifolium')">Ligusticum tenuifolium</a>
+                    <a href="#Linnea borealis" onclick="showMarkers_species('Linnea borealis')">Linnea borealis</a>
+                    <a href="#Lloydia serotina" onclick="showMarkers_species('Lloydia serotina')">Lloydia serotina</a>
+                    <a href="#Lupinus argenteus" onclick="showMarkers_species('Lupinus argenteus')">Lupinus argenteus</a>
+                    <a href="#Luzula spicata" onclick="showMarkers_species('Luzula spicata')">Luzula spicata</a>
+                    <a href="#Mertensia ciliata" onclick="showMarkers_species('Mertensia ciliata')">Mertensia ciliata</a>
+                    <a href="#Mertensia lanceolata" onclick="showMarkers_species('Mertensia lanceolata')">Mertensia lanceolata</a>
+                    <a href="#Minuartia obtusiloba" onclick="showMarkers_species('Minuartia obtusiloba')">Minuartia obtusiloba</a>
+                    <a href="#Noccaea fendleri" onclick="showMarkers_species('Noccaea fendleri')">Noccaea fendleri</a>
+                    <a href="#Oreoxis alpina" onclick="showMarkers_species('Oreoxis alpina')">Oreoxis alpina</a>
+                    <a href="#Oxyria digyna" onclick="showMarkers_species('Oxyria digyna')">Oxyria digyna</a>
+                    <a href="#Packera cana" onclick="showMarkers_species('Packera cana')">Packera cana</a>
+                    <a href="#Packera crocata" onclick="showMarkers_species('Packera crocata')">Packera crocata</a>
+                    <a href="#Paronychia pulvinata" onclick="showMarkers_species('Paronychia pulvinata')">Paronychia pulvinata</a>
+                    <a href="#Pedicularis groenlandica" onclick="showMarkers_species('Pedicularis groenlandica')">Pedicularis groenlandica</a>
+                    <a href="#Pedicularis parryi" onclick="showMarkers_species('Pedicularis parryi')">Pedicularis parryi</a>
+                    <a href="#Pedicularis procera" onclick="showMarkers_species('Pedicularis procera')">Pedicularis procera</a>
+                    <a href="#Pedicularis sudetica" onclick="showMarkers_species('Pedicularis sudetica')">Pedicularis sudetica</a>
+                    <a href="#Penstemon whippleanus" onclick="showMarkers_species('Penstemon whippleanus')">Penstemon whippleanus</a>
+                    <a href="#Phacelia sericea" onclick="showMarkers_species('Phacelia sericea')">Phacelia sericea</a>
+                    <a href="#Phleum alpinum" onclick="showMarkers_species('Phleum alpinum')">Phleum alpinum</a>
+                    <a href="#Phlox pulvinata" onclick="showMarkers_species('Phlox pulvinata')">Phlox pulvinata</a>
+                    <a href="#Picea engelmannii" onclick="showMarkers_species('Picea engelmannii')">Picea engelmannii</a>
+                    <a href="#Picea pungens" onclick="showMarkers_species('icea pungens')">Picea pungens</a>
+                    <a href="#Pinus contorta" onclick="showMarkers_species('Pinus contorta')">Pinus contorta</a>
+                    <a href="#Pinus flexilis" onclick="showMarkers_species('Pinus flexilis')">Pinus flexilis</a>
+                    <a href="#Pinus ponderosa" onclick="showMarkers_species('Pinus ponderosa')">Pinus ponderosa</a>
+                    <a href="#Poa sp." onclick="showMarkers_species('Poa sp.')">Poa sp.</a>
+                    <a href="#Polemonium pulcherrimum" onclick="showMarkers_species('Polemonium pulcherrimum')">Polemonium pulcherrimum</a>
+                    <a href="#Polemonium viscosum" onclick="showMarkers_species('Polemonium viscosum')">Polemonium viscosum</a>
+                    <a href="#Populus tremuloides" onclick="showMarkers_species('Populus tremuloides')">Populus tremuloides</a>
+                    <a href="#Potentilla diversifolia" onclick="showMarkers_species('Potentilla diversifolia')">Potentilla diversifolia</a>
+                    <a href="#Primula angustifolia" onclick="showMarkers_species('Primula angustifolia')">Primula angustifolia</a>
+                    <a href="#Primula parryi" onclick="showMarkers_species('Primula parryi')">Primula parryi</a>
+                    <a href="#Pseudotsuga menziesii" onclick="showMarkers_species('Pseudotsuga menziesii')">Pseudotsuga menziesii</a>
+                    <a href="#Ranunculus adoneus" onclick="showMarkers_species('Ranunculus adoneus')">Ranunculus adoneus</a>
+                    <a href="#Ranunculus eschscholtzii" onclick="showMarkers_species('Ranunculus eschscholtzii')">Ranunculus eschscholtzii</a>
+                    <a href="#red Castilleja sp." onclick="showMarkers_species('red Castilleja sp.')">red Castilleja sp.</a>
+                    <a href="#Rhodiola integrifolia" onclick="showMarkers_species('Rhodiola integrifolia')">Rhodiola integrifolia</a>
+                    <a href="#Rhodiola rhodantha" onclick="showMarkers_species('Rhodiola rhodantha')">Rhodiola rhodantha</a>
+                    <a href="#Ribes sp." onclick="showMarkers_species('Ribes sp.')">Ribes sp.</a>
+                    <a href="#Rubus idaeus spp. melanolasius" onclick="showMarkers_species('Rubus idaeus spp. melanolasius')">Rubus idaeus spp. melanolasius</a>
+                    <a href="#Salix arctica spp. petraea" onclick="showMarkers_species('Salix arctica spp. petraea')">Salix arctica spp. petraea</a>
+                    <a href="#Salix glauca" onclick="showMarkers_species('Salix glauca')">Salix glauca</a>
+                    <a href="#Salix nivalis" onclick="showMarkers_species('Salix nivalis')">Salix nivalis</a>
+                    <a href="#Salix planifolia" onclick="showMarkers_species('Salix planifolia')">Salix planifolia</a>
+                    <a href="#Salix reticula ssp. nivalis" onclick="showMarkers_species('Salix reticula ssp. nivalis')">Salix reticula ssp. nivalis</a>
+                    <a href="#Salix villosa" onclick="showMarkers_species('Salix villosa')">Salix villosa</a>
+                    <a href="#Saxifraga bronchialis" onclick="showMarkers_species('Saxifraga bronchialis')">Saxifraga bronchialis</a>
+                    <a href="#Saxifraga chrysantha" onclick="showMarkers_species('Saxifraga chrysantha')">Saxifraga chrysantha</a>
+                    <a href="#Saxifraga flagellaris" onclick="showMarkers_species('Saxifraga flagellaris')">Saxifraga flagellaris</a>
+                    <a href="#Saxifraga rhomboidea" onclick="showMarkers_species('Saxifraga rhomboidea')">Saxifraga rhomboidea</a>
+                    <a href="#Saxifraga rivularis" onclick="showMarkers_species('Saxifraga rivularis')">Saxifraga rivularis</a>
+                    <a href="#Sedum lanceolatum" onclick="showMarkers_species('Sedum lanceolatum')">Sedum lanceolatum</a>
+                    <a href="#Senecio fremontii" onclick="showMarkers_species('Senecio fremontii')">Senecio fremontii</a>
+                    <a href="#Sibbaldia procumbens" onclick="showMarkers_species('Sibbaldia procumbens')">Sibbaldia procumbens</a>
+                    <a href="#Silene acaulis" onclick="showMarkers_species('Silene acaulis')">Silene acaulis</a>
+                    <a href="#Solidago multiradiata" onclick="showMarkers_species('Solidago multiradiata')">Solidago multiradiata</a>
+                    <a href="#Stellaria longipes" onclick="showMarkers_species('Stellaria longipes')">Stellaria longipes</a>
+                    <a href="#Stellaria umbellata" onclick="showMarkers_species('Stellaria umbellata')">Stellaria umbellata</a>
+                    <a href="#Swertia perennis" onclick="showMarkers_species('Swertia perennis')">Swertia perennis</a>
+                    <a href="#Tetraneuris acaulis" onclick="showMarkers_species('Tetraneuris acaulis')">Tetraneuris acaulis</a>
+                    <a href="#Tetraneuris grandiflora" onclick="showMarkers_species('Tetraneuris grandiflora')">Tetraneuris grandiflora</a>
+                    <a href="#Tonestus lyallii" onclick="showMarkers_species('Tonestus lyallii')">Tonestus lyallii</a>
+                    <a href="#Tonestus pygmaeus" onclick="showMarkers_species('Tonestus pygmaeus')">Tonestus pygmaeus</a>
+                    <a href="#Trifolium dasyphyllum" onclick="showMarkers_species('Trifolium dasyphyllum')">Trifolium dasyphyllum</a>
+                    <a href="#Trifolium nanum" onclick="showMarkers_species('Trifolium nanum')">Trifolium nanum</a>
+                    <a href="#Trifolium parryi" onclick="showMarkers_species('Trifolium parryi')">Trifolium parryi</a>
+                    <a href="#Trisetum spicatum" onclick="showMarkers_species('Trisetum spicatum')">Trisetum spicatum</a>
+                    <a href="#Trollius albiflorus" onclick="showMarkers_species('Trollius albiflorus')">Trollius albiflorus</a>
+                    <a href="#Vaccinium caespitosum" onclick="showMarkers_species('Vaccinium caespitosum')">Vaccinium caespitosum</a>
+                    <a href="#Vaccinium myrtillus" onclick="showMarkers_species('Vaccinium myrtillus')">Vaccinium myrtillus</a>
+                    <a href="#Vaccinium scoparium" onclick="showMarkers_species('Vaccinium scoparium')">Vaccinium scoparium</a>
+                    <a href="#Veronica wormskjoldii" onclick="showMarkers_species('Veronica wormskjoldii')">Veronica wormskjoldii</a>
+                    <a href="#Viola adunca" onclick="showMarkers_species('Viola adunca')">Viola adunca</a>
+                    <a href="#yellow Castilleja sp." onclick="showMarkers_species('yellow Castilleja sp.')">yellow Castilleja sp.</a>
+                    <a href="#Zigadenus elegans" onclick="showMarkers_species('Zigadenus elegans')">Zigadenus elegans</a>
+                </ul>
+            </div>
+        </div>
+        <button id="download_all_btn" class="btn btn-action" onclick="create_zip()" style="height:32px;width:120px">Download All</button>
+
+        <br></br>
+
+        <div id="map" style="width:100%;height:450px;background:black"></div>
+
+        <div class="home_section" style="height: 100%;">
+
+            <script type="text/javascript" src="assets/js/Stuk-jszip-ab3829a/dist/jszip.js"></script>
+            <script type="text/javascript" src="assets/js/FileSaver.js"></script>
+
+            <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+            <script>
+                // Initialize Firebase
+                var config = {
+                    apiKey: "AIzaSyALD0AZe1fPShuzIcNLHh87eERLXXpx3ks",
+                    authDomain: "speciesid-ca814.firebaseapp.com",
+                    databaseURL: "https://speciesid-ca814.firebaseio.com",
+                    storageBucket: "speciesid-ca814.appspot.com",
+                    messagingSenderId: "794603922973"
+                };
+                firebase.initializeApp(config);
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALD0AZe1fPShuzIcNLHh87eERLXXpx3ks"></script>
+            <script>
+                // Firebase stuff
+                const obs_database = firebase.database().ref("speciesid/observations");
+                const acc_database = firebase.database().ref("speciesid/accounts");
+
+                // Researcher Check
+                var is_researcher = false;
+
+                // Check for researcher
+                firebase.auth().onAuthStateChanged(firebaseUser => {
+                    if (firebaseUser) {
+
+                        acc_database.once("value").then(function(snapshot) {
+                            snapshot.forEach(function(childSnapshot) {
+
+                                var user_uid = childSnapshot.getKey();
+                                var researcher_val = childSnapshot.val().researcher;
+
+                                if (user_uid == firebaseUser.uid) {
+
+                                    if (researcher_val >= 3) {
+                                        is_researcher = true;
+                                    }
+                                }
+                            });
+                        });
+                    }
+                });
+
+                // Map, marker arrays, obs array
+                var map;
+                var verified_markers = [];
+                var not_verified_markers = [];
+                var observation_array = [];
+                var species_array_ver = []
+                var species_array_not_ver = []
+
+                function initMap() {
+
+                    var verified_btn = document.getElementById('verified_btn');
+                    var not_verified_btn = document.getElementById('not_verified_btn');
+                    var all_btn = document.getElementById('all_btn');
+
+                    var mapOptions = {
+                        zoom: 12,
+                        center: new google.maps.LatLng(40.03287778, -105.5464028),
+                        styles: [{
+                            "featureType": "administrative",
+                            "elementType": "all",
+                            "stylers": [{
+                                "visibility": "on"
+                            }, {
+                                "color": "#207f35"
+                            }, {
+                                "saturation": "-27"
+                            }]
+                        }, {
+                            "featureType": "administrative",
+                            "elementType": "labels.text.fill",
+                            "stylers": [{
+                                "color": "#ffffff"
+                            }, {
+                                "visibility": "on"
+                            }]
+                        }, {
+                            "featureType": "administrative",
+                            "elementType": "labels.text.stroke",
+                            "stylers": [{
+                                "visibility": "on"
+                            }, {
+                                "color": "#1d7a34"
+                            }, {
+                                "weight": "2.70"
+                            }]
+                        }, {
+                            "featureType": "administrative.locality",
+                            "elementType": "labels.icon",
+                            "stylers": [{
+                                "color": "#ffffff"
+                            }]
+                        }, {
+                            "featureType": "landscape",
+                            "elementType": "all",
+                            "stylers": [{
+                                "color": "#4ca634"
+                            }, {
+                                "visibility": "on"
+                            }]
+                        }, {
+                            "featureType": "landscape",
+                            "elementType": "labels.text",
+                            "stylers": [{
+                                "color": "#ffffff"
+                            }, {
+                                "visibility": "on"
+                            }]
+                        }, {
+                            "featureType": "landscape",
+                            "elementType": "labels.text.stroke",
+                            "stylers": [{
+                                "visibility": "on"
+                            }, {
+                                "lightness": "7"
+                            }, {
+                                "weight": "2.70"
+                            }, {
+                                "color": "#1d7a34"
+                            }]
+                        }, {
+                            "featureType": "poi",
+                            "elementType": "all",
+                            "stylers": [{
+                                "visibility": "on"
+                            }, {
+                                "color": "#71b347"
+                            }]
+                        }, {
+                            "featureType": "poi",
+                            "elementType": "labels.text.fill",
+                            "stylers": [{
+                                "visibility": "on"
+                            }, {
+                                "color": "#ffffff"
+                            }]
+                        }, {
+                            "featureType": "poi",
+                            "elementType": "labels.text.stroke",
+                            "stylers": [{
+                                "visibility": "on"
+                            }, {
+                                "color": "#1d7a34"
+                            }, {
+                                "lightness": "7"
+                            }, {
+                                "weight": "2.70"
+                            }]
+                        }, {
+                            "featureType": "poi",
+                            "elementType": "labels.icon",
+                            "stylers": [{
+                                "visibility": "on"
+                            }]
+                        }, {
+                            "featureType": "road",
+                            "elementType": "all",
+                            "stylers": [{
+                                "saturation": -100
+                            }, {
+                                "lightness": 45
+                            }, {
+                                "visibility": "simplified"
+                            }, {
+                                "color": "#c6d19d"
+                            }]
+                        }, {
+                            "featureType": "road",
+                            "elementType": "labels.text",
+                            "stylers": [{
+                                "visibility": "off"
+                            }, {
+                                "color": "#ffffff"
+                            }]
+                        }, {
+                            "featureType": "road",
+                            "elementType": "labels.text.fill",
+                            "stylers": [{
+                                "color": "#ffffff"
+                            }, {
+                                "visibility": "on"
+                            }]
+                        }, {
+                            "featureType": "road",
+                            "elementType": "labels.text.stroke",
+                            "stylers": [{
+                                "visibility": "on"
+                            }, {
+                                "color": "#1d7a34"
+                            }, {
+                                "weight": "1.99"
+                            }, {
+                                "saturation": "0"
+                            }, {
+                                "lightness": "7"
+                            }]
+                        }, {
+                            "featureType": "road",
+                            "elementType": "labels.icon",
+                            "stylers": [{
+                                "visibility": "off"
+                            }]
+                        }, {
+                            "featureType": "road.highway",
+                            "elementType": "all",
+                            "stylers": [{
+                                "visibility": "on"
+                            }]
+                        }, {
+                            "featureType": "road.highway",
+                            "elementType": "labels",
+                            "stylers": [{
+                                "visibility": "on"
+                            }, {
+                                "color": "#d0d0d0"
+                            }]
+                        }, {
+                            "featureType": "road.highway",
+                            "elementType": "labels.text",
+                            "stylers": [{
+                                "visibility": "on"
+                            }, {
+                                "color": "#ffffff"
+                            }]
+                        }, {
+                            "featureType": "road.highway",
+                            "elementType": "labels.text.fill",
+                            "stylers": [{
+                                "weight": "1"
+                            }, {
+                                "saturation": "0"
+                            }, {
+                                "visibility": "on"
+                            }, {
+                                "color": "#ffffff"
+                            }]
+                        }, {
+                            "featureType": "road.highway",
+                            "elementType": "labels.text.stroke",
+                            "stylers": [{
+                                "color": "#1d7a34"
+                            }, {
+                                "lightness": "7"
+                            }, {
+                                "gamma": "1"
+                            }, {
+                                "weight": "1.99"
+                            }, {
+                                "visibility": "on"
+                            }]
+                        }, {
+                            "featureType": "road.highway",
+                            "elementType": "labels.icon",
+                            "stylers": [{
+                                "visibility": "off"
+                            }, {
+                                "color": "#ffffff"
+                            }]
+                        }, {
+                            "featureType": "road.arterial",
+                            "elementType": "labels.icon",
+                            "stylers": [{
+                                "visibility": "off"
+                            }]
+                        }, {
+                            "featureType": "road.local",
+                            "elementType": "all",
+                            "stylers": [{
+                                "visibility": "on"
+                            }]
+                        }, {
+                            "featureType": "road.local",
+                            "elementType": "labels.icon",
+                            "stylers": [{
+                                "visibility": "off"
+                            }]
+                        }, {
+                            "featureType": "transit",
+                            "elementType": "all",
+                            "stylers": [{
+                                "visibility": "off"
+                            }]
+                        }, {
+                            "featureType": "water",
+                            "elementType": "all",
+                            "stylers": [{
+                                "visibility": "on"
+                            }, {
+                                "color": "#e2f9ff"
+                            }]
+                        }, {
+                            "featureType": "water",
+                            "elementType": "labels",
+                            "stylers": [{
+                                "color": "#1f7833"
+                            }, {
+                                "visibility": "on"
+                            }, {
+                                "saturation": "-32"
+                            }]
+                        }]
+
+                    };
+                    var mapElement = document.getElementById('map');
+
+                    map = new google.maps.Map(mapElement, mapOptions);
+
+                    // Query obs database
+                    obs_database.once("value").then(function(snapshot) {
+                        snapshot.forEach(function(childSnapshot) {
+
+                            var gps_lat = childSnapshot.val().gps_lat;
+                            var gps_long = childSnapshot.val().gps_long;
+                            var is_verified = childSnapshot.val().is_verified;
+                            var species_name = childSnapshot.val().species_name;
+
+                            var uid_timestamp = childSnapshot.getKey();
+
+                            var gps_loc = {
+                                lat: gps_lat,
+                                lng: gps_long
+                            };
+
+                            if (is_verified >= 3) {
+                                addMarker_verified(gps_loc, map, uid_timestamp, species_name);
+                            } else {
+                                addMarker_not_verified(gps_loc, map, uid_timestamp, species_name);
+                            }
+
+                        });
+
+                    });
+
+                    // Recent Obs Data
+
+                    var observation_1 = document.getElementById('observation_1');
+                    var observation_2 = document.getElementById('observation_2');
+                    var observation_3 = document.getElementById('observation_3');
+
+                    var observation_1_name = document.getElementById('observation_1_name');
+                    var observation_2_name = document.getElementById('observation_2_name');
+                    var observation_3_name = document.getElementById('observation_3_name');
+
+                    var observation_1_comments = document.getElementById('observation_1_comments');
+                    var observation_2_comments = document.getElementById('observation_2_comments');
+                    var observation_3_comments = document.getElementById('observation_3_comments');
+
+                    var observation_1_img = document.getElementById('observation_1_img');
+                    var observation_2_img = document.getElementById('observation_2_img');
+                    var observation_3_img = document.getElementById('observation_3_img');
+
+                    var total_observations = document.getElementById('total_observations');
+
+                    var recent_obs_data = firebase.database().ref("speciesid/observations").orderByKey();
+
+                    recent_obs_data.once("value").then(function(snapshot) {
+                        snapshot.forEach(function(childSnapshot) {
+
+                            var observation_id = childSnapshot.getKey();
+
+                            var species_name = childSnapshot.val().species_name;
+                            var username = childSnapshot.val().username;
+                            var comments = childSnapshot.val().comments;
+
+                            observation_array.push(observation_id);
+
+                            //alert(observation_array.length);
+
+                            total_observations.textContent = "Total: " + observation_array.length
+
+                            firebase.database().ref("speciesid/observations").once("value").then(function(snapshot) {
+
+                                var observation_id = childSnapshot.getKey();
+
+                                if (observation_array[observation_array.length - 1] == observation_id) {
+
+                                    observation_1.textContent = species_name;
+                                    observation_1_name.textContent = username;
+                                    observation_1_comments.textContent = comments;
+
+                                    var storage = firebase.storage();
+                                    var storageRef = storage.ref();
+                                    var tangRef = storageRef.child('observations/' + observation_id + '.jpg');
+
+                                    tangRef.getDownloadURL().then(function(url) {
+                                        document.getElementById('observation_1_img').src = url;
+                                    })
+
+                                }
+                            });
+
+                            firebase.database().ref("speciesid/observations").once("value").then(function(snapshot) {
+
+                                var observation_id = childSnapshot.getKey();
+
+                                if (observation_array[observation_array.length - 2] == observation_id) {
+
+                                    observation_2.textContent = species_name;
+                                    observation_2_name.textContent = username;
+                                    observation_2_comments.textContent = comments;
+
+                                    var storage = firebase.storage();
+                                    var storageRef = storage.ref();
+                                    var tangRef = storageRef.child('observations/' + observation_id + '.jpg');
+
+                                    tangRef.getDownloadURL().then(function(url) {
+                                        document.getElementById('observation_2_img').src = url;
+                                    })
+
+                                }
+                            });
+
+                            firebase.database().ref("speciesid/observations").once("value").then(function(snapshot) {
+
+                                var observation_id = childSnapshot.getKey();
+
+                                if (observation_array[observation_array.length - 3] == observation_id) {
+
+                                    observation_3.textContent = species_name;
+                                    observation_3_name.textContent = username;
+                                    observation_3_comments.textContent = comments;
+
+                                    var storage = firebase.storage();
+                                    var storageRef = storage.ref();
+                                    var tangRef = storageRef.child('observations/' + observation_id + '.jpg');
+
+                                    tangRef.getDownloadURL().then(function(url) {
+                                        document.getElementById('observation_3_img').src = url;
+                                    })
+                                }
+                            });
+                        });
+                    });
+                }
+
+                function addMarker_verified(location, map, uid_timestamp, species_name) {
+
+                    var image = 'https://firebasestorage.googleapis.com/v0/b/speciesid-ca814.appspot.com/o/google%20maps%2Fblue_small.png?alt=media&token=6d8ff7ed-ceb4-4e30-b79e-445c54588899';
+                    var marker = new google.maps.Marker({
+                        position: location,
+                        map: map,
+                        icon: image
+                    });
+
+                    marker.addListener('click', function() {
+                        map.setCenter(marker.getPosition());
+
+                        var display_recent_observations = document.getElementById('display_recent_observations');
+                        var show_recent_observations = document.getElementById('show_recent_observations');
+                        var display_species_name = document.getElementById('display_species_name');
+                        var obs_image_main = document.getElementById('obs_image');
+
+                        var current_obs = document.getElementById('current_obs');
+
+                        var verify_obs_btn = document.getElementById('verify_obs_btn');
+                        var remove_obs_btn = document.getElementById('remove_obs_btn');
+
+                        var display_verified = document.getElementById('display_verified');
+                        var display_verified_main = document.getElementById('display_verified_main');
+                        var display_username = document.getElementById('display_username');
+                        var display_username_main = document.getElementById('display_username_main');
+                        var display_datetime = document.getElementById('display_datetime');
+                        var display_datetime_main = document.getElementById('display_datetime_main');
+                        var display_lat = document.getElementById('display_lat');
+                        var display_lat_main = document.getElementById('display_lat_main');
+                        var display_long = document.getElementById('display_long');
+                        var display_long_main = document.getElementById('display_long_main');
+                        var display_comments = document.getElementById('display_comments');
+                        var display_comments_main = document.getElementById('display_comments_main');
+
+                        // Query obs database
+                        obs_database.once("value").then(function(snapshot) {
+                            snapshot.forEach(function(childSnapshot) {
+
+                                var comments = childSnapshot.val().comments;
+                                var gps_lat = childSnapshot.val().gps_lat;
+                                var gps_long = childSnapshot.val().gps_long;
+                                var is_verified = childSnapshot.val().is_verified;
+                                var species_name = childSnapshot.val().species_name;
+                                var username = childSnapshot.val().username;
+                                var timestamp = childSnapshot.val().datetime;
+
+                                var uid_timestamp_true = childSnapshot.getKey();
+
+                                var storage = firebase.storage();
+                                var storageRef = storage.ref();
+                                var tangRef = storageRef.child('observations/' + uid_timestamp + '.jpg');
+
+                                if (uid_timestamp == uid_timestamp_true) {
+
+                                    tangRef.getDownloadURL().then(function(url) {
+                                        document.getElementById('obs_image').src = url;
+                                    })
+
+                                    display_species_name.textContent = species_name;
+                                    display_username.textContent = username;
+                                    display_datetime.textContent = timestamp;
+                                    display_lat.textContent = gps_lat;
+                                    display_long.textContent = gps_long;
+                                    display_comments.textContent = comments;
+
+                                    current_obs.textContent = uid_timestamp_true;
+
+                                }
+
+                            });
+
+                        });
+
+                        display_recent_observations.classList.add('hide');
+                        show_recent_observations.classList.add('hide');
+                        display_species_name.classList.remove('hide');
+                        obs_image_main.classList.remove('hide');
+
+                        if (is_researcher) {
+                            verify_obs_btn.classList.remove('hide');
+                        } else {
+                            verify_obs_btn.classList.add('hide');
+                        }
+                        //remove_obs_btn.classList.remove('hide');
+
+                        display_not_verified.classList.add('hide');
+                        display_verified.classList.remove('hide');
+                        display_verified_main.classList.remove('hide');
+                        display_username.classList.remove('hide');
+                        display_username_main.classList.remove('hide');
+                        display_datetime.classList.remove('hide');
+                        display_datetime_main.classList.remove('hide');
+                        display_lat.classList.remove('hide');
+                        display_lat_main.classList.remove('hide');
+                        display_long.classList.remove('hide');
+                        display_long_main.classList.remove('hide');
+                        display_comments.classList.remove('hide');
+                        display_comments_main.classList.remove('hide');
+
+                    });
+
+                    verified_markers.push(marker);
+                    species_array_ver.push(species_name);
+                }
+
+                function addMarker_not_verified(location, map, uid_timestamp, species_name) {
+
+                    var image = 'https://firebasestorage.googleapis.com/v0/b/speciesid-ca814.appspot.com/o/google%20maps%2Fred_small.png?alt=media&token=b8887eec-5075-422f-a515-ba4bce116f0d';
+                    var marker_not_ver = new google.maps.Marker({
+                        position: location,
+                        map: map,
+                        icon: image
+                    });
+
+                    marker_not_ver.addListener('click', function() {
+                        map.setCenter(marker_not_ver.getPosition());
+
+                        var display_recent_observations = document.getElementById('display_recent_observations');
+                        var show_recent_observations = document.getElementById('show_recent_observations');
+                        var display_species_name = document.getElementById('display_species_name');
+                        var obs_image_main = document.getElementById('obs_image');
+
+                        var current_obs = document.getElementById('current_obs');
+
+                        var verify_obs_btn = document.getElementById('verify_obs_btn');
+                        var remove_obs_btn = document.getElementById('remove_obs_btn');
+
+                        var display_not_verified = document.getElementById('display_not_verified');
+                        var display_verified_main = document.getElementById('display_verified_main');
+                        var display_username = document.getElementById('display_username');
+                        var display_username_main = document.getElementById('display_username_main');
+                        var display_datetime = document.getElementById('display_datetime');
+                        var display_datetime_main = document.getElementById('display_datetime_main');
+                        var display_lat = document.getElementById('display_lat');
+                        var display_lat_main = document.getElementById('display_lat_main');
+                        var display_long = document.getElementById('display_long');
+                        var display_long_main = document.getElementById('display_long_main');
+                        var display_comments = document.getElementById('display_comments');
+                        var display_comments_main = document.getElementById('display_comments_main');
+
+                        // Query obs database
+                        obs_database.once("value").then(function(snapshot) {
+                            snapshot.forEach(function(childSnapshot) {
+
+                                var comments = childSnapshot.val().comments;
+                                var gps_lat = childSnapshot.val().gps_lat;
+                                var gps_long = childSnapshot.val().gps_long;
+                                var is_verified = childSnapshot.val().is_verified;
+                                var species_name = childSnapshot.val().species_name;
+                                var username = childSnapshot.val().username;
+                                var timestamp = childSnapshot.val().datetime;
+
+                                var uid_timestamp_true = childSnapshot.getKey();
+
+                                var storage = firebase.storage();
+                                var storageRef = storage.ref();
+                                var tangRef = storageRef.child('observations/' + uid_timestamp + '.jpg');
+
+                                if (uid_timestamp == uid_timestamp_true) {
+
+                                    tangRef.getDownloadURL().then(function(url) {
+                                        document.getElementById('obs_image').src = url;
+                                    })
+
+                                    display_species_name.textContent = species_name;
+                                    display_username.textContent = username;
+                                    display_datetime.textContent = timestamp;
+                                    display_lat.textContent = gps_lat;
+                                    display_long.textContent = gps_long;
+                                    display_comments.textContent = comments;
+
+                                    current_obs.textContent = uid_timestamp_true;
+
+                                }
+
+                            });
+
+                        });
+
+                        display_recent_observations.classList.add('hide');
+                        show_recent_observations.classList.add('hide');
+                        display_species_name.classList.remove('hide');
+                        obs_image_main.classList.remove('hide');
+
+                        if (is_researcher) {
+                            verify_obs_btn.classList.remove('hide');
+                        } else {
+                            verify_obs_btn.classList.add('hide');
+                        }
+                        //remove_obs_btn.classList.remove('hide');
+
+                        display_verified.classList.add('hide');
+                        display_not_verified.classList.remove('hide');
+                        display_verified_main.classList.remove('hide');
+                        display_username.classList.remove('hide');
+                        display_username_main.classList.remove('hide');
+                        display_datetime.classList.remove('hide');
+                        display_datetime_main.classList.remove('hide');
+                        display_lat.classList.remove('hide');
+                        display_lat_main.classList.remove('hide');
+                        display_long.classList.remove('hide');
+                        display_long_main.classList.remove('hide');
+                        display_comments.classList.remove('hide');
+                        display_comments_main.classList.remove('hide');
+
+                    });
+
+                    not_verified_markers.push(marker_not_ver);
+                    species_array_not_ver.push(species_name);
+                }
+
+                function setMap_verfied(map) {
+                    for (var i = 0; i < verified_markers.length; i++) {
+                        //console.log(verified_markers[i]);
+                        verified_markers[i].setMap(map);
+                    }
+                }
+
+                function setMap_not_verfied(map) {
+                    for (var i = 0; i < not_verified_markers.length; i++) {
+                        not_verified_markers[i].setMap(map);
+                    }
+                }
+
+                function showMarkers_verified() {
+                    setMap_verfied(map);
+                    setMap_not_verfied(null);
+                }
+
+                function showMarkers_not_verified() {
+                    setMap_verfied(null);
+                    setMap_not_verfied(map);
+                }
+
+                function showMarkers() {
+                    setMap_verfied(map);
+                    setMap_not_verfied(map);
+                }
+
+                function showMarkers_species(species) {
+
+                    setMap_verfied(null);
+                    setMap_not_verfied(null);
+
+                    for (var i = 0; i < species_array_ver.length; i++) {
+                        if (species_array_ver[i] == species) {
+                            verified_markers[i].setMap(map);
+                        }
+                    }
+                    for (var i = 0; i < species_array_not_ver.length; i++) {
+                        if (species_array_not_ver[i] == species) {
+                            not_verified_markers[i].setMap(map);
+                        }
+                    }
+                }
+
+                function verify_obs_func() {
+
+                    var uid_timestamp = document.getElementById('current_obs').textContent;
+
+                    obs_database.once("value").then(function(snapshot) {
+                        snapshot.forEach(function(childSnapshot) {
+
+                            var uid_timestamp_true = childSnapshot.getKey();
+
+                            if (uid_timestamp == uid_timestamp_true) {
+
+                                var verify_number = childSnapshot.val().is_verified;
+
+                                verify_number = verify_number + 1;
+
+                                firebase.database().ref("speciesid/observations").child(uid_timestamp).update({
+                                    "is_verified": verify_number
+                                });
+                            }
+                        });
+                    });
+
+                    alert("Observation verified! (Need 3)");
+
+                }
+
+                function myFunction_obs() {
+                    document.getElementById("myDropdown_obs").classList.toggle("show");
+                }
+
+                function filterFunction_obs() {
+                    var input, filter, ul, li, a, i;
+                    input = document.getElementById("myInput_obs");
+                    filter = input.value.toUpperCase();
+                    div = document.getElementById("myDropdown_obs");
+                    a = div.getElementsByTagName("a");
+                    for (i = 0; i < a.length; i++) {
+                        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                            a[i].style.display = "";
+                        } else {
+                            a[i].style.display = "none";
+                        }
+                    }
+                }
+
+                function create_zip() {
+
+                    var download_dictionary = "Species Name,Plant Code,Datetime,GPS Latitude,GPS Longitude,GPS Accuracy,Verification,Username,Comments,Firebase Photo Name\r\n";
+                    var obervations_counter = 0;
+
+                    obs_database.once("value").then(function(snapshot) {
+                        snapshot.forEach(function(childSnapshot) {
+
+                            var uid_timestamp_true = childSnapshot.getKey();
+
+                            //console.log(childSnapshot.getKey());
+                            var species_name = childSnapshot.val().species_name;
+                            var plant_code = childSnapshot.val().plant_code;
+                            var datetime = childSnapshot.val().datetime;
+                            var gps_lat = childSnapshot.val().gps_lat;
+                            var gps_long = childSnapshot.val().gps_long;
+                            var is_verified = childSnapshot.val().is_verified;
+                            var username = childSnapshot.val().username;
+                            var comments = childSnapshot.val().comments;
+                            var gps_accuracy = childSnapshot.val().gps_accuracy;
+
+
+
+                            download_dictionary = download_dictionary.concat(species_name + ',' + plant_code + ',' + datetime + ',' + gps_lat + ',' + gps_long + ',' + gps_accuracy + ',' + is_verified + ',' + username + ',' + comments + ',' + uid_timestamp_true + '\r\n')
+
+                            obervations_counter = obervations_counter + 1;
+
+                        });
+                        var zip = new JSZip();
+
+                        zip.file("Observations.csv", download_dictionary);
+
+
+
+                        zip.generateAsync({
+                            type: "blob"
+                        }).then(function(content) {
+                            saveAs(content, "observations.zip");
+                        });
+                    });
+
+                }
+
+                google.maps.event.addDomListener(window, 'load', initMap);
+            </script>
+            <h2 id="display_recent_observations" style="text-align:center;color:#ffffff;">Recent Observations</h2>
+
+            <div id="show_recent_observations" style="clear:both;">
+                <div id="container_obs">
+                    <h3><span id="observation_1" style="font-size:14px" class="columnh2_obs"></span><img id="observation_1_img" class="img_obs" border="0" width="80" height="80" /><br/><br/><br/><br/><br/><br/><br/><br/><span style="font-size:14px;color:#aaaaaa;">User: </span><span id="observation_1_name" class="columnh2_obs"></span><br/><span style="font-size:16px;color:#aaaaaa;">Comments: </span><span id="observation_1_comments" style="font-size:16px" class="columnh2_obs"></span></h3>
+                    <h3><span id="observation_2" style="font-size:14px" class="columnh2_obs"></span><img id="observation_2_img" class="img_obs" border="0" width="80" height="80" /><br/><br/><br/><br/><br/><br/><br/><br/><span style="font-size:14px;color:#aaaaaa;">User: </span><span id="observation_2_name" class="columnh2_obs"></span><br/><span style="font-size:16px;color:#aaaaaa;">Comments: </span><span id="observation_2_comments" style="font-size:16px" class="columnh2_obs"></span></h3>
+                    <h3><span id="observation_3" style="font-size:14px" class="columnh2_obs"></span><img id="observation_3_img" class="img_obs" border="0" width="80" height="80" /><br/><br/><br/><br/><br/><br/><br/><br/><span style="font-size:14px;color:#aaaaaa;">User: </span><span id="observation_3_name" class="columnh2_obs"></span><br/><span style="font-size:16px;color:#aaaaaa;">Comments: </span><span id="observation_3_comments" style="font-size:16px" class="columnh2_obs"></span></h3>
+                </div>
+            </div>
+
+            <h2 id="display_species_name" class="hide" style="text-align:center;color:#dddddd;"></h2>
+
+            <div align="left" style="float:left;width:50%;">
+
+                <h4 id="current_obs" class="hide"></h4>
+
+                <div style="clear:both;">
+                    <img id="obs_image" class="hide" style="vertical-align:middle;height:250px;width:200px" />
+                    <h4 id="display_verified_main" class="hide" style="text-align:center;color:#dddddd;">Verified:</h4>
+                    <img src="assets/img/check.png" id="display_verified" class="icons hide" style="vertical-align:middle;">
+                    <img src="assets/img/x.png" id="display_not_verified" class="icons hide" style="vertical-align:middle;">
+                </div>
+                <br></br>
+                <div style="clear: both;text-align: center;">
+                    <button id="verify_obs_btn" class="btn btn-action hide" style="height:32px;width:120px" onclick="verify_obs_func();">Verify</button>
+                    <!--
+    	  	<button id="remove_obs_btn" class="btn btn-action hide" style="height:32px;width:120px">Remove</button>
+    	  	-->
+                </div>
+
+            </div>
+            <div align="right" style="float:right;width:50%;padding:0px 65px">
+
+                <div style="clear: both">
+                    <h5 id="display_username_main" class="hide" style="float:left;color:#dddddd;">User:</h5>
+                    <h4 id="display_username" style="float:right;width:50%;"></h4>
+                </div>
+
+                <div style="clear: both">
+                    <h5 id="display_datetime_main" class="hide" style="float:left;color:#dddddd;">Date:</h5>
+                    <h4 id="display_datetime" style="float:right;width:50%;"></h4>
+                </div>
+
+                <div style="clear: both">
+                    <h5 id="display_lat_main" class="hide" style="float:left;color:#dddddd;">Latitude:</h5>
+                    <h4 id="display_lat" style="float:right;width:50%;"></h4>
+                </div>
+
+                <div style="clear: both">
+                    <h5 id="display_long_main" class="hide" style="float:left;color:#dddddd;">Longitude:</h5>
+                    <h4 id="display_long" style="float:right;width:50%;"></h4>
+                </div>
+
+                <div style="clear: both">
+                    <h5 id="display_comments_main" class="hide" style="float:left;color:#dddddd;">Comments:</h5>
+                    <h4 id="display_comments" style="float:right;width:50%;"></h4>
+                </div>
+            </div>
+            <h2 style="clear: both;text-align:center;color:#ffffff;">All Observations</h2>
+
+            <h3 style="float:left;color:#dddddd;width:33%;font-size:16px">Species Name</h3>
+            <h3 style="float:left;color:#dddddd;width:33%;font-size:16px">User</h3>
+            <h3 style="float:left;color:#dddddd;width:33%;font-size:16px">Date</h3>
+
+            <iframe id="all_obs_frame" src="all_obs.html" style="height:550px;"></iframe>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.luminousid.luminousid.glossaryDetailActivity">
+
+    <ImageView
+        android:id="@+id/glossaryImage"
+        android:layout_width="match_parent"
+        android:layout_height="238dp"
+        android:layout_weight="1.57"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        android:layout_above="@+id/glossary_nameText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/glossary_nameText"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Blank Name"
+        android:textColor="@android:color/black"
+        android:textSize="40dp"
+        android:layout_marginBottom="167dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

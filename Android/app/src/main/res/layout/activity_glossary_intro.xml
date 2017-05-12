@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lumi_homescreen_background_img"
+    tools:context="com.luminousid.luminousid.Glossary_IntroActivity">
+
+    <Button
+        android:id="@+id/forbsButton"
+        android:layout_width="300sp"
+        android:layout_height="85sp"
+        android:layout_marginBottom="70sp"
+        android:background="@drawable/forbs_title"
+        android:layout_above="@+id/graminoidsButton"
+        android:layout_alignLeft="@+id/graminoidsButton"
+        android:layout_alignStart="@+id/graminoidsButton" />
+
+    <Button
+        android:id="@+id/graminoidsButton"
+        android:layout_width="300sp"
+        android:layout_height="85sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/graminoids_title"/>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lumi_homescreen_background_img"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.luminousid.luminousid.open_screenActivity"
+    android:id="@+id/activity_open_screen">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/lumi_logo"
+        android:layout_above="@+id/loginButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="35dp"
+        android:adjustViewBounds="true" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_above="@+id/signUpButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:onClick="gotoLogin" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="Sign Up"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_above="@+id/guestButton"
+        android:layout_alignLeft="@+id/loginButton"
+        android:layout_alignStart="@+id/loginButton"
+        android:onClick="gotoSignup" />
+
+    <Button
+        android:id="@+id/guestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/transparent"
+        android:text="Continue as guest"
+        fontPath="fonts/Snippet.ttf"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="gotoHomeScreen"/>
+</RelativeLayout>
