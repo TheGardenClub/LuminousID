@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HWg-U9-Am5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HWg-U9-Am5">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -2557,7 +2557,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="2400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:Ofk-D1-eFA:image" translatesAutoresizingMaskIntoConstraints="NO" id="Ofk-D1-eFA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="A72EC6BC-A3CB-46F7-BE74-800689F1B9AD" translatesAutoresizingMaskIntoConstraints="NO" id="Ofk-D1-eFA">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="2400"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XW-Sr-t0Y">
@@ -2825,14 +2825,14 @@ Jane Smith
                                                 </attributes>
                                             </fragment>
                                             <fragment>
-                                                <mutableString key="content">Image Use: Images included in this website and app have been made freely available by their owners for education and research purposes. Contributors retain the full copyright for their images. Images may be used only in unmodified form for personal or educational use and are NOT available for commercial use unless permission is first obtained from the copyright holder. Any image used in a non-commercial publication, report, or as a web link, must credit the photographer or artist, as well as the name of the website hosting the image.
+                                                <string key="content">Image Use: Images included in this website and app have been made freely available by their owners for education and research purposes. Contributors retain the full copyright for their images. Images may be used only in unmodified form for personal or educational use and are NOT available for commercial use unless permission is first obtained from the copyright holder. Any image used in a non-commercial publication, report, or as a web link, must credit the photographer or artist, as well as the name of the website hosting the image.
 
 
 Illustration Credit: All illustrations included in the Luminous ID app were created by Jane G. Smith.
 
 
 Photo Credits:
-*Biopix: A. Neuman, J.C. Schou | </mutableString>
+*Biopix: A. Neuman, J.C. Schou | </string>
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
@@ -3577,23 +3577,7 @@ Search for a variety of different species using the field guide as a reference, 
         </scene>
     </scenes>
     <resources>
-        <image name="Camera_Icon" width="28" height="21"/>
-        <image name="Capture_Button_White" width="80" height="80"/>
-        <image name="Flash_Icon" width="13" height="22"/>
-        <image name="HowTo_tab" width="30" height="30"/>
-        <image name="Luminous-ID" width="1507" height="487"/>
-        <image name="about_normal" width="75" height="75"/>
-        <image name="about_us_tab" width="30" height="30"/>
-        <image name="background_img" width="404" height="612"/>
-        <image name="deciduous" width="200" height="50"/>
-        <image name="fg_forbs" width="200" height="50"/>
-        <image name="fg_grams" width="200" height="50"/>
-        <image name="fg_ts" width="200" height="50"/>
-        <image name="field_guide_normal" width="75" height="75"/>
-        <image name="garden_club_logo" width="216" height="168"/>
-        <image name="glossary" width="75" height="75"/>
-        <image name="grasses" width="200" height="50"/>
-        <image name="imageView:Ofk-D1-eFA:image" width="404" height="612">
+        <image name="A72EC6BC-A3CB-46F7-BE74-800689F1B9AD" width="404" height="612">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -20131,6 +20115,22 @@ AA8hmQAPIaEADyGkAA8hqQAPIbEADyG0AA8hxgAPIckADyHOAAAAAAAABAEAAAAAAAAAQQAAAAAAAAAA
 AAAAAAAPIdA
 </mutableData>
         </image>
+        <image name="Camera_Icon" width="28" height="21"/>
+        <image name="Capture_Button_White" width="80" height="80"/>
+        <image name="Flash_Icon" width="13" height="22"/>
+        <image name="HowTo_tab" width="30" height="30"/>
+        <image name="Luminous-ID" width="1507" height="487"/>
+        <image name="about_normal" width="75" height="75"/>
+        <image name="about_us_tab" width="30" height="30"/>
+        <image name="background_img" width="404" height="612"/>
+        <image name="deciduous" width="200" height="50"/>
+        <image name="fg_forbs" width="200" height="50"/>
+        <image name="fg_grams" width="200" height="50"/>
+        <image name="fg_ts" width="200" height="50"/>
+        <image name="field_guide_normal" width="75" height="75"/>
+        <image name="garden_club_logo" width="216" height="168"/>
+        <image name="glossary" width="75" height="75"/>
+        <image name="grasses" width="200" height="50"/>
         <image name="my_observations_normal" width="75" height="75"/>
         <image name="needle" width="200" height="50"/>
         <image name="rushes" width="200" height="50"/>
